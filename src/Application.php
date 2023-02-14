@@ -15,6 +15,7 @@
 namespace App;
 
 use Cake\Core\Configure;
+use Cake\Core\Exception\MissingPluginException;
 use Cake\Error\Middleware\ErrorHandlerMiddleware;
 use Cake\Http\BaseApplication;
 use Cake\Routing\Middleware\AssetMiddleware;
@@ -34,6 +35,41 @@ use App\Middleware\AccountRequiredFieldsMiddleware;
  */
 class Application extends BaseApplication
 {
+
+    public function bootstrap()
+    {
+        if (PHP_SAPI === 'cli') {
+            try {
+                $this->addPlugin('Bake');
+            } catch (MissingPluginException $e) {
+                // Do not halt if the plugin is missing
+            }
+        }
+
+        /*
+        * Only try to load DebugKit in development mode
+        * Debug Kit should not be installed on a production system
+        */
+        if (Configure::read('debug')) {
+            Configure::write('DebugKit.panels', ['DebugKit.Packages' => false]);
+            $this->addPlugin('DebugKit', ['bootstrap' => true]);
+        }
+
+        $this->addPlugin('Migrations');
+        $this->addPlugin('BootstrapUI');
+        $this->addPlugin('Josegonzalez/Upload');
+
+        // Disabilitato:
+        // Alcuni CSS (quelli inline css_head--inline, che erano soggetti già a compressione tramite preg_match) non venivano interpretati
+        // correttamente
+        //$this->addPlugin('WyriHaximus/MinifyHtml', ['bootstrap' => true]);
+
+        $this->addPlugin('Recaptcha', []);
+        // $this->addPlugin('ADmad/HybridAuth', ['bootstrap' => true, 'routes' => true]);
+        $this->addPlugin('CsvView');
+        $this->addPlugin('AppRestrictAccess', ['bootstrap' => true, 'routes' => true]);
+
+    }
 
     /**
      * Metodo utilizzato dal Middleware OnlyDeveloperMiddleware
@@ -68,7 +104,7 @@ class Application extends BaseApplication
             ->add(new AssetMiddleware())
 
             // Apply routing
-            ->add(new RoutingMiddleware());
+            ->add(new RoutingMiddleware($this));
 
             // if (Configure::read('Maintenance.enabled')) {
             //     $middleware

@@ -93,6 +93,7 @@ use Cake\Datasource\ConnectionManager;
 use Cake\Error\ErrorHandler;
 use Cake\Log\Log;
 use Cake\Mailer\Email;
+use Cake\Mailer\TransportFactory;
 use Cake\Network\Request;
 use Cake\Utility\Inflector;
 use Cake\Utility\Security;
@@ -182,12 +183,12 @@ if (!Configure::read('App.fullBaseUrl')) {
     unset($httpHost, $s);
 }
 
-Cache::config(Configure::consume('Cache'));
-ConnectionManager::config(Configure::consume('Datasources'));
-Email::configTransport(Configure::consume('EmailTransport'));
-Email::config(Configure::consume('Email'));
-Log::config(Configure::consume('Log'));
-Security::salt(Configure::consume('Security.salt'));
+Cache::setConfig(Configure::consume('Cache'));
+ConnectionManager::setConfig(Configure::consume('Datasources'));
+TransportFactory::setConfig(Configure::consume('EmailTransport'));
+Email::setConfig(Configure::consume('Email'));
+Log::setConfig(Configure::consume('Log'));
+Security::setSalt(Configure::consume('Security.salt'));
 
 /*
  * The default crypto extension in 3.0 is OpenSSL.
@@ -235,49 +236,13 @@ Type::build('datetime')
 //Inflector::rules('uninflected', ['dontinflectme']);
 //Inflector::rules('transliteration', ['/å/' => 'aa']);
 
-/*
- * Plugins need to be loaded manually, you can either load them one by one or all of them in a single call
- * Uncomment one of the lines below, as you need. make sure you read the documentation on Plugin to use more
- * advanced ways of loading plugins
- *
- * Plugin::loadAll(); // Loads all plugins at once
- * Plugin::load('Migrations'); //Loads a single plugin named Migrations
- *
- */
-
 
 use Cake\Event\EventManager;
 use App\Event\UserListener;
 use App\Event\AdminListener;
 
-EventManager::instance()->attach(new UserListener());
-EventManager::instance()->attach(new AdminListener());
+EventManager::instance()->on(new UserListener());
+EventManager::instance()->on(new AdminListener());
 
-
-/*
- * Only try to load DebugKit in development mode
- * Debug Kit should not be installed on a production system
- */
-if (Configure::read('debug')) {
-    Configure::write('DebugKit.panels', ['DebugKit.Packages' => false]);
-    Plugin::load('DebugKit', ['bootstrap' => true]);
-}
 
 Configure::load('funjob');
-
-Plugin::load('Migrations');
-Plugin::load('BootstrapUI');
-
-Plugin::load('Josegonzalez/Upload');
-
-// Disabilitato:
-// Alcuni CSS (quelli inline css_head--inline, che erano soggetti già a compressione tramite preg_match) non venivano interpretati
-// correttamente
-//Plugin::load('WyriHaximus/MinifyHtml', ['bootstrap' => true]);
-
-
-Plugin::load('Recaptcha', []);
-//Plugin::load('ADmad/HybridAuth', ['bootstrap' => true, 'routes' => true]);
-Plugin::load('CsvView');
-
-Plugin::load('AppRestrictAccess', ['bootstrap' => true, 'routes' => true]);
