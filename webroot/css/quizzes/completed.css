@@ -1,0 +1,30 @@
+
+.fa-check--completed {
+    color:green !important;
+    text-shadow:1px 1px 2px green;
+}
+
+.app-quiz-entity {
+    border-bottom: 1px solid whitesmoke;
+    padding-top:10px;
+}
+
+
+.funjob-quiz-level .content--hover {display:none}
+
+.btn-reset {border:0;}
+.btn-reset:hover {background-color:transparent;box-shadow:none}
+
+
+.funjob-quiz-result .panel-footer {padding:5px;}
+.funjob-quiz-result-finalScore {margin-top:10px;}
+
+.list-group-item--funjob{background-color:#00adee !important;color:white !important;}
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1080px) {
+    .funjob-quiz-result .panel-footer .btn-block+.btn-block{margin-top:0 !important}
+    .funjob-quiz-result .panel-footer .btn-block {width:auto;display:inline-block;}
+    .funjob-quiz-result .panel-footer .action-buttons {text-align:right}
+}

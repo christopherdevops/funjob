@@ -1,0 +1,40 @@
+.quiz-entity-content a {color: white !important;}
+.quiz-entity-content a:hover {color:#00adee !important;}
+
+/* Posizionamento avatar sopra cover */
+.quiz-entity-avatar {position:relative;}
+.quiz-entity-avatar img {
+    position:absolute;
+    top:-15px;
+    left:10px;
+    z-index:999;
+
+    border:2px solid whitesmoke;
+}
+
+.quiz-entity-avatar img:hover {
+    border:2px solid #00adee;
+}
+
+
+.quiz-entity-title {
+    padding-top:3px !important;
+
+    display:block;
+    width:100%;
+    height:30px;
+
+    padding-left:5px;
+    padding-right:5px;
+
+    font-weight:bold;
+    font-size:14px !important;
+}
+
+.quiz-entity-footer {
+    padding-left:5%;padding-right:5%;
+    background-color:rgba(255,255,255,0.45);
+}
+
+.quiz-entity-footer .fa {color:white;}
+.quiz-entity-footer .fa-smile-o {color:white;}

@@ -1,0 +1,29 @@
+html {
+    background-color:#00adee !important;
+    background-image:url("../img/quiz-background.jpg") !important;
+    overflow:hidden;
+    min-height:100%;
+}
+body{background-color:transparent !important;}
+
+.app-menu-primary-btn {
+    width: 100% !important;
+    text-align: left !important;
+    padding-left:5px;
+}
+
+.app-menu-primary-btn,
+.app-menu-primary-btn * {
+    /* bottone al centro della barra */
+    line-height: 100%;
+        vertical-align: middle;
+        display: table-cell !important;
+}
+
+.app-menu-primary-btn .back-text {padding-left:10px;font-weight:bold;text-transform:uppercase;}
+.js-sound-toggle, .js-sound-toggle:active, .js-sound-toggle:hover {color:white !important}
+
+/** Bootstrap **/
+.navbar-fixed-top{
+    border-width: 0 0 3px !important;
+}

@@ -1,0 +1,5365 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Funjob\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: English <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: Application.php:75
+msgid "Applicazione in manutenzione"
+msgstr "Application in maintenance"
+
+#: Controller/AppController.php:66
+msgid "Per visualizzare questa pagina è richiesto il login"
+msgstr "Requested page require login"
+
+#: Controller/AppController.php:259
+msgid "Pubblicità disponibile"
+msgstr "Advertising not available"
+
+#: Controller/AppController.php:260
+msgid "Acquista angolo pubblicitario"
+msgstr "Buy advertising"
+
+#: Controller/BigBrainsController.php:81
+msgid "Grazie! La tua richiesta verrà analizzata e verrai ricontattato su {0}"
+msgstr "Thank You! Your will contact soon on {0}"
+
+#: Controller/BigBrainsController.php:91
+msgid "\"NON SONO UN ROBOT\" errato... ritenta"
+msgstr ""
+
+#: Controller/CitiesController.php:206
+msgid "API status [{0}]"
+msgstr ""
+
+#: Controller/CompaniesController.php:95 Controller/UsersController.php:143
+msgid "Questo utente non esiste"
+msgstr "This user not exists"
+
+#: Controller/ContactsController.php:45
+msgid "Verifica reCaptcha fallita"
+msgstr ""
+
+#: Controller/ContactsController.php:51
+msgid "Controlla di aver compilato correttamente i campi e riprova"
+msgstr ""
+
+#: Controller/ContactsController.php:68
+msgid "Impossibile inviare e-mail"
+msgstr ""
+
+#: Controller/ContactsController.php:72
+msgid "E-mail inoltrata"
+msgstr ""
+
+#: Controller/CurriculumVitaesController.php:47
+msgid "CV: Non caricato"
+msgstr "CV: not uploaded"
+
+#: Controller/CurriculumVitaesController.php:49
+msgid "CV: file non trovato"
+msgstr "CV: file not founded"
+
+#: Controller/CurriculumVitaesController.php:88
+msgid "CV: accedi a FunJob"
+msgstr "CV: login to FunJob"
+
+#: Controller/CurriculumVitaesController.php:110
+msgid "Non puoi visualizzare il CV perchè l'utente non ti ha ancora abilitato"
+msgstr "You can't view this CV because not have permission "
+
+#: Controller/CurriculumVitaesController.php:112
+msgid "Non puoi visualizzare il CV: l'utente ha rifiutato"
+msgstr "You can't view this CV because user rejected your request"
+
+#: Controller/CurriculumVitaesController.php:128;148
+msgid "Eliminazione fallita"
+msgstr "Deleted fail"
+
+#: Controller/CurriculumVitaesController.php:143
+msgid "CV eliminato correttamente"
+msgstr "CV deleted"
+
+#: Controller/CvAuthorizationsController.php:21
+msgid "Funzionalità riservata ai soli utenti privati"
+msgstr "Feature only for private user"
+
+#: Controller/CvAuthorizationsController.php:110;119
+msgctxt "Autorizzazione CV creata"
+msgid "Richiesta inviata: attendi che venga abilitata dall'utente"
+msgstr ""
+
+#: Controller/HybridAuthController.php:50
+msgid "Invalid username or password, try again"
+msgstr ""
+
+#: Controller/QuizQuestionReportingsController.php:60
+#: Controller/QuizUserReportingsController.php:47
+msgid "Un amministratore è stato avvisato della tua segnalazione. Grazie!"
+msgstr ""
+
+#: Controller/QuizQuestionsController.php:48;163;196
+#: Controller/Sponsor/SponsorAdvsController.php:125
+#: Controller/User/QuizzesController.php:87
+msgid "Permesso negato"
+msgstr "Forbidden "
+
+#: Controller/QuizQuestionsController.php:81
+msgid "Domanda creata"
+msgstr "Question created"
+
+#: Controller/QuizQuestionsController.php:84
+msgid "Verifica che tutti siano corretti, e ritenta"
+msgstr "Check errors and re-retry"
+
+#: Controller/QuizQuestionsController.php:110
+#: Controller/Admin/QuizQuestionsController.php:100;200
+msgid "The quiz question has been saved."
+msgstr ""
+
+#: Controller/QuizQuestionsController.php:114
+#: Controller/Admin/QuizQuestionsController.php:104;204
+msgid "The quiz question could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/QuizQuestionsController.php:134
+#: Controller/Admin/QuizQuestionsController.php:223
+msgid "The quiz question has been deleted."
+msgstr ""
+
+#: Controller/QuizQuestionsController.php:136
+#: Controller/Admin/QuizQuestionsController.php:225
+msgid "The quiz question could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/QuizQuestionsController.php:208
+msgid "Domanda giocabile"
+msgstr ""
+
+#: Controller/QuizQuestionsController.php:214
+msgid "Domanda nascosta (non giocabile)"
+msgstr ""
+
+#: Controller/QuizQuestionsController.php:223
+msgid "Aggiornamento fallito"
+msgstr ""
+
+#: Controller/QuizzesController.php:41
+msgid "Quiz non trovato"
+msgstr ""
+
+#: Controller/QuizzesController.php:45
+msgid "Non è ancora stato pubblicato"
+msgstr ""
+
+#: Controller/QuizzesController.php:332
+msgid ""
+"Spiacenti, per i tuoi quiz la funzionalità di guadagno PIX tramite "
+"pubblicità è disabilitata"
+msgstr ""
+
+#: Controller/QuizzesController.php:388
+msgid "Sessione di quiz scaduta (non esistente)"
+msgstr ""
+
+#: Controller/QuizzesController.php:394
+msgid "Sessione di quiz scaduta (refresh)"
+msgstr ""
+
+#: Controller/QuizzesController.php:402
+msgid "Sessione di quiz scaduta"
+msgstr ""
+
+#: Controller/QuizzesController.php:433
+msgid "Richiesta non valida"
+msgstr ""
+
+#: Controller/QuizzesController.php:450
+msgid "Sessione scaduta"
+msgstr "Session expired"
+
+#: Controller/QuizzesController.php:476
+msgid "Sessione di gioco scaduta"
+msgstr "Game session expired"
+
+#: Controller/QuizzesController.php:498
+msgid "Impossibile mostrare risultato, sessione di gioco scaduta"
+msgstr ""
+
+#: Controller/QuizzesController.php:564
+msgid "Quiz creato: inserisci le domande prima di pubbliarlo"
+msgstr ""
+
+#: Controller/QuizzesController.php:667
+msgid "Accesso negato"
+msgstr ""
+
+#: Controller/QuizzesController.php:674
+msgid "Quiz aggiornato"
+msgstr "Quiz updated"
+
+#: Controller/QuizzesController.php:678
+msgid "Impossibile aggiornare, controlla che i dati inseriti siano corretti"
+msgstr ""
+
+#: Controller/SponsorAdvsController.php:123
+msgid "Impressione su {adv} : {url}"
+msgstr ""
+
+#: Controller/SponsorAdvsController.php:178
+msgid "click su pubblicità {adv} {url}"
+msgstr ""
+
+#: Controller/StoresController.php:97
+msgid "Prodotto non esistente"
+msgstr ""
+
+#: Controller/StoresController.php:155
+msgid "Ordine effettuato. Verrai contattato al più presto su {0}"
+msgstr ""
+
+#: Controller/StoresController.php:159
+msgid "Ordine NON effettuato. Se pensi sia un problema contattaci"
+msgstr ""
+
+#: Controller/UserGroupsController.php:98
+msgid "Gruppo creato: ora puoi assegnare una foto o delle parole chiavi"
+msgstr ""
+
+#: Controller/UserGroupsController.php:102
+msgid "Impossibile procedere, verifica che i campi siano corretti."
+msgstr ""
+
+#: Controller/UserGroupsController.php:145
+msgid "Gruppo aggiornato"
+msgstr ""
+
+#: Controller/UserGroupsController.php:149
+msgid ""
+"Impossibile proseguire, verifica che tutti i campi siano privi di errore."
+msgstr ""
+
+#: Controller/UserGroupsController.php:168
+msgid "The user group has been deleted."
+msgstr ""
+
+#: Controller/UserGroupsController.php:170
+msgid "The user group could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UserGroupsController.php:193
+msgid "Sei entrato nel gruppo"
+msgstr ""
+
+#: Controller/UserGroupsController.php:215
+msgid "Sei uscito dal gruppo"
+msgstr ""
+
+#: Controller/UserRegistrationsController.php:51
+msgid "Grazie per aver aggiornato i tuoi dati"
+msgstr ""
+
+#: Controller/UserRegistrationsController.php:71
+msgid "Nessun account è associato a questa email"
+msgstr ""
+
+#: Controller/UserRegistrationsController.php:79
+msgid "Ti è stata inviata un email per il ripristino"
+msgstr ""
+
+#: Controller/UserRegistrationsController.php:104
+msgid "Esegui l'accesso con i tuoi nuovi dati"
+msgstr ""
+
+#: Controller/UserRegistrationsController.php:134
+msgid "Grazie per aver completato la registrazione"
+msgstr ""
+
+#: Controller/UserRegistrationsController.php:151
+msgid "Account già verificato, Grazie"
+msgstr ""
+
+#: Controller/UserRegistrationsController.php:156
+msgid "E-mail di conferma re-inviata: controlla anche nella tua spambox"
+msgstr ""
+
+#: Controller/UsersController.php:92
+msgid "Account eliminato..."
+msgstr ""
+
+#: Controller/UsersController.php:95
+msgid "Impossibile eliminare account"
+msgstr ""
+
+#: Controller/UsersController.php:313
+msgid "Credenziali di accesso errate"
+msgstr ""
+
+#: Controller/UsersController.php:342
+msgid "Benvenuto in FunJob {username}"
+msgstr ""
+
+#: Controller/Admin/HomepagesController.php:50
+msgid "Configurazione homepage salvata"
+msgstr ""
+
+#: Controller/Admin/HomepagesController.php:53
+msgid "The homepage could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/QuizCategoriesController.php:44
+msgid "Categoria quiz non creata.. riprova"
+msgstr ""
+
+#: Controller/Admin/QuizCategoriesController.php:82
+msgid "Aggiornamento fallito; tenta nuovamente"
+msgstr ""
+
+#: Controller/Admin/QuizCategoriesController.php:106
+msgid "Categoria Quiz eliminata"
+msgstr ""
+
+#: Controller/Admin/QuizCategoriesController.php:108
+msgid "Impossibile eliminare categoria"
+msgstr ""
+
+#: Controller/Admin/QuizzesController.php:101
+msgid "Quiz disabilitato"
+msgstr ""
+
+#: Controller/Admin/QuizzesController.php:104
+msgid "Quiz non più disabilitato"
+msgstr ""
+
+#: Controller/Admin/QuizzesController.php:118
+msgid "Impossibile aggiornare flag \"disabled\" quiz"
+msgstr ""
+
+#: Controller/Admin/StoreOrdersController.php:75
+msgid "Aggiornamento inviato a utente"
+msgstr ""
+
+#: Controller/Admin/StoreProductPicturesController.php:30
+msgid "Foto caricata"
+msgstr ""
+
+#: Controller/Admin/StoreProductPicturesController.php:32
+msgid "Impossibile caricare foto"
+msgstr ""
+
+#: Controller/Admin/StoreProductPicturesController.php:56
+msgid "Foto eliminata"
+msgstr ""
+
+#: Controller/Admin/StoreProductsController.php:113;158
+msgid "The store could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/UserCreditsController.php:41
+msgid "Crediti aggiornati: da {from} a {to}"
+msgstr ""
+
+#: Controller/Admin/UserCreditsController.php:44
+msgid "The user credit could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Company/UsersController.php:76
+#: Controller/User/UsersController.php:120
+msgid "Opzioni aggiornate"
+msgstr ""
+
+#: Controller/Company/UsersController.php:79
+#: Controller/User/UsersController.php:123
+msgid "Correggi i campi errati e riprova"
+msgstr ""
+
+#: Controller/Component/QuizGameComponent.php:185
+msgid "Non sono state trovate abbastanza domande per questo livello"
+msgstr ""
+
+#: Controller/Component/QuizGameComponent.php:308
+msgid "Livello {level} non previsto per la tipologia di quiz {quiz_type}"
+msgstr ""
+
+#: Controller/Component/QuizGameComponent.php:464
+msgid "Errore Quiz data: nessuna risposta corretta!!!"
+msgstr ""
+
+#: Controller/Component/QuizGameComponent.php:656
+msgid "Suggerimento {name} già utilizzato!"
+msgstr ""
+
+#: Controller/Component/QuizSessionComponent.php:121
+msgid "Quiz::end - Livello giocato={level}   Punteggio ottenuto={score}"
+msgstr ""
+
+#: Controller/Component/QuizSessionComponent.php:131
+msgid "Quiz::end - QuizSession#{session} creato"
+msgstr ""
+
+#: Controller/Component/QuizSessionComponent.php:133
+msgid "Quiz::end - QuizSession#{session} already exists"
+msgstr ""
+
+#: Controller/Component/QuizSessionComponent.php:142
+msgid ""
+"Quiz::end - QuizSessionLevel#{id} già giocato (livello: {level} punteggio: "
+"{score})"
+msgstr ""
+
+#: Controller/Component/QuizSessionComponent.php:258
+msgid "Quiz::score - Ha ottenuto un punteggio di {score}"
+msgstr ""
+
+#: Controller/Component/QuizSessionComponent.php:264
+msgid ""
+"Quiz::score - Punteggio bonus (per aiuti non utilizzati) {score} + "
+"{score_diff} = {score_bonus}"
+msgstr ""
+
+#: Controller/Sponsor/SponsorAdvsController.php:87
+msgid "Annuncio creato, procedi al pagamento tramite il pulsante \"Acquista\""
+msgstr ""
+
+#: Controller/Sponsor/SponsorAdvsController.php:103
+msgid "Pubblicità su pagine"
+msgstr ""
+
+#: Controller/Sponsor/SponsorAdvsController.php:104
+msgid "Maximum Memories (pubblicità tra le domande del gioco)"
+msgstr ""
+
+#: Controller/Sponsor/SponsorAdvsController.php:109
+msgid "{views} views [{amount} euro]"
+msgstr ""
+
+#: Controller/Sponsor/SponsorAdvsController.php:128
+msgid "Permesso negato: {reason}"
+msgstr ""
+
+#: Controller/Sponsor/SponsorAdvsController.php:128
+msgid "Campagna inattiva"
+msgstr ""
+
+#: Controller/User/QuizSessionsController.php:47
+msgid "Visibilità aggiornata"
+msgstr ""
+
+#: Controller/User/QuizSessionsController.php:50
+msgid "Visibilità NON aggiornata"
+msgstr ""
+
+#: Controller/User/QuizSessionsController.php:93
+msgid "Sessione di gioco eliminata correttamente"
+msgstr ""
+
+#: Controller/User/QuizUserRankingsController.php:21
+msgid "Grazie per aver contribuito a FunJob"
+msgstr ""
+
+#: Controller/User/QuizUserRankingsController.php:49
+msgid "Grazie, per aver espresso la tua preferenza"
+msgstr ""
+
+#: Controller/User/QuizUserRankingsController.php:53
+msgid "The quiz user ranking could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/User/QuizUserRankingsController.php:74
+msgid "The quiz user ranking has been deleted."
+msgstr ""
+
+#: Controller/User/QuizUserRankingsController.php:76
+msgid "The quiz user ranking could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/User/QuizzesController.php:95
+msgid ""
+"Questo gioco non rispecchia i requisiti minimi per essere pubblicato (numero "
+"domande minime)"
+msgstr ""
+
+#: Controller/User/QuizzesController.php:106
+msgid "Visibilità quiz modificata"
+msgstr ""
+
+#: Controller/User/QuizzesController.php:110
+msgid "Impossibile cambiare visibilità quiz"
+msgstr ""
+
+#: Controller/User/UserFriendsController.php:139
+msgid "Richiesta di amicizia in attesa di approvazione da parte dell'utente"
+msgstr ""
+
+#: Controller/User/UserFriendsController.php:163
+msgid "Attendi che l'utente dia un responso per la tua richiesta di amicizia"
+msgstr ""
+
+#: Controller/User/UserFriendsController.php:165
+msgid "Impossibile richiedere amicizia"
+msgstr ""
+
+#: Controller/User/UserFriendsController.php:209
+msgid "Richiesta accettata"
+msgstr ""
+
+#: Controller/User/UserFriendsController.php:211
+msgid "Impossibile aggiornare richiesta"
+msgstr ""
+
+#: Controller/User/UserFriendsController.php:276
+msgid "Richiesta di amicizia non accettata."
+msgstr ""
+
+#: Controller/User/UserFriendsController.php:233
+msgctxt "Richiesta di amicizia rifiutata"
+msgid "Richiesta non accettata"
+msgstr ""
+
+#: Controller/User/UserIgnoreListsController.php:54
+msgid "Hai aggiunto questo utente nella lista ignorati"
+msgstr ""
+
+#: Controller/User/UserIgnoreListsController.php:62
+msgid "Impossibile ignorare utente"
+msgstr ""
+
+#: Controller/User/UserIgnoreListsController.php:81
+msgid "The user ignore list has been deleted."
+msgstr ""
+
+#: Controller/User/UserIgnoreListsController.php:83
+msgid "The user ignore list could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/User/UserMessagesController.php:151;225
+msgid "Messaggio inviato"
+msgstr ""
+
+#: Controller/User/UserMessagesController.php:155
+msgid "The user message could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/User/UserMessagesController.php:229
+msgid "Impossibile inviare messaggio"
+msgstr ""
+
+#: Controller/User/UserMessagesController.php:306
+msgid "Questo utente ti stà ignorando"
+msgstr ""
+
+#: Controller/User/UsersController.php:206
+msgid "Utilizza almeno uno di questi filtri"
+msgstr ""
+
+#: Event/UserListener.php:107
+msgid ""
+"Guadagno crediti: {user} ha completato un livello/quiz ({credits_previous} + "
+"{credits} = {credits_current})"
+msgstr ""
+
+#: Event/UserListener.php:165
+msgid ""
+"Guadagno crediti: un utente ha giocato il quiz di {author} "
+"({credits_previous} + {credits} = {credits_current})"
+msgstr ""
+
+#: Event/UserListener.php:206
+msgid "Crediti insufficienti (richiesti: {0}  attuali: {1})"
+msgstr ""
+
+#: Event/UserListener.php:223
+msgid "Quantità non disponibile"
+msgstr ""
+
+#: Event/UserListener.php:251
+msgid "Crediti: current={0} expected={1} -> now={2}"
+msgstr ""
+
+#: Event/UserListener.php:252
+msgid "Ordine : #{0}"
+msgstr ""
+
+#: Event/UserListener.php:253
+msgid "Aggiorno disponibilità prodotto {0} -> {1}"
+msgstr ""
+
+#: Form/BigBrainContactForm.php:45
+msgid "Non è un indirizzo email valido"
+msgstr ""
+
+#: Form/BigBrainContactForm.php:46
+msgid "Richiede minimo 100 caratteri"
+msgstr "Require 100 characters minimum"
+
+#: Form/BigBrainContactForm.php:76
+msgid "BigBrain: nuovo candidato {0}"
+msgstr ""
+
+#: Form/ContactForm.php:41
+msgid "Voce non valida"
+msgstr ""
+
+#: Form/ContactForm.php:48
+msgid "Indirizzo non valido"
+msgstr "Invalid address"
+
+#: Form/QuizQuestionReportingForm.php:36;40;44
+#: Form/QuizUserReportingForm.php:40
+msgid "Valore errato"
+msgstr "Invalid value"
+
+#: Form/QuizSessionReplyForm.php:40
+msgid "ID non valido"
+msgstr ""
+
+#: Form/QuizSessionReplyForm.php:46
+msgid "Risposta sconosciuta"
+msgstr ""
+
+#: Form/QuizSessionReplyForm.php:53 Template/Quizzes/play.ctp:337
+msgid "Tempo scaduto"
+msgstr "Time expired"
+
+#: Form/QuizSessionStartForm.php:43
+msgid "Registrazione richiesta"
+msgstr ""
+
+#: Form/QuizSessionStartForm.php:56
+msgid "Non hai ancora sbloccato questo livello"
+msgstr ""
+
+#: Form/UserJobOffersForm.php:61;66
+msgid "Richiede un valore numerico"
+msgstr ""
+
+#: Form/UserJobOffersForm.php:76
+msgid "Questo valore deve essere più grande dell'età minima specificata"
+msgstr ""
+
+#: Form/UserJobOffersForm.php:87
+msgid "Compila il campo, e seleziona un risultato"
+msgstr ""
+
+#: Hiryu85/Model/UserRecoveryTrait.php:10;21
+msgid "{class}::findByResetToken richiede $settings[token]"
+msgstr ""
+
+#: Hiryu85/Traits/TableFindsTrait.php:23
+msgid "{method} richiede il parametro: {param}"
+msgstr ""
+
+#: Mailer/OrderMailer.php:27
+msgid "[funjob.it] Ordine da {0} (N° {1})"
+msgstr ""
+
+#: Mailer/OrderMailer.php:54
+msgid "[funjob.it] Ordine #{id} aggiornato"
+msgstr ""
+
+#: Mailer/QuizQuestionReportingMailer.php:28
+msgid "[funjob.it] Domanda segnalata da un utente (Quiz n° {quiz_id})"
+msgstr ""
+
+#: Mailer/QuizUserReportingMailer.php:29
+msgid "[funjob.it] Quiz reportato da un utente (Quiz n° {quiz_id})"
+msgstr ""
+
+#: Mailer/SponsorAdvMailer.php:29
+msgid "[funjob.it] Annuncio creato da {user} (N° {adv_id})"
+msgstr ""
+
+#: Mailer/UserFriendMailer.php:25
+msgid "[funjob.it] Richiesta di amicizia di {username}"
+msgstr ""
+
+#: Mailer/UserMailer.php:32
+msgid "[funjob.it] Verifica account"
+msgstr ""
+
+#: Mailer/UserMailer.php:44
+msgid "[funjob.it] ripristino account"
+msgstr ""
+
+#: Middleware/DeveloperOnlyMiddleware.php:75
+msgid "OnlyDeveloperMiddleware callback not callable"
+msgstr ""
+
+#: Model/Behavior/StripTagsBehavior.php:46
+msgid "{0} allowable_tags should be array"
+msgstr ""
+
+#: Model/Entity/Quiz.php:171
+msgid "Quiz::title proprietà richiesta"
+msgstr ""
+
+#: Model/Entity/Quiz.php:176
+msgid "Quiz::id proprietà richiesta"
+msgstr ""
+
+#: Model/Entity/SponsorAdv.php:56
+msgid "SponsorAdvEntity::image_track_src works only if isNew = false"
+msgstr ""
+
+#: Model/Entity/SponsorAdv.php:60
+msgid "SponsorAdvEntity::image_track_src require uuid in SELECT"
+msgstr ""
+
+#: Model/Entity/SponsorAdv.php:69
+msgid "SponsorAdvEntity::href_track_src works only if isNew = false"
+msgstr ""
+
+#: Model/Entity/SponsorAdv.php:73
+msgid "SponsorAdvEntity::href_track_src require uuid in SELECT"
+msgstr ""
+
+#: Model/Entity/User.php:94
+msgid "Anonimo"
+msgstr ""
+
+#: Model/Table/CompaniesTable.php:92;95;98;102
+#: Model/Table/QuizAnswersTable.php:58
+#: Model/Table/QuizQuestionsTable.php:147;163;166;169
+#: Model/Table/SponsorAdvsTable.php:143;165;200;252
+#: Model/Table/UsersTable.php:107;147;148;194;195;272
+msgid "Campo obbligatorio"
+msgstr ""
+
+#: Model/Table/CompaniesTable.php:101 Model/Table/UsersTable.php:108
+msgid "Valore non valido"
+msgstr ""
+
+#: Model/Table/CompaniesTable.php:136;174
+msgid "{method} richiede parametro: {param}"
+msgstr ""
+
+#: Model/Table/CvAuthorizationsTable.php:89
+msgid "Richiesta in attesa di moderazione"
+msgstr ""
+
+#: Model/Table/HomepageSettingsTable.php:54;58
+msgid "Richiede URL"
+msgstr ""
+
+#: Model/Table/HomepageSettingsTable.php:66;78
+msgid "Richiede un codice embed"
+msgstr ""
+
+#: Model/Table/HomepageSettingsTable.php:71;83
+#: Model/Table/QuizzesTable.php:191
+msgid "Questo host non è abilitato per l'embed video"
+msgstr ""
+
+#: Model/Table/QuizAnswersTable.php:70
+msgid "La risposta deve essere lunga da {min_chars} a {max_chars}"
+msgstr ""
+
+#: Model/Table/QuizQuestionsTable.php:129
+msgid "La domanda deve essere lunga da {min_chars} a {max_chars}"
+msgstr ""
+
+#: Model/Table/QuizQuestionsTable.php:146;162;165;168
+msgid "Campo richiesto"
+msgstr ""
+
+#: Model/Table/QuizQuestionsTable.php:150
+msgid "URL invalido"
+msgstr ""
+
+#: Model/Table/QuizQuestionsTable.php:156
+msgid "Sono abilitati solo link provenienti da Wikipedia"
+msgstr ""
+
+#: Model/Table/QuizQuestionsTable.php:173
+msgid "Allega la scansione della pagina"
+msgstr ""
+
+#: Model/Table/QuizQuestionsTable.php:178
+#: Model/Table/SponsorAdvsTable.php:205;257
+msgid "Impossibile caricare file"
+msgstr ""
+
+#: Model/Table/QuizQuestionsTable.php:183
+msgid "Formato file non abilitato (.png, .gif, .jpg, .jpeg)"
+msgstr ""
+
+#: Model/Table/QuizQuestionsTable.php:200;214
+msgid "Questa tipologia di quiz necessita di {0} risposte"
+msgstr ""
+
+#: Model/Table/QuizQuestionsTable.php:304
+msgid "{0} required paramenter complexity"
+msgstr ""
+
+#: Model/Table/QuizQuestionsTable.php:375
+msgid "{0} required paramenter \"term\""
+msgstr ""
+
+#: Model/Table/QuizQuestionsTable.php:425
+msgid "{0} required paramenter \"category_id\""
+msgstr ""
+
+#: Model/Table/QuizQuestionsTable.php:449
+msgid "{0} required paramenter \"quiz_id\""
+msgstr ""
+
+#: Model/Table/QuizQuestionsTable.php:453
+msgid "{0} required paramenter \"question_id\""
+msgstr ""
+
+#: Model/Table/QuizSessionsTable.php:131 Model/Table/QuizzesTable.php:587
+msgid "{class} parameter: $settings[\"user\"] required"
+msgstr ""
+
+#: Model/Table/QuizSessionsTable.php:158 Model/Table/QuizzesTable.php:612
+msgid "Nessun categoria"
+msgstr ""
+
+#: Model/Table/QuizUserRankingsTable.php:68
+msgid "Numero da 1 a 10"
+msgstr ""
+
+#: Model/Table/QuizUserRankingsTable.php:85
+msgid "Voto già esistente"
+msgstr ""
+
+#: Model/Table/QuizzesTable.php:179
+msgid "Richiede un colore esadecimale (#f0f0f0)"
+msgstr ""
+
+#: Model/Table/QuizzesTable.php:186
+msgid "Richiede un codice embed (HTLM)"
+msgstr ""
+
+#: Model/Table/QuizzesTable.php:198
+msgid "Richiede un indirizzo valido (con http://)"
+msgstr ""
+
+#: Model/Table/QuizzesTable.php:222
+msgid "Formato file non abilitato ({mimes})"
+msgstr ""
+
+#: Model/Table/QuizzesTable.php:231 Model/Table/UserGroupsTable.php:247
+msgid "Dimensione massima immagine: {size} KB"
+msgstr ""
+
+#: Model/Table/QuizzesTable.php:240 Model/Table/UserGroupsTable.php:257
+msgid "L'altezza minima dell'immagine deve essere superiore a {minSize} px"
+msgstr ""
+
+#: Model/Table/QuizzesTable.php:248 Model/Table/UserGroupsTable.php:267
+msgid "La larghezza minima dell'immagine deve essere superiore a {minSize} px"
+msgstr ""
+
+#: Model/Table/QuizzesTable.php:310
+msgid "Seleziona una categoria"
+msgstr ""
+
+#: Model/Table/QuizzesTable.php:311
+msgid "Poi selezionare non più di {max} categorie"
+msgstr ""
+
+#: Model/Table/QuizzesTable.php:489
+msgid "{0} need parameter \"type\""
+msgstr ""
+
+#: Model/Table/SponsorAdvClicksTable.php:97
+#: Model/Table/SponsorAdvViewsTable.php:117
+msgid "findByMonth: parametro mancante \"month\""
+msgstr ""
+
+#: Model/Table/SponsorAdvClicksTable.php:102
+#: Model/Table/SponsorAdvViewsTable.php:122
+msgid "findByMonth: formato non valido \"month\" (richiede: Y-m)"
+msgstr ""
+
+#: Model/Table/SponsorAdvViewsTable.php:141
+msgid "findByPeriod: parametro mancante \"date_from\""
+msgstr ""
+
+#: Model/Table/SponsorAdvViewsTable.php:145
+msgid "findByPeriod: parametro mancante \"date_to\""
+msgstr ""
+
+#: Model/Table/SponsorAdvsTable.php:210;262
+msgid "Formato file non abilitato (.png, .jpg, .jpeg)"
+msgstr ""
+
+#: Model/Table/SponsorAdvsTable.php:217;269
+msgid "Deve avere un altezza maggiore di {min_height} pixel"
+msgstr ""
+
+#: Model/Table/SponsorAdvsTable.php:224;276
+msgid "Deve avere un larghezza maggiore di {min_width} pixel"
+msgstr ""
+
+#: Model/Table/SponsorAdvsTable.php:233;285
+msgid "Dimensione massima immagine: {max_kb} KB"
+msgstr ""
+
+#: Model/Table/StoreProductPicturesTable.php:141
+msgid "Carica un immagine"
+msgstr ""
+
+#: Model/Table/StoreProductPicturesTable.php:147
+msgid "Non è stato trovato nessun file da caricare"
+msgstr ""
+
+#: Model/Table/StoreProductPicturesTable.php:152
+msgid "Errore file system durante l'upload"
+msgstr ""
+
+#: Model/Table/StoreProductPicturesTable.php:159
+msgid "Questa immagine richiede un altezza superiore di 200 pixel"
+msgstr ""
+
+#: Model/Table/StoreProductPicturesTable.php:164
+msgid "Questa immagine richiede una larghezza superiore a 200 pixel"
+msgstr ""
+
+#: Model/Table/StoreProductsTable.php:188
+msgid "Parametro richiesto: {field}"
+msgstr ""
+
+#: Model/Table/UserFieldsTable.php:95
+msgid "Estenzioni accettate: pdf"
+msgstr ""
+
+#: Model/Table/UserFieldsTable.php:116
+msgid "Data non valida"
+msgstr ""
+
+#: Model/Table/UserFriendsTable.php:99
+msgid "Hai già inviato una richiesta di amicizia a questo utente"
+msgstr ""
+
+#: Model/Table/UserFriendsTable.php:122
+msgid "Parameter required: user_id => integer, friend_id => integer"
+msgstr ""
+
+#: Model/Table/UserGroupMembersTable.php:96
+msgid "Parametro: user_id richiesto"
+msgstr ""
+
+#: Model/Table/UserGroupMembersTable.php:100
+msgid "Parametro: group_id richiesto"
+msgstr ""
+
+#: Model/Table/UserGroupsTable.php:184
+msgid "Massiamo 100 caratteri"
+msgstr ""
+
+#: Model/Table/UserGroupsTable.php:191
+msgid "Massiamo 255 caratteri"
+msgstr ""
+
+#: Model/Table/UserGroupsTable.php:236
+msgid "Estenzioni accettate: jpg, jpeg, gif, png"
+msgstr ""
+
+#: Model/Table/UserGroupsTable.php:278
+msgid "Questa immagine NON dovrebbe essere più grande di 1000 px in altezza"
+msgstr ""
+
+#: Model/Table/UserGroupsTable.php:284
+msgid "Questa immagine NON dovrebbe essere più grande di 1000 px in larghezza"
+msgstr ""
+
+#: Model/Table/UserGroupsTable.php:302
+msgid "Gruppo già esistente"
+msgstr ""
+
+#: Model/Table/UserIgnoreListsTable.php:81
+msgid "Hai già ignorato questo utente"
+msgstr ""
+
+#: Model/Table/UserIgnoreListsTable.php:92
+msgid "Parametri mancanti: user_id o ignore_user_id"
+msgstr ""
+
+#: Model/Table/UserMessageConversationsTable.php:81;175
+msgid "{0} require parameter \"user_id\""
+msgstr ""
+
+#: Model/Table/UserMessageConversationsTable.php:143
+msgid "{0}::{1} require parameter \"conversation_id\""
+msgstr ""
+
+#: Model/Table/UserMessageRecipientsTable.php:101
+msgid "{0} missing argument: user_id"
+msgstr ""
+
+#: Model/Table/UsersTable.php:114
+msgid ""
+"Il nickname deve essere di una lunghezza compresa dai {min_chars} ai "
+"{max_chars}"
+msgstr ""
+
+#: Model/Table/UsersTable.php:122
+msgid "Questo username non è ammesso"
+msgstr ""
+
+#: Model/Table/UsersTable.php:128
+msgid "Questo username è riservato"
+msgstr ""
+
+#: Model/Table/UsersTable.php:135
+msgid "Caratteri non ammessi: utilizzare solo lettere o numeri"
+msgstr ""
+
+#: Model/Table/UsersTable.php:153;200;291
+msgid "Caratteri minimi per password: 5"
+msgstr ""
+
+#: Model/Table/UsersTable.php:160;207;298
+msgid "La password di conferma non è uguale alla password"
+msgstr ""
+
+#: Model/Table/UsersTable.php:167;275
+msgid "Tipologia account sconosciuta"
+msgstr ""
+
+#: Model/Table/UsersTable.php:179;180
+msgid "Devi accettare i termini e le condizioni"
+msgstr ""
+
+#: Model/Table/UsersTable.php:282
+msgid "Devi prima verificare la tua email per poter accedere a funjob"
+msgstr ""
+
+#: Model/Table/UsersTable.php:314
+msgid "Username giù utilizzato"
+msgstr ""
+
+#: Model/Table/UsersTable.php:315
+msgid "Indirizzo giù utilizzato"
+msgstr ""
+
+#: Shell/ScrapingQuestionShell.php:88
+msgid "Specifica ID quiz --quiz=5"
+msgstr ""
+
+#: Shell/ScrapingQuestionShell.php:124
+msgid "<success>Nuova domanda:</success> {0}"
+msgstr ""
+
+#: Shell/ScrapingQuestionShell.php:127
+msgid "Impossibile importare nuova domanda: {0}"
+msgstr ""
+
+#: Shell/ScrapingQuestionShell.php:132
+msgid "√ {0} nuove domande"
+msgstr ""
+
+#: Shell/ScrapingQuestionShell.php:155
+msgid "Empty results"
+msgstr ""
+
+#: Template/Admin/CompanyCategories/add.ctp:7
+#: Template/Admin/CompanyCategories/edit.ctp:13
+#: Template/Admin/QuizCategories/add.ctp:8
+#: Template/Admin/QuizCategories/edit.ctp:8
+#: Template/Admin/Store/StoreProductCategories/add.ctp:13
+#: Template/Admin/Store/StoreProductCategories/edit.ctp:13
+msgid "Sotto categoria di"
+msgstr ""
+
+#: Template/Admin/CompanyCategories/add.ctp:8
+#: Template/Admin/CompanyCategories/edit.ctp:14
+#: Template/Admin/QuizCategories/add.ctp:9
+#: Template/Admin/QuizCategories/edit.ctp:9
+#: Template/Admin/Store/StoreProductCategories/add.ctp:14
+#: Template/Admin/Store/StoreProductCategories/edit.ctp:14
+msgid "-- Nodo principale"
+msgstr ""
+
+#: Template/Admin/CompanyCategories/add.ctp:12
+#: Template/Admin/QuizCategories/add.ctp:13
+#: Template/Admin/Store/StoreProductCategories/add.ctp:18
+#: Template/QuizCategories/index.ctp:14
+msgid "Nome categoria"
+msgstr ""
+
+#: Template/Admin/CompanyCategories/add.ctp:13
+#: Template/Admin/QuizCategories/add.ctp:14
+#: Template/Admin/Store/StoreProductCategories/add.ctp:19
+msgid "Traduzioni disponibili nella pagina di modifica"
+msgstr ""
+
+#: Template/Admin/CompanyCategories/add.ctp:18
+#: Template/Admin/CompanyCategories/edit.ctp:38
+#: Template/Admin/QuizCategories/add.ctp:19
+#: Template/Admin/QuizCategories/edit.ctp:31
+#: Template/Admin/Store/StoreProductCategories/add.ctp:24
+#: Template/Admin/Store/StoreProductCategories/edit.ctp:36
+msgid "Submit"
+msgstr ""
+
+#: Template/Admin/CompanyCategories/edit.ctp:2
+msgid "Modifica: {subject}"
+msgstr ""
+
+#: Template/Admin/CompanyCategories/edit.ctp:4
+msgid "Settori aziendali"
+msgstr "Company categories"
+
+#: Template/Admin/CompanyCategories/edit.ctp:5
+#: Template/Admin/Store/StoreProductCategories/edit.ctp:5
+#: Template/Admin/Store/StoreProducts/edit.ctp:7;64
+#: Template/Quizzes/edit.ctp:9 Template/UserGroups/edit.ctp:40
+msgid "Modifica"
+msgstr "Edit"
+
+#: Template/Admin/CompanyCategories/edit.ctp:19
+#: Template/Admin/QuizCategories/edit.ctp:14
+#: Template/Admin/Store/StoreProductCategories/edit.ctp:19
+msgid "Nome (originale)"
+msgstr "Name (original)"
+
+#: Template/Admin/CompanyCategories/edit.ctp:20
+#: Template/Admin/QuizCategories/edit.ctp:15
+#: Template/Admin/Store/StoreProductCategories/edit.ctp:20
+msgid ""
+"Se non è prevista una traduzione di questo campo (in \"Traduzioni\") verrà "
+"utilizzata questo stringa"
+msgstr ""
+
+#: Template/Admin/CompanyCategories/edit.ctp:28
+#: Template/Admin/QuizCategories/edit.ctp:21
+#: Template/Admin/Store/StoreProductCategories/edit.ctp:26
+msgid "Traduzioni"
+msgstr ""
+
+#: Template/Admin/CompanyCategories/edit.ctp:30
+#: Template/Admin/QuizCategories/edit.ctp:23
+#: Template/Admin/Store/StoreProductCategories/edit.ctp:28
+msgid "Italiano"
+msgstr "Italiano"
+
+#: Template/Admin/CompanyCategories/edit.ctp:31
+#: Template/Admin/QuizCategories/edit.ctp:24
+#: Template/Admin/Store/StoreProductCategories/edit.ctp:29
+msgid "Inglese"
+msgstr "English"
+
+#: Template/Admin/CompanyCategories/edit.ctp:32
+#: Template/Admin/QuizCategories/edit.ctp:25
+#: Template/Admin/Store/StoreProductCategories/edit.ctp:30
+msgid "Francese"
+msgstr ""
+
+#: Template/Admin/CompanyCategories/edit.ctp:33
+#: Template/Admin/QuizCategories/edit.ctp:26
+#: Template/Admin/Store/StoreProductCategories/edit.ctp:31
+msgid "Spagnolo"
+msgstr ""
+
+#: Template/Admin/CompanyCategories/edit.ctp:34
+#: Template/Admin/QuizCategories/edit.ctp:27
+#: Template/Admin/Store/StoreProductCategories/edit.ctp:32
+msgid "Russo"
+msgstr ""
+
+#: Template/Admin/CompanyCategories/index.ctp:3;53
+#: Template/Admin/QuizCategories/index.ctp:47
+#: Template/Admin/Store/StoreProductCategories/add.ctp:4
+#: Template/Admin/Store/StoreProductCategories/edit.ctp:4
+#: Template/Admin/Store/StoreProductCategories/index.ctp:47
+#: Template/Admin/Store/StoreProducts/add.ctp:56
+#: Template/Admin/Store/StoreProducts/edit.ctp:43
+msgid "Categorie"
+msgstr ""
+
+#: Template/Admin/CompanyCategories/index.ctp:4
+msgid "Settore Aziende"
+msgstr ""
+
+#: Template/Admin/CompanyCategories/index.ctp:43
+#: Template/Admin/QuizCategories/index.ctp:37
+msgid "Categorie Quiz"
+msgstr ""
+
+#: Template/Admin/CompanyCategories/index.ctp:45
+#: Template/Admin/QuizCategories/index.ctp:39
+#: Template/Admin/Store/StoreProductCategories/index.ctp:39
+msgid "Nuova Categoria"
+msgstr ""
+
+#: Template/Admin/Homepages/edit.ctp:51 Template/QuizQuestions/add.ctp:435
+msgid "Salva"
+msgstr "Save"
+
+#: Template/Admin/QuizCategories/edit.ctp:5
+msgid "Modifica: Categoria Quiz"
+msgstr "Edit: Quiz Category"
+
+#: Template/Admin/QuizQuestions/index.ctp:2
+msgid "Ricerca domande"
+msgstr ""
+
+#: Template/Admin/QuizQuestions/index.ctp:83
+msgid "Facili"
+msgstr "Easy"
+
+#: Template/Admin/QuizQuestions/index.ctp:84
+msgid "Medie"
+msgstr "Medium"
+
+#: Template/Admin/QuizQuestions/index.ctp:85
+msgid "Difficili"
+msgstr "Hard"
+
+#: Template/Admin/QuizQuestions/index.ctp:135
+#: Template/QuizQuestions/add.ctp:426 Template/QuizQuestions/index.ctp:56
+#: View/Helper/QuizAnswerHelper.php:40
+msgid "Vero"
+msgstr "True"
+
+#: Template/Admin/QuizQuestions/index.ctp:137
+#: Template/QuizQuestions/add.ctp:427 Template/QuizQuestions/index.ctp:58
+#: View/Helper/QuizAnswerHelper.php:40
+msgid "Falso"
+msgstr "False"
+
+#: Template/Admin/Quizzes/index.ctp:16 Template/Admin/Users/quizzes.ctp:38
+#: Template/User/Users/quizzes.ctp:25
+msgid "Nome quiz"
+msgstr ""
+
+#: Template/Admin/Quizzes/index.ctp:21
+#: Template/Admin/Store/StoreOrders/index.ctp:27
+#: Template/Sponsor/SponsorAdvs/index.ctp:15
+#: Template/User/StoreOrders/index.ctp:15 Template/User/Users/quizzes.ctp:30
+msgid "Tutti"
+msgstr ""
+
+#: Template/Admin/Quizzes/index.ctp:23 Template/User/Users/quizzes.ctp:32
+msgid "Allestimento (domande non raggiunte, o non ancora pubblicato)"
+msgstr ""
+
+#: Template/Admin/Quizzes/index.ctp:24 Template/User/Users/quizzes.ctp:33
+msgid "Giocabili (domande raggiunte e in archivio)"
+msgstr ""
+
+#: Template/Admin/Quizzes/index.ctp:25 Template/User/Users/quizzes.ctp:34
+msgid "Non giocabili (disabilitate da admin)"
+msgstr ""
+
+#: Template/Admin/Quizzes/index.ctp:31 Template/Admin/Users/quizzes.ctp:42
+#: Template/User/Users/quizzes.ctp:40
+msgid "Ogni tipologia"
+msgstr ""
+
+#: Template/Admin/Quizzes/index.ctp:33 Template/Admin/Users/quizzes.ctp:44
+#: Template/User/Users/quizzes.ctp:42
+msgid "Quiz normale"
+msgstr ""
+
+#: Template/Admin/Quizzes/index.ctp:34 Template/Admin/Users/quizzes.ctp:45
+#: Template/User/Users/quizzes.ctp:43
+msgid "Quiz certificato FunJob"
+msgstr ""
+
+#: Template/Admin/Quizzes/index.ctp:51
+msgid "Downlaod domande/risposte"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:2;4
+#: Template/Element/ui/main-menu.ctp:108
+#: Template/Sponsor/SponsorAdvs/add.ctp:5
+#: Template/Sponsor/SponsorAdvs/index.ctp:5
+#: Template/Sponsor/SponsorAdvs/view.ctp:5
+#: Template/UserDashboards/index.ctp:265
+msgid "Pubblicità"
+msgstr "Advertising"
+
+#: Template/Admin/SponsorAdvs/index.ctp:13
+msgid "Tutti gli stati"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:15
+msgid "Solo: Attivi"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:16
+msgid "Solo: Attesa di pagamento"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:17
+msgid "Solo: In scadenza"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:23
+msgid "Tutti i tipi"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:25
+msgid "Solo: banner in pagine"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:26
+msgid "Solo: banner su quiz"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:32
+msgid "Identificativo Paypal"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:33
+msgid "Nella schermata di pagamento ricevuto come \"CUSTOM FIELD\""
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:38
+#: Template/Cell/QuizCategoriesJsTree/display.ctp:20
+#: Template/Company/Users/search.ctp:7 Template/Quizzes/popular.ctp:18
+#: Template/User/Users/search.base.ctp:145
+#: Template/User/Users/search.ctp:7;308
+msgid "Ricerca"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:49
+#: Template/Sponsor/SponsorAdvs/index.ctp:60
+#: Template/User/Users/settings.ctp:150 Template/UserGroups/add.ctp:20
+#: Template/UserGroups/edit.ctp:14
+msgid "Nome"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:50
+msgid "Insersionista"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:51
+msgid "Anteprima"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:52 Template/UserGroups/add.ctp:13
+msgid "Tipologia"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:53
+msgid "Filtri"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:54
+#: Template/Admin/Store/StoreOrders/index.ctp:52
+#: Template/QuizQuestions/index.ctp:5 Template/User/StoreOrders/index.ctp:52
+msgid "Stato"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:55
+#: Template/Sponsor/SponsorAdvs/index.ctp:63
+msgid "Impressioni rimanenti"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:56
+msgid "Amministra"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:121
+msgid "Disablita"
+msgstr ""
+
+#: Template/Admin/SponsorAdvs/index.ctp:126
+msgid "Abilita"
+msgstr ""
+
+#: Template/Admin/Store/StoreOrders/index.ctp:2
+msgid "Archivio ordini ricevuti"
+msgstr ""
+
+#: Template/Admin/Store/StoreOrders/index.ctp:4
+#: Template/Admin/Store/StoreOrders/view.ctp:4
+#: Template/Admin/Store/StoreProductCategories/add.ctp:3
+#: Template/Admin/Store/StoreProductCategories/edit.ctp:3
+#: Template/Admin/Store/StoreProducts/add.ctp:5
+#: Template/Admin/Store/StoreProducts/edit.ctp:5
+#: Template/Admin/Store/StoreProducts/index.ctp:4
+#: Template/Element/ui/main-menu.ctp:179
+#: Template/Element/ui/primary-menu.ctp:263 Template/Stores/archive.ctp:5
+#: Template/Stores/index.ctp:4 Template/Stores/search.ctp:6
+#: Template/Stores/view.ctp:5 Template/UserDashboards/index.ctp:256
+msgid "Negozio"
+msgstr "Store"
+
+#: Template/Admin/Store/StoreOrders/index.ctp:5
+msgid "Ordini ricevuti"
+msgstr ""
+
+#: Template/Admin/Store/StoreOrders/index.ctp:30
+#: Template/CvAuthorizations/index.ctp:90
+#: Template/Sponsor/SponsorAdvs/index.ctp:21
+#: Template/User/StoreOrders/index.ctp:21
+#: Template/User/UserFriends/index.ctp:101
+msgid "In attesa"
+msgstr ""
+
+#: Template/User/UserFriends/waiting.ctp:92
+msgctxt "richiesta non ancora accettata"
+msgid "In attesa"
+msgstr ""
+
+#: Template/Admin/Store/StoreOrders/index.ctp:33
+#: Template/User/StoreOrders/index.ctp:27
+msgid "Completati"
+msgstr ""
+
+#: Template/Admin/Store/StoreOrders/index.ctp:36
+#: Template/User/StoreOrders/index.ctp:33
+msgid "Rifiutati"
+msgstr ""
+
+#: Template/Admin/Store/StoreOrders/index.ctp:55
+msgid "Creato il"
+msgstr ""
+
+#: Template/Admin/Store/StoreOrders/index.ctp:56
+msgid "Modificato il"
+msgstr ""
+
+#: Template/Admin/Store/StoreOrders/view.ctp:2
+msgid "Ordine N° {0}"
+msgstr ""
+
+#: Template/Admin/Store/StoreOrders/view.ctp:5
+msgid "Ordini"
+msgstr ""
+
+#: Template/Admin/Store/StoreOrders/view.ctp:59
+msgid "Indirizzo utente specificato in fase di registrazione"
+msgstr ""
+
+#: Template/Admin/Store/StoreOrders/view.ctp:63
+msgid "[funjob.it] Ordine: {0} (ordine n°{1})"
+msgstr ""
+
+#: Template/Admin/Store/StoreOrders/view.ctp:66
+msgid "Comunicazione a cliente"
+msgstr ""
+
+#: Template/Admin/Store/StoreOrders/view.ctp:69
+msgid "Comunica il codice coupon attraverso questa area"
+msgstr ""
+
+#: Template/Admin/Store/StoreOrders/view.ctp:71
+msgid "Invia email"
+msgstr ""
+
+#: Template/Admin/Store/StoreOrders/view.ctp:117
+msgid "backend"
+msgstr ""
+
+#: Template/Admin/Store/StoreOrders/view.ctp:155
+msgid "Attesa"
+msgstr ""
+
+#: Template/Admin/Store/StoreOrders/view.ctp:156
+msgid "Completato"
+msgstr ""
+
+#: Template/Admin/Store/StoreOrders/view.ctp:157
+msgid "Rifiutato"
+msgstr ""
+
+#: Template/Admin/Store/StoreProductCategories/add.ctp:2
+msgid "Nuova categoria"
+msgstr ""
+
+#: Template/Admin/Store/StoreProductCategories/add.ctp:5
+#: Template/Element/ui/main-menu.ctp:289
+msgid "Nuova"
+msgstr "New"
+
+#: Template/Admin/Store/StoreProductCategories/edit.ctp:2
+msgid "Modifica: {name}"
+msgstr ""
+
+#: Template/Admin/Store/StoreProductCategories/index.ctp:37
+msgid "Categoria negozio"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/add.ctp:2
+msgid "Crea nuovo prodotto"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/add.ctp:4
+#: Template/Admin/Store/StoreProducts/edit.ctp:4
+msgid "Backend"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/add.ctp:6
+#: Template/Admin/Store/StoreProducts/edit.ctp:6
+#: Template/Admin/Store/StoreProducts/index.ctp:5
+#: Template/Element/ui/main-menu.ctp:325 Template/Stores/search.ctp:7
+#: Template/Stores/view.ctp:6
+msgid "Prodotti"
+msgstr "Products"
+
+#: Template/Admin/Store/StoreProducts/add.ctp:7
+#: Template/Admin/Store/StoreProducts/index.ctp:37
+#: Template/Layout/frontend.backup.ctp:85 Template/Quizzes/add.ctp:10
+msgid "Nuovo"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/add.ctp:15
+msgid "Tipologia prodotto"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/add.ctp:17
+msgid "-- Seleziona campo"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/add.ctp:18
+msgid "T-shirt"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/add.ctp:19
+msgid "Buono sconto"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/add.ctp:25
+msgid "Sotto prodotto di"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/add.ctp:32
+#: Template/Admin/Store/StoreProducts/edit.ctp:19
+msgid "Nome prodotto"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/add.ctp:38
+#: Template/Admin/Store/StoreProducts/edit.ctp:25
+#: Template/Element/CompanyProfile/tabs/descr.ctp:5
+#: Template/Quizzes/add.ctp:86 Template/Quizzes/edit.ctp:222
+#: Template/Sponsor/SponsorAdvs/add.ctp:46 Template/UserGroups/add.ctp:34
+#: Template/UserGroups/edit.ctp:24 Template/UserGroups/index.ctp:102
+#: Template/Users/profile_tabs/groups.ctp:56
+msgid "Descrizione"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/add.ctp:43
+#: Template/Admin/Store/StoreProducts/edit.ctp:30
+msgid "Quantità disponibile"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/add.ctp:44
+#: Template/Admin/Store/StoreProducts/edit.ctp:31
+msgid ""
+"Modifica questo campo in futuro per aggiungere o ridimensionare la quantità "
+"disponibile"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/add.ctp:48
+#: Template/Admin/Store/StoreProducts/edit.ctp:35
+msgid "Prezzo"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/add.ctp:49
+#: Template/Admin/Store/StoreProducts/edit.ctp:36
+msgid "in PIXs"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/add.ctp:63
+#: Template/Admin/Store/StoreProducts/edit.ctp:51
+msgid "Mostra prodotto in negozio"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/add.ctp:70
+#: Template/Element/ui/primary-menu.ctp:174 Template/UserGroups/add.ctp:5;40
+msgid "Crea"
+msgstr "New"
+
+#: Template/Admin/Store/StoreProducts/edit.ctp:2
+msgid "Modifica {0}"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/edit.ctp:55
+msgid "Mostra prodotto nello slider in home"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/edit.ctp:82
+msgid "Carica foto"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/edit.ctp:99
+#: Template/Element/UserSettings/cv_settings.ctp:24
+#: Template/User/Quizzes/played.ctp:301
+msgid "Elimina"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/index.ctp:2
+msgid "Inventario prodottii"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/index.ctp:24
+#: Template/QuizCategories/index.ctp:15;30
+msgid "Termine di ricerca"
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/index.ctp:53
+msgid "Quantità disp."
+msgstr ""
+
+#: Template/Admin/Store/StoreProducts/index.ctp:125
+msgid ""
+"Prodotto con sotto prodotti: la disponibilità vengono assegnate ai sotto "
+"prodotti"
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:2
+msgid "Archivio utenti registrati"
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:4 Template/Companies/view.ctp:8
+#: Template/Element/ui/main-menu.ctp:160;239
+#: Template/Element/ui/primary-menu.ctp:293
+#: Template/FunJobPages/profiles/all.ctp:104;135
+#: Template/FunJobPages/profiles/user.ctp:3;9 Template/User/Users/search.ctp:6
+#: Template/Users/view.ctp:18
+msgid "Utenti"
+msgstr "Users"
+
+#: Template/Admin/Users/index.ctp:11 Template/User/Users/search.base.ctp:3
+#: Template/User/Users/search.ctp:3;300
+msgid "Ricerca utenti"
+msgstr "User search"
+
+#: Template/Admin/Users/index.ctp:16
+msgid "Esporta utenti"
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:22
+msgid ""
+"Stai utilizzando dei filtri... alcuni utenti potrebbero non essere mostrati."
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:25
+msgid "Rimuovi filtri"
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:38
+msgid "Username"
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:42
+msgid "Nome cognome, Nome o Cognome"
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:43
+msgid "Solo per utenti privati"
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:47 Template/Company/Users/settings.ctp:161
+msgid "Ragione sociale"
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:48
+msgid "Solo per utenti aziende"
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:54 Template/Users/register.ctp:34
+msgid "E-mail"
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:58
+msgid "Tipologia utente"
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:61
+msgid "Privato"
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:62 Template/FunJobPages/profiles/all.ctp:140
+msgid "Azienda"
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:66
+msgid "Cerca"
+msgstr "Search"
+
+#: Template/Admin/Users/quizzes.ctp:16
+msgctxt "backend"
+msgid "In preparazione"
+msgstr ""
+
+#: Template/Admin/Users/quizzes.ctp:18
+msgctxt "backend"
+msgid "Disabilitato (ban)"
+msgstr ""
+
+#: Template/Admin/Users/quizzes.ctp:20
+msgctxt "backend"
+msgid "Pubblicati"
+msgstr ""
+
+#: Template/Admin/Users/view.ctp:30
+msgid "Attuali: {total}"
+msgstr ""
+
+#: Template/Admin/Users/view.ctp:31
+msgid "Numero crediti"
+msgstr ""
+
+#: Template/Admin/Users/view.ctp:32
+msgid "Verranno accreditati a questo utente"
+msgstr ""
+
+#: Template/Admin/Users/view.ctp:55
+msgid "Collaboratore?"
+msgstr ""
+
+#: Template/Admin/Users/view.ctp:58
+#: Template/Company/Users/settings.ctp:110;209 Template/Quizzes/edit.ctp:264
+#: Template/User/Users/settings.ctp:100;205;240
+#: Template/UserRegistrations/requirements.ctp:86
+msgid "Aggiorna"
+msgstr ""
+
+#: Template/BigBrains/add.ctp:2 Template/Element/ui/main-menu.ctp:194
+msgid "Collabora con noi"
+msgstr "Collaborate with us"
+
+#: Template/BigBrains/add.ctp:6
+msgid "BigBrains"
+msgstr "BigBrains"
+
+#: Template/BigBrains/add.ctp:7 Template/Contacts/index.ctp:5;9
+#: Template/Element/ui/primary-menu.ctp:327
+#: Template/Sponsor/SponsorAdvs/add.ctp:16
+msgid "Contattaci"
+msgstr "Contact us"
+
+#: Template/BigBrains/add.ctp:13
+msgid "Richiesta di collaborazione"
+msgstr ""
+
+#: Template/BigBrains/add.ctp:21
+msgid "Nome Cognome"
+msgstr "Full name"
+
+#: Template/BigBrains/add.ctp:28
+msgid "Dove contattarti"
+msgstr ""
+
+#: Template/BigBrains/add.ctp:33
+msgid "Presentazione e materie conosciute"
+msgstr ""
+
+#: Template/BigBrains/add.ctp:34
+msgid ""
+"Sono ........... \n"
+"e vorrei aiutarvi nelle seguenti materie ........"
+msgstr ""
+
+#: Template/BigBrains/add.ctp:45
+msgid "Invia richiesta"
+msgstr ""
+
+#: Template/BigBrains/index.ctp:2
+msgid "I nostri collaboratori"
+msgstr ""
+
+#: Template/BigBrains/index.ctp:6 Template/Element/ui/main-menu.ctp:193
+msgid "Collaboratori"
+msgstr "Collaborators"
+
+#: Template/BigBrains/index.ctp:50
+msgid "Ordina per tempo collaborazione:"
+msgstr ""
+
+#: Template/BigBrains/index.ctp:55
+msgid "<i class=\"fa fa-arrow-up\"></i>"
+msgstr ""
+
+#: Template/BigBrains/index.ctp:61
+msgid "<i class=\"fa fa-arrow-down\"></i>"
+msgstr ""
+
+#: Template/BigBrains/index.ctp:81
+msgid ""
+"Solo i migliori diventano Big Brain.Per diventare un BigBrain dovrai "
+"conoscere bene un argomento e redigere giochi ad esso riferiti."
+msgstr ""
+
+#: Template/BigBrains/index.ctp:83
+msgid ""
+"Dopo averci contattato certificheremo il tuo profilo ed oltre a guadagnare "
+"dai tuoi giochi, avrai maggiore visibilità con le aziende."
+msgstr ""
+
+#: Template/BigBrains/index.ctp:91
+msgid "Diventa un BigBrain"
+msgstr ""
+
+#: Template/BigBrains/index.ctp:97
+msgid "Maggiori informazioni"
+msgstr ""
+
+#: Template/BigBrains/index.ctp:122
+msgid "Vuoi diventare un nostro collaboratore?"
+msgstr ""
+
+#: Template/BigBrains/index.ctp:126;138
+msgid "Richiedi"
+msgstr ""
+
+#: Template/BigBrains/index.ctp:134
+msgid "Cerchi visibilità? Compari in questa pagina!!"
+msgstr ""
+
+#: Template/Cell/CookiePolicy/display.ctp:30
+msgid ""
+"Questo sito utilizza cookie, continuando la navigazione ne accetti le norme "
+"e le condizioni"
+msgstr ""
+
+#: Template/Cell/CookiePolicy/display.ctp:32
+msgid "{linkStart}normativa{linkEnd}"
+msgstr ""
+
+#: Template/Cell/CookiePolicy/display.ctp:44
+msgid "OK"
+msgstr ""
+
+#: Template/Cell/HomeCompaniesLatests/display.ctp:92
+msgid "Cerchi aziende a cui potresti interessare?"
+msgstr ""
+
+#: Template/Cell/HomeCompaniesLatests/display.ctp:94
+msgid "Usa la ricerca aziende"
+msgstr ""
+
+#: Template/Cell/HomeLatestGroups/display.ctp:6
+msgid "Gruppi creati recentemente"
+msgstr ""
+
+#: Template/Cell/HomeLatestGroups/display.ctp:25
+msgid "Altri gruppi"
+msgstr ""
+
+#: Template/Cell/HomeRandomBigBrains/display.ctp:115
+#: Template/UserGroups/view.ctp:104
+msgid "Mostra tutti"
+msgstr "Show all"
+
+#: Template/Cell/HomeRandomBigBrains/display.ctp:121
+msgid "Collabora"
+msgstr ""
+
+#: Template/Cell/HomeUserLatests/display.ctp:95
+msgid "Cerca amici e colleghi"
+msgstr "Search friends and collegues"
+
+#: Template/Cell/HomeUserLatests/display.ctp:97
+msgid "Usa la ricerca utenti"
+msgstr "Use user search"
+
+#: Template/Cell/HomeVideosForeground/display.ctp:9
+msgid "Quiz Tutorial e Social Quiz"
+msgstr ""
+
+#: Template/Cell/HomeVideosForeground/display.ctp:31
+msgid "Gioca Quiz Tutorial"
+msgstr ""
+
+#: Template/Cell/HomeVideosForeground/display.ctp:33
+msgid "Gioca Social Quiz"
+msgstr ""
+
+#: Template/Cell/HomeVideosForeground/display.ctp:41
+msgid ""
+"Inserisci il tuo Video Tutorial YouTube nel tuo profilo FUNJOB e crea un "
+"quiz ad esso riferito. Guadagnerai {icon} PIX trasformabili in premi quando "
+"i tuoi amici o utenti lo giocheranno. I migliori saranno inseriti in Home "
+"Page."
+msgstr ""
+
+#: Template/Cell/HomeVideosForeground/display.ctp:44
+msgid "Proponi il tuo quiz"
+msgstr ""
+
+#: Template/Cell/QuizQuestionCounter/default_counter.ctp:30
+#: Template/Cell/QuizQuestionCounter/funjob_counter.ctp:19
+msgid "Livello"
+msgstr "Level"
+
+#: Template/Cell/QuizQuestionCounter/default_counter.ctp:31
+#: Template/Cell/QuizQuestionCounter/funjob_counter.ctp:20
+msgid "Contatore"
+msgstr ""
+
+#: Template/Cell/QuizQuestionCounter/default_counter.ctp:18
+msgctxt "percentuale domande create"
+msgid "{percentage}% completato"
+msgstr ""
+
+#: Template/Cell/QuizQuestionCounter/default_counter.ctp:50
+#: Template/Cell/QuizQuestionCounter/funjob_counter.ctp:39
+msgctxt "domande rimanenti per livello"
+msgid "{created} inserite, {lefts} domande rimanenti"
+msgstr ""
+
+#: Template/Cell/QuizQuestionCounter/default_counter.ctp:52
+#: Template/Cell/QuizQuestionCounter/funjob_counter.ctp:41
+msgctxt "domande rimanenti per livello"
+msgid "{created} inserite"
+msgstr ""
+
+#: Template/Cell/StoreCompaniesLogos/display.ctp:25
+msgid "Aziende che offrono i premi"
+msgstr ""
+
+#: Template/Cell/StoreProductCategories/display.ctp:17
+msgid "-- Categorie disponibili"
+msgstr ""
+
+#: Template/Cell/StoreProductSlideshow/display.ctp:36
+msgid "Premi popolari"
+msgstr ""
+
+#: Template/Cell/StoreProductSlideshow/display.ctp:51
+msgid ""
+"Questi premi possono essere tuoi semplicemente giocando i nostri quiz. "
+"Raggiunta abbastanza moneta virtuale (PiX) potrai ordinarli"
+msgstr ""
+
+#: Template/Cell/UserFriendsRequests/display.ctp:10;18
+#: Template/Companies/view.ctp:183;281;282
+#: Template/Element/ui/main-menu.ctp:53
+#: Template/User/UserFriends/index.ctp:2;5
+#: Template/User/UserFriends/waiting.ctp:5
+#: Template/UserDashboards/index.ctp:211;215
+#: Template/Users/view.ctp:358;456;457
+#: Template/Users/profile_tabs/friends.ctp:2
+msgid "Amici"
+msgstr "Friends"
+
+#: Template/Companies/index.ctp:2;9 Template/Company/Users/search.ctp:6
+#: Template/Element/ui/main-menu.ctp:166;251
+#: Template/Element/ui/primary-menu.ctp:313
+#: Template/FunJobPages/profiles/all.ctp:112
+#: Template/FunJobPages/profiles/company.ctp:3;8
+msgid "Aziende"
+msgstr "Companies"
+
+#: Template/Companies/index.ctp:14 Template/Company/Users/settings.ctp:39
+msgid "Tutte le categorie"
+msgstr "All categories"
+
+#: Template/Companies/index.ctp:25
+msgid "Nessuna azienda trovata per questa chiave di ricerca"
+msgstr "No companies founded for this search"
+
+#: Template/Companies/index.ctp:30
+msgid "Nessuna azienda al momento ..."
+msgstr "No companies in this moment"
+
+#: Template/Companies/index.ctp:67
+msgid "Cerca azienda per nome"
+msgstr "Search company by name"
+
+#: Template/Companies/index.ctp:73;191;204
+msgid "Settore"
+msgstr ""
+
+#: Template/Companies/index.ctp:84
+msgid "Città"
+msgstr "Cities"
+
+#: Template/Companies/index.ctp:99 Template/User/Users/search.ctp:273
+msgid "Digita il nome e attendi i suggerimenti (3 caratteri richiesti) "
+msgstr ""
+
+#: Template/Companies/index.ctp:105 Template/User/Users/search.ctp:279
+msgid "Cerca città e seleziona dai risultati"
+msgstr ""
+
+#: Template/Companies/index.ctp:111 Template/User/Quizzes/played.ctp:115
+#: Template/Users/profile_tabs/quiz_created.ctp:45
+msgid "Filtra"
+msgstr "Filter"
+
+#: Template/Companies/index.ctp:130
+msgid "Sei un azienda?"
+msgstr ""
+
+#: Template/Companies/index.ctp:134
+msgid ""
+"Registrati! È gratuito e potrai usufruire di tutti i servizi offerti da "
+"Funjob"
+msgstr ""
+
+#: Template/Companies/index.ctp:136
+msgid "Scopri come"
+msgstr ""
+
+#: Template/Companies/index.ctp:145
+msgid "Gruppi attinenti alla tua ricerca"
+msgstr ""
+
+#: Template/Companies/index.ctp:150 Template/Homepages/home.ctp:628
+msgid "Ultime aziende registrate"
+msgstr "Latest companies register"
+
+#: Template/Companies/view.ctp:3
+msgid "Profilo aziendale: @{0}"
+msgstr "Company profile: @{0}"
+
+#: Template/Companies/view.ctp:9 Template/Users/view.ctp:19
+msgid "Profili"
+msgstr "Profiles"
+
+#: Template/Companies/view.ctp:23
+msgid "Dati aziendali"
+msgstr ""
+
+#: Template/Companies/view.ctp:30
+msgid ""
+"Potrai configurare queste informazioni dalle <i class='fa fa-cogs'></i> "
+"impostazioni del profilo"
+msgstr ""
+
+#: Template/Companies/view.ctp:47
+msgid "Ragione sociale (modifica)"
+msgstr ""
+
+#: Template/Companies/view.ctp:79
+msgid "Pagina ufficiale"
+msgstr "Official page"
+
+#: Template/Companies/view.ctp:101
+#: Template/Element/UserProfile/tabs/vcard.ctp:106 Template/Users/view.ctp:276
+msgid "Invia messaggio"
+msgstr "Send message"
+
+#: Template/Companies/view.ctp:107
+msgid "Richiesta posizione lavorativa"
+msgstr ""
+
+#: Template/Companies/view.ctp:110
+msgid "Proponiti per colloquio"
+msgstr ""
+
+#: Template/Companies/view.ctp:122 Template/Users/view.ctp:297
+msgid "{icon} {textStart}Invia amicizia{textEnd}"
+msgstr ""
+
+#: Template/Companies/view.ctp:139 Template/Users/view.ctp:314
+msgid "{icon} {textStart}Rimuovi amicizia{textEnd}"
+msgstr ""
+
+#: Template/Companies/view.ctp:163
+#: Template/Companies/UserProfile/settings/links.ctp:10
+#: Template/Element/CompanySettings/links.ctp:10
+#: Template/Element/UserSettings/links.ctp:10 Template/Users/view.ctp:338
+msgid "Links"
+msgstr ""
+
+#: Template/Companies/view.ctp:191 Template/Users/view.ctp:366
+msgid "Nessun amico al momento"
+msgstr "No friends in this moment"
+
+#: Template/Companies/view.ctp:210 Template/Users/view.ctp:385
+msgid "Vedi tutti"
+msgstr ""
+
+#: Template/Companies/view.ctp:239 Template/Users/view.ctp:414
+msgid "Cambia avatar"
+msgstr "Change avatar"
+
+#: Template/Companies/view.ctp:240 Template/Users/view.ctp:420
+msgid "Cambia"
+msgstr "Change"
+
+#: Template/Companies/view.ctp:256;257 Template/Company/Users/settings.ctp:228
+#: Template/Element/ui/primary-menu.ctp:30;277
+#: Template/User/Users/settings.ctp:258 Template/Users/view.ctp:435;436
+msgid "Profilo"
+msgstr "Profile"
+
+#: Template/Companies/view.ctp:263;264 Template/Users/view.ctp:443
+msgid "Giochi Creati"
+msgstr ""
+
+#: Template/Companies/view.ctp:288;289
+#: Template/Element/ui/primary-menu.ctp:320 Template/UserGroups/add.ctp:4
+#: Template/UserGroups/edit.ctp:4 Template/UserGroups/index.ctp:3
+#: Template/UserGroups/members.ctp:6 Template/UserGroups/view.ctp:5
+#: Template/Users/view.ctp:463;464
+msgid "Gruppi"
+msgstr "Groups"
+
+#: Template/Companies/view.ctp:311 Template/Users/view.ctp:498
+msgid "Il tuo username"
+msgstr "Your username"
+
+#: Template/Companies/view.ctp:319;323 Template/Users/view.ctp:506;510
+msgid "140 caratteri per descrivere te o la tua professione"
+msgstr "140 characters for describe you and your professione"
+
+#: Template/Companies/view.ctp:332 Template/Users/view.ctp:519
+msgid "Modifica {0} profilo {1}"
+msgstr "Edit {0} profile {1}"
+
+#: Template/Companies/view.ctp:374;397;407
+#: Template/Users/view.ctp:572;582;592;602
+msgid "Questo contenuto richiede JavaScript"
+msgstr "This content require JavaScript"
+
+#: Template/Companies/UserProfile/profile.ctp:2
+#: Template/Element/CompanyProfile/profile.ctp:2
+#: Template/Element/UserProfile/profile.ctp:2
+msgid "Mostra/Nascondi"
+msgstr "Show/Hide"
+
+#: Template/Companies/UserProfile/profile.ctp:7
+#: Template/Element/CompanyProfile/profile.ctp:7
+#: Template/Element/UserProfile/profile.ctp:7
+msgid "Apri tutti"
+msgstr "Open all"
+
+#: Template/Companies/UserProfile/profile.ctp:15
+#: Template/Element/CompanyProfile/profile.ctp:15
+#: Template/Element/UserProfile/profile.ctp:15
+#: Template/Element/ui/secondary-menu.ctp:12
+#: Template/FunJobPages/profiles/all.ctp:267 Template/Homepages/home.ctp:276
+#: Template/Layout/frontend__offcanvas.ctp:61
+#: Template/User/Quizzes/played.ctp:432
+msgid "Chiudi"
+msgstr "Close"
+
+#: Template/Companies/UserProfile/profile.ctp:16
+#: Template/Element/CompanyProfile/profile.ctp:16
+#: Template/Element/UserProfile/profile.ctp:16
+msgid "tutti"
+msgstr "all"
+
+#: Template/Companies/UserProfile/settings/links.ctp:3
+#: Template/Element/CompanySettings/links.ctp:3
+#: Template/Element/UserSettings/links.ctp:3
+msgid "Collegamenti"
+msgstr "Links"
+
+#: Template/Companies/UserProfile/settings/links.ctp:4
+#: Template/Element/CompanySettings/links.ctp:4
+#: Template/Element/UserSettings/links.ctp:4
+msgid "Links alle tue pagine web (visualizzati nel tuo profilo)"
+msgstr ""
+
+#: Template/Companies/UserProfile/settings/links.ctp:11
+#: Template/Element/CompanySettings/links.ctp:11
+#: Template/Element/UserSettings/links.ctp:11
+msgid "Nome sito http://www...."
+msgstr ""
+
+#: Template/Companies/UserProfile/settings/links.ctp:12
+#: Template/Element/CompanySettings/links.ctp:12
+#: Template/Element/UserSettings/links.ctp:12
+msgid "I links alle tue pagine web (uno per linea)"
+msgstr ""
+
+#: Template/Company/Users/search.ctp:3
+msgid "Ricerca aziende"
+msgstr ""
+
+#: Template/Company/Users/search.ctp:21 Template/User/Users/search.ctp:247
+msgid "Competenze tecniche (separate da virgola)"
+msgstr ""
+
+#: Template/Company/Users/search.ctp:22
+msgid ""
+"Ti consigliamo di cercare termini tecnici che rispecchiano i requisiti della "
+"persona che stai cercando"
+msgstr ""
+
+#: Template/Company/Users/search.ctp:28 Template/User/Users/search.ctp:257
+msgid "Vive a"
+msgstr ""
+
+#: Template/Company/Users/search.ctp:29
+msgid "Trascrivi il nome della città"
+msgstr ""
+
+#: Template/Company/Users/search.ctp:40 Template/User/Users/search.ctp:285
+msgid "Nuova ricerca"
+msgstr "New search"
+
+#: Template/Company/Users/settings.ctp:9
+#: Template/Element/ui/primary-menu.ctp:24 Template/User/Users/settings.ctp:6
+#: Template/UserDashboards/index.ctp:100 Template/UserGroups/edit.ctp:6
+msgid "Impostazioni"
+msgstr "Configurations"
+
+#: Template/Company/Users/settings.ctp:52 Template/User/Users/settings.ctp:41
+msgid "Immagine di copertina"
+msgstr ""
+
+#: Template/Company/Users/settings.ctp:54 Template/User/Users/settings.ctp:43
+msgid "Gradienti"
+msgstr ""
+
+#: Template/Company/Users/settings.ctp:98 Template/User/Users/settings.ctp:87
+msgid "Impostazioni relative al tuo account funjob"
+msgstr ""
+
+#: Template/Company/Users/settings.ctp:106 Template/User/Users/settings.ctp:95
+msgid "Lingua interfaccia"
+msgstr ""
+
+#: Template/Company/Users/settings.ctp:119
+#: Template/User/Users/settings.ctp:110
+msgid "Elimina account"
+msgstr "Delete account"
+
+#: Template/Company/Users/settings.ctp:129
+#: Template/User/Users/settings.ctp:118
+msgid "Impostazioni relative al tuo profilo personale"
+msgstr ""
+
+#: Template/Company/Users/settings.ctp:130
+#: Template/User/Users/settings.ctp:119
+msgid "Profilo personale pubblico"
+msgstr ""
+
+#: Template/Company/Users/settings.ctp:154
+#: Template/User/Users/settings.ctp:143
+msgid "Immagine del profilo (avatar)"
+msgstr ""
+
+#: Template/Company/Users/settings.ctp:163
+#: Template/User/Users/settings.ctp:152;157
+msgid "Sarà mostrato nel tuo profilo"
+msgstr ""
+
+#: Template/Company/Users/settings.ctp:167 Template/QuizQuestions/add.ctp:345
+#: Template/Sponsor/SponsorAdvs/add.ctp:42
+#: Template/User/Users/settings.ctp:170
+msgid "Titolo"
+msgstr "Title"
+
+#: Template/Company/Users/settings.ctp:169
+#: Template/User/Users/settings.ctp:172
+msgid "Descriviti in {characters} caratteri (te o la tua professione)"
+msgstr ""
+
+#: Template/Company/Users/settings.ctp:173
+msgid "Indirizzo"
+msgstr "Address"
+
+#: Template/Company/Users/settings.ctp:183
+msgid "Potrai essere ricercato tramite queste categorie"
+msgstr ""
+
+#: Template/Company/Users/settings.ctp:191
+#: Template/Element/ui/main-menu.ctp:276
+msgid "Homepage"
+msgstr ""
+
+#: Template/Company/Users/settings.ctp:222
+#: Template/User/Users/settings.ctp:252
+msgid "Generali"
+msgstr ""
+
+#: Template/Company/Users/settings.ctp:235
+#: Template/User/Users/settings.ctp:271
+msgid "Mostra profilo"
+msgstr ""
+
+#: Template/Contacts/index.ctp:15 Template/Homepages/home.ctp:468
+msgid "Contatti"
+msgstr ""
+
+#: Template/Contacts/index.ctp:26
+msgid "Mittente"
+msgstr ""
+
+#: Template/Contacts/index.ctp:29 Template/Email/html/Contacts/default.ctp:8
+msgid "Nominativo"
+msgstr ""
+
+#: Template/Contacts/index.ctp:34
+msgid "Indirizzo e-mail"
+msgstr ""
+
+#: Template/Contacts/index.ctp:43
+msgid "Richiesta"
+msgstr ""
+
+#: Template/Contacts/index.ctp:51
+msgid "Tipologia richiesta"
+msgstr "Request type"
+
+#: Template/Contacts/index.ctp:56 Template/User/UserMessages/add.ctp:51
+#: Template/User/UserMessages/index.ctp:150
+msgid "Oggetto"
+msgstr "Subject"
+
+#: Template/Contacts/index.ctp:60
+msgid "Testo"
+msgstr "Body"
+
+#: Template/Contacts/index.ctp:72
+msgid "Verifica richiesta"
+msgstr ""
+
+#: Template/Contacts/index.ctp:78
+#: Template/Element/cv-authorization-request.ctp:20
+#: Template/User/UserMessages/add.ctp:80
+#: Template/User/UserMessages/view.ctp:271
+msgid "Invia"
+msgstr "Send"
+
+#: Template/CvAuthorizations/filter.ctp:4
+msgid "Niente da mostrare per il momento"
+msgstr ""
+
+#: Template/CvAuthorizations/filter.ctp:14
+msgid "Utente"
+msgstr ""
+
+#: Template/CvAuthorizations/filter.ctp:15
+msgid "Autorizzato"
+msgstr "Authorize"
+
+#: Template/CvAuthorizations/filter.ctp:16
+msgctxt "Data in cui è stata richiesta autorizzazione CV"
+msgid "Richiesta in data"
+msgstr ""
+
+#: Template/CvAuthorizations/index.ctp:10
+msgid "Autorizzazioni CV"
+msgstr ""
+
+#: Template/CvAuthorizations/index.ctp:21
+msgid "Attendi ..."
+msgstr "Please wait ..."
+
+#: Template/CvAuthorizations/index.ctp:53
+msgid "Sai che puoi limitare l'accesso al tuo CV?"
+msgstr ""
+
+#: Template/CvAuthorizations/index.ctp:54
+msgid "Cosi potrai autorizzare gli utenti manualmente"
+msgstr ""
+
+#: Template/CvAuthorizations/index.ctp:61
+msgid "Hai paura di condividere i tuoi dati sensibili del tuo CV?"
+msgstr ""
+
+#: Template/CvAuthorizations/index.ctp:62
+msgid ""
+"Niente paura! Puoi rendere il tuo CV privato, così da permettere la lettura "
+"solo a determinati utenti"
+msgstr ""
+
+#: Template/CvAuthorizations/index.ctp:72
+msgid "Impostazioni CV"
+msgstr ""
+
+#: Template/CvAuthorizations/index.ctp:83
+msgid "Stato autorizzazioni"
+msgstr ""
+
+#: Template/CvAuthorizations/index.ctp:96
+msgid "Autorizzati"
+msgstr ""
+
+#: Template/CvAuthorizations/index.ctp:102
+msgid "Non autorizzati"
+msgstr ""
+
+#: Template/CvAuthorizations/index.ctp:120
+msgid "{0} in attesa"
+msgstr ""
+
+#: Template/CvAuthorizations/index.ctp:124
+msgid "Utenti che attendono un tuo responso per poter visualizzare il tuo CV"
+msgstr ""
+
+#: Template/CvAuthorizations/index.ctp:130
+msgid "Autorizza"
+msgstr ""
+
+#: Template/CvAuthorizations/index.ctp:145
+msgid "{0} autorizzati"
+msgstr ""
+
+#: Template/CvAuthorizations/index.ctp:148
+msgid "Utenti che possono accedere al tuo CV"
+msgstr ""
+
+#: Template/CvAuthorizations/index.ctp:154;178
+#: Template/Element/ui/main-menu.ctp:288 Template/User/Quizzes/played.ctp:273
+msgid "Mostra"
+msgstr "Show"
+
+#: Template/CvAuthorizations/index.ctp:169
+msgid "{0} bloccati"
+msgstr ""
+
+#: Template/CvAuthorizations/index.ctp:172
+msgid "Utenti che non possono accedere al tuo CV"
+msgstr ""
+
+#: Template/CvAuthorizations/index.ctp:189;194;199
+msgctxt "JS disattivato"
+msgid "Attiva JavaScript"
+msgstr ""
+
+#: Template/CvAuthorizations/index.ctp:339
+msgctxt "Autorizzazione CV modificata di stato"
+msgid "Autorizzazione salvata"
+msgstr ""
+
+#: Template/Element/blocks-frontend.ctp:22;27
+msgctxt "{0} = icona home"
+msgid "{0} FunJob"
+msgstr ""
+
+#: Template/Element/category-quiz-carousel.ctp:29 Template/Stores/view.ctp:47
+msgid "Precedente"
+msgstr "Previous"
+
+#: Template/Element/category-quiz-carousel.ctp:33
+msgid "Successivo"
+msgstr "Next"
+
+#: Template/Element/cities-autocomplete.ctp:8
+msgid "Element: {file} require \"templateTag\" settings"
+msgstr ""
+
+#: Template/Element/cities-autocomplete.ctp:86
+#: Template/Element/ui/primary-menu.ctp:285;286
+#: Template/QuizCategories/index.ctp:102;132
+#: Template/User/UserMessages/add.ctp:131
+#: Template/User/Users/search.base.ctp:153 Template/User/Users/search.ctp:316
+msgid "Risultati"
+msgstr "Results"
+
+#: Template/Element/cv-authorization-request.ctp:2
+msgid ""
+"Il CV di {0} necessita di un'autorizzazione per poter essere visualizzato"
+msgstr ""
+
+#: Template/Element/cv-authorization-request.ctp:9
+msgctxt "Modulo autorizzazione CV"
+msgid ""
+"Se sei un azienda specifica sempre la motivazione per invogliare l'utente a "
+"condividere il suo CV con te"
+msgstr ""
+
+#: Template/Element/cv-authorization-request.ctp:16
+msgctxt "Modulo autorizzazione CV"
+msgid "Motivazione"
+msgstr "Reason"
+
+#: Template/Element/cv-authorization-request.ctp:17
+msgctxt "Modulo autorizzazione CV"
+msgid "Specifica la motivazione per cui richiedi la visualizzazione"
+msgstr ""
+
+#: Template/Element/pagination.ctp:17
+msgid "{0} Precedente"
+msgstr "{0} Previous"
+
+#: Template/Element/pagination.ctp:18
+msgid "Prossima {0}"
+msgstr "Next {0}"
+
+#: Template/Element/welcome-modal.ctp:9 Template/Homepages/home.ctp:3
+msgid "Benvenuto in FunJob"
+msgstr ""
+
+#: Template/Element/Advs/compact.ctp:35
+msgid "Sponsors"
+msgstr ""
+
+#: Template/Element/Advs/compact.ctp:55 Template/Element/Advs/large.ctp:72
+msgid "Acquista spazio"
+msgstr ""
+
+#: Template/Element/Advs/large.ctp:31
+#: Template/FunJobPages/profiles/all.ctp:120;145
+#: Template/FunJobPages/profiles/sponsor.ctp:3
+msgid "Sponsor"
+msgstr ""
+
+#: Template/Element/CompanyProfile/tabs/candidates.ctp:5
+#: Template/Element/CompanySettings/candidates.ctp:3;10
+msgid "Candidati ideali"
+msgstr ""
+
+#: Template/Element/CompanyProfile/tabs/history.ctp:5
+#: Template/Element/CompanySettings/history.ctp:3
+msgid "Storia aziendale"
+msgstr ""
+
+#: Template/Element/CompanyProfile/tabs/job_roles.ctp:5
+msgid "Posizione lavorative aperte"
+msgstr ""
+
+#: Template/Element/CompanyProfile/tabs/mission.ctp:5
+#: Template/Element/CompanySettings/mission.ctp:3
+msgid "Missione aziendale"
+msgstr ""
+
+#: Template/Element/CompanyProfile/tabs/staff.ctp:5
+msgid "Staff aziendale"
+msgstr ""
+
+#: Template/Element/CompanyProfile/tabs/tab.ctp:28
+#: Template/Element/UserProfile/tabs/tab.ctp:28
+msgid "Configura questo testo da {0}"
+msgstr ""
+
+#: Template/Element/CompanyProfile/tabs/tab.ctp:30
+#: Template/Element/UserProfile/tabs/tab.ctp:30
+msgid "Opzioni profilo"
+msgstr ""
+
+#: Template/Element/CompanySettings/candidates.ctp:4
+msgid "Ricevi offerte di collaborazione"
+msgstr ""
+
+#: Template/Element/CompanySettings/city.ctp:62
+#: Template/Element/UserSettings/born_city.ctp:62
+#: Template/Element/UserSettings/live_city.ctp:66
+msgid ""
+"Inserisci il nome della città e seleziona un suggerimento (minimo 3 "
+"caratteri)"
+msgstr ""
+
+#: Template/Element/CompanySettings/city.ctp:71
+#: Template/Element/UserSettings/age.ctp:17
+#: Template/Element/UserSettings/born_city.ctp:71
+#: Template/Element/UserSettings/live_city.ctp:75
+msgid "Mostrare nel tuo profilo utente pubblico"
+msgstr ""
+
+#: Template/Element/CompanySettings/history.ctp:10
+msgid "Storia"
+msgstr ""
+
+#: Template/Element/CompanySettings/job_roles.ctp:3
+msgid "Posizioni lavorative aperte"
+msgstr ""
+
+#: Template/Element/CompanySettings/job_roles.ctp:10
+msgid "Posizioni ricercate"
+msgstr ""
+
+#: Template/Element/CompanySettings/mission.ctp:10
+msgid "Missione"
+msgstr ""
+
+#: Template/Element/CompanySettings/staff.ctp:3;10
+msgid "Staff"
+msgstr ""
+
+#: Template/Element/CompanySettings/staff.ctp:4
+msgid "personale aziendale"
+msgstr ""
+
+#: Template/Element/Store/search.ctp:10
+msgid "Cerca prodotto"
+msgstr ""
+
+#: Template/Element/UserProfile/tabs/bigbrain.ctp:5
+#, fuzzy
+msgid "BigBrain"
+msgstr "BigBrains"
+
+#: Template/Element/UserProfile/tabs/bigbrain.ctp:12
+#, fuzzy
+msgid "Collaboratore da: {date}"
+msgstr "Collaborators"
+
+#: Template/Element/UserProfile/tabs/bio.ctp:5
+#: Template/Element/UserSettings/user_profile_box__fun.ctp:10
+msgid "Biografia"
+msgstr "Biography"
+
+#: Template/Element/UserProfile/tabs/film.ctp:5
+msgid "Film"
+msgstr ""
+
+#: Template/Element/UserProfile/tabs/hobbies.ctp:5
+msgid "Hobbies e Interessi"
+msgstr "Hobbies"
+
+#: Template/Element/UserProfile/tabs/inspirations.ctp:7
+msgid "Personaggi che ti hanno inspirato"
+msgstr ""
+
+#: Template/Element/UserProfile/tabs/job_skills.ctp:6
+msgid "Specializzazioni"
+msgstr ""
+
+#: Template/Element/UserProfile/tabs/music.ctp:5
+msgid "Musica"
+msgstr "Music"
+
+#: Template/Element/UserProfile/tabs/pubblications.ctp:6
+#: Template/Element/UserSettings/user_profile_box__job.ctp:11
+msgid "Pubblicazioni"
+msgstr ""
+
+#: Template/Element/UserProfile/tabs/quotes.ctp:7
+msgid "Citazioni preferite"
+msgstr ""
+
+#: Template/Element/UserProfile/tabs/skills.ctp:7
+#: Template/Element/UserSettings/skill_tags.ctp:3
+#: Template/UserDashboards/index.ctp:177
+msgid "Competenze tecniche"
+msgstr ""
+
+#: Template/Element/UserProfile/tabs/skills.ctp:145
+msgid "Scarso"
+msgstr ""
+
+#: Template/Element/UserProfile/tabs/skills.ctp:148
+msgid "Mediocre"
+msgstr ""
+
+#: Template/Element/UserProfile/tabs/skills.ctp:151
+msgid "Professionista"
+msgstr ""
+
+#: View/Helper/QuizSessionHelper.php:38;43
+msgctxt "titolo punteggio totale gioco"
+msgid "Professionista"
+msgstr ""
+
+#: Template/Element/UserProfile/tabs/skills.ctp:154
+msgid "Esperto"
+msgstr ""
+
+#: View/Helper/QuizSessionHelper.php:37;42
+msgctxt "titolo punteggio totale gioco"
+msgid "Esperto"
+msgstr ""
+
+#: Template/Element/UserProfile/tabs/studies.ctp:6
+msgid "Studi"
+msgstr ""
+
+#: Template/Element/UserProfile/tabs/vcard.ctp:10;22;49
+#: Template/Users/view.ctp:149;170;199
+msgid ""
+"Puoi nascondere questo campo dalle <i class='fa fa-cogs'></i> impostazioni "
+"del profilo"
+msgstr ""
+
+#: Template/Element/UserProfile/tabs/vcard.ctp:40 Template/Users/view.ctp:190
+msgid "Nato a:"
+msgstr "Born in:"
+
+#: Template/Element/UserProfile/tabs/vcard.ctp:62 Template/Users/view.ctp:212
+msgid "Nato il:"
+msgstr "Born at:"
+
+#: Template/Element/UserProfile/tabs/vcard.ctp:68 Template/Users/view.ctp:218
+msgid ""
+"<p class'font-size-xs'>Puoi nascondere questo campo dalle <i class='fa fa-"
+"cogs'></i> impostazioni del profilo.</p><p class='text-muted'>Si consiglia "
+"di mostrarlo, in quanto qualche azienda potrebbe ricercare figure di una "
+"certa fascia di età.</p>"
+msgstr ""
+
+#: Template/Element/UserProfile/tabs/vcard.ctp:85 Template/Users/view.ctp:234
+msgid "Vive a:"
+msgstr "Live in:"
+
+#: Template/Element/UserProfile/tabs/vcard.ctp:94 Template/Users/view.ctp:242
+msgid ""
+"Puoi nascondere questo campo dalle <i class='fa fa-cogs'></i> impostazioni "
+"del profilo."
+msgstr ""
+
+#: Template/Element/UserProfile/tabs/vcard.ctp:113
+#: Template/Users/view.ctp:256;265
+msgid "Curriculum Vitae"
+msgstr ""
+
+#: Template/Element/UserProfile/tabs/vcard.ctp:120
+msgid "Invia amicizia"
+msgstr "Send friend"
+
+#: Template/Element/UserProfile/tabs/vcard.ctp:122
+msgid "future"
+msgstr ""
+
+#: Template/Element/UserSettings/age.ctp:3
+msgid "Età"
+msgstr "Age"
+
+#: Template/Element/UserSettings/age.ctp:10
+msgid "Nato il"
+msgstr ""
+
+#: Template/Element/UserSettings/age.ctp:11
+msgid ""
+"Alcune aziende potrebbero cercare personale in base all'età, non "
+"configurando il campo è possibile che verrai mostrato come candidato"
+msgstr ""
+
+#: Template/Element/UserSettings/born_city.ctp:3
+msgid "Città natale"
+msgstr ""
+
+#: Template/Element/UserSettings/born_city.ctp:4
+msgid "Aiuta a capire la tua madre lingua"
+msgstr ""
+
+#: Template/Element/UserSettings/cv_settings.ctp:3
+msgid "CV"
+msgstr ""
+
+#: Template/Element/UserSettings/cv_settings.ctp:4
+msgid "Permetti alle aziende di visualizzare le tue competenze tecniche"
+msgstr ""
+
+#: Template/Element/UserSettings/cv_settings.ctp:15
+msgid "Visualizza"
+msgstr ""
+
+#: Template/Element/UserSettings/cv_settings.ctp:51
+msgid "Carica il tuo CV (solo in PDF)"
+msgstr ""
+
+#: Template/Element/UserSettings/cv_settings.ctp:52
+msgid ""
+"Permetti alle aziende di visualizzare il tuo CV, per proporti offerte di "
+"lavoro"
+msgstr ""
+
+#: Template/Element/UserSettings/cv_settings.ctp:59
+msgid "Rendi CV consultabile a tutti (pubblico)"
+msgstr ""
+
+#: Template/Element/UserSettings/cv_settings.ctp:60
+msgid ""
+"<span class=\"text-warning text-bold\">Se il CV non è pubblico, dovrai "
+"autorizzare ogni utente che vuole visualizzare il tuo CV da {0}</span>"
+msgstr ""
+
+#: Template/Element/UserSettings/cv_settings.ctp:62
+msgid "questa pagina"
+msgstr ""
+
+#: Template/Element/UserSettings/live_city.ctp:3
+msgid "Città attuale"
+msgstr ""
+
+#: Template/Element/UserSettings/live_city.ctp:4
+msgid ""
+"Potrebbe essere strategico per ricevere offerte di lavoro dalle aziende "
+"locali"
+msgstr ""
+
+#: Template/Element/UserSettings/live_city.ctp:64
+msgid "Città dove vivi"
+msgstr ""
+
+#: Template/Element/UserSettings/skill_tags.ctp:4
+msgid "Parole chiave professionali"
+msgstr ""
+
+#: Template/Element/UserSettings/skill_tags.ctp:15;31
+msgid ""
+"Cerca di usare termini più tecnici possibile (tags) in modo che le aziende "
+"possano trovarti"
+msgstr ""
+
+#: Template/Element/UserSettings/user_profile_box__fun.ctp:3
+#: Template/Element/ui/main-menu.ctp:42 Template/UserDashboards/index.ctp:92
+msgid "Profilo pubblico"
+msgstr "Public profile"
+
+#: Template/Element/UserSettings/user_profile_box__fun.ctp:4
+#: Template/Element/UserSettings/user_profile_box__job.ctp:4
+msgid "Campi personali: mostrati nel tuo profilo"
+msgstr ""
+
+#: Template/Element/UserSettings/user_profile_box__fun.ctp:11;21;26;31
+msgid "Scrivici qualcosa su di te.."
+msgstr ""
+
+#: Template/Element/UserSettings/user_profile_box__fun.ctp:15
+msgid "Hobbie"
+msgstr ""
+
+#: Template/Element/UserSettings/user_profile_box__fun.ctp:16
+msgid "Scrivi cosa ti piace fare..."
+msgstr ""
+
+#: Template/Element/UserSettings/user_profile_box__fun.ctp:20
+msgid "Film preferiti"
+msgstr ""
+
+#: Template/Element/UserSettings/user_profile_box__fun.ctp:25
+msgid "Musica preferita"
+msgstr ""
+
+#: Template/Element/UserSettings/user_profile_box__fun.ctp:30
+msgid "Citazioni preferita"
+msgstr ""
+
+#: Template/Element/UserSettings/user_profile_box__fun.ctp:35
+msgid "Modelli che ti hanno inspirato"
+msgstr ""
+
+#: Template/Element/UserSettings/user_profile_box__fun.ctp:36
+#: Template/Element/UserSettings/user_profile_box__job.ctp:25
+msgid "Per cosa vorresti essere contattato?"
+msgstr ""
+
+#: Template/Element/UserSettings/user_profile_box__job.ctp:3
+msgid "Profilo pubblico (professionale)"
+msgstr ""
+
+#: Template/Element/UserSettings/user_profile_box__job.ctp:12
+msgid "Libri pubblicati, Video pubblicati"
+msgstr ""
+
+#: Template/Element/UserSettings/user_profile_box__job.ctp:17
+msgid "Cronologia studi"
+msgstr ""
+
+#: Template/Element/UserSettings/user_profile_box__job.ctp:18
+msgid "2012 - Laurea ingegneria informatica presso ....."
+msgstr ""
+
+#: Template/Element/UserSettings/user_profile_box__job.ctp:19;26
+msgid "Questo campo potrebbe interessare alle aziende"
+msgstr ""
+
+#: Template/Element/UserSettings/user_profile_box__job.ctp:24
+msgid "Competenze lavorative"
+msgstr ""
+
+#: Template/Element/ui/main-menu.ctp:28
+#: Template/Layout/frontend.backup.ctp:100
+msgid "Il tuo account"
+msgstr "Your account"
+
+#: Template/Element/ui/main-menu.ctp:33
+msgid "Sommario"
+msgstr "Dashboard"
+
+#: Template/Element/ui/main-menu.ctp:38
+msgid "Opzioni account"
+msgstr "Account settings"
+
+#: Template/Element/ui/main-menu.ctp:58
+msgid "Richieste"
+msgstr "Requests"
+
+#: Template/Element/ui/main-menu.ctp:65 Template/UserDashboards/index.ctp:162
+msgid "Curriculum"
+msgstr ""
+
+#: Template/Element/ui/main-menu.ctp:71 Template/UserDashboards/index.ctp:166
+msgid "Carica"
+msgstr "Load"
+
+#: Template/Element/ui/main-menu.ctp:76 Template/UserDashboards/index.ctp:167
+msgid "Autorizzazioni"
+msgstr "Authorizations"
+
+#: Template/Element/ui/main-menu.ctp:83 Template/Quizzes/score.ctp:6
+#: Template/Quizzes/view.ctp:15
+msgid "Quiz"
+msgstr "Quizzes"
+
+#: Template/Element/ui/main-menu.ctp:89
+#: Template/Users/profile_tabs/quiz_created.ctp:4
+msgid "Quiz creati"
+msgstr "Quiz created"
+
+#: Template/Element/ui/main-menu.ctp:95
+msgid "Quiz giocati"
+msgstr "Quiz played"
+
+#: Template/Element/ui/main-menu.ctp:103 Template/User/StoreOrders/index.ctp:6
+#: Template/UserDashboards/index.ctp:257
+msgid "Premi richiesti"
+msgstr "Requested rewards"
+
+#: Template/Element/ui/main-menu.ctp:113
+msgid "Ricevi offerte di lavoro"
+msgstr ""
+
+#: Template/Element/ui/main-menu.ctp:122 Template/UserDashboards/index.ctp:107
+msgid "Esci"
+msgstr "Exit"
+
+#: Template/Element/ui/main-menu.ctp:129;138
+#: Template/Element/ui/primary-menu.ctp:103
+#: Template/Layout/frontend.backup.ctp:110 Template/Users/login.ctp:38
+msgid "Accedi"
+msgstr "Login"
+
+#: Template/Element/ui/main-menu.ctp:133
+#: Template/Element/ui/primary-menu.ctp:109
+#: Template/Homepages/home.ctp:409;456 Template/Layout/frontend.backup.ctp:111
+#: Template/Users/register.ctp:67;119
+msgid "Registrati"
+msgstr "Register"
+
+#: Template/Element/ui/main-menu.ctp:150
+msgid "Chi siamo?"
+msgstr "Who are?"
+
+#: Template/Element/ui/main-menu.ctp:155
+msgid "FunJob per ..."
+msgstr "FunJob for ..."
+
+#: Template/Element/ui/main-menu.ctp:172
+#: Template/FunJobPages/profiles/sponsor.ctp:8
+msgid "Insersionisti"
+msgstr "Sponsors"
+
+#: Template/Element/ui/main-menu.ctp:182
+msgid "Termini & Condizioni"
+msgstr "Terms & Conditions"
+
+#: Template/Element/ui/main-menu.ctp:190
+#, fuzzy
+msgid "BigBrains (collaboratori)"
+msgstr "Collaborators"
+
+#: Template/Element/ui/main-menu.ctp:199
+#: Template/Element/ui/primary-menu.ctp:168 Template/Homepages/home.ctp:357
+#: Template/UserDashboards/index.ctp:122
+msgid "Gioca"
+msgstr "Game"
+
+#: Template/Element/ui/main-menu.ctp:214
+msgid "Cerca argomento"
+msgstr "Search category"
+
+#: Template/Element/ui/main-menu.ctp:222
+msgid "Crea nuovo"
+msgstr "New"
+
+#: Template/Element/ui/main-menu.ctp:230
+#: Template/Layout/frontend.backup.ctp:102 Template/QuizQuestions/add.ctp:7
+#: Template/Quizzes/add.ctp:9 Template/Quizzes/edit.ctp:7
+#: Template/User/Users/quizzes.ctp:6 Template/UserDashboards/index.ctp:144
+msgid "I miei quiz"
+msgstr ""
+
+#: Template/Element/ui/main-menu.ctp:243 Template/UserDashboards/index.ctp:233
+msgid "Cerca utente"
+msgstr "Search user"
+
+#: Template/Element/ui/main-menu.ctp:255 Template/UserDashboards/index.ctp:190
+msgid "Cerca aziende"
+msgstr "Search company"
+
+#: Template/Element/ui/main-menu.ctp:282
+#: Template/Layout/frontend.backup.ctp:84 Template/Stores/archive.ctp:6
+#: Template/User/UserMessages/index.ctp:7
+msgid "Archivio"
+msgstr "Archive"
+
+#: Template/Element/ui/main-menu.ctp:286
+msgid "Categorie (Materie)"
+msgstr ""
+
+#: Template/Element/ui/main-menu.ctp:146
+msgctxt "menu"
+msgid "Informazioni"
+msgstr "Informations"
+
+#: Template/Element/ui/primary-menu.ctp:45
+msgid "MENU"
+msgstr ""
+
+#: Template/Element/ui/primary-menu.ctp:145
+msgid "Dashboard"
+msgstr ""
+
+#: Template/Element/ui/primary-menu.ctp:153
+msgid "Home"
+msgstr ""
+
+#: Template/Element/ui/primary-menu.ctp:190
+msgid "I PIX sono la moneta virtuale che accumulerai giocando con Funjob."
+msgstr ""
+
+#: Template/Element/ui/primary-menu.ctp:193
+msgid ""
+"Funjob ridistribuisce fino al 50% degl'introiti pubblicitari dei giochi "
+"all'utente che li ha generati giocandoli."
+msgstr ""
+
+#: Template/Element/ui/primary-menu.ctp:198
+msgid "Come puoi guadagnare PIX?"
+msgstr ""
+
+#: Template/Element/ui/primary-menu.ctp:201
+msgid "Partecipando ai giochi"
+msgstr ""
+
+#: Template/Element/ui/primary-menu.ctp:202
+msgid ""
+"se superi il gioco ti verrà accreditato 1 PIX per ogni domanda corretta, "
+"pari al 35% del guadagno generato dalle pubblicità all’interno del gioco."
+msgstr ""
+
+#: Template/Element/ui/primary-menu.ctp:205
+msgid "Creando nuovi giochi"
+msgstr ""
+
+#: Template/Element/ui/primary-menu.ctp:206
+msgid ""
+"ogni utente che ci giocherà ti farà guadagnare il 15% - sotto forma di PIX - "
+"degl'introiti pubblicitari generati dal gioco."
+msgstr ""
+
+#: Template/Element/ui/primary-menu.ctp:210
+msgid "Come posso spendere i miei PIX?"
+msgstr ""
+
+#: Template/Element/ui/primary-menu.ctp:215
+msgid ""
+"Puoi spendere i tuoi PIX nel nostro {linkStart}negozio{linkEnd}, scegliendo "
+"tra i tanti prodotti disponibili."
+msgstr ""
+
+#: Template/Element/ui/primary-menu.ctp:225
+msgid "Come incrementare il guadagno di PIX?"
+msgstr ""
+
+#: Template/Element/ui/primary-menu.ctp:227
+msgid ""
+"Attraverso la condivisione nei social network e in generale tra la tua "
+"cerchia di conoscenze, potrai fare in modo che tanti utenti partecipino al "
+"gioco a quiz che hai creato. Così facendo guadagnerai PIX."
+msgstr ""
+
+#: Template/Element/ui/primary-menu.ctp:230
+msgid ""
+"Con Funjob potrai sempre decidere di giocare senza messaggi pubblicitari e "
+"rinunciando ai relativi PIX. "
+msgstr ""
+
+#: Template/Element/ui/primary-menu.ctp:234
+msgid "Approfondisci"
+msgstr ""
+
+#: Template/Element/ui/primary-menu.ctp:407
+msgid "Lingue disponibili"
+msgstr ""
+
+#: Template/Element/ui/primary-menu.ctp:410
+#, fuzzy
+msgid "Cambia lingua"
+msgstr "Change"
+
+#: Template/Element/ui/quiz-dots--square.ctp:39
+#: Template/Element/ui/quiz-dots.ctp:22
+msgid "Domanda {0}/{1}"
+msgstr ""
+
+#: Template/Email/html/Contacts/default.ctp:1
+msgid ""
+"Ciao, hai ricevuto una richiesta di contatto da parte di un utente funjob.it."
+msgstr ""
+
+#: Template/Email/html/Contacts/default.ctp:2
+msgid "Di seguito i dati del contatto:"
+msgstr ""
+
+#: Template/Email/html/Contacts/default.ctp:12
+msgid "Funjob ID"
+msgstr ""
+
+#: Template/Email/html/Contacts/default.ctp:16
+msgid "IP"
+msgstr ""
+
+#: Template/Email/html/Store/Admin/order_state_updated.ctp:11
+msgid "Oggetto richiesto"
+msgstr ""
+
+#: Template/Email/html/Store/Admin/order_state_updated.ctp:14
+msgid "Richiesto in data"
+msgstr ""
+
+#: Template/Email/html/Store/Admin/order_update.ctp:5
+msgid ""
+"Stai ricevendo questa e-mail perchè hai richiesto un premio su funjob.it"
+msgstr ""
+
+#: Template/Email/html/Users/confirm_account.ctp:1
+#: Template/Email/html/Users/new_friend_request.ctp:1
+#: Template/Email/html/Users/reset_account.ctp:1
+msgid "Ciao {username}"
+msgstr ""
+
+#: Template/Email/html/Users/confirm_account.ctp:2
+msgid ""
+"Per poter accedere a funjob.it è necessario che confermi il tuo account "
+"seguendo il link di seguito"
+msgstr ""
+
+#: Template/Email/html/Users/new_friend_request.ctp:2
+msgid ""
+"Hai ricevuto una nuova richiesta di amicizia da parte di un utente funjob"
+msgstr ""
+
+#: Template/Email/html/Users/new_friend_request.ctp:7
+msgid "{requester} vorrebbe diventare tuoi amico"
+msgstr ""
+
+#: Template/Email/html/Users/new_friend_request.ctp:16
+msgid "Accetta o rifiuta da questa pagina"
+msgstr ""
+
+#: Template/Email/html/Users/reset_account.ctp:2
+msgid ""
+"Hai richiesto di ripristinare le tue credenziali d'accesso a funjob.it, "
+"segui il link di seguito"
+msgstr ""
+
+#: Template/FunJobPages/index.ctp:3
+msgid "FunJob: cos'è?"
+msgstr ""
+
+#: Template/FunJobPages/index.ctp:6
+#: Template/FunJobPages/profiles/company.ctp:6
+#: Template/FunJobPages/profiles/sponsor.ctp:6
+#: Template/FunJobPages/profiles/user.ctp:7
+msgid "Informazioni su FunJob"
+msgstr ""
+
+#: Template/FunJobPages/profiles/all.ctp:3
+msgid "A chi è rivolto Funjob?"
+msgstr ""
+
+#: Template/FunJobPages/profiles/all.ctp:79
+msgid "Caratteristiche"
+msgstr ""
+
+#: Template/FunJobPages/profiles/all.ctp:96
+msgid "Altri profili"
+msgstr ""
+
+#: Template/FunJobPages/profiles/all.ctp:266 Template/Quizzes/view.ctp:280
+msgid "Continua a leggere ..."
+msgstr ""
+
+#: Template/FunJobPages/profiles/company.ctp:7
+#: Template/FunJobPages/profiles/sponsor.ctp:7
+#: Template/FunJobPages/profiles/user.ctp:8
+msgid "A chi è rivolto?"
+msgstr ""
+
+#: Template/Homepages/home.ctp:209
+msgid "Categorie popolari"
+msgstr ""
+
+#: Template/Homepages/home.ctp:270
+msgid "Apri"
+msgstr ""
+
+#: Template/Homepages/home.ctp:292
+msgid "Introduzione a Funjob"
+msgstr ""
+
+#: Template/Homepages/home.ctp:296
+msgid "Intro a Funjob"
+msgstr ""
+
+#: Template/Homepages/home.ctp:348;400;447
+msgid "Guarda video"
+msgstr ""
+
+#: Template/Homepages/home.ctp:363;415;462
+msgid "Scopri"
+msgstr ""
+
+#: Template/Homepages/home.ctp:373
+msgid "Il tuo browser non supporta questo formato video."
+msgstr ""
+
+#: Template/Homepages/home.ctp:507
+msgid "@einstein Tu devi essere il nuovo assistente ..."
+msgstr ""
+
+#: Template/Homepages/home.ctp:530
+msgid "Si"
+msgstr ""
+
+#: Template/Homepages/home.ctp:533
+msgid "No"
+msgstr ""
+
+#: Template/Homepages/home.ctp:542
+msgid ""
+"Gioca e crea i tuoi quiz. Dimostra le tue capacità e guadagna fino al 50% "
+"dei profitti generati dalla pubblicità."
+msgstr ""
+
+#: Template/Homepages/home.ctp:543
+msgid ""
+"Metti a frutto le tue conoscenze, condividi i risultati dei giochi e fatti "
+"trovare dalle aziende in cerca di personale di talento."
+msgstr ""
+
+#: Template/Homepages/home.ctp:547
+msgid ""
+"Puoi giocare con Funjob senza condividere i tuoi risultati e senza vedere "
+"pubblicità."
+msgstr ""
+
+#: Template/Homepages/home.ctp:556 Template/Quizzes/index.ctp:122
+msgid "Ultimi giochi inseriti"
+msgstr ""
+
+#: Template/Homepages/home.ctp:566
+msgid "Cerca gioco"
+msgstr "Search game"
+
+#: Template/Homepages/home.ctp:572
+msgid "Nuovo gioco"
+msgstr "New game"
+
+#: Template/Homepages/home.ctp:614
+msgid "Ultimi utenti registrati"
+msgstr "Latests registered users"
+
+#: Template/Layout/backend.ctp:7;9
+msgid "Amministrazione"
+msgstr ""
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/Layout/frontend--game.ctp:89
+msgid "Indietro"
+msgstr ""
+
+#: Template/Layout/frontend-maintenance.ctp:42
+#: Template/User/Users/search.ctp:185 Template/Users/login.ctp:26
+#: Template/Users/register.ctp:29
+msgid "Nome utente"
+msgstr "Username"
+
+#: Template/Layout/frontend-maintenance.ctp:43
+msgid "Solo gli addetti ai lavori possono momentaneamente accedere"
+msgstr ""
+
+#: Template/Layout/frontend-maintenance.ctp:47 Template/Users/login.ctp:30
+msgid "Password"
+msgstr "Password"
+
+#: Template/Layout/frontend-maintenance.ctp:49
+msgid "Accesso admin"
+msgstr ""
+
+#: Template/Layout/frontend-maintenance.ctp:61
+msgid "Accesso"
+msgstr ""
+
+#: Template/Layout/frontend.backup.ctp:96
+msgid "Ciao, {0}"
+msgstr ""
+
+#: Template/Layout/frontend.backup.ctp:101
+msgid "I miei gudagni"
+msgstr ""
+
+#: Template/Layout/frontend.backup.ctp:103
+msgid "Opzioni"
+msgstr ""
+
+#: Template/Layout/frontend.backup.ctp:104
+msgid "Logout"
+msgstr ""
+
+#: Template/Layout/frontend.backup.ctp:105
+msgid "Account collegati"
+msgstr ""
+
+#: Template/Layout/frontend.ctp:120
+msgid "The Social Talent Network"
+msgstr ""
+
+#: Template/Layout/frontend.ctp:125
+msgid ""
+"FunJob è un marchio e un progetto registrato alla {siae_start}SIAE{siae_end} "
+"e {uibm_start}UIBM{uibm_end}"
+msgstr ""
+
+#: Template/Layout/frontend.ctp:155
+msgid "Made in Italy with {icon}"
+msgstr ""
+
+#: Template/Layout/store.ctp:16
+msgid "Categorie prodotti"
+msgstr ""
+
+#: Template/Leaderboards/index.ctp:2
+msgid "Classifica"
+msgstr ""
+
+#: Template/Leaderboards/index.ctp:7
+msgid "Prossimamente attiva"
+msgstr ""
+
+#: Template/Pages/cookie_policy.ctp:2
+msgid "Normativa Cookie"
+msgstr "Cookie policy"
+
+#: Template/Pages/cookie_policy.ctp:4
+msgid "Cookie"
+msgstr ""
+
+#: Template/QuizCategories/index.ctp:2
+msgid "Cerca argomento gioco"
+msgstr ""
+
+#: Template/QuizCategories/index.ctp:4
+msgid "Giochi"
+msgstr ""
+
+#: Template/QuizCategories/index.ctp:5
+msgid "Cerca per argomento"
+msgstr ""
+
+#: Template/QuizCategories/index.ctp:16;31
+msgid "Digita il termine, e attendi il risultato"
+msgstr ""
+
+#: Template/QuizCategories/index.ctp:29
+msgid "Nome quiz, parole chiave"
+msgstr ""
+
+#: Template/QuizCategories/index.ctp:193
+msgid "Area di interesse"
+msgstr ""
+
+#: Template/QuizCategories/index.ctp:206 Template/Quizzes/view.ctp:73;77
+#: Template/Users/quiz_completed.popover.ctp:12
+msgid "Livello {0}"
+msgstr ""
+
+#: Template/QuizCategories/index.ctp:218
+msgid "Mostra quiz per categoria selezionata"
+msgstr ""
+
+#: Template/QuizCategories/index.ctp:308
+msgid "Ricerca per parole chiave"
+msgstr ""
+
+#: Template/QuizCategories/index.ctp:310
+msgid "Digita un termine nelle seguenti aree e attendi un suggerimento"
+msgstr ""
+
+#: Template/QuizCategories/index.ctp:325
+msgid "Ricerca per argomento"
+msgstr ""
+
+#: Template/QuizCategories/index.ctp:327
+msgid ""
+"Attraverso le selezioni ti consiglieremo i quiz attinenti alla tua competenza"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:4
+msgid "Crea una nuova domanda"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:9
+msgid "Crea domanda"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:85
+msgid "Modifica Quiz"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:91;453
+msgid "Nuova domanda"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:105 Template/Quizzes/edit.ctp:53
+msgid "{icon} Pubblica"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:114 Template/Quizzes/edit.ctp:62
+msgid ""
+"{icon} Non puoi pubblicare il tuo quiz, fino a che non raggiungi il numero "
+"di domande minime richieste"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:140
+msgid "Utilizza domande già pubblicate"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:143
+msgid "Utilizza domande altrui"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:153
+msgid "Disabilita quiz (ban)"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:204
+msgid "Domanda con 4 risposte chiuse"
+msgstr "Closed question: 4 replies"
+
+#: Template/QuizQuestions/add.ctp:205
+msgid "Domanda con risposta vera o falsa"
+msgstr "True or False question"
+
+#: Template/QuizQuestions/add.ctp:211
+msgid "Titolo domanda"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:212
+msgid "Scrivi la tua domanda in massimo {max_chars} caratteri"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:228
+msgid "-- Seleziona una voce"
+msgstr "-- Select a chooice"
+
+#: Template/QuizQuestions/add.ctp:229 Template/User/Quizzes/played.ctp:193
+msgid "Facile"
+msgstr "Easy"
+
+#: Template/QuizQuestions/add.ctp:230 Template/User/Quizzes/played.ctp:200
+msgid "Medio"
+msgstr "Medium"
+
+#: Template/QuizQuestions/add.ctp:231 Template/User/Quizzes/played.ctp:207
+msgid "Difficile"
+msgstr "Hard"
+
+#: Template/QuizQuestions/add.ctp:234 Template/QuizQuestions/index.ctp:8
+msgid "Difficoltà"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:235
+msgid "Necessaria per la creazione dei livelli su quiz funjob"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:242 Template/Quizzes/score.ctp:170
+msgid "Fonte"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:244
+msgid ""
+"Necessaria per verificare la tua domanda, e fornire all'utente un "
+"approfondimento"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:267
+msgid "Nessuna"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:289;330
+msgid "Link"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:304
+msgid "Libro"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:318
+msgid ""
+"Ti consigliamo di specificare una fonte, poichè viene mostrata nella "
+"schermata finale del quiz."
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:320
+msgid "L'utente potrà approfondire l'argomento direttamente tramite un link"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:331
+msgid "Solo link provenienti da pagine Wikipedia"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:350
+msgid "Pagina"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:356
+msgid "Scansione pagina"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:357
+msgid ""
+"Ci servirà nel processo di validazione del quiz per verificare le risposte"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:395 Template/QuizQuestions/index.ctp:7
+msgid "Risposte"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:405
+msgid "Questa sarà la risposta corretta"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:419
+msgid "Risposte [vero/falso]"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:443
+msgid "Domande in base alla difficoltà"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:458
+msgid "Domande del quiz"
+msgstr ""
+
+#: Template/QuizQuestions/add.ctp:471
+msgid "Richiede Javascript"
+msgstr ""
+
+#: Template/QuizQuestions/edit.ctp:8;27
+msgid "Delete"
+msgstr ""
+
+#: Template/QuizQuestions/edit.ctp:10;29
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/QuizQuestions/edit.ctp:14;33
+msgid "List Quiz Questions"
+msgstr ""
+
+#: Template/QuizQuestions/edit.ctp:15;34
+msgid "List Quizzes"
+msgstr ""
+
+#: Template/QuizQuestions/edit.ctp:16;35
+msgid "New Quiz"
+msgstr ""
+
+#: Template/QuizQuestions/edit.ctp:17;36
+msgid "List Quiz Answers"
+msgstr ""
+
+#: Template/QuizQuestions/edit.ctp:18;37
+msgid "New Quiz Answer"
+msgstr ""
+
+#: Template/QuizQuestions/edit.ctp:44
+msgid "Edit {0}"
+msgstr ""
+
+#: Template/QuizQuestions/edit.ctp:55
+msgid "Save"
+msgstr ""
+
+#: Template/QuizQuestions/index.ctp:6
+msgid "Domanda"
+msgstr "Question"
+
+#: Template/QuizQuestions/index.ctp:20
+msgid "Giocabile"
+msgstr "Playable"
+
+#: Template/QuizSessionLevels/view.ctp:16 Template/User/Quizzes/played.ctp:436
+msgid "Sessione di gioco"
+msgstr "Game session"
+
+#: Template/QuizSessionLevels/view.ctp:32
+msgid "Livello {level_current} di {level_total}"
+msgstr "Level {level_current} of {level_total}"
+
+#: Template/QuizSessionLevels/view.ctp:42
+msgid "Risposte corrette"
+msgstr "Correct replies"
+
+#: Template/QuizSessionLevels/view.ctp:47 Template/User/Quizzes/played.ctp:351
+msgid "Punteggio"
+msgstr "Score"
+
+#: Template/QuizSessionLevels/view.ctp:66
+msgid "+1 punto"
+msgstr "+1 point"
+
+#: Template/QuizSessions/view.ctp:18 Template/User/Quizzes/played.ctp:13
+msgid "Giochi completati"
+msgstr "Game completed"
+
+#: Template/QuizSessions/view.ctp:20 Template/Quizzes/score.ctp:8
+msgid "Risultato"
+msgstr "Result"
+
+#: Template/QuizSessions/view.ctp:42
+msgid ""
+"{username} ha ottenuto il titolo \"{score_title}\" su “{title}” ottenendo "
+"un  punteggio di {score}/{score_max}"
+msgstr ""
+
+#: Template/QuizSessions/view.ctp:63
+msgid "Convidivi questo punteggio"
+msgstr "Share this score"
+
+#: Template/QuizSessions/view.ctp:76;82
+msgid "Gioca quiz"
+msgstr "Play quiz"
+
+#: Template/QuizSessions/view.ctp:92
+msgid "Vedi profilo"
+msgstr "Show profile"
+
+#: Template/QuizSessions/view.ctp:96
+msgid "Risultati di @{username}"
+msgstr "@{username} results"
+
+#: Template/QuizSessions/view.ctp:106
+msgid "Punteggio: "
+msgstr "Score: "
+
+#: Template/QuizSessions/view.ctp:155
+msgid "Livello {level}"
+msgstr ""
+
+#: Template/QuizSessions/view.ctp:169
+msgid "Questo utente non ha ancora sbloccato questo livello"
+msgstr "This level its unlocked for this user"
+
+#: Template/Quizzes/add.ctp:6
+msgid "Nuovo Quiz"
+msgstr "New quiz"
+
+#: Template/Quizzes/add.ctp:18
+msgid ""
+"Creando i tuoi gioco ti metterai in risalto con le aziende e metterai in "
+"circolo la tua intelligenza dando valore economico alla tua cultura."
+msgstr ""
+
+#: Template/Quizzes/add.ctp:20
+msgid ""
+"Gli utenti che lo giocheranno con la pubblicità ti faranno guadagnare il 15% "
+"dei guadagni generati dalla stessa.\n"
+"        Per incrementare i tuoi guadagni ricorda di condividere nei Social "
+"Network i giochi che crei."
+msgstr ""
+
+#: Template/Quizzes/add.ctp:39 Template/Quizzes/browse.ctp:88
+#: Template/Quizzes/index.ctp:83
+msgid "Tipologia quiz"
+msgstr ""
+
+#: Template/Quizzes/add.ctp:41
+msgid "Quiz normale: 10 domande"
+msgstr "Default quiz: 10 questions"
+
+#: Template/Quizzes/add.ctp:42
+msgid ""
+"Quiz certificato: 10 domande per 3 livelli di difficoltà (90 domande minimo)"
+msgstr ""
+
+#: Template/Quizzes/add.ctp:44
+msgid "Puoi creare differenti tipologie di quiz"
+msgstr ""
+
+#: Template/Quizzes/add.ctp:58
+msgid "Argomento o materia trattata (puoi selezionare fino a 10 categorie)"
+msgstr ""
+
+#: Template/Quizzes/add.ctp:81 Template/Quizzes/edit.ctp:217
+msgid "Titolo quiz"
+msgstr "Quiz name"
+
+#: Template/Quizzes/add.ctp:82 Template/Quizzes/edit.ctp:218
+msgid "Il titolo viene mostrato nell'archivio"
+msgstr "This title will be show in archive"
+
+#: Template/Quizzes/add.ctp:87 Template/Quizzes/edit.ctp:223
+msgid "Viene mostrata in archivio"
+msgstr ""
+
+#: Template/Quizzes/add.ctp:92
+msgid "Parole chiave"
+msgstr "Keywords"
+
+#: Template/Quizzes/add.ctp:93
+msgid "Parole chiave del quiz (utilizzate nella ricerca quiz)"
+msgstr ""
+
+#: Template/Quizzes/add.ctp:98 Template/Quizzes/edit.ctp:234
+msgid "Copertina"
+msgstr "Cover"
+
+#: Template/Quizzes/add.ctp:99 Template/Quizzes/edit.ctp:235
+msgid ""
+"Sarà visibile all'interno del quiz e in archivio (inferiore a {size} KB, e "
+"{format} px)"
+msgstr ""
+
+#: Template/Quizzes/add.ctp:107 Template/Quizzes/edit.ctp:243
+msgid "Colore copertina"
+msgstr ""
+
+#: Template/Quizzes/add.ctp:108 Template/Quizzes/edit.ctp:244
+msgid "Sarà visibile all'interno del quiz e in archivio"
+msgstr ""
+
+#: Template/Quizzes/add.ctp:114 Template/Quizzes/edit.ctp:251
+msgid "Video presentazione quiz"
+msgstr ""
+
+#: Template/Quizzes/add.ctp:115
+msgid "Codice HTML di embed (Su Youtube: Condividi > Codice da incorporare)"
+msgstr ""
+
+#: Template/Quizzes/add.ctp:119 Template/Quizzes/edit.ctp:256
+msgid "Pagina di approfondimento"
+msgstr ""
+
+#: Template/Quizzes/add.ctp:120 Template/Quizzes/edit.ctp:257
+msgid "Sponsorizza la tua pagina"
+msgstr ""
+
+#: Template/Quizzes/add.ctp:125
+msgid "Crea Quiz"
+msgstr ""
+
+#: Template/Quizzes/browse.ctp:2
+msgid "Quiz per: {0}"
+msgstr ""
+
+#: Template/Quizzes/browse.ctp:3
+msgid "Archivio Quiz"
+msgstr ""
+
+#: Template/Quizzes/browse.ctp:29
+msgid "Al momento non è presente nessun quiz per questa categoria."
+msgstr ""
+
+#: Template/Quizzes/browse.ctp:30
+msgid "Crea quiz"
+msgstr ""
+
+#: Template/Quizzes/browse.ctp:89
+msgid "Quiz certificati da funjob.it (a più livelli)"
+msgstr ""
+
+#: Template/Quizzes/browse.ctp:92
+msgid "Mostra: certificati + creati da gli utenti"
+msgstr ""
+
+#: Template/Quizzes/browse.ctp:93
+msgid "Mostra solo quiz certificati"
+msgstr ""
+
+#: Template/Quizzes/edit.ctp:4
+msgid "Modifica: {0}"
+msgstr ""
+
+#: Template/Quizzes/edit.ctp:40
+msgid "Aggiungi domande"
+msgstr ""
+
+#: Template/Quizzes/edit.ctp:74;188
+msgid "Materia trattata"
+msgstr ""
+
+#: Template/Quizzes/edit.ctp:191
+msgid "Verrà inserito nell'archivio selezionato"
+msgstr ""
+
+#: Template/Quizzes/edit.ctp:229
+msgid "Utili per ricercare il quiz (separate da virgola)"
+msgstr ""
+
+#: Template/Quizzes/edit.ctp:252
+msgid ""
+"Codice HTML di embed (Su video Youtube: \"Condividi > Codice da incorporare"
+"\")"
+msgstr ""
+
+#: Template/Quizzes/index.ctp:4
+msgid "Archivio quiz"
+msgstr ""
+
+#: Template/Quizzes/index.ctp:17 Template/UserDashboards/index.ctp:126
+msgid "Ultimi inseriti"
+msgstr "Latest created"
+
+#: Template/Quizzes/index.ctp:19
+msgid "Più votati"
+msgstr "More ranked"
+
+#: Template/Quizzes/index.ctp:23 Template/Quizzes/popular.ctp:9
+msgid "Quizzes"
+msgstr ""
+
+#: Template/Quizzes/index.ctp:34
+msgid ""
+"Filtra i quiz in base al tuo interesse, categoria, tipologia di autori, "
+"punteggio assegnato dagli utenti, cronologia etc."
+msgstr ""
+
+#: Template/Quizzes/index.ctp:55
+msgid "Ricerca Gioco"
+msgstr "Search a game"
+
+#: Template/Quizzes/index.ctp:58;70;232
+#: Template/Users/profile_tabs/quiz_created.ctp:134
+msgid "Apri {icon}"
+msgstr "Open {icon}"
+
+#: Template/Quizzes/index.ctp:67
+msgid "Ricerca Avanzata"
+msgstr "Advanced search"
+
+#: Template/Quizzes/index.ctp:87
+msgid "Quiz FunJob certificati (3 livelli)"
+msgstr ""
+
+#: Template/Quizzes/index.ctp:88
+msgid "Quiz Utenti"
+msgstr ""
+
+#: Template/Quizzes/index.ctp:89
+msgid "Tutti i quiz"
+msgstr "All quizzes"
+
+#: Template/Quizzes/index.ctp:116
+msgid "Ordinamento in base a"
+msgstr "Sort by"
+
+#: Template/Quizzes/index.ctp:121
+msgid "I più votati"
+msgstr "More ranked"
+
+#: Template/Quizzes/index.ctp:126
+msgid "Cerca parola chiave"
+msgstr "Search by keyword"
+
+#: Template/Quizzes/index.ctp:127
+msgid "Digita parola chiave"
+msgstr ""
+
+#: Template/Quizzes/index.ctp:131
+msgid "{icon} Filtra"
+msgstr "{icon} Filter"
+
+#: Template/Quizzes/index.ctp:185 Template/Quizzes/popular.ctp:94
+#: Template/Users/profile_tabs/quiz_created.ctp:94
+msgid "La media della valutazione degli utenti"
+msgstr ""
+
+#: Template/Quizzes/index.ctp:200
+#: Template/Users/profile_tabs/quiz_created.ctp:109
+msgid "Quiz certificati FunJob: a più livelli"
+msgstr ""
+
+#: Template/Quizzes/index.ctp:203
+#: Template/Users/profile_tabs/quiz_created.ctp:112
+msgid "Quiz normali: un solo livello"
+msgstr ""
+
+#: Template/Quizzes/index.ctp:225
+msgid "Nessun quiz soddisfa la tua ricerca..."
+msgstr ""
+
+#: Template/Quizzes/index.ctp:235
+#: Template/Users/profile_tabs/quiz_created.ctp:137
+msgid "Chiudi {icon}"
+msgstr ""
+
+#: Template/Quizzes/play.ctp:2
+msgid "[{0}/10] {1}"
+msgstr ""
+
+#: Template/Quizzes/play.ctp:37
+msgid "Togli 1"
+msgstr ""
+
+#: Template/Quizzes/play.ctp:55
+msgid "Salta"
+msgstr ""
+
+#: Template/Quizzes/play.ctp:260
+msgid "{icon} Link Sponsor"
+msgstr ""
+
+#: Template/Quizzes/play.ctp:269
+msgid "{icon} Attendi ..."
+msgstr ""
+
+#: Template/Quizzes/play.ctp:289
+msgid "{icon} Attendi {seconds} secondi"
+msgstr ""
+
+#: Template/Quizzes/play.ctp:294
+msgid "{icon} Prosegui Gioco"
+msgstr ""
+
+#: Template/Quizzes/play.ctp:344
+msgid "{icon} Indietro"
+msgstr ""
+
+#: Template/Quizzes/play.ctp:352
+msgid "Gioca di nuovo"
+msgstr ""
+
+#: Template/Quizzes/play.ctp:424
+msgid "Attendere prego ..."
+msgstr ""
+
+#: Template/Quizzes/popular.ctp:2
+msgid "Quiz popolari"
+msgstr ""
+
+#: Template/Quizzes/popular.ctp:10 Template/UserDashboards/index.ctp:127
+msgid "Popolari"
+msgstr ""
+
+#: Template/Quizzes/popular.ctp:33
+msgid "Ricerca quiz"
+msgstr ""
+
+#: Template/Quizzes/rand.ctp:2
+msgid "Quiz casuali"
+msgstr ""
+
+#: Template/Quizzes/rand.ctp:25
+msgid "Mostra altri quiz della categoria ..."
+msgstr ""
+
+#: Template/Quizzes/score.ctp:2 Template/Quizzes/view.ctp:2
+#: Template/User/UserMessages/add.ctp:63
+#: Template/User/UserMessages/view.ctp:255
+msgid "{0}"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:43 Template/Quizzes/view.ctp:223;347
+msgid "Sfida i tuoi amici su: ‹{title}›"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:62 Template/User/Quizzes/played.ctp:307
+msgid "Condividi risultato"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:63
+msgid "Dimostra a tutti il tuo talento condividendo il tuo risultato"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:76
+msgid "Ho ottenuto un punteggio di {score} su ‹{title}›"
+msgstr "I scored {score} on ‹{title}›"
+
+#: Template/Quizzes/score.ctp:108
+msgid "Hai guadagnato {total} PIX"
+msgstr "You have earned {total} PIX"
+
+#: Template/Quizzes/score.ctp:161
+msgid "Risposta"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:177;193 Template/Quizzes/view.ctp:36;315
+msgid "Segnala"
+msgstr "Report"
+
+#: Template/Quizzes/score.ctp:190
+msgid "Motivazione della segnalazione"
+msgstr "Report reason"
+
+#: Template/Quizzes/score.ctp:221
+msgid "Punteggio ottenuto"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:227;249
+msgid ""
+"+1 punto bonus per ogni aiuto non utilizzato (se rispondi correttamente a "
+"tutte le domande)"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:239
+msgid "Il tuo miglior punteggio (mostrato nel profilo)"
+msgstr "Your bigger score (will be showed on your profile)"
+
+#: Template/Quizzes/score.ctp:264
+msgid "{icon} Nascondi risultati dal profilo"
+msgstr "{icon} Hide results on my profile"
+
+#: Template/Quizzes/score.ctp:277
+msgid "{icon} {br} Attendere ..."
+msgstr "{icon} {br} Please wait ..."
+
+#: Template/Quizzes/score.ctp:298
+msgid "{icon} Trova altri giochi"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:305
+msgid "{icon} Riprovo! Posso fare di meglio"
+msgstr "{icon} Retry! I can do better"
+
+#: Template/Quizzes/score.ctp:311
+msgid "{icon} Rigioca"
+msgstr "{icon} Play again"
+
+#: Template/Quizzes/score.ctp:319
+msgid "Continua {icon}"
+msgstr "Continue {icon}"
+
+#: Template/Quizzes/score.ctp:339
+msgid "Prova di nuovo"
+msgstr "Try again"
+
+#: Template/Quizzes/score.ctp:364
+msgid "Come valuti questo quiz?"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:366
+msgid "1: Sconsigliato"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:367
+msgid "2: Inesatto"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:368
+msgid "3: Poco interessante"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:369
+msgid "4: Poco coinvolgente"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:370
+msgid "5: Potrebbe essere migliorato"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:371
+msgid "6: Sufficiente"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:372
+msgid "7: Diventente"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:373
+msgid "8: Molto divertente"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:374
+msgid "9: Consigliato"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:375
+msgid "10: Tra i migliori"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:378
+msgid "Vota"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:378
+msgid "Aggiorna voto"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:399
+msgid "Molto bene, ti sei fatto valere"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:405
+msgid "Conosci molto bene l'argomento"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:409
+msgid "Impossibile fare di meglio!"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:426
+msgid "Ops! Dovresti ripassare l'argomento"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:430
+msgid "Sai di cosa si parla ma puoi fare di meglio ;-)"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:460
+msgid "Condividi gioco"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:463
+msgid ""
+"Lo sapevi che puoi guadagnare se altri utenti giocano il quiz che hai creato?"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:471
+msgid "Vota gioco"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:474
+msgid "Votando il gioco contribuirai a far emerge il talento"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:489
+msgid "Dai un punteggio a questo gioco"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:96
+msgctxt "contatore risposte esatte"
+msgid "{0} su {1} domande"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:328
+msgctxt "Risultato quiz"
+msgid "{0} SPIACENTE! Non hai superato la prova"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:332
+msgctxt "Risultato quiz"
+msgid ""
+"Hai ottenuto un punteggio di \"{score}/10\" (il minimo richiesto è "
+"{min_score}/10)"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:391
+msgctxt "Risultato quiz"
+msgid "Complimenti"
+msgstr ""
+
+#: Template/Quizzes/score.ctp:420
+msgctxt "Risultato quiz"
+msgid "Spiacente! Riprova"
+msgstr ""
+
+#: Template/Quizzes/view.ctp:34
+msgid "Motivazione per cui vuoi segnalare questo quiz"
+msgstr ""
+
+#: Template/Quizzes/view.ctp:83
+msgid "✅ Livello {0} {1} {2}"
+msgstr ""
+
+#: Template/Quizzes/view.ctp:87
+msgid "(Ripeti)"
+msgstr ""
+
+#: Template/Quizzes/view.ctp:95
+msgid "{icon} Livello di difficoltà"
+msgstr ""
+
+#: Template/Quizzes/view.ctp:97
+msgid "Giocando potrai sbloccare i livelli successivi"
+msgstr ""
+
+#: Template/Quizzes/view.ctp:136
+msgid "{icon} Guadagna crediti (PIX) da spendere in premi"
+msgstr ""
+
+#: Template/Quizzes/view.ctp:139
+msgid "Saranno mostrati annunci pubblicitari {link_start}{icon}{link_end}"
+msgstr ""
+
+#: Template/Quizzes/view.ctp:153
+msgid "Inizia Gioco {icon}"
+msgstr ""
+
+#: Template/Quizzes/view.ctp:171
+msgid "Autore"
+msgstr ""
+
+#: Template/Quizzes/view.ctp:188
+msgid "Video presentazione"
+msgstr ""
+
+#: Template/Quizzes/view.ctp:211
+msgid "Promuovi Gioco"
+msgstr ""
+
+#: Template/Quizzes/view.ctp:241
+msgid "Segnala gioco"
+msgstr ""
+
+#: Template/Quizzes/view.ctp:264
+msgid "Pagina di riferimento"
+msgstr ""
+
+#: Template/Quizzes/view.ctp:279
+msgid "Riduci ..."
+msgstr ""
+
+#: Template/Quizzes/view.ctp:299
+msgid "Video"
+msgstr ""
+
+#: Template/Quizzes/view.ctp:306 Template/User/Quizzes/played.ctp:312
+msgid "Condividi"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:2
+msgid "Nuovo annuncio Funjob"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:6
+msgid "Nuovo annuncio"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:12
+msgid ""
+"Contattaci per avere un piano pubblicitario personalizzato che comprenda "
+"banner e giochi prodotti da Funjob per far conoscere la tua azienda."
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:23
+msgid "Tipologie pubblicitarie"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:33
+msgid "Pacchetto di visualizzazioni"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:39
+msgid "Crea pubblicità"
+msgstr "New advertising"
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:50
+msgid "URL di destinazione"
+msgstr "URL"
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:51
+msgid "L'utente verrà redirezionato a questo indirizzo dopo il click"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:56
+msgid "Immagine pubblicitaria"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:62
+msgid "Target pubblicitario"
+msgstr "Advertising target"
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:64
+msgid ""
+"Alcuni filtri fanno riferimento a informazioni non obbligatorie (es: sesso, "
+"età) per cui non saranno visualizzate da gli utenti che non le hanno "
+"impostate. Inoltre, le altre aziende non potranno vederle se imposti questi "
+"filtri solamente per gli utenti."
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:68
+#: Template/User/Users/settings.ctp:161
+msgid "Sesso"
+msgstr "Sex"
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:70
+msgid "Tutti i sessi"
+msgstr "All sexs"
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:71
+#: Template/User/Users/settings.ctp:164
+msgid "Maschio"
+msgstr "Male"
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:72
+#: Template/User/Users/settings.ctp:165
+msgid "Femmina"
+msgstr "Female"
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:74
+msgid ""
+"Attenzione: la scelta del sesso non è obbligatoria da parte dell'utente."
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:78
+msgid "Età: da"
+msgstr "Age: from"
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:82;90
+msgid ""
+"Attenzione: il campo compleanno non è obbligatorio da parte dell'utente."
+msgstr "Warning: birthday it is a optional field"
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:86
+msgid "Età: a"
+msgstr "Age: to"
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:94
+msgid "Nazionalità"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:96
+msgid "Tutte le nazionalità"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:97
+msgid "Italiani"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:98
+msgid "Inglesi"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:100
+msgid "Il campo lingua viene prelevato dalla lingua corrente dell'utente"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/add.ctp:104
+msgid "Crea insersione"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/index.ctp:2
+msgid "Le tue campagne pubblicitarie"
+msgstr "Yours advertising"
+
+#: Template/Sponsor/SponsorAdvs/index.ctp:27
+msgid "Attivi"
+msgstr "Actives"
+
+#: Template/Sponsor/SponsorAdvs/index.ctp:33
+msgid "In scadenza"
+msgstr "In expiring"
+
+#: Template/Sponsor/SponsorAdvs/index.ctp:42
+#: Template/UserDashboards/index.ctp:269
+msgid "Crea annuncio"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/index.ctp:59
+msgid "Data di creazione"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/index.ctp:61
+msgid "URL"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/index.ctp:62
+msgid "Pubblicata"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/index.ctp:103
+msgid "Acquista"
+msgstr "Buy"
+
+#: Template/Sponsor/SponsorAdvs/index.ctp:7
+msgctxt "Pubblicità create"
+msgid "Create"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/view.ctp:2
+msgid "Dettaglio compagna"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/view.ctp:7
+msgid "Tue campagne"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/view.ctp:9
+#: Template/User/UserMessages/view.ctp:10
+msgid "Dettaglio"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/view.ctp:28
+msgid "Storico"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/view.ctp:67
+msgid "{count} views"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/view.ctp:76
+msgid "{count} clicks"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/view.ctp:94
+msgid "Pubblicità NON mostrata"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/view.ctp:98
+msgid "Pubblicità mostrata"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/view.ctp:110
+msgid "Tipoogia"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/view.ctp:113
+msgid "Pubblicità nelle pagine"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/view.ctp:115
+msgid "Pubblicità a schermo intero nei quiz"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/view.ctp:119
+msgid "Validità"
+msgstr ""
+
+#: Template/Sponsor/SponsorAdvs/view.ctp:122
+msgid "dal {from} al {to}"
+msgstr "from {from} to {to}"
+
+#: Template/Sponsor/SponsorAdvs/view.ctp:129
+msgid "Viste rimanenti prima della scadenza"
+msgstr ""
+
+#: Template/Stores/archive.ctp:2
+msgid "Negozio: prodotti funjobs"
+msgstr ""
+
+#: Template/Stores/archive.ctp:25
+msgid "Nessun prodotto al momento per questa categoria"
+msgstr ""
+
+#: Template/Stores/archive.ctp:57 Template/Stores/index.ctp:94
+#: Template/Stores/search.ctp:62
+msgid "Dettagli"
+msgstr "Details"
+
+#: Template/Stores/index.ctp:5
+msgid "Prima pagina"
+msgstr "Homepage"
+
+#: Template/Stores/search.ctp:2
+msgid "Ricerca prodotto: {name}"
+msgstr ""
+
+#: Template/Stores/search.ctp:8
+msgid "Risultati ricerca"
+msgstr "Search results"
+
+#: Template/Stores/search.ctp:16
+msgid "Nessun prodotto per questa chiave di ricerca"
+msgstr "No products for this search"
+
+#: Template/Stores/search.ctp:21
+msgid "Nessun prodotto al momento ..."
+msgstr "No products yet ..."
+
+#: Template/Stores/search.ctp:28
+msgid "Prodotti per: {term}"
+msgstr "Products for: {term}"
+
+#: Template/Stores/view.ctp:51
+msgid "Prossima"
+msgstr "Next"
+
+#: Template/Stores/view.ctp:94;188
+msgid "Gli articoli di funjob.it non sono in vendita!"
+msgstr ""
+
+#: Template/Stores/view.ctp:95;189
+msgid "Puoi ottenerli solo giocando e accumulando PIX {icon}"
+msgstr ""
+
+#: Template/Stores/view.ctp:101
+msgid "Converti i tuoi PIX in questo premio"
+msgstr ""
+
+#: Template/Stores/view.ctp:113
+msgid "{label_start}{icon} costo{label_end}: {amount} PIX"
+msgstr ""
+
+#: Template/Stores/view.ctp:122
+msgid "{label_start}{icon} al momento non disponibile{label_end}"
+msgstr "{label_start}{icon} not available for this moment{label_end}"
+
+#: Template/Stores/view.ctp:167
+msgid "{icon} Acquista"
+msgstr "{icon} Buy"
+
+#: Template/Stores/view.ctp:173;219
+msgid "Non hai abbastanza crediti per la conversione"
+msgstr "You do not have enough credits for conversion"
+
+#: Template/Stores/view.ctp:175;221
+msgid "Esegui l'accesso per richiedere il premio"
+msgstr "Login for request this product"
+
+#: Template/Stores/view.ctp:206
+msgid "{icon} Acquista con {amount} PIX"
+msgstr "{icon} Buy for {amount} PIX"
+
+#: Template/Stores/view.ctp:231
+msgid "Acquista per {amount} PIX"
+msgstr "Buy for {amount} PIX"
+
+#: Template/Stores/view.ctp:237
+msgid "Registrati, e fai tuo questo premio giocando"
+msgstr ""
+
+#: Template/Stores/view.ctp:57
+msgctxt "Immagini prodotto da caricare"
+msgid "{count} immagini prodotto"
+msgstr "{count} product's images"
+
+#: Template/Stores/view.ctp:129
+msgctxt "disponibilità prodotto"
+msgid "{label_start}{icon} disponibilità:{label_end} ultimo rimasto"
+msgstr ""
+
+#: Template/Stores/view.ctp:135
+msgctxt "disponibilità prodotto"
+msgid "{label_start}{icon} disponibilità:{label_end} ultimi {qty} rimasti</em>"
+msgstr ""
+
+#: Template/Stores/view.ctp:142
+msgctxt "disponibilità prodotto"
+msgid "{label_start}{icon} disponibilità:{label_end} molti</em>"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:7
+msgid "Storico dei quiz completati"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:43
+msgid "Sai che puoi decidere quali risultati mostrare nel tuo profilo?"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:45
+msgid ""
+"A fianco ad ogni risultato clicca sull'icona per decidere se mostrarlo agli "
+"altri utenti e alle altre aziende."
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:52
+msgid "Visibile sul tuo profilo"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:60
+msgid "Nascosto sul tuo profilo"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:69
+msgid ""
+"Condividendo con utenti e aziende i tuoi risultati potrai dimostrare le tue "
+"conoscenze e il tuo talento"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:70
+msgid ""
+"Per farlo collegati vai in {link_start}Risultati{link_end} e abilita la "
+"condivisione"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:92
+msgid "Cerca gioco per nome"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:93
+#: Template/Users/profile_tabs/quiz_created.ctp:25
+msgid "Nome del quiz"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:102
+#: Template/Users/profile_tabs/quiz_created.ctp:32
+msgid "({count} risultati)"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:106
+msgid "Cerca gioco per categoria"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:225
+msgid "{score} corrette su {score_max}"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:262
+msgid "Nascondi da profilo"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:275
+msgid "Nascondi"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:295
+msgid "Elimina sessione di gioco"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:346
+msgid "Mostra dettaglio Punteggio"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:380
+msgid "Inizia a giocare"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:410
+msgid "Livello bloccato"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:418
+msgid "Livello superato"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:425
+msgid "Condividi questo risultato con i tuoi amici"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:437
+msgid "Sei sicuro di voler cancellare i punteggi ottenuti di questo gioco?"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:377
+msgctxt "Messaggio su \"Quiz Completati\" nel profilo utente"
+msgid "Non hai ancora ancora completato nessun gioco"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:383
+msgctxt "Messaggio su \"Quiz Completati\" nel profilo utente"
+msgid "Questo utente non ha ancora completato nessun gioco"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:412
+msgctxt "Livello bloccato"
+msgid "Per procedere devi superare i precedenti"
+msgstr ""
+
+#: Template/User/Quizzes/played.ctp:420
+msgctxt "popover su bottone livello"
+msgid "Fare click per maggiori dettagli"
+msgstr ""
+
+#: Template/User/StoreOrders/index.ctp:2
+msgid "I tuoi ordini"
+msgstr ""
+
+#: Template/User/StoreOrders/index.ctp:53
+msgid "Premio richiesto"
+msgstr ""
+
+#: Template/User/StoreOrders/index.ctp:54
+msgid "Ordine creato il"
+msgstr ""
+
+#: Template/User/StoreOrders/index.ctp:55
+msgid "Ultima modifica"
+msgstr ""
+
+#: Template/User/StoreOrders/index.ctp:57
+msgid "Crediti utilizzati"
+msgstr ""
+
+#: Template/User/StoreOrders/index.ctp:103
+msgid "Non hai richiesto nessun premio con i tuoi PIX maturati."
+msgstr ""
+
+#: Template/User/StoreOrders/index.ctp:105
+msgid "Visita il nostro Negozio e richiedi un premio"
+msgstr ""
+
+#: Template/User/UserFriends/index.ctp:63
+msgid "Nessuna amico al momento ..."
+msgstr ""
+
+#: Template/User/UserFriends/index.ctp:111
+msgid "Rifiuta amicizia"
+msgstr ""
+
+#: Template/User/UserFriends/index.ctp:122
+msgid "Aggiungi a preferiti"
+msgstr "Add to preferite"
+
+#: Template/User/UserFriends/index.ctp:127
+msgid "Elimina da preferiti"
+msgstr "Delete from preferite"
+
+#: Template/User/UserFriends/waiting.ctp:2
+msgid "Richieste di amicizia"
+msgstr ""
+
+#: Template/User/UserFriends/waiting.ctp:6
+#: Template/UserDashboards/index.ctp:216
+msgid "Richieste in attesa"
+msgstr ""
+
+#: Template/User/UserFriends/waiting.ctp:47
+msgid "Nessuna richiesta di amicizia al momento"
+msgstr ""
+
+#: Template/User/UserFriends/waiting.ctp:102
+msgid "Accetta amicizia"
+msgstr "Accept friend"
+
+#: Template/User/UserFriends/waiting.ctp:111
+msgid "Rimuovi amicizia"
+msgstr "Remove friend"
+
+#: Template/User/UserMessages/add.ctp:2
+msgid "Componi nuovo messaggio"
+msgstr "Compose new message"
+
+#: Template/User/UserMessages/add.ctp:8
+#: Template/User/UserMessages/index.ctp:2;6
+#: Template/User/UserMessages/view.ctp:9
+msgid "Messaggi privati"
+msgstr ""
+
+#: Template/User/UserMessages/add.ctp:9
+msgid "Componi"
+msgstr ""
+
+#: Template/User/UserMessages/add.ctp:14
+msgid "Componi messaggio"
+msgstr ""
+
+#: Template/User/UserMessages/add.ctp:18
+msgid "Torna a messaggi"
+msgstr ""
+
+#: Template/User/UserMessages/add.ctp:33
+msgid "Tipologia messaggio"
+msgstr ""
+
+#: Template/User/UserMessages/add.ctp:36 Template/Users/view.ctp:281
+msgid "Offerta di lavoro"
+msgstr ""
+
+#: Template/User/UserMessages/add.ctp:37
+msgid "Richiesta di lavoro"
+msgstr ""
+
+#: Template/User/UserMessages/add.ctp:38
+msgid "Messaggio personale"
+msgstr ""
+
+#: Template/User/UserMessages/add.ctp:55
+#: Template/User/UserMessages/index.ctp:156
+msgid "Messaggio"
+msgstr ""
+
+#: Template/User/UserMessages/index.ctp:24
+#: Template/User/UserMessages/view.ctp:96
+msgid "Archivio messaggi"
+msgstr ""
+
+#: Template/User/UserMessages/index.ctp:33
+msgid "Nuovo messaggio"
+msgstr ""
+
+#: Template/User/UserMessages/index.ctp:40
+msgid "Segna tutti come letti"
+msgstr ""
+
+#: Template/User/UserMessages/index.ctp:53
+msgid "Ultimi messaggi ricevuti"
+msgstr ""
+
+#: Template/User/UserMessages/index.ctp:153
+msgid "Ultimo messaggio"
+msgstr ""
+
+#: Template/User/UserMessages/index.ctp:159
+msgid "Data"
+msgstr ""
+
+#: Template/User/UserMessages/view.ctp:2
+msgid "Senza oggetto"
+msgstr "No subject"
+
+#: Template/User/UserMessages/view.ctp:91
+msgid "Conversazione iniziata il {0}"
+msgstr ""
+
+#: Template/User/UserMessages/view.ctp:103
+msgid "Rispondi"
+msgstr ""
+
+#: Template/User/UserMessages/view.ctp:165;203
+msgid "Ignora"
+msgstr ""
+
+#: Template/User/UserMessages/view.ctp:210
+msgid "Sei sicuro di voler bloccare questo utente?"
+msgstr ""
+
+#: Template/User/UserMessages/view.ctp:227
+msgid "Link diretto"
+msgstr ""
+
+#: Template/User/UserMessages/view.ctp:242
+msgid "Rispondi al messaggio"
+msgstr "Reply to message"
+
+#: Template/User/UserMessages/view.ctp:247
+msgid "Digita qui la tua risposta  ..."
+msgstr ""
+
+#: Template/User/UserMessages/view.ctp:138
+msgctxt "Il tuo nick"
+msgid "(te stesso)"
+msgstr "(yourself)"
+
+#: Template/User/Users/quizzes.ctp:2
+msgid "I tuoi quiz"
+msgstr "Your quizzes"
+
+#: Template/User/Users/search.base.ctp:14
+msgid "Nessun candidato trovato con i parametri da te specificati"
+msgstr ""
+
+#: Template/User/Users/search.base.ctp:17 Template/User/Users/search.ctp:21
+msgid "Prova con una ricerca meno mirata"
+msgstr ""
+
+#: Template/User/Users/search.base.ctp:26
+msgid ""
+"Tieni in considerazione che ci sono moltissimi talenti che non hanno un "
+"titolo di studio (auto didatti)"
+msgstr ""
+
+#: Template/User/Users/search.base.ctp:61 Template/User/Users/search.ctp:73
+msgid "1 utente soddisfa la tua richiesta"
+msgid_plural "{0} utenti soddisfano la tua richiesta"
+msgstr[0] "1 user matching your request"
+msgstr[1] "{0} users matching your request"
+
+#: Template/User/Users/search.base.ctp:41
+msgctxt "frase incompleta perchè a seguito c'è il link all sezione gruppi"
+msgid ""
+"Se vuoi cercare i tuoi compagni di università, o utenti in base ai proprio "
+"hobbies ti consigliamo di cercare nei"
+msgstr ""
+
+#: Template/User/Users/search.base.ctp:93 Template/User/Users/search.ctp:113
+msgctxt "grado di conoscienza skill"
+msgid "Esperienza: {0}%"
+msgstr "Experience: {0}%"
+
+#: Template/User/Users/search.ctp:17
+msgid "Nessun utente trovato con i parametri da te specificati"
+msgstr ""
+
+#: Template/User/Users/search.ctp:29
+msgid "Ricerche in base a gruppo"
+msgstr ""
+
+#: Template/User/Users/search.ctp:41
+#, fuzzy
+msgid "Mostra gruppi di utenti"
+msgstr "Show all"
+
+#: Template/User/Users/search.ctp:152
+msgid "da"
+msgstr "from"
+
+#: Template/User/Users/search.ctp:153;164
+msgid "anni"
+msgstr "years"
+
+#: Template/User/Users/search.ctp:163
+msgid "fino a"
+msgstr "untill to"
+
+#: Template/User/Users/search.ctp:180
+msgid "Nome e cognome"
+msgstr "Fullname"
+
+#: Template/User/Users/search.ctp:189
+msgid "Età {noteStart}puoi compilare anche solo uno dei campi di età{noteEnd}"
+msgstr ""
+
+#: Template/User/Users/search.ctp:248
+msgid ""
+"Ti consigliamo di cercare termini tecnici che rispecchiano i requisiti della "
+"persona che stai cercandoes: sviluppatore web, php"
+msgstr ""
+
+#: Template/User/Users/search.ctp:33
+msgctxt "Introduzione a gruppi utenti su pagina di ricerca utenti"
+msgid ""
+"Puoi cercare gli altri utenti anche in base all'università frequentata o "
+"agli hobbies nella sezione gruppi"
+msgstr ""
+
+#: Template/User/Users/settings.ctp:155
+msgid "Cognome"
+msgstr ""
+
+#: Template/User/Users/settings.ctp:162
+msgid "Non specificato"
+msgstr ""
+
+#: Template/User/Users/settings.ctp:176
+msgid "Professione"
+msgstr ""
+
+#: Template/User/Users/settings.ctp:178
+msgid "La tua professione in breve (massimo {characters} caratteri)"
+msgstr ""
+
+#: Template/User/Users/settings.ctp:183
+msgid "{icon} Bigbrain: Materie"
+msgstr ""
+
+#: Template/User/Users/settings.ctp:186
+msgid "Le materie in cui sei specializzato"
+msgstr ""
+
+#: Template/User/Users/settings.ctp:213
+msgid "Impostazioni relative al tuo profilo lavorativo"
+msgstr ""
+
+#: Template/User/Users/settings.ctp:214
+msgid ""
+"Attraverso queste impostazioni verrai ricercato dalle aziende per offerte di "
+"lavoro"
+msgstr ""
+
+#: Template/User/Users/settings.ctp:264 Template/UserDashboards/index.ctp:186
+msgid "Lavoro"
+msgstr "Job"
+
+#: Template/UserDashboards/index.ctp:2
+msgid "Ciao {name}"
+msgstr "Hello {name}"
+
+#: Template/UserDashboards/index.ctp:6
+msgid "Pannello di controllo"
+msgstr "Control Panel"
+
+#: Template/UserDashboards/index.ctp:136
+msgid "Crea gioco"
+msgstr "Create game"
+
+#: Template/UserDashboards/index.ctp:191
+msgid "Cerca candidati"
+msgstr ""
+
+#: Template/UserDashboards/index.ctp:204
+msgid "Community"
+msgstr ""
+
+#: Template/UserDashboards/index.ctp:225
+msgid "Gruppi di utenti"
+msgstr "Users groups"
+
+#: Template/UserDashboards/index.ctp:245
+msgid "Varie"
+msgstr ""
+
+#: Template/UserDashboards/index.ctp:252
+msgid "Premi"
+msgstr "Rewards"
+
+#: Template/UserDashboards/index.ctp:270
+msgid "Annunci creati"
+msgstr ""
+
+#: Template/UserDashboards/index.ctp:298
+msgid "Tanti auguri per il tuo {count}° compleanno."
+msgstr "Happy {count}° birthday "
+
+#: Template/UserDashboards/index.ctp:301
+msgid "Lo staff di FunJob.it"
+msgstr "FunJob.it staff"
+
+#: Template/UserGroups/add.ctp:2 Template/UserGroups/index.ctp:48
+msgid "Crea gruppo"
+msgstr "Create group"
+
+#: Template/UserGroups/add.ctp:29 Template/UserGroups/edit.ctp:30
+msgid "Parole chiave (separatate da virgola)"
+msgstr "Keywords (separate with comma)"
+
+#: Template/UserGroups/add.ctp:37 Template/UserGroups/edit.ctp:25
+msgid "Breve introduzione di massimo 400 caratteri"
+msgstr ""
+
+#: Template/UserGroups/add.ctp:46;53
+msgid ""
+"Affinchè possano trovarti gli utenti tramite ricerca ti consigliamo di usare "
+"come titolo:"
+msgstr ""
+
+#: Template/UserGroups/add.ctp:48
+msgctxt "suggerimento creazione nome gruppo universitario"
+msgid "Roma 3 - ing. informatica"
+msgstr ""
+
+#: Template/UserGroups/add.ctp:55
+msgctxt "suggerimento creazione nome gruppo liceale"
+msgid "Liceo Artistico, A.G Bragaglia Frosinone"
+msgstr ""
+
+#: Template/UserGroups/edit.ctp:2
+msgid "Impostazioni gruppo: {name}"
+msgstr ""
+
+#: Template/UserGroups/edit.ctp:36
+msgid "Copertina gruppo"
+msgstr ""
+
+#: Template/UserGroups/edit.ctp:37
+msgid "Dimensione: 400x400 → 1000x1000 pixel {br} Peso massimo: 150 KB"
+msgstr ""
+
+#: Template/UserGroups/index.ctp:13
+msgid "Nessun gruppo per questa chiave di ricerca"
+msgstr ""
+
+#: Template/UserGroups/index.ctp:18
+msgid "Nessun gruppo al momento ..."
+msgstr ""
+
+#: Template/UserGroups/index.ctp:31
+msgid "Cerca per nome o per chiave di ricerca"
+msgstr ""
+
+#: Template/UserGroups/index.ctp:56
+msgid "{count} Gruppi attinenti alla tua ricerca"
+msgstr ""
+
+#: Template/UserGroups/index.ctp:60
+msgid "Ultimi gruppi creati"
+msgstr "Latests groups created"
+
+#: Template/UserGroups/index.ctp:106;128
+#: Template/Users/profile_tabs/groups.ctp:60;83
+msgid "Entra"
+msgstr "Enter"
+
+#: Template/UserGroups/index.ctp:120 Template/Users/profile_tabs/groups.ctp:75
+msgid "{0} utente"
+msgid_plural "{0} utenti"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Template/UserGroups/members.ctp:8
+msgid "Utenti inscritti"
+msgstr ""
+
+#: Template/UserGroups/members.ctp:27
+msgid "Iscritti a questo gruppo"
+msgstr "Members of this group"
+
+#: Template/UserGroups/view.ctp:61
+msgid "Impostazioni gruppo"
+msgstr "Group settings"
+
+#: Template/UserGroups/view.ctp:64
+msgid "Modifica gruppo"
+msgstr "Edit group"
+
+#: Template/UserGroups/view.ctp:81
+msgid "Puoi caricare la foto da {url}"
+msgstr ""
+
+#: Template/UserGroups/view.ctp:82
+msgid "qui"
+msgstr ""
+
+#: Template/UserGroups/view.ctp:94
+msgid "Iscritti ({counter})"
+msgstr "Members ({counter})"
+
+#: Template/UserGroups/view.ctp:115
+msgid "Tema del gruppo"
+msgstr ""
+
+#: Template/UserGroups/view.ctp:132
+msgid "{icon} Nuovo Post"
+msgstr "{icon} New Post"
+
+#: Template/UserGroups/view.ctp:133
+msgid "Pubblica nuovo post visibile a tutti i membri del gruppo"
+msgstr ""
+
+#: Template/UserGroups/view.ctp:134
+msgid "Prossimanente potrai pubblicare i tuoi messaggi"
+msgstr ""
+
+#: Template/UserGroups/view.ctp:137
+msgid "Pubblica post"
+msgstr ""
+
+#: Template/UserGroups/view.ctp:148
+msgid "Funzionalità in sviluppo"
+msgstr ""
+
+#: Template/UserGroups/view.ctp:156;163
+msgid "Funjob.it"
+msgstr ""
+
+#: Template/UserGroups/view.ctp:167
+msgid ""
+"Presto attraverso i gruppi potrai socializzare con altri utenti che hanno i "
+"tuoi stessi interessi"
+msgstr ""
+
+#: Template/UserGroups/view.ctp:36
+msgctxt "testo bottone + icona"
+msgid "{0} Entra nel gruppo"
+msgstr "{0} Join group"
+
+#: Template/UserGroups/view.ctp:44
+msgctxt "testo bottone + icona"
+msgid "{0} Esci dal gruppo"
+msgstr "{0} Leave group"
+
+#: Template/UserGroups/view.ctp:48
+msgctxt "testo bottone + icona"
+msgid "{0} Esci"
+msgstr "{0} Leave"
+
+#: Template/UserRegistrations/recovery.ctp:6
+msgid "Invia codice di ripristino"
+msgstr ""
+
+#: Template/UserRegistrations/requirements.ctp:2;5
+msgid "Account"
+msgstr ""
+
+#: Template/UserRegistrations/requirements.ctp:12
+msgid "Richiesta verifica e-mail per proseguire"
+msgstr ""
+
+#: Template/UserRegistrations/requirements.ctp:17
+msgid ""
+"Ti è stata inviata un email a {address} contenente un link per poter "
+"verificare il tuo account email"
+msgstr ""
+
+#: Template/UserRegistrations/requirements.ctp:24
+msgid "Invia nuovamente"
+msgstr ""
+
+#: Template/UserRegistrations/requirements.ctp:35
+msgid "Campi richiesti"
+msgstr "Required fields"
+
+#: Template/UserRegistrations/requirements.ctp:36
+msgid "Compila i campi sottostanti per poter procedere nella navigazione"
+msgstr "Please fill out the fields below to navigate"
+
+#: Template/UserRegistrations/requirements.ctp:49
+msgid "Sarà il tuo nome su FunJob"
+msgstr "It will be your name on FunJob"
+
+#: Template/UserRegistrations/requirements.ctp:55
+msgid "Verrà inviata un email a questo indirizzo per verificare l'account"
+msgstr ""
+
+#: Template/UserRegistrations/requirements.ctp:61
+msgid "Controlla la mail specificata, per verificare il tuo account"
+msgstr ""
+
+#: Template/UserRegistrations/requirements.ctp:70
+#: Template/Users/register.ctp:52
+msgid "Sono un privato"
+msgstr "I'm private person"
+
+#: Template/UserRegistrations/requirements.ctp:71
+#: Template/Users/register.ctp:53
+msgid "Sono un azienda"
+msgstr "I'm company"
+
+#: Template/UserRegistrations/requirements.ctp:79
+#: Template/UserRegistrations/reset.ctp:12
+msgid "Digita nuovamente la password"
+msgstr ""
+
+#: Template/UserRegistrations/reset.ctp:16
+msgid "Salva password"
+msgstr ""
+
+#: Template/Users/disable.ctp:4
+msgid "Sei sicuro di voler cancellare il tuo account?"
+msgstr ""
+
+#: Template/Users/disable.ctp:7
+msgid ""
+"L'operazione sarà irreversibile e perderai tutti i tuoi guadagni maturati "
+"con FunJob"
+msgstr ""
+
+#: Template/Users/disable.ctp:13
+msgid "Non voglio cancellare il mio account"
+msgstr ""
+
+#: Template/Users/disable.ctp:18
+msgid "Si, cancella account"
+msgstr ""
+
+#: Template/Users/login.ctp:2;7;19
+msgid "Accedi a FunJob"
+msgstr ""
+
+#: Template/Users/login.ctp:46
+msgid "Password dimenticata"
+msgstr ""
+
+#: Template/Users/login.ctp:66
+msgid "Non sei registrato?"
+msgstr ""
+
+#: Template/Users/login.ctp:71
+msgid "Registrati a FunJob per sbloccare alcune funzionalità"
+msgstr ""
+
+#: Template/Users/login.ctp:77
+msgid "Profilo personale con CV"
+msgstr ""
+
+#: Template/Users/login.ctp:81
+msgid "Punteggi sui quiz svolti"
+msgstr ""
+
+#: Template/Users/login.ctp:85
+msgid "Essere trovato da utenti e da aziende (per offerte lavorative)"
+msgstr ""
+
+#: Template/Users/login.ctp:89
+msgid "Guadagnare creando quiz o giocando quelli altrui"
+msgstr ""
+
+#: Template/Users/login.ctp:94
+msgid "Convertire i PIX guadagnati in premi"
+msgstr ""
+
+#: Template/Users/login.ctp:101
+msgid "Sfidare altri utenti e partecipare ai tornei"
+msgstr ""
+
+#: Template/Users/login.ctp:106
+msgid "E tanto altro ancora ..."
+msgstr ""
+
+#: Template/Users/login.ctp:110
+msgid "Registrati.. è gratis"
+msgstr "Register.. its free"
+
+#: Template/Users/quiz_completed.popover.ctp:15
+msgid "+{0} punti"
+msgstr ""
+
+#: Template/Users/register.ctp:2;6
+msgid "Entra in FunJob"
+msgstr ""
+
+#: Template/Users/register.ctp:31
+msgid "Sarà il tuo nickname su FunJob"
+msgstr ""
+
+#: Template/Users/register.ctp:35
+msgid "Utilizzata per il recupero password (non verrà mostrata su funjob)"
+msgstr ""
+
+#: Template/Users/register.ctp:39
+msgid "Password (minimo 5 caratteri)"
+msgstr ""
+
+#: Template/Users/register.ctp:43
+msgid "Password (digita nuovamente)"
+msgstr ""
+
+#: Template/Users/register.ctp:59
+msgid "Accetto i "
+msgstr ""
+
+#: Template/Users/register.ctp:79
+msgid ""
+"Registrandoti attraverso social network FunJob accederà al tuo nome utente "
+"ed email."
+msgstr ""
+
+#: Template/Users/register.ctp:86
+msgid ""
+"Non verranno in alcun modo salvate informazioni sensibili quali password o "
+"inviati messaggi automatizzati senza il tuo consenso."
+msgstr ""
+
+#: Template/Users/register.ctp:125
+msgid "Richiede pochi secondi"
+msgstr ""
+
+#: Template/Users/register.ctp:128
+msgid "Qualche sec"
+msgstr ""
+
+#: Template/Users/register.ctp:143
+msgid "Registrati tramite Social Network"
+msgstr ""
+
+#: Template/Users/view.ctp:3
+msgid "Profilo di @{0}"
+msgstr ""
+
+#: Template/Users/view.ctp:158
+msgid "Il tuo nome e cognome"
+msgstr ""
+
+#: Template/Users/view.ctp:284
+msgid "Invita a colloquio"
+msgstr ""
+
+#: Template/Users/view.ctp:442
+msgid "Giochi creati"
+msgstr ""
+
+#: Template/Users/view.ctp:449;450
+msgid "Giochi Condivisi"
+msgstr ""
+
+#: Template/Users/view.ctp:754
+msgid "CV con restrizioni"
+msgstr ""
+
+#: Template/Users/profile_tabs/friends.ctp:30
+msgid "Nessun amico"
+msgstr ""
+
+#: Template/Users/profile_tabs/groups.ctp:2;8
+msgid "Gruppi di cui fà parte"
+msgstr ""
+
+#: Template/Users/profile_tabs/groups.ctp:16
+msgid "Questo utente non è iscritto a nessun gruppo"
+msgstr ""
+
+#: Template/Users/profile_tabs/quiz_created.ctp:36
+msgid "Categoria"
+msgstr ""
+
+#: Template/Users/profile_tabs/quiz_created.ctp:67
+msgid "Nessun gioco creato"
+msgstr ""
+
+#: View/Helper/QuizSessionHelper.php:33
+msgid "Gioco non certificato (creato dagli utenti)"
+msgstr ""
+
+#: View/Helper/QuizSessionHelper.php:33
+msgid "Gioco certificato Funjob"
+msgstr ""
+
+#: View/Helper/QuizSessionHelper.php:52
+msgid ""
+"Require $this->QuizSession->config(\"entity\", \\App\\Model\\Entity"
+"\\QuizSession $QuizSessionEntity)"
+msgstr ""
+
+#: View/Helper/QuizSessionHelper.php:73
+msgid "{range} domande corrette"
+msgstr ""
+
+#: View/Helper/QuizSessionHelper.php:36;41
+msgctxt "titolo punteggio totale gioco"
+msgid "Appassionato"
+msgstr ""
+
+#: View/Helper/TreeHelper.php:135
+msgid "Sei sicuro?"
+msgstr ""
+
+#: View/Widget/UploadWidget.php:51
+msgid "Require entity property {0}"
+msgstr ""

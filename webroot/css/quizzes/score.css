@@ -1,0 +1,131 @@
+    .app-quiz-result {
+        margin-top:0 !important;
+        overflow:auto;
+    }
+
+    .app-quiz-result-image {
+        margin-bottom:20px;
+        overflow:hidden;
+        border:3px solid gray;
+        border-radius:4px;
+    }
+    .app-quiz-result-image img {opacity:0.86;}
+
+    .app-quiz-result-text {
+        width:100%;
+        color:white;
+            text-shadow:1px 1px 1px black;
+            background-color:whitesmoke;
+    }
+
+
+.quiz-entity-title {
+    font-size:16px;
+        line-height:16px;
+        text-align: vertical;
+
+    margin:8px;
+    text-shadow:1px 1px 1px black;
+    color:white !important;
+    text-align:center;
+}
+
+
+.quiz-result-preview-title,
+.quiz-result-preview-title-icon
+{
+    font-size:26px;
+    line-height:26px;
+}
+
+.app-quiz-result-footer {
+    overflow:hidden;
+}
+.app-quiz-result-footer .container-fluid {
+    padding-top:10px;
+    padding-bottom:10px;
+    margin:5px;
+}
+.funjob-quiz-footer-title {text-align:center;margin-bottom:4px;}
+.funjob-quiz-footer-title--share {text-align:left}
+
+.funjob-quiz-score-buttons {
+    margin:0 auto;
+}
+
+.funjob-quiz-score-separator {border-color:#00adee;border-size:3px;}
+
+.quiz-result-preview-title {text-transform:uppercase;margin-top:5px;}
+.quiz-result-preview-title--passed {color:#00adee;text-shadow:1px 1px 1px #ccc;}
+.quiz-result-preview-title--failed {color:#cc3333;text-shadow:1px 1px 1px #ccc;}
+
+.quiz-result-preview-eyelet{font-style:italic}
+
+.funjob-quiz-pix-earned{text-align:center;margin-bottom:5px;}
+.funjob-quiz-pix-earned-title {color:#ffa700;font-weight:bold}
+
+
+/** COINS **/
+.coins {}
+.coin {
+    background-color:gold;
+    border:3px solid #ffbf00;
+    padding:0;
+
+    width:32px;height:32px;
+    display:inline-block;
+    margin:2px;
+    text-align:center;
+    border-radius:50%;
+}
+.coin i {
+    color:#ffb300;
+    text-shadow:1px 1px 2px #fd0;
+    font-size:17px;
+        line-height:22px;
+    padding:0;margin:0;
+}
+
+i.fa-star, i.fa-star-o {
+    font-size:22px;
+}
+
+i.star--extra {
+    color:#ffb900;
+}
+
+.funjob-quiz-score-star-extra-help {
+    font-size:12px; /* stesso font icone stelle */
+    color:#ffb900;
+    position:relative;top:-13px;
+}
+
+/* Share buttons */
+.jscocials {
+    overflow:hidden;
+}
+.jssocials-share {
+    padding:0;
+    margin:0 5px 0px 0px !important;
+}
+.jssocials-share-link {
+    border-radius:50% !important;
+    padding:5px !important;
+}
+
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+    .coin {width:27px;height:27px;margin:0;}
+    .coin i {font-size:16px;line-height:16px;}
+
+    i.fa-star, i.fa-star-o {
+        font-size:16px;
+    }
+}

@@ -1,0 +1,24 @@
+/** ==== TAB: PROFILO ==== **/
+.flexbox-space-between {
+    display:flex;
+    justify-content:space-between;
+    flex-flow: row wrap;
+}
+
+@media (max-width: 767px) {
+    .funjob-userprofile-edit {
+        min-width:100%;
+    }
+}
+
+.funjob-userprofile-header {
+    margin-top:22px !important;
+    overflow:hidden;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .funjob-userprofile-header {
+        margin-top:5px !important;
+    }
+}

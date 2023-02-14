@@ -1,0 +1,48 @@
+
+
+/* Features: carousel.css */
+.carousel-showmanymoveone .carousel-control {width:2.5%;}
+#slider-control a {margin:0 !important}
+#slider-control a i {position: absolute;top:40%;left:0;right: 0;font-size:1.6em;}
+
+.carousel-showmanymoveone .carousel-control.left,
+.carousel-showmanymoveone .carousel-control.right
+{background-image:none;}
+
+
+/** HEADER **/
+.store-image-heading {}
+.store-image-heading-right-box {
+    position:absolute;
+        top:0;
+        right:0;
+}
+
+
+
+.store-categories-menu{padding-top:10px;}
+.store-categories-menu ul{margin:0;}
+/*
+.store-categories-menu ul .clt {font-weight:bold}
+.store-categories-menu ul .clt a {font-weight:normal;text-transform:lowercase;}
+*/
+
+.store-categories-menu>div>ul{padding-left:15px;}
+.store-categories-menu>div>ul>li {list-style-type:none;color:#666666;}
+
+
+.store-archive-product .thumbnail {
+    margin-bottom:8px;
+}
+.store-archive-product-title {}
+.store-archive-product-descr {margin-top:5px;}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+
+    #store-slideshow-products .panel-footer {display:none;}
+}

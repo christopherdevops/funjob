@@ -1,0 +1,39 @@
+.thumbnail {margin-bottom:0;}
+
+.usergroup-index-title {
+    display:block;
+
+    text-align:left;
+    margin-left:20px;
+    margin-top:5px;
+    margin-bottom:0;
+
+    overflow:hidden;
+        max-height:70px;
+}
+
+
+/** box company **/
+.usergroup-index-company-register {}
+.usergroup-index-company-registerIcon {
+    font-size:35px !important;
+    line-height:35px;
+}
+
+.usergroup-index-company-registerTitle,
+.usergroup-index-company-registerIcon
+{
+    line-height:35px;
+    vertical-align:middle;
+}
+
+.usergroup-index-company-register hr {
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .usergroup-index-title {padding-left:15px;}
+}

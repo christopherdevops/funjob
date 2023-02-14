@@ -1,0 +1,18 @@
+.store-product-buy {margin-top:5px}
+.store-product-category {margin-right:5px;font-size:10px;}
+
+.store-product-title {
+    color:#666666;
+}
+
+.store-product-buy-btn {font-size:16px !important;}
+.store-product-buy-btn i {margin-right:8px;font-size:20px !important;}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px)
+{
+    /* centra immagini al centro */
+    .store-product-pictures-picture {display:inline-block;margin:0 auto;}
+}

@@ -1,0 +1,274 @@
+.animated--infinite {
+    animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -ms-animation-iteration-count: infinite;
+}
+
+.app-nav-primary {
+    background-color:#00adee !important;
+}
+.app-menu-primary-logo-btn {
+    display:block;
+    text-align:center;
+}
+
+.app-menu-primary-logo {
+    margin:0 auto;
+    display:table-cell;
+    animation-iteration-count:5;
+    height:55px;width:auto;
+}
+
+.app-menu-primary {
+    background-color: #00adee;
+}
+    .app-menu-primary,
+    .app-menu-primary > .row,
+    .app-menu-primary > .row > div[class*="col-"] {
+        height:55px;
+    }
+
+.mail-badge {
+    color: red;
+    background-color: white;
+    position:absolute;
+
+    bottom: 15px;
+    right: 44px;
+
+    width:20px;
+    height:18px;
+    line-height:18px;
+
+    display:inline-block;
+    border-radius:50%;
+    padding:0px;
+
+    font-size:0.80em;
+    opacity:0.97;
+}
+
+#funjob-primary-menu-right-logon.btn-group .btn {
+    min-width:50px !important;
+    background-color:#c0c0c0;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    .mail-badge {
+        height:17px !important;
+        width:17px !important;
+    }
+
+    .funjob-primary-menu-right-container {
+        padding-right:22px !important;
+        padding-left:0 !important;
+    }
+
+    #funjob-primary-menu-right-logon .btn span {
+        font-size:12px;
+    }
+}
+
+.app-menu-primary-btn {
+    display:inline-block;
+    height:50px;
+    width:50px;
+
+    text-decoration:none;
+    color:white !important;
+}
+
+.app-menu-primary-btn i {font-size:32px;}
+.app-menu-primary-btn span {font-size:12px;}
+
+
+.app-menu-primary-btn--mail {
+    display:inline-block;
+    text-align:center;
+    font-size:12px;
+    color:white;
+    /*
+    animation-delay:10s !important;
+        -webkit-animation-delay:10s !important;
+        -moz-animation-delay:10s !important;
+    */
+
+    animation-timing-function: linear !important;
+        -webkit-animation-timing-function: linear !important;
+        -moz-animation-timing-function: linear !important;
+
+    animation-duration: 1s !important;
+        -webkit-animation-duration: 1s !important;
+        -moz-animation-duration: 1s !important;
+}
+
+.app-menu-primary-btn--friendsWaiting {
+    display:inline-block;
+    text-align:center;
+    font-size:12px;
+    color:white;
+    /*
+    animation-delay:10s !important;
+        -webkit-animation-delay:10s !important;
+        -moz-animation-delay:10s !important;
+    */
+
+    animation-timing-function: linear !important;
+        -webkit-animation-timing-function: linear !important;
+        -moz-animation-timing-function: linear !important;
+
+    animation-duration: 1s !important;
+        -webkit-animation-duration: 1s !important;
+        -moz-animation-duration: 1s !important;
+}
+
+.app-menu-secondary {
+    padding:0px;
+    border-bottom:2px solid #00adee !important;
+    background-color:rgba(245,245,245,0.93);
+
+    height:auto !important;
+    top:55px !important; /* overrides bootstrap (stesso height .app-menu-primary) */
+    margin:0 !important; /* overrides bootstrap */
+    min-height: 33px !important;    /* overrides bootstrap */
+}
+
+.app-menu-tab {
+    margin:0;
+    padding:0;
+
+    /* Altezza: dimensione massima per non far andare a capo la lista se ci sono troppe icone (prima che si esegua msScroller) */
+    max-height:51px;
+    overflow:hidden;
+}
+
+.app-menu-tab-list {
+    margin:0;
+    list-style-type:none;
+
+    height:inherit !important;
+
+    /** Utilizzata per eliminare spaziatura su .app-menu-tab-list-item con display:inline-block, piuttosto che float:left */
+    /*font-size:0px;*/
+
+    text-align:center;
+
+    /* Spaziatura laterale lista  */
+    padding:0 15px 0 15px;
+}
+
+.app-menu-tab-list-item {
+    display:inline-block;
+    min-width:60px; /* valore originale 70px */
+    width:auto;
+    text-align:center;
+    /*font-size:20px;*/
+
+    padding:2px 2.5px 2px 2.5px;
+}
+
+.app-menu-tab-list-item--disabled a {
+    /*
+    text-shadow:1px 1px 1px white !important;
+    opacity:0.6;
+    */
+}
+
+.app-menu-tab-list-item--header {
+    font-size:0;
+    border-bottom:0 !important;
+    min-width:25px !important;
+}
+
+.app-menu-tab-list-item--header img {
+    vertical-align:text-bottom;
+}
+
+
+.app-menu-tab-list-item  a {
+    display:block;
+}
+
+.app-menu-tab-list-item--fun a {
+    color:#00adee;
+}
+.app-menu-tab-list-item--job a {
+    color:gray;
+}
+
+.app-menu-tab-list-item a:hover {
+    color:gray;
+    text-decoration:none;
+}
+
+.app-menu-tab-list-item a > i {
+    /*font-size:14px;*/ /* valore originale 18px */
+}
+.app-menu-tab-list-item a > span {
+    /*font-size:11px;*/ /* valore originale 14px */
+
+    display:block;
+}
+
+
+
+.funjob-primary-menu-right-list {margin:0;line-height:50px}
+.funjob-primary-menu-right-list li a, .funjob-primary-menu-right-list li i {display:inline;color:white;}
+.funjob-primary-menu-right-list i {font-size:20px;}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    .funjob-primary-menu-right-list a {font-size:12px;}
+    .funjob-primary-menu-right-list i {font-size:16px;}
+
+    .funjob-primary-menu-right-list--authed i {font-size:24px;}
+}
+
+/**
+ * SCROLLER
+ */
+.mCSB_scrollTools_horizontal
+{
+    /* Rail sotto contenuto */
+    bottom:-7px !important;
+}
+
+/** AMICI **/
+.user-friends-waiting-icon{position:relative;}
+.user-friends-waiting-counter {
+    position:absolute;top:-6px;right:-7px;
+    font-size:0.70em;
+
+    z-index:999;
+    color:red;
+    padding: 2px;
+    border-radius: 50%;
+    font-size: 12px;
+    opacity: 0.8;
+
+    font-family:"Comic Sans",serif;
+    font-weight:bold;
+}
+
+/**
+ * MEDIA QUERIES
+ */
+@media only screen and (max-device-width : 640px),
+{
+    /* Nasconde scrollbar shortcut menù su mobile (richiesta di Giuseppe) */
+    .mCSB_draggerRail,
+    .mCSB_dragger_bar
+    {display:none !important;}
+}
+
+@media only screen and (max-device-width: 768px) {
+    /* Nasconde scrollbar shortcut menù su mobile (richiesta di Giuseppe) */
+    .mCSB_draggerRail,
+    .mCSB_dragger_bar
+    {display:none !important;}
+}

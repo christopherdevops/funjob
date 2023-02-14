@@ -1,0 +1,73 @@
+.funjob-quiz-author-link {overflow:hidden;}
+.funjob-quiz-reporting-btn {
+    margin-bottom:10px !important;
+}
+
+.app-quiz-sidebar .panel-sm .panel-title {padding-left:0 !important;}
+.app-quiz-sidebar .panel {margin-bottom:10px;}
+
+
+.funjob-quiz-cover-box {
+    border:3px solid transparent;
+        border-bottom:none !important;
+
+    background-position:center top;
+    background-repeat: no-repeat;
+
+    -webkit-background-size: cover;
+    background-size: cover;
+    object-fit: cover;
+
+    height:200px;
+    width:100%;
+
+    max-height:250px;
+    border-top-left-radius:5px !important;
+    border-top-right-radius:5px !important;
+
+    margin-bottom:0;
+}
+
+.funjob-quiz-cover-info {
+    border:0 !important;
+    border-top-left-radius:0 !important;
+    border-top-right-radius:0 !important;
+    color:white;
+}
+
+.funjob-quiz-href  {font-size:14px;}
+.funjob-quiz-descr
+{
+    font-size:14px;
+    margin-top:15px !important;
+}
+
+.funjob-quiz-descr {
+    border-radius:4px;
+    background-color:whitesmoke;
+    color:#333333;
+    line-height:20px;
+    padding:4px 10px;
+}
+
+
+.readmore, .readless {color:white;}
+
+
+
+.funjob-video-embed-iframe {
+    width:100%;
+    height:100%;
+}
+
+/* iframe in modale */
+.modal .funjob-video-embed-iframe {
+    width:100%;
+    height:100%;
+    min-height:300px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .jssocials-shares {text-align:center;}
+}

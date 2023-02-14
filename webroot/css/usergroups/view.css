@@ -1,0 +1,10 @@
+.usergroup-header {margin:0;}
+.usergroup-header-title {margin:0 0 10px 0 !important; font-size:25px;}
+
+#usergroup-detail-descr .panel-title {padding-left:0 !important;}
+#usergroup-detail-members li {padding:4px !important;}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+}

@@ -1,0 +1,5 @@
+.mm-listview li span i.fa,
+.mm-listview li span i[class^="fontello-"]
+{
+    color:#00adee;
+}

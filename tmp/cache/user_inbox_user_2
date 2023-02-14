@@ -1,0 +1,10 @@
+1666296534
+<a
+    class="app-menu-primary-btn--mail animated animated--infinite pulse"
+    href="/messages"
+>
+   <i class="fa fa-envelope-o visible-md visible-lg" style="font-size:24px"></i>
+   <i class="fa fa-envelope-o visible-xs visible-sm" style="font-size:22px"></i>
+   <span class="mail-badge">4</span>
+</a>
+

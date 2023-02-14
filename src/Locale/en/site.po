@@ -1,0 +1,812 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2017-07-19 10:00+0000\n"
+"PO-Revision-Date: 2017-07-19 17:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.6.4\n"
+"Language: en\n"
+
+#: Template/FunJobPages/index.ctp:84
+msgid ""
+"FUNJOB è un Social Talent Network in grado di dare valore economico "
+"all’intelligenza collettiva che redistribuisce agli Utenti oltre il 50% del "
+"guadagno generato dal proprio utilizzo."
+msgstr ""
+"FUNJOB is a Social Talent Network able to give economic value to collective "
+"intelligence redistributing the Users more than 50% of the profit rising "
+"from its use."
+
+#: Template/FunJobPages/index.ctp:89
+msgid ""
+"Un {bold_open}Gioco{bold_close} che usa la cultura e la meritocrazia per "
+"fare emergere il talento, dando alle Aziende la possibilità di contattare i "
+"migliori utenti risparmiando tempo nel recruiting e agli Utenti di trovare "
+"nuovi amici e guadagnare dalla propria cultura."
+msgstr ""
+"A {bold_open}Game{bold_close} that enhances culture and meritocracy in favor "
+"of talent, giving companies the chance to contact the best users saving time "
+"in recruiting and offering users an opportunity to find new friends and make "
+"money from their culture."
+
+#: Template/FunJobPages/index.ctp:90
+msgid ""
+"Uno strumento che al contempo è sia un gioco fruibile anonimamente che il "
+"trampolino di lancio per i talenti che potranno decidere di creare il "
+"proprio profilo culturale."
+msgstr ""
+"An instrument that at the same time is a game to be played anonimously or a "
+"springboard for talents’cultural profile."
+
+#: Template/FunJobPages/index.ctp:91
+msgid ""
+"In FUNJOB non bastano i Titoli Accademici conta solo la {bold_open}"
+"Meritocrazia{bold_close}."
+msgstr ""
+"In FUNJOB {bold_open}Meritocracy{bold_close} is of paramount importance."
+
+#: Template/FunJobPages/index.ctp:114
+msgid "UTENTI"
+msgstr "USERS"
+
+#: Template/FunJobPages/index.ctp:125
+msgid ""
+"Hai mai pensato che tutte le tue conoscenze potessero darti un guadagno "
+"economico?"
+msgstr "Have you ever thought that all your knowledge can give you a profit?"
+
+#: Template/FunJobPages/index.ctp:126
+msgid ""
+"Di metterti in mostra con Aziende e nuovi Amici per il tuo vero talento?"
+msgstr "Can make your talent visible with companies and new friends?"
+
+#: Template/FunJobPages/index.ctp:127
+msgid "D’imparare giocando?"
+msgstr "Can offer you the opportunity to learn while playing?"
+
+#: Template/FunJobPages/index.ctp:131;162;193
+msgid "Approfondisci"
+msgstr ""
+
+#: Template/FunJobPages/index.ctp:145
+msgid "AZIENDE"
+msgstr "COMPANIES"
+
+#: Template/FunJobPages/index.ctp:156
+msgid "Quante volte al CV non corrisponde la reale cultura del candidato?"
+msgstr ""
+"How many times does a CV correspond to the actual culture of an applicant?"
+
+#: Template/FunJobPages/index.ctp:157
+msgid "Quanti dei suoi aspetti non hai avuto il tempo di vagliare?"
+msgstr "How many aspects didn’t you have the time to examine?"
+
+#: Template/FunJobPages/index.ctp:158
+msgid "Prova i nostri strumenti di ricerca del personale."
+msgstr "Try our search tools for recruitment."
+
+#: Template/FunJobPages/index.ctp:176
+msgid "SPONSOR"
+msgstr "SPONSORS"
+
+#: Template/FunJobPages/index.ctp:188
+msgid ""
+"Gl’internauti ti odiano ma non in FUNJOB che gli dona oltre il 50% di ciò "
+"che spendi e che possono decidere di non vedere pubblicità."
+msgstr ""
+"Internet users may hate you but FUNJOB gives them more than 50% of what you "
+"spend and can decide not to watch commercials."
+
+#: Template/FunJobPages/index.ctp:189
+msgid "Finanzia il merito, decidi di farti amare!"
+msgstr "Support the worthy ones, decide to make you loved!"
+
+#: Template/FunJobPages/profiles/company.ctp:16
+msgid "Profilo aziendale"
+msgstr "Company profile"
+
+#: Template/FunJobPages/profiles/company.ctp:20
+#: Template/FunJobPages/profiles/sponsor.ctp:20
+#: Template/FunJobPages/profiles/user.ctp:23
+msgid "Giocare quiz"
+msgstr "Play quiz"
+
+#: Template/FunJobPages/profiles/company.ctp:24
+#: Template/FunJobPages/profiles/sponsor.ctp:24
+#: Template/FunJobPages/profiles/user.ctp:27
+msgid "Creare nuovi quiz"
+msgstr "Create new quiz"
+
+#: Template/FunJobPages/profiles/company.ctp:28
+msgid "Ricerca figure professionali"
+msgstr "Search professional roles"
+
+#: Template/FunJobPages/profiles/company.ctp:39
+msgid "“Risparmia sul recruiting e circondati di eccellenze”"
+msgstr "“Save on recruiting and work with the best”"
+
+#: Template/FunJobPages/profiles/company.ctp:45
+msgid ""
+"Per le Aziende i nostri servizi sono gratuiti e ogni Azienda potrà decidere "
+"se essere visibile o di non comparire nei risultati delle ricerche che "
+"faranno gli Utenti per proporsi."
+msgstr ""
+"Our services are free for companies and any company may decide if il wants "
+"to be visible or not in the results of the researches Users will do."
+
+#: Template/FunJobPages/profiles/company.ctp:48
+msgid ""
+"Gli strumenti che ti offriamo sono molteplici. Potrai esaminare il profilo "
+"del tuo candidato ideale (sempre che sia stato reso pubblico) conoscendo i "
+"tanti aspetti della sua formazione culturale."
+msgstr ""
+"We can offer manyfold tools. You may view your applicants’ profile you are "
+"looking for (if it is public) and know the several aspects of their cultural "
+"education."
+
+#: Template/FunJobPages/profiles/company.ctp:51
+msgid ""
+"Potrai proporre Tornei ai quali si potranno iscrivere gratuitamente gli "
+"Utenti, chiederci assistenza per stilare Giochi a Quiz per selezionare solo "
+"determinati profili da te ricercati."
+msgstr ""
+"You may propose Competitions Users can subscribe freely, ask for assistance "
+"while preparing Quiz Games in order to select specific profiles."
+
+#: Template/FunJobPages/profiles/company.ctp:54
+msgid ""
+"Attraverso la messaggistica privata potrai invitare gli utenti a fare un "
+"colloquio online o di persona, dopo aver chiesto l’autorizzazione a "
+"visionare il loro Curriculum Vitae."
+msgstr ""
+"You may invite users for a job interview in person or on line through "
+"private messages after asking permission to view their CVs."
+
+#: Template/FunJobPages/profiles/company.ctp:57
+msgid ""
+"Le classifiche per materia e la ricerca per residenza, titolo di studi etc. "
+"etc. etc. dei potenziali candidati ti aiuteranno nelle tue ricerche."
+msgstr ""
+"You can make lists of applicants per subject, address, academic "
+"qualifications etc., which can help you in your researches."
+
+#: Template/FunJobPages/profiles/company.ctp:60
+msgid ""
+"In breve: recruiting mirato e accesso alla migliori menti! Tutto "
+"gratuitamente!"
+msgstr ""
+"To sum up: you may get a proper recruiting and have access to the best "
+"minds! And everything is free!"
+
+#: Template/FunJobPages/profiles/company.ctp:70
+msgid "“Utilizza FUNJOB, ne gioverà la tua reputazione!”"
+msgstr "“Use FUNJOB and you will get a good reputation!”"
+
+#: Template/FunJobPages/profiles/company.ctp:76
+msgid ""
+"Le Aziende che utilizzeranno FUNJOB lanciano un chiaro segnale alla società "
+"sul proprio approccio meritocratico verso le assunzioni o più semplicemente "
+"ai colloqui."
+msgstr ""
+"Companies using FUNJOB show their interest for Meritocracy in recruiting "
+"staff or only in job interviews."
+
+#: Template/FunJobPages/profiles/company.ctp:79
+msgid ""
+"Indirettamente, l’utilizzo dei nostro sistema, ti gioverà in termini "
+"d’Immagine."
+msgstr "Indirectly our system will benefit your profile."
+
+#: Template/FunJobPages/profiles/company.ctp:82
+msgid ""
+"In FUNJOB non esistono raccomandazioni, qui vige una sola regola: “La "
+"meritocrazia” e un azienda che l’abbraccia non può che essere amata dai "
+"potenziali lavoratori ma anche dai potenziali clienti."
+msgstr ""
+"Meritocracy is the key word that is worthy both for potential job seekers "
+"and for customers."
+
+#: Template/FunJobPages/profiles/company.ctp:92
+msgid "“Conoscere bene i propri collaboratori per esaltarne il talento”"
+msgstr "“To know your staff well in order to enhance their talent”"
+
+#: Template/FunJobPages/profiles/company.ctp:98
+msgid "Cosa dice un Curriculum Vitae di qualcuno? Poco o nulla. Solo “Parole”."
+msgstr "CVs are not very often satisfactory."
+
+#: Template/FunJobPages/profiles/company.ctp:101
+msgid ""
+"L’attività d’impresa, qualunque essa sia, richiede fatti, conoscenze "
+"concrete e ancora vive e attuali."
+msgstr "Any business activity requires real competences and data."
+
+#: Template/FunJobPages/profiles/company.ctp:102
+msgid ""
+"FUNJOB sa bene che leggere un titolo accademico in un CV non da nessuna "
+"garanzia su ciò che realmente si ricorda di quelle materie ed i tempi "
+"stretti del recruiting non permettono di approfondire più di tanto."
+msgstr ""
+"FUNJOB knows well that qualifications in CVs don’t often correspond to the "
+"real competences of applicants and there is no time to test them deeply.At "
+"the same time not only academic studies but also experiences, practice and "
+"interests make the difference to achieve excellence among applicants."
+
+#: Template/FunJobPages/profiles/company.ctp:105
+msgid ""
+"Al contempo, una persona non è solo ciò che ha studiato: la vita, le "
+"esperienze, la pratica sul campo, le passioni, tutto questo è inesprimibile "
+"attraverso un classico Curriculum Vitae ma sono tutti elementi capaci di "
+"fare la differenza tra un buon collaboratore ed un collaboratore eccellente."
+msgstr ""
+
+#: Template/FunJobPages/profiles/company.ctp:108
+msgid ""
+"Come un’anziana nonna è spesso più brava a cucinare di uno chef stellato dal "
+"curriculum altisonante, così il mondo è pieno di talenti dalla cultura "
+"coltivata privatamente che FUNJOB fa emergere attraverso i propri Giochi a "
+"Quiz."
+msgstr ""
+"Practice makes perfect as it often happens in real life that a grandmother "
+"is a better cook than a renowned chef, in the same way the world is full of "
+"talents that FUNJOB discovers through its Quiz Games."
+
+#: Template/FunJobPages/profiles/sponsor.ctp:16
+#: Template/FunJobPages/profiles/user.ctp:19
+msgid "Profilo personale"
+msgstr "Personal profile"
+
+#: Template/FunJobPages/profiles/sponsor.ctp:28
+msgid "Creare banner pubblicitari"
+msgstr "Create new advertising"
+
+#: Template/FunJobPages/profiles/sponsor.ctp:39
+msgid "“Mai più pubblicità indesiderata”"
+msgstr "“No more unwanted advertising”"
+
+#: Template/FunJobPages/profiles/sponsor.ctp:44
+msgid ""
+"Hai mai pensato di essere amato per la pubblicità che finanzi, invece di "
+"essere percepito come un disturbo dai tuoi potenziali acquirenti?"
+msgstr ""
+"Have you ever thought you could be welcome for the advertising you pay for, "
+"instead of feeling to disturb your potential purchasers?"
+
+#: Template/FunJobPages/profiles/sponsor.ctp:47
+msgid ""
+"Sappi che oltre il 50% di ciò che versi a FUNJOB per promuovere la tua "
+"Azienda sarà ridistribuito agli Utenti che comunque potranno sempre decidere "
+"di disinserire il messaggio pubblicitario."
+msgstr ""
+"You have to know that over 50% of what you pay to FUNJOB to promote your "
+"business will be redistributed to users who anyway are free to switch off "
+"the advertising message."
+
+#: Template/FunJobPages/profiles/sponsor.ctp:50
+msgid "Conosci un'altra azienda che fa una cosa del genere?"
+msgstr "Do you know any other business that has such advantage?"
+
+#: Template/FunJobPages/profiles/sponsor.ctp:51
+msgid ""
+"Così facendo non solo ti promuoverai ma aiuterai anche gli Utenti FUNJOB a "
+"realizzarsi nella vita!\n"
+"                    Unisci questo ai nostri prezzi concorrenziali e avrai la "
+"cifra della tua convenienza a far parte di FUNJOB."
+msgstr ""
+"In such a way you can foster your business and also you will be able to help "
+"FUNJOB users to be successful in life!If you consider also our competitive "
+"prices you will definetely appreciate to join FUNJOB."
+
+#: Template/FunJobPages/profiles/sponsor.ctp:62
+msgid "“La tua pubblicità sarà Osservata, non guardata con fastidio”"
+msgstr ""
+"“Your advertising will be observed closely and not looked at with annoyance”"
+
+#: Template/FunJobPages/profiles/sponsor.ctp:67
+msgid ""
+"FUNJOB ti offre innovativi sistemi pubblicitari in grado di farti "
+"raggiungere livelli di efficacia fin qui mai raggiunti."
+msgstr ""
+"FUNJOB offers you new advertising systems making you able to gain "
+"performance levels never reached before."
+
+#: Template/FunJobPages/profiles/sponsor.ctp:70
+msgid ""
+"Oltre ai classici banner nelle pagine, ciò che ci differenzia è il sistema: "
+"“Maximum Memories”, cioè la pubblicità della tua azienda inserita tra una "
+"domanda e l’altra dei nostri Giochi a Quiz."
+msgstr ""
+"Besides the banners in the pages, what is different is the “Maximum "
+"Memories” system that is the advertising of your company inserted in between "
+"the Quiz Games."
+
+#: Template/FunJobPages/profiles/sponsor.ctp:73
+msgid ""
+"Perché è efficace? Perché viene visualizzata nel momento di maggiore "
+"attenzione dell’Utente, ovvero nel momento in cui risponde alle domande a "
+"tempo. Fidati, si ricorderà di te!"
+msgstr ""
+"Why is the system efficient? Because it is visualized at the moment of the "
+"Users’ greatest level of attention, that is when they are answering time "
+"questions. Trust me; the users will remember you!"
+
+#: Template/FunJobPages/profiles/sponsor.ctp:76
+msgid ""
+"Se pensi di poter essere troppo invasivo non avere timori perché ogni Utente "
+"all’inizio del Gioco a Quiz può disinserire i messaggi pubblicitari e se non "
+"lo farà guadagnerà ben oltre il 50% di quanto corrisponderai a FUNJOB per "
+"l’inserzione."
+msgstr ""
+"Don’t be afraid to be too intrusive because Users can switch off the "
+"advertising messages and if they don’t do it they will gain over 50% more "
+"than you give FUNJOB for the advertisement."
+
+#: Template/FunJobPages/profiles/sponsor.ctp:86
+msgid "“Non solo banner …”"
+msgstr "“Not only banners ...”"
+
+#: Template/FunJobPages/profiles/sponsor.ctp:92
+msgid ""
+"I nostri Sponsor possono partecipare attivamente alla vita della Community "
+"di FUNJOB."
+msgstr "Our Sponsors may take an active part in FUNJOB community."
+
+#: Template/FunJobPages/profiles/sponsor.ctp:95
+msgid ""
+"Possono pubblicizzarsi attraverso dei Tornei a premi, magari su tematiche "
+"riguardanti la storia della propria azienda o le caratteristiche dei propri "
+"prodotti."
+msgstr ""
+"They may adevertise the history of the company or the features of their "
+"products through prize competitions."
+
+#: Template/FunJobPages/profiles/sponsor.ctp:98
+msgid ""
+"Il tutto senza alcun banner pubblicitario perché la pubblicità è già nel "
+"testo del Gioco a Quiz che vi riguarda. Un modo divertente e particolarmente "
+"incisivo per rimanere nella memoria di chi vi leggerà e per\n"
+"                    distribuire premi agli utenti."
+msgstr ""
+"They don’t need banners because advertising is already inserted in the "
+"correspondent Quiz Game. It is an entertaining and effective tool to remind "
+"you and distribute prizes to the users."
+
+#: Template/FunJobPages/profiles/sponsor.ctp:110
+msgid "“Non sei solo uno Sponsor. Prima di tutto sei un Azienda”"
+msgstr "“You are not only a Sponsor. You are a Company first of all.\""
+
+#: Template/FunJobPages/profiles/sponsor.ctp:114
+msgid ""
+"Prima di essere uno Sponsor sei un’Azienda e quindi puoi partecipare anche "
+"sotto questo profilo alle\n"
+"                attività della comunità di FUNJOB."
+msgstr ""
+"Don’t forget you are a Company and as such you can take part in the "
+"activities of FUNJOB community."
+
+#: Template/FunJobPages/profiles/sponsor.ctp:118
+msgid ""
+"Scegliendoci hai già dimostrato di voler investire sul merito ed a favore di "
+"una filosofia di comunità che fa emergere il talento e redistribuisce i "
+"capitali percepiti agli utenti ma puoi fare di più, puoi essere un Attore "
+"principale entrando a far parte del gruppo di Aziende che abbracciano una "
+"selezione innovativa del personale."
+msgstr ""
+"When choosing us you decided to invest on merit and on a community that "
+"wants to look for talents and redistribute the capitals to the Users."
+"Moreover you may also become a main Actor in a group of Companies that "
+"prefer to select their staff through innovative tools."
+
+#: Template/FunJobPages/profiles/user.ctp:31
+msgid "CV"
+msgstr ""
+
+#: Template/FunJobPages/profiles/user.ctp:42
+msgid "“Your Mind, Your Business”"
+msgstr "“Your Mind, Your Business”"
+
+#: Template/FunJobPages/profiles/user.ctp:47
+msgid ""
+"Puoi giocare solo per divertimento e in modo anonimo e se i risultati ti "
+"soddisferanno potrai decidere di condividerli con Utenti e Aziende, "
+"mettendoti in mostra con entrambi."
+msgstr ""
+"You may play only for fun and anonymously and if the results are "
+"satisfactory to you you can decide to share them with users and companies, "
+"making yourself visible to both."
+
+#: Template/FunJobPages/profiles/user.ctp:50
+msgid ""
+"Sceglierai il tuo Gioco a Quiz in relazione ai tuoi gusti, al tuo umore o "
+"alla tua cultura. Per prepararti ad un concorso, ripassare una materia "
+"d’esame, per rivisitare i ricordi dell’ultimo libro che hai letto, per "
+"rivisitare le caratteristiche del tuo hobby, per informarti sulle news, "
+"sulla moda e quant’altro. E potrai anche tu creare Giochi a Quiz e "
+"pubblicizzarli sui Social Network guadagnando dagl’introiti generati da chi "
+"li giocherà."
+msgstr ""
+"You can choose your quiz game according to your taste, mood or your culture "
+"level. You may prepare for a public examination, revise an academic subject, "
+"recollect memories about the last book you read, review the features of your "
+"hobby, get information about news, fashion and more. Moreover you may also "
+"create Games and Quizzes and spread them on social networks, making profit "
+"from the users."
+
+#: Template/FunJobPages/profiles/user.ctp:53
+msgid ""
+"Giocando accumulerai Pix da spendere, scalerai le classifiche, creerai il "
+"tuo Profilo in base al tuo talento, sfiderai altri utenti, creerai e "
+"parteciperai ai tornei promossi da FunJob, Utenti o Aziende. Troverai nuovi "
+"amici, sarai contattato dalle Aziende e tanto altro ancora. Semplicemente: "
+"“Giocando”."
+msgstr ""
+"While playing you will collect Pixes to spend, climb the ranks, create your "
+"own talent based profile, compete with other users, create and take part in "
+"competitions fostered by FUNJOB, Users or companies.You will find new "
+"friends, will be contacted by companies and much more, ONLY PLAYING."
+
+#: Template/FunJobPages/profiles/user.ctp:63
+msgid "“La Meritocrazia prima di tutto”"
+msgstr "“Meritocracy first of all”"
+
+#: Template/FunJobPages/profiles/user.ctp:69
+msgid ""
+"Il nostro è un meccanismo semplice ma rivoluzionario. Infatti, tutto è "
+"cultura! L’ultimo romanzo che hai\n"
+"                    letto, le materie universitarie che stai studiando, le "
+"tue passioni e ogni tipo di conoscenza che possiedi è\n"
+"                    funzionale per tracciare un profilo reale di te! Per far "
+"sapere al mondo il tuo valore!"
+msgstr ""
+"Ours is a simple but revolutionary mechanism and is based on culture. The "
+"last novel you read, the academic subjects you are studying at University, "
+"your hobbies, everykind of knowledge you have is funtional to define your "
+"real profile, to make the world know your own value."
+
+#: Template/FunJobPages/profiles/user.ctp:74
+msgid ""
+"Il tuo cervello è una miniera d’informazioni che se tradurrai in “Domande” "
+"da inserire in FUNJOB e giocherai ai nostri Quiz,\n"
+"                    otterrai molti risultati: quello di guadagnare quando "
+"gli altri utenti ci giocheranno, quello di guadagnare tu\n"
+"                    stesso quando giocherai a FUNJOB, trovare Lavoro, nuovi "
+"Amici e la possibilità di costruirti un Profilo\n"
+"                    Culturale personale."
+msgstr ""
+"Your brain is full of information, source of “questions” to be inserted in "
+"FUNJOB and if you play our quiz games you will get los of advantages: make "
+"money when you are playing, find a job, find new friends, build up a "
+"cultural profile."
+
+#: Template/FunJobPages/profiles/user.ctp:80
+msgid "Tutto questo ti qualificherà. Ti renderà unico."
+msgstr "All that will qualify you and help you to be unique. "
+
+#: Template/FunJobPages/profiles/user.ctp:83
+msgid ""
+"Traccerà i lineamenti del tuo carattere e della tua personalità, cultura e "
+"talento che un semplice Curriculum non riuscirebbe mai a fare. In una "
+"parola: “Meritocrazia”."
+msgstr "Your profile will be made up on the basis of “Meritocracy”"
+
+#: Template/FunJobPages/profiles/user.ctp:94
+msgid "“Amici sì ma di Qualità!”"
+msgstr "\"Friends, why not, but quality friends!\""
+
+#: Template/FunJobPages/profiles/user.ctp:99
+msgid ""
+"FUNJOB utilizza l’intelligenza collettiva al servizio dei rapporti umani. "
+"Realizzati i tuoi quiz potrai condividerli\n"
+"                    con gli amici ed invitarli a svolgerli, guadagnando ogni "
+"qualvolta essi vi parteciperanno. Allo stesso modo\n"
+"                    potrai partecipare ai Quiz creati dai BigBrain di "
+"FUNJOB, dagl’altri utenti o dei tuoi stessi amici."
+msgstr ""
+"FUNJOB uses the collective intelligence to foster human relationships. You "
+"can share your quizzes with friends and invite them to find a solution and "
+"you can gain money while they are playing. Inthe same way you can play the "
+"Quizzes created by FUNJOB BigBrains , by other Users or by your own friends."
+
+#: Template/FunJobPages/profiles/user.ctp:104
+msgid ""
+"Così ti presenterai al mondo per ciò che sei, per quanto vali a prescindere "
+"dai titoli accademici. Le tue passioni, i tuoi hobby, tutto diventerà un "
+"elemento in grado di qualificarti agl’occhi del mondo."
+msgstr ""
+"Thus you can be visible for what you are, and not only for your academic "
+"qualifications. Your interests, hobbies etc. will qualify you all over the "
+"world.In conlusion you can start a new personal and professional life."
+
+#: Template/FunJobPages/profiles/user.ctp:107
+msgid ""
+"In questo modo potrai trovare nuovi amici in base alle passioni comuni, alle "
+"affinità culturali e chissà,\n"
+"                    magari intraprendere con essi un percorso professionale "
+"oltre che personale."
+msgstr ""
+"In this way you will find new friends based on common passions, cultural "
+"affinities and who knows, perhaps engaging with them as a professional as "
+"well as personal."
+
+#: Template/FunJobPages/profiles/user.ctp:122
+msgid "“FUNJOB inventa il concetto di: “Rendita da Conoscenza”"
+msgstr "\"FUNJOB has invented the “Income from knowledge” theory\""
+
+#: Template/FunJobPages/profiles/user.ctp:127
+msgid ""
+"Non è magia, è matematica! Perché di cultura si deve poter quantomeno "
+"sopravvivere!\n"
+"                    FUNJOB è l’unica società al mondo che ridistribuisce ai "
+"propri utenti oltre il 50% dei guadagni ricavati dal\n"
+"                    gettito pubblicitario generato dalla circolazione delle "
+"conoscenze degli utenti stessi."
+msgstr ""
+"It is not fantasy, it is mathematics! FUNJOB is the only company in the "
+"world that gives its users over 50% of the profit from commercials coming "
+"from the circulation of the users’ knowledge."
+
+#: Template/FunJobPages/profiles/user.ctp:132
+msgid ""
+"Ogni Gioco a Quiz superato da diritto all’utente di percepire in PIX, cioè "
+"la nostra moneta virtuale spendibile\n"
+"                    nel nostro Store, il <strong>35%</strong> del guadagno "
+"generato dalla visione della pubblicità inserita nel quiz stesso e che\n"
+"                    comunque sarà sempre disinseribile a scelta dell’utente."
+msgstr ""
+"After passing a quiz game you get <strong>35%</strong> in Pixes, our virtual "
+"currency, that can be spent in our Store, deriving from the commercials "
+"inserted in the quiz itself and that anyway can be switched off."
+
+#: Template/FunJobPages/profiles/user.ctp:137
+msgid ""
+"Ogni Quiz creato dall’utente farà guadagnare il <strong>15%</strong> degli "
+"introiti pubblicitari generati ogni volta che viene\n"
+"                    giocato e a prescindere che il quiz venga superato o "
+"meno dal giocatore."
+msgstr ""
+"Every quiz created by the users makes a profit of <strong>15%</strong> of "
+"the total coming from commercials everywhen it is played, independently from "
+"the user’s success or failure."
+
+#: Template/FunJobPages/profiles/user.ctp:141
+msgid ""
+"A queste opzioni vanno aggiunti i guadagni dai Tornei tematici multi "
+"giocatore dai montepremi più alti, i\n"
+"                    Quiz degli Sponsor con particolari coupon per i "
+"vincitori e quelli proposti dalle Aziende in cui il premio sarà\n"
+"                    un colloquio di lavoro."
+msgstr ""
+"Moreover must be added the profits from multi player team competitions, from "
+"higher jackpots, from Sponsors’quizzes offering special coupons for the "
+"winners, and from companies whose prize will be a job interview."
+
+#: Template/FunJobPages/profiles/user.ctp:146
+msgid ""
+"Il tutto sempre con l’opzione di disabilitare la pubblicità e di giocare in "
+"modo anonimo.\n"
+"                    Finalmente l’ultimo libro che hai letto, la tua passione "
+"per l’arte e quant’altro faccia parte delle tue\n"
+"                    conoscenze, avrà un valore monetario e per il solo fatto "
+"di conoscere qualcosa avrai una “Rendita da\n"
+"                    Conoscenza”. Non passerai più ore ed ore in Social "
+"Network senza guadagnarci nulla!"
+msgstr ""
+"You will also have the advantage of playing anonimously and skipping "
+"commercials.You only have to play, create your Quiz games, share them in the "
+"social network and challenge your friends.At last you will be rewarded from "
+"what you know. The time you spend on social networks will let you make money."
+
+#: Template/FunJobPages/profiles/user.ctp:152
+msgid ""
+"Non ti resta che giocare, creare i tuoi Giochi a Quiz, condividerli nei "
+"Social Network e sfidare gli amici!"
+msgstr ""
+"You only have to play, create your Quiz games, share them in the social "
+"network and challenge your friends."
+
+#: Template/FunJobPages/profiles/user.ctp:162
+msgid "“PIX: moneta virtuale, guadagno reale!”"
+msgstr "“Pix: virtual currency, effective profit!”"
+
+#: Template/FunJobPages/profiles/user.ctp:167
+msgid ""
+"1 PIX corrisponde ad 1 centesimo di euro e si accumula giocando all’interno "
+"di FUNJOB."
+msgstr ""
+"1 Pix is equivalent to 1 euro cent and can be gained playing inside FUNJOB."
+
+#: Template/FunJobPages/profiles/user.ctp:170
+msgid ""
+"Ogni Quiz Giocato (se non decidi di disabilitare i messaggi pubblicitari) "
+"genera un profitto che FUNJOB\n"
+"                    divide con i propri utenti. <br/>\n"
+"                    In relazione alle sfide tra utenti ed ai tornei, il "
+"guadagno in PIX sarà generato dalle quote d’iscrizione di ogni\n"
+"                    partecipante."
+msgstr ""
+"Every game played ( if you don’t disable commercials) produces a profit that "
+"FUNJOB shares with users.<br/>Competitions between users will give profits "
+"based on every participant’s enrolment fees."
+
+#: Template/FunJobPages/profiles/user.ctp:176
+msgid ""
+"Potrai spendere i tuoi PIX acquistando i prodotti all’interno del nostro "
+"STORE, potrai convertirli in Codici\n"
+"                    Sconto per acquistare ciò che desideri altrove, "
+"spenderli per fagare la quota d’iscrizione di alcuni Tornei o\n"
+"                    donarli ad iniziative benefiche."
+msgstr ""
+"You can spend your Pixes buying products in our Store, you can change them "
+"in discount vouchers to buy somewhere else and also to pay participation "
+"fees to competitions or subscriptions to charities."
+
+#: Template/FunJobPages/profiles/user.ctp:181
+msgid ""
+"Lo scopo primario di FUNJOB è quello di offrire a prezzi molto bassi, tutti "
+"quegli alimenti e oggetti facenti\n"
+"                    parte di ciò che serve per soddisfare i bisogni primari "
+"di ogni persona perché uno dei concetti alla base della\n"
+"                    nostra filosofia è quello che la conoscenza dovrebbe "
+"permettere di poter sopravvivere."
+msgstr ""
+"The main objective of FUNJOB is to offer at very low prices all the "
+"necessary elements to meet the primary needs of individuals , thus allowing "
+"their survival."
+
+#: Template/FunJobPages/profiles/user.ctp:193
+msgid "“Il Profilo FUNJOB è più affidabile del CV e le Aziende lo sanno”"
+msgstr "“The FUNJOB profile is more reliable of CVs and companies know it”"
+
+#: Template/FunJobPages/profiles/user.ctp:198
+msgid ""
+"Attesta le tue conoscenze. FUNJOB è un Social Talent Network che offre ai "
+"suoi utilizzatori la possibilità di\n"
+"                    avere un profilo personale che fotografi le sue "
+"conoscenze, le sue passioni, capacità e cultura. La\n"
+"                    Meritocrazia abita qui rivoluzionando il sistema di "
+"recruiting per le Aziende che attraverso FUNJOB possono\n"
+"                    cercare il loro candidato ideale potendo contare su dati "
+"veri, attuali e certificati da speciali servizi come il\n"
+"                    “MiCam”, cioè l’opzione di salvare l’audio e il video di "
+"se stesso mentre si svolge il proprio quiz così da\n"
+"                    offrire un’assoluta garanzia delle proprie conoscenze "
+"alle Aziende che diversamente dovrebbero spendere\n"
+"                    mesi del proprio tempo per approfondimenti culturali di "
+"quel genere!"
+msgstr ""
+"It certifies your knowledge. FUNJOB is a Social Talent Network that offers "
+"its users the chance tohave a full personal profile of yur knowledge, "
+"interests, hobbies, competences, skills and culture.It changes the system of "
+"recruiting on the basis of Meritocracy, so companies may search anemployee "
+"through real, genuine, updated data and certified by special services "
+"like“MiCam” which gives the opportunity to save audio and video recordings "
+"of your performancewhile doing the test. Doing so the companies know your "
+"competences in a short time and withoutspending much money."
+
+#: Template/FunJobPages/profiles/user.ctp:207
+msgid ""
+"Chi ci assicura che un laureato in Giurisprudenza conosca il Diritto della "
+"Navigazione o ricordi ancora le\n"
+"                    materie studiate? O che un laureato in lettere ricordi "
+"ancora la parafrasi della Divina Commedia? Chi l’ha\n"
+"                    detto che una donna matura non conosca le ricette di "
+"cucina meglio di molti chef stellati? Gli esempi\n"
+"                    sarebbero infiniti come infinite sono le conoscenze di "
+"ogni essere umano."
+msgstr ""
+"Who assures us that a law graduate knows the Right of Navigation or still "
+"remembers the subjects studied? Or that a graduate in letters still remember "
+"the paraphrase of the Divine Comedy? Who told her that a mature woman does "
+"not know cooking recipes better than many star-studded chefs? The examples "
+"are infinite as infinite are the knowledge of every human being."
+
+#: Template/FunJobPages/profiles/user.ctp:213
+msgid ""
+"FUNJOB, Quiz dopo Quiz, tassello dopo tassello, traccia i lineamenti della "
+"personalità di un potenziale\n"
+"                    candidato, di un nuovo amico, di un potenziale socio e "
+"quant’altro."
+msgstr ""
+"FUNJOB is a way to find out new talents, new friends, prospective members "
+"and applicant gradually, step by step, quiz after quiz."
+
+#: Template/FunJobPages/profiles/user.ctp:217
+msgid ""
+"Sei pronto ad essere trovato dal lavoro? Bene, allora inizia a divertirti "
+"giocando!"
+msgstr "Are you ready to be discovered ? So start playing and enjoy!"
+
+#: Template/FunJobPages/profiles/user.ctp:231
+msgid "“Fatti trovare! In te c’è più Conoscenza e Talento di quanto credi!”"
+msgstr ""
+"“Make sure you can be found! You have more competences and talent than you "
+"know!”"
+
+#: Template/FunJobPages/profiles/user.ctp:237
+msgid ""
+"Le Aziende e anche gli Sponsor, potranno visionare le Classifiche per "
+"Materia dei nostri giocatori, trovare\n"
+"                    nuovi talenti e inviare loro una “richiesta di "
+"contatto”. L’utente, se sarà interessato, potrà permettere\n"
+"                    all’Azienda di visionare il proprio Curriculum Vitae e "
+"mostrare la propria fotografia culturale a 360°.\n"
+"                    Le Aziende potranno scegliere di non essere visibili per "
+"poter scegliere in tranquillità a quali utenti proporre\n"
+"                    di svolgere i Quiz da esse create nella forma dei Tornei "
+"o dei Quiz Individuali o invitarlo direttamente ad un\n"
+"                    colloquio anche via Skype, invitarlo ad un colloquio di "
+"persona o via Skype, proporgli di partecipare a Tornei\n"
+"                    a numero chiuso redatti solo per esso."
+msgstr ""
+"Companies and Sponsors may have access to our players’ ranking positions per "
+"subject, find new talents and send them a “contact request”.If the users are "
+"interested may allow the company to view their CVs and show their full "
+"profile. The Companies may decide not to be visible and choose freely if the "
+"users were to be administered individual quizzes or contests or interviews "
+"in person or by Skype."
+
+#: Template/FunJobPages/profiles/user.ctp:246
+msgid ""
+"La garanzia dei Quiz FUNJOB (Certificati dai nostri BigBrain a differenza di "
+"quelli degli utenti) e le\n"
+"\n"
+"                    registrazioni opzionali “MiCam” fatte dall’utente che ha "
+"deciso di autocertificarsi completeranno il quadro\n"
+"\n"
+"                    di garanzie sul vostro talento.\n"
+"\n"
+"                    In FUNJOB puoi giocare in modo anonimo e senza impegno "
+"ma se scegli di mettere in evidenza il tuo\n"
+"\n"
+"                    talento lo farai seriamente!"
+msgstr ""
+"The warranty of FUNJOB quizzes (BigBrains certificates) and the “MiCam” "
+"recordings in case ofautocertifications are the final steps in the field of "
+"warranties,In FUNJOB you may play anonymously and without any commitment or "
+"if you choose to showyour talent you will take it seriously!"
+
+#: Template/FunJobPages/profiles/user.ctp:265
+msgid ""
+"“Se conosci bene un argomento sei già un <span class=\"text-transform:none !"
+"important\">BigBrain</span>”"
+msgstr "“If you know a topic well you are already a BigBrain”"
+
+#: Template/FunJobPages/profiles/user.ctp:270
+msgid ""
+"Per diventare un BigBrain dovrai essere un utente registrato e certificato "
+"da FUNJOB, dimostrare di\n"
+"                    conoscere bene la materia o l’argomento che ti sarà "
+"assegnato e dovrai redigere i Nostri giochi a Quiz."
+msgstr ""
+"In order to become a BigBrain you must be a user registered and certified by "
+"FUNJOB, show that you know the subject or topic given to you and make Quiz "
+"Games."
+
+#: Template/FunJobPages/profiles/user.ctp:274
+msgid ""
+"Come per tutti gli altri utenti guadagnerai per ciò che produrrai ma a "
+"differenza degli altri utenti avrai una\n"
+"                    corsia preferenziale nei confronti delle Aziende."
+msgstr ""
+"As it happens for the other users you will make profits in relation to what "
+"you produce but differently from the others you will get a “fast track” to "
+"the companies."
+
+#: Template/FunJobPages/profiles/user.ctp:278
+msgid ""
+"Un BigBrain rappresenta una persona che in una determinata materia o "
+"argomento è un eccellenza.\n"
+"                    Per diventarlo inviaci una richiesta attraverso il "
+"“Modulo Contatti”."
+msgstr ""
+"As it happens for the other users you will make profits in relation to what "
+"you produce but differently from the others you will get a “fast track” to "
+"the companies. A BigBrain is a person that is excellent in a subject or "
+"topic."

@@ -1,0 +1,2 @@
+1666297725
+a:5:{i:0;a:4:{s:2:"id";i:1;s:4:"name";s:12:"Univerisità";s:9:"parent_id";N;s:7:"_locale";s:2:"it";}i:1;a:4:{s:2:"id";i:872;s:4:"name";s:6:"Laurea";s:9:"parent_id";i:1;s:7:"_locale";s:2:"it";}i:2;a:4:{s:2:"id";i:873;s:4:"name";s:12:"Architettura";s:9:"parent_id";i:872;s:7:"_locale";s:2:"it";}i:3;a:4:{s:2:"id";i:874;s:4:"name";s:12:"Architettura";s:9:"parent_id";i:873;s:7:"_locale";s:2:"it";}i:4;a:4:{s:2:"id";i:883;s:4:"name";s:10:"Matematica";s:9:"parent_id";i:874;s:7:"_locale";s:2:"it";}}

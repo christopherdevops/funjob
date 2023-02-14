@@ -1,0 +1,34 @@
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 1500px) {
+
+    .text-lg-xxx, .font-size-lg--xxx {font-size:30px !important;}
+    .text-lg-xx, .font-size-lg--xx {font-size:28px !important;}
+    .text-lg-x, .font-size-lg--x {font-size:24px !important;}
+
+    .text-lg, .font-size-lg {font-size:18px !important;}
+    .text-md, .font-size-md {font-size:13px !important;}
+    .text-md2, .font-size-md2 {font-size:14px !important;}
+    .text-md2, .font-size-md3 {font-size:15px !important;}
+
+    .text-sm, .font-size-sm {font-size:10px !important;}
+    .text-xs, .font-size-xs {font-size:9px !important;}
+
+    .text-xs-x, .font-size-xs--x {font-size:14px !important;}
+    .text-xs-xx, .font-size-xs--xx {font-size:12px !important;}
+    .text-xs-xxx, .font-size-xs--xxx {font-size:10px !important;}
+
+    .app-menu-secondary {
+        min-height:33px !important;
+    }
+
+    .app-menu-tab-list-item {
+        min-width:50px; /* valore originale 70px */
+    }
+
+    .app-menu-tab-list-item a > i {
+        font-size:16px !important;
+    }
+    .app-menu-tab-list-item a > span {
+        font-size:10px !important;
+    }
+}

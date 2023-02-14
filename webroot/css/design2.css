@@ -1,0 +1,486 @@
+@font-face {
+    font-family: 'Alba';
+    src: url('/font/alba.woff2') format('woff2'),
+         url('/font/alba.woff') format('woff'),
+         url('/font/alba.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.text-logo {
+    font-family: "Alba", serif;
+    letter-spacing:3px;
+}
+
+.font-family--alba {
+    font-family: "Alba", serif;
+}
+
+.funjob-pseudo-logo {
+    vertical-align: middle;
+    margin:4px;
+}
+
+body {background-color:transparent;}
+
+*, *.active {outline:none !important;}
+a {text-decoration:none !important;outline:none !important;}
+
+div.required > label::after,
+div.required + input::after,
+div.required + textarea::after
+{
+    content:' *';
+    color:orange;
+    font-size:12px;
+}
+
+
+/** ==== UTILITIES ===== */
+.no-padding {padding:0 !important;}
+.no-margin {margin:0 !important;}
+
+.flex-align-center {display: flex;align-items: center;height: 100%;}
+.flex-align-center--inline {display:inline-flex;}
+
+.text-justify{text-align:justify!important}
+.text-nowrap{white-space:nowrap!important}
+.text-truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+.text-left, .text-align-left {text-align:left !important}
+.text-right, .text-align-right {text-align:right !important}
+.text-center, .text-align-center {text-align:center !important}
+.text-justify, .text-align-justify {text-align:justify !important}
+
+.text-bold {font-weight:bold !important;}
+
+.text-xl, .font-size-xl {font-size:30px;}
+.text-lg-xxx, .font-size-lg--xxx {font-size:26px;}
+.text-lg-xx, .font-size-lg--xx {font-size:24px;}
+.text-lg-x, .font-size-lg--x {font-size:22px;}
+
+.text-lg, .font-size-lg {font-size:20px;}
+.text-md, .font-size-md {font-size:16px;}
+.text-sm, .font-size-sm {font-size:14px;}
+.text-xs, .font-size-xs {font-size:12px;}
+
+.text-xs-x, .font-size-xs--x {font-size:10px;}
+.text-xs-xx, .font-size-xs--xx {font-size:8px;}
+.text-xs-xxx, .font-size-xs--xxx {font-size:6px;}
+
+.display-block, .block {display:block;}
+.display-inline-block, .inline-block {display:inline-block;}
+
+.text-color-1, .text-color-primary {color:#00adee;}
+.text-color-2, .text-color-secondary, .text-color-whitesmoke {color:whitesmoke;}
+.text-color-3, .text-color-gray--light {color:#d2c7c7;}
+
+.text-color-gray {color:#d2c7c7;}
+.text-color-gray--dark {color:#666666;}
+.text-color-gray--light {color:#d2c7c7;}
+
+
+.text-color-gray {color:rgb(120, 120, 120);}
+.row-height-100 {
+    height:100%;
+}
+
+.margin-top--big {margin-top:100px}
+.margin-top--medium {margin-top:50px}
+.margin-top--short {margin-top:20px}
+
+/** TWITTER BOOTSTRAP: CONDITIONAL BTN **/
+@media (max-width: 767px) {
+    .btn-xs-block {
+        display: block !important;
+        width: 100%;
+    }
+    input[type="submit"].btn-xs-block,
+    input[type="reset"].btn-xs-block,
+    input[type="button"].btn-xs-block {
+        width: 100%;
+    }
+    .btn-block + .btn-xs-block,
+    .btn-xs-block + .btn-block,
+    .btn-xs-block + .btn-xs-block {
+        margin-top: 0.5rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .btn-sm-block {
+        display: block !important;
+        width: 100%;
+    }
+    input[type="submit"].btn-sm-block,
+    input[type="reset"].btn-sm-block,
+    input[type="button"].btn-sm-block {
+        width: 100%;
+    }
+    .btn-block + .btn-sm-block,
+    .btn-sm-block + .btn-block,
+    .btn-sm-block + .btn-sm-block {
+        margin-top: 0.5rem;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .btn-md-block {
+        display: block !important;
+        width: 100%;
+    }
+    input[type="submit"].btn-md-block,
+    input[type="reset"].btn-md-block,
+    input[type="button"].btn-md-block {
+        width: 100%;
+    }
+    .btn-block + .btn-md-block,
+    .btn-md-block + .btn-block,
+    .btn-md-block + .btn-md-block {
+        margin-top: 0.5rem;
+    }
+}
+@media (min-width: 1200px) {
+    .btn-lg-block {
+        display: block !important;
+        width: 100%;
+    }
+    input[type="submit"].btn-lg-block,
+    input[type="reset"].btn-lg-block,
+    input[type="button"].btn-lg-block {
+        width: 100%;
+    }
+    .btn-block + .btn-lg-block,
+    .btn-lg-block + .btn-block,
+    .btn-lg-block + .btn-lg-block {
+        margin-top: 0.5rem;
+    }
+}
+
+.tab-pane {margin-top:20px; }
+
+/* UiHelper::helpPopover **/
+.ui-question-popover {
+}
+.ui-question-popover i {
+    padding-left:2px;
+}
+
+
+/** FUNJOB BOOTSTRAP  **/
+/* Twitter bootstrap: remove "/" */
+.breadcrumb>li+li:before {
+    content: "" !important;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px)
+{
+    .btn { /* spaziatura verticale bottoni, uno sotto l'altro */
+        margin-top:3px !important;
+    }
+}
+.btn-gray {
+    color: #fff;
+        background-color: #cccccc;
+        border-color: #999;
+}
+.btn-gray:hover {
+    color:white !important;
+    background-color: #999;
+    border-color: #999;
+}
+
+.btn-funjob {
+   color: #fff;
+       background-color: #00adee;
+       border-color: #69c;
+}
+.btn-funjob:hover {
+    color:white !important;
+    background-color: #0099ff;
+}
+.btn-funjob.active {
+    background-color: rgba(0, 153, 255, 0.58) !important;
+    color:white !important;
+}
+
+.btn-funjob-gray {
+    color: #333;
+    border-color: #ccc;
+    background-color:#e9e7e7;
+}
+
+
+/** FUNJOB MODAL **/
+.funjob-modal.modal {top:30px;}
+.funjob-modal.modal .modal-header {
+    background-color:#00adee !important;
+    color:white !important;
+    text-align:center;
+    padding:10px;
+}
+.funjob-modal.modal .modal-content {border:5px solid #CECECE !important;}
+.funjob-modal.modal .bootbox-close-button {color:gray;opacity:1;font-size:22px;}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    .funjob-modal.modal {top:54px;}
+}
+
+
+/** bootstrap col: equal height (@see https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all-the-same-height); */
+.row.row-eq-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.row-eq-height > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+* And with max cross-browser enabled.
+* Nobody should ever write this by hand.
+* Use a preprocesser with autoprefixing.
+*/
+.row.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row.row-eq-height > [class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+/** ==== MARGIN ====== */
+.margin-top--lg {margin-top:15px !important;}
+.margin-top--md {margin-top:10px !important;}
+.margin-top--sm {margin-top:5px !important;}
+.margin-top--xs {margin-top:5px !important;}
+
+.margin--lg {margin:15px !important;}
+.margin--md {margin:10px !important;}
+.margin--sm {margin:5px !important;}
+.margin--xs {margin:5px !important;}
+
+
+/** ==== NAVIGATION ==== */
+.navbar-default {
+    background-color:#00adee;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color:white;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color:transparent;
+    color:white;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color:whitesmoke;
+}
+
+.navbar-brand {
+    padding:3px 5px;
+    height:inherit !important;
+}
+.navbar-brand-logo {
+    height:50px;
+}
+
+.navbar {
+    border-radius:0;
+}
+
+
+.btn-info {
+    background-color:#00adee !important;
+}
+
+/** === MENU ICON ==== */
+.app-menu {
+    padding:0;
+    overflow-x:auto;
+    height:100%;
+
+    width:inherit; /* Stessa larghezza colonna bootstrap */
+    width:auto !important;
+    position:fixed;top:0;
+
+    background-color: #e4e5e6;
+
+    border-top:3px solid #00adee;
+    border-right:3px solid #00adee;
+
+    min-height:110%;
+
+    margin-bottom:20px;
+    margin-top:90px;
+}
+
+.app-menu-list {
+    padding-top:5px;
+    list-style-type:none;
+    border-bottom:rgba(255,255,255,0.4);
+}
+
+.app-menu-list-item-badge--mailbox {
+    display: inline-block !important;
+    position: relative;
+    left: -15px;
+    top: -10px;
+    background-color: rgba(255,255,255,0.6);
+    z-index: 9999;
+    color: black;
+}
+
+
+
+/* BOOTSTRAP THEME OVERRIDES */
+.breadcrumb span{color:#666666;}
+
+/* difetto con header, i campi di input vanno sopra l'header */
+.input-group .form-control {z-index:inherit !important;}
+
+.popover-content {
+    color:#00adee !important;
+}
+.page-header {
+    margin-top:10px !important;
+}
+
+.btn-primary {
+    background-color:#00adee;
+}
+.btn-primary:active {
+    background-color:#00adee;
+}
+
+.btn-info,
+.panel-info .panel-heading
+{
+    background-color:#00adee !important;
+    color:white !important;
+    border-color:#00adee;
+}
+
+.panel-info .panel-body
+{
+    background-color:whitesmoke;
+}
+
+.panel-adv .panel-heading {
+    background-color:#00adee;
+}
+
+.panel-funjob-gray .panel-body{background-color:whitesmoke;}
+.panel-funjob-gray .panel-heading {background-color:gray;color:white !important;}
+
+
+.panel-sm .panel-heading,
+.panel-sm .panel-body,
+.alert-sm
+{
+    padding:5px !important;
+}
+
+.panel-sm .panel-title {
+    padding-left:8px;
+}
+
+.list-group.list-group-sm .list-group-item {
+    padding:8px;
+}
+
+/** BOOTSTRAP: WELL  */
+.well-default {}
+
+.well-info {
+    background-color:#00adee !important;
+    color:white !important;
+}
+.well-success {
+    color: #3c763d !important;
+    background-color: #dff0d8 !important;
+    border-color: #d6e9c6 !important;
+}
+
+.well-warning {
+    color: #8a6d3b !important;
+    background-color: #fcf8e3 !important;
+    border-color: #faebcc !important;
+}
+
+.well-danger {
+    color: #a94442 !important;
+    background-color: #f2dede !important;
+    border-color: #ebccd1 !important;
+}
+
+.well-help {
+    background-color: #78ceee !important;
+    border-color: #62c5ea !important;
+    color:white;
+}
+
+#app-page {margin-bottom:10px;}
+#app-sidebar--side {}
+#app-sidebar--aside {
+    margin-top:20px;
+}
+
+#app-footer {z-index: 888;position: relative;}
+
+/* JSTree overrides */
+a.jstree-disabled {color:rgba(0,0,0,0.59) !important;cursor: default !important;}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px)
+{
+    #app-footer-info,
+    #app-footer-links
+    {
+        text-align:center; /* icone social al centro */
+    }
+}
+
+
+
+/** jQueryUI **/
+div.blockMsg {
+    position:fixed !important;
+        top:    10% !important;
+        left:   30% !important;
+
+    width:  40%;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid #c0c0c0;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    -moz-opacity:.70;
+    opacity:.70;
+    padding: 15px;
+    color: #fff;
+}
