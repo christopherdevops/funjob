@@ -7,7 +7,7 @@ use AppRestrictAccess\Form\AuthorizationForm;
 class AuthorizationsController extends BaseController
 {
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
         $this->Auth->allow(['authorize']);
