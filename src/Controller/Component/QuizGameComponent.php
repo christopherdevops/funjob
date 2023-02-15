@@ -97,9 +97,9 @@ class QuizGameComponent extends Component
         // $this->_config['quiz_id'] è nullo
         if (
             empty($this->_config['quiz_id']) &&
-            !empty($this->Controller->request->params['id'])
+            !empty($this->Controller->request->getParam('id'))
         ) {
-            $this->_config['quiz_id'] = (int) $this->Controller->request->params['id'];
+            $this->_config['quiz_id'] = (int) $this->Controller->request->getParam('id');
         }
 
         $keyPath = sprintf('Quiz.%d', $this->_config['quiz_id']);
@@ -172,7 +172,7 @@ class QuizGameComponent extends Component
         }
 
         if (!$session->read($this->getSessionPath('level'))) {
-            $session->write($this->getSessionPath('level'), $this->Controller->request->params['level']);
+            $session->write($this->getSessionPath('level'), $this->Controller->request->getParam('level'));
         }
 
         $this->_quiz = $session->read($this->getSessionPath('quiz'));
@@ -296,7 +296,7 @@ class QuizGameComponent extends Component
         $q->limit(10);
 
         // Implementare difficoltà domande in base al livello richiesto
-        $level = $this->Controller->request->params['level'];
+        $level = $this->Controller->request->getParam('level');
 
         // NOTE:
         // Attacca alla query dei filtri
@@ -499,10 +499,10 @@ class QuizGameComponent extends Component
         $this->Controller->request->getSession()->write($sessionKey . '.reply_after_secs', $secs);
 
         $params = [
-            'id'    => $this->request->params['id'],
-            'title' => $this->request->params['title'],
-            'step'  => $this->request->params['step'],
-            'level' => $this->request->params['level']
+            'id'    => $this->request->getParam('id'),
+            'title' => $this->request->getParam('title'),
+            'step'  => $this->request->getParam('step'),
+            'level' => $this->request->getParam('level')
         ];
 
         //\Cake\Log\Log::debug(sprintf('Risposta n° %d fornita ... completato? %s', $this->getStep(), $this->isCompleted()));
@@ -518,7 +518,7 @@ class QuizGameComponent extends Component
             return $this->response;
         } else {
             $this->response->body(json_encode([
-                'redirect' => Router::url(['action' => 'save', $this->request->params['id']], true),
+                'redirect' => Router::url(['action' => 'save', $this->request->getParam('id')], true),
                 'status'   => 'next'
             ]));
         }

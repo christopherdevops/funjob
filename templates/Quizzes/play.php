@@ -196,7 +196,7 @@
             var publicMethods = {
                 countdown: <?= (int) \Cake\Core\Configure::readOrFail('app.quizAnswer.advCountdown') ?>,
                 <?php
-                    $useAdv = $this->request->getSession()->read(sprintf('Quiz.%d._adv', $this->request->params['pass'][0]));
+                    $useAdv = $this->request->getSession()->read(sprintf('Quiz.%d._adv', $this->request->getParam('pass')[0]));
                     $useAdv = filter_var($useAdv, FILTER_VALIDATE_BOOLEAN);
                 ?>
                 useAdv: <?= json_encode($useAdv) ?>,

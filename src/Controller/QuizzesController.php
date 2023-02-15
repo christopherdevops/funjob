@@ -38,7 +38,7 @@ class QuizzesController extends AppController
         }
 
         if (in_array($this->request->action, ['view', 'play'])) {
-            $Quiz = $this->Quizzes->get($this->request->params['pass'][0]);
+            $Quiz = $this->Quizzes->get($this->request->getParam('pass')[0]);
 
             if (empty($Quiz)) {
                 throw new \Cake\Network\Exception\NotFoundException(__('Quiz non trovato'));

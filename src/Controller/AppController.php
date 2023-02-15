@@ -97,8 +97,8 @@ class AppController extends Controller
 
                 default:
                     if (
-                        $this->request->params['controller'] == 'Quizzes' &&
-                        $this->request->params['action'] == 'play'
+                        $this->request->getParam('controller') == 'Quizzes' &&
+                        $this->request->getParam('action') == 'play'
                     ) {
                         $layout = 'frontend-fullscreen';
                     } else {
@@ -181,7 +181,7 @@ class AppController extends Controller
     public function isAuthorized($user = null)
     {
         // Any registered user can access public functions
-        if (empty($this->request->params['prefix'])) {
+        if (empty($this->request->getParam('prefix'))) {
             return true;
         }
 
@@ -193,10 +193,10 @@ class AppController extends Controller
 
         // Prefixes liberi    : user, company, sponsor
         // Prefixes riservati : admin
-        if (in_array($this->request->params['prefix'], ['user', 'company', 'sponsor'])) {
+        if (in_array($this->request->getParam('prefix'), ['user', 'company', 'sponsor'])) {
             return true;
         } else {
-            return $this->request->params['prefix'] == $user['type'];
+            return $this->request->getParam('prefix') == $user['type'];
         }
 
         return false;

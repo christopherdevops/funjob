@@ -115,7 +115,7 @@ class QuizSessionComponent extends Component
         }
 
         // Aggiunge livello su $session
-        //$session['level'] = $this->Controller->request->params['level'];
+        //$session['level'] = $this->Controller->request->getParam('level');
 
         $score = $this->calcScore($session);
         $session['points'] = $score['score'];
