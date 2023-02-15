@@ -30,7 +30,7 @@ class QuizScoreComponent extends Component
         parent::initialize($config);
 
         $this->Controller = $this->_registry->getController();
-        $this->Session    = $this->Controller->request->session();
+        $this->Session    = $this->Controller->request->getSession();
     }
 
 

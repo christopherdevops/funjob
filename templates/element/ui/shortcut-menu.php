@@ -29,7 +29,7 @@
             <li style="padding-top:5px" class="app-menu-list-item">
                 <a href="#">
                     <img style="margin:0 auto" class="img-responsive img-circle" src="//gravatar.com/avatar/abe2d7626ec0125f99fd5eb3e7a05dff?s=40" alt="">
-                    <span><?php echo $this->request->session()->read('Auth.User.firstname') ?></span>
+                    <span><?php echo $this->request->getSession()->read('Auth.User.firstname') ?></span>
                 </a>
             </li>
             <li class="app-menu-list-item">

@@ -149,7 +149,7 @@ class StoresController extends AppController
         $requireFieldsList = [];
         $User              = null;
 
-        if ($this->request->session()->check('Auth.User')) {
+        if ($this->request->getSession()->check('Auth.User')) {
             $User = $this->Users->get($this->Auth->user('id'));
             if (in_array($User->type, ['admin', 'user'])) {
                 $UserFields = TableRegistry::get('UserFields');

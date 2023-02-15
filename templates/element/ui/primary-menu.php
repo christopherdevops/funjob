@@ -4,7 +4,7 @@
     $this->Html->script(['/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js'], ['block' => 'js_foot']);
     $this->Html->css(['/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css'], ['block' => 'css_foot']);
 
-    $is_authed = $this->request->session()->check('Auth.User');
+    $is_authed = $this->request->getSession()->check('Auth.User');
 ?>
 
 <?php // NON UTILIZZATO ?>
@@ -58,28 +58,28 @@
                     <div data-class="pull-right flex-align-center" style="height:100%">
                         <div class="funjob-primary-menu-right-container container-fluid">
 
-                            <ul class="funjob-primary-menu-right-list <?= $this->request->session()->check('Auth.User.id') ? 'funjob-primary-menu-right-list--authed' : '' ?> list-inline pull-right">
+                            <ul class="funjob-primary-menu-right-list <?= $this->request->getSession()->check('Auth.User.id') ? 'funjob-primary-menu-right-list--authed' : '' ?> list-inline pull-right">
 
                                 <li style="padding-left:0 !important">
                                     <a id="lang-selector" href="#">
                                         <div class="visible-xs-inline">
                                             <i class="fa fa-globe"></i>
                                             <span class="font-size-xs">
-                                                <?php echo $this->request->session()->read('Config.language') ?>
+                                                <?php echo $this->request->getSession()->read('Config.language') ?>
                                             </span>
                                         </div>
                                         <div class="visible-sm-inline visible-md-inline visible-lg-inline">
                                             <i class="fa fa-globe"></i>
-                                            <?php echo $this->request->session()->read('Config.language') ?>
+                                            <?php echo $this->request->getSession()->read('Config.language') ?>
                                         </div>
                                     </a>
                                 </li>
 
 
-                                <?php if ($this->request->session()->check('Auth.User')) : ?>
+                                <?php if ($this->request->getSession()->check('Auth.User')) : ?>
                                 <li>
                                     <?php
-                                        $uid = $this->request->session()->read('Auth.User.id');
+                                        $uid = $this->request->getSession()->read('Auth.User.id');
                                         echo $this->cell('Inbox::unreadCount',
                                             ['user_id' => $uid],
                                             ['cache' => ['config' => 'user_inbox', 'key' => 'user_' . $uid]]
@@ -125,7 +125,7 @@
     <div class="row no-padding" style="">
 
         <div class="col-md-12 no-padding">
-            <?php $md5 = md5($this->request->session()->read('Auth.User.email')); ?>
+            <?php $md5 = md5($this->request->getSession()->read('Auth.User.email')); ?>
 
             <div class="app-menu-tab app-menu-tab--scroller">
                 <ul class="app-menu-tab-list">
@@ -136,7 +136,7 @@
                     </li>
                     <?php endif ?>
 
-                    <?php if ($this->request->session()->check('Auth.User')) : ?>
+                    <?php if ($this->request->getSession()->check('Auth.User')) : ?>
                     <li class="app-menu-tab-list-item app-menu-tab-list-item--fun">
                         <a href="<?= $this->Url->build(['_name' => 'me:dashboard']) ?>">
                             <i class="font-size-md fa fa-universal-access"></i>
@@ -184,7 +184,7 @@
 
                     <li class="app-menu-tab-list-item app-menu-tab-list-item--fun">
                         <?php
-                            $uid = $this->request->session()->read('Auth.User.id');
+                            $uid = $this->request->getSession()->read('Auth.User.id');
                             echo $this->cell(
                                 'UserFriendsRequests::display',
                                 ['user_id' => $uid],
@@ -214,7 +214,7 @@
                         </a>
                     </li>
 
-                    <?php if ($this->request->session()->check('Auth.User')) : ?>
+                    <?php if ($this->request->getSession()->check('Auth.User')) : ?>
                     <li class="app-menu-tab-list-item app-menu-tab-list-item--job">
                         <a href="<?= $this->Url->build(['_name' => 'me:quizzes:completed']) ?>">
                             <i class="font-size-md fa fa-check-square-o"></i>

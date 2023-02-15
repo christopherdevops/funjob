@@ -261,7 +261,7 @@
                 </div>
             </div>
 
-            <?php if ($this->request->session()->check('Auth.User')) : ?>
+            <?php if ($this->request->getSession()->check('Auth.User')) : ?>
             <div class="hidden-xs">
                 <button data-modal-message="#modal-quiz-reporting" class="js-open-modal btn-danger btn-block btn btn-sm funjob-quiz-reporting-btn">
                     <i class="fa fa-exclamation-triangle"></i>
@@ -271,8 +271,8 @@
             <?php endif ?>
 
             <?php if (
-                $this->request->session()->read('Auth.User.id') == $quiz->user_id ||
-                $this->request->session()->read('Auth.User.type') == 'admin'
+                $this->request->getSession()->read('Auth.User.id') == $quiz->user_id ||
+                $this->request->getSession()->read('Auth.User.type') == 'admin'
             ) : ?>
             <div class="hidden-xs">
                 <a class="btn btn-block btn-default" href="<?= $this->Url->build(['controller' => 'Quizzes', 'action' => 'edit', $quiz->id]) ?>">
@@ -346,7 +346,7 @@
                         <?php echo __('Condividi') ?>
                     </button>
 
-                    <?php if ($this->request->session()->check('Auth.User')) : ?>
+                    <?php if ($this->request->getSession()->check('Auth.User')) : ?>
                     <div class="pull-right">
                         <button data-modal-message="#modal-quiz-reporting" class="js-open-modal btn btn-default btn-xs">
                             <i class="text-danger fa fa-exclamation-triangle"></i>

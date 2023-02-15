@@ -34,8 +34,8 @@ class QuizCategoriesJsTreeCell extends Cell
         }
         $selector = $baseSelector;
 
-        if ($this->request->session()->check('Config.language')) {
-            $lang = $this->request->session()->read('Config.language');
+        if ($this->request->getSession()->check('Config.language')) {
+            $lang = $this->request->getSession()->read('Config.language');
         } else {
             $lang = Configure::read('app.defaultLanguage');
         }

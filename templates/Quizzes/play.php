@@ -30,7 +30,7 @@
 
             <?php $suggestionSessionPath = sprintf('Quiz.%d.suggestions', $this->request->getParam('id')) ?>
 
-            <?php if ($this->request->session()->read($suggestionSessionPath . '.perc25')) : ?>
+            <?php if ($this->request->getSession()->read($suggestionSessionPath . '.perc25')) : ?>
             <button type="button" id="suggestion-filter--1" class="btn2 btn-gradient rounded bronze mini width-fixed">
                 <i class="fa fa-star-o"></i>
                 <span class="font-size-md">
@@ -39,7 +39,7 @@
             </button>
             <?php endif ?>
 
-            <?php if ($this->request->session()->read($suggestionSessionPath . '.perc50')) : ?>
+            <?php if ($this->request->getSession()->read($suggestionSessionPath . '.perc50')) : ?>
             <button type="button" id="suggestion-filter--2" class="btn2 btn-gradient rounded silver mini width-fixed">
                 <i class="fa fa-star-half-o"></i>
                 <span class="font-size-md">
@@ -48,7 +48,7 @@
             </button>
             <?php endif ?>
 
-            <?php if ($this->request->session()->read($suggestionSessionPath . '.skip')) : ?>
+            <?php if ($this->request->getSession()->read($suggestionSessionPath . '.skip')) : ?>
             <button type="button" id="suggestion-correct" class="btn2 btn-gradient rounded yellow mini width-fixed">
                 <i class="fa fa-star "></i>
                 <span class="font-size-md">
@@ -140,8 +140,8 @@
                                         echo $this->Element(
                                             'ui/countdown-dates--line',
                                             [
-                                                'from' => $this->request->session()->read(sprintf('%s.replies.%d.started_at', $gameSessionPath, $step), true),
-                                                'to'   => $this->request->session()->read(sprintf('%s.replies.%d.expire_at', $gameSessionPath, $step), true),
+                                                'from' => $this->request->getSession()->read(sprintf('%s.replies.%d.started_at', $gameSessionPath, $step), true),
+                                                'to'   => $this->request->getSession()->read(sprintf('%s.replies.%d.expire_at', $gameSessionPath, $step), true),
                                                 'secs' => \Cake\Core\Configure::read('app.quizAnswer.timeout')
                                             ]
                                         )
@@ -196,7 +196,7 @@
             var publicMethods = {
                 countdown: <?= (int) \Cake\Core\Configure::readOrFail('app.quizAnswer.advCountdown') ?>,
                 <?php
-                    $useAdv = $this->request->session()->read(sprintf('Quiz.%d._adv', $this->request->params['pass'][0]));
+                    $useAdv = $this->request->getSession()->read(sprintf('Quiz.%d._adv', $this->request->params['pass'][0]));
                     $useAdv = filter_var($useAdv, FILTER_VALIDATE_BOOLEAN);
                 ?>
                 useAdv: <?= json_encode($useAdv) ?>,
@@ -632,5 +632,5 @@
     // Cosi da inibire il refresh della pagina qualora l'utente volesse
     // premesse "Aggiorna" o "ctrl+f4".
     // Questo per evitare problematiche relative al timer quiz
-    $this->request->session()->write(sprintf('%s.replies.%d.already_rendered', $gameSessionPath, $step), true);
+    $this->request->getSession()->write(sprintf('%s.replies.%d.already_rendered', $gameSessionPath, $step), true);
 ?>

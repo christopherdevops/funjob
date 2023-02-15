@@ -110,7 +110,7 @@
 
 <?php foreach ($userMessage->replies as $message) : ?>
 <?php
-    $is_mine = $message->sender_id == $this->request->session()->read('Auth.User.id');
+    $is_mine = $message->sender_id == $this->request->getSession()->read('Auth.User.id');
 ?>
 
     <div class="app-inbox-reply app-inbox-reply--<?= $is_mine ? 'me' : 'user' ?> app-inbox-reply-<?= $userMessage->uuid ?>--<?= $message->id ?>">
@@ -204,7 +204,7 @@
                                         ['controller' => 'UserIgnoreLists', 'action' => 'add'],
                                         [
                                             'data' => [
-                                                'recipient_user_id' => $this->request->session()->read('Auth.User.id'),
+                                                'recipient_user_id' => $this->request->getSession()->read('Auth.User.id'),
                                                 'ignore_user_id'    => $message->reply_sender->id
                                             ],
                                             'confirm' => __('Sei sicuro di voler bloccare questo utente?')

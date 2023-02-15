@@ -115,11 +115,11 @@ class AppController extends Controller
         // Default language
         $lang = Configure::readOrFail('app.defaultLanguage');
 
-        if ($this->request->session()->check('Auth.User.lang')) {
-            $lang = $this->request->session()->read('Auth.User.lang');
+        if ($this->request->getSession()->check('Auth.User.lang')) {
+            $lang = $this->request->getSession()->read('Auth.User.lang');
         } else {
-            if ($this->request->session()->check('Config.language')) {
-                $lang = $this->request->session()->read('Config.language');
+            if ($this->request->getSession()->check('Config.language')) {
+                $lang = $this->request->getSession()->read('Config.language');
             }
         }
 
@@ -128,7 +128,7 @@ class AppController extends Controller
             $lang = $this->request->getQuery('lang');
         }
 
-        $this->request->session()->write('Config.language', $lang);
+        $this->request->getSession()->write('Config.language', $lang);
         I18n::locale($lang);
 
         // Entity che contiene l'utente loggato

@@ -24,12 +24,12 @@ class UserProfileHelper extends Helper
      * @return bool
      */
     public function isMyProfile() {
-        if (!$this->request->session()->check('Auth.User')) {
+        if (!$this->request->getSession()->check('Auth.User')) {
             return false;
         }
 
         // Usando $this->request->params['id'] non funziona in /me
-        return $this->request->session()->read('Auth.User.id') == $this->_View->viewVars['User']->id;
+        return $this->request->getSession()->read('Auth.User.id') == $this->_View->viewVars['User']->id;
     }
 
 }

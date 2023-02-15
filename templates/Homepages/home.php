@@ -340,7 +340,7 @@
                         <hr>
                         <div class="row">
                             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                <?php if ($this->request->session()->check('Auth.User')) : ?>
+                                <?php if ($this->request->getSession()->check('Auth.User')) : ?>
                                     <a href="<?= $this->Url->build(['_name' => 'quiz:index']) ?>" class="btn btn-xs btn-info btn-block">
                                         <i class="fontello-quiz-play text-color-whitesmoke"></i>
                                         <?= __('Gioca') ?>

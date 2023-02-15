@@ -11,7 +11,7 @@
 
 <script type="text/template" id="funjob-pix-tutorial-template">
 
-    <?php if ($this->request->session()->check('Auth.User')) : ?>
+    <?php if ($this->request->getSession()->check('Auth.User')) : ?>
     <br><br>
     <div class="alert alert-sm alert-warning" style="box-shadow:2px 2px 2px 2px whitesmoke">
         <p class="text-bold text-center">

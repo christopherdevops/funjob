@@ -45,7 +45,7 @@
 <nav id="menu">
     <ul role="mmenu-list">
 
-        <?php if ($this->request->session()->check('Auth.User')) : ?>
+        <?php if ($this->request->getSession()->check('Auth.User')) : ?>
         <li>
             <span>
                 <?= $this->User->avatar($UserAuth->avatarSrcMobile, ['height' => 12, 'width' => 12]) ?>
@@ -62,7 +62,7 @@
                         <?= __('Opzioni account') ?></a>
                     </li>
                 <li>
-                    <a href="<?php echo $this->Url->build(['_name' => 'user:profile', 'id' => $this->request->session()->read('Auth.User.id'), 'username' => $this->request->session()->read('Auth.User.username')]) ?>">
+                    <a href="<?php echo $this->Url->build(['_name' => 'user:profile', 'id' => $this->request->getSession()->read('Auth.User.id'), 'username' => $this->request->getSession()->read('Auth.User.username')]) ?>">
                         <?= __('Profilo pubblico') ?>
                     </a>
                 </li>
@@ -273,7 +273,7 @@
                     </a>
                 </li>
 
-                <?php if ($this->request->session()->check('Auth.User')) : ?>
+                <?php if ($this->request->getSession()->check('Auth.User')) : ?>
                 <li>
                     <a href="<?= $this->Url->build(['_name' => 'me:quizzes']) ?>">
                         <?= __('I miei quiz') ?>
@@ -316,7 +316,7 @@
                     </a>
                 </li>
 
-                <?php if ($this->request->session()->check('Auth.User')) : ?>
+                <?php if ($this->request->getSession()->check('Auth.User')) : ?>
                 <li>
                     <a href="<?= $this->Url->build(['_name' => 'mygroups:archive:created']) ?>">
                         <?= __('Gruppi che hai creato') ?>
@@ -365,7 +365,7 @@
             </a>
         </li>
 
-        <?php if ($this->request->session()->read('Auth.User.type') == 'admin'): ?>
+        <?php if ($this->request->getSession()->read('Auth.User.type') == 'admin'): ?>
         <li>
             <span> <i class="fa fa-cogs" aria-hidden="true"></i> <?= __('Amministratore') ?></span>
             <ul>

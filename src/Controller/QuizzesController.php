@@ -313,8 +313,8 @@ class QuizzesController extends AppController
                 $sessionPath = sprintf('Quiz.%d', $this->request->data('quiz_id'));
 
                 // Reset Sessione di gicoo
-                if ($this->request->session()->check($sessionPath)) {
-                    $this->request->session()->delete($sessionPath);
+                if ($this->request->getSession()->check($sessionPath)) {
+                    $this->request->getSession()->delete($sessionPath);
                 }
 
                 $useAdv = (bool) $this->request->getData('_adv', true);
@@ -323,7 +323,7 @@ class QuizzesController extends AppController
                     $this->Flash->info(__('Spiacenti, per i tuoi quiz la funzionalità di guadagno PIX tramite pubblicità è disabilitata'));
                 }
 
-                $this->request->session()->write($sessionPath. '._adv', $useAdv);
+                $this->request->getSession()->write($sessionPath. '._adv', $useAdv);
 
                 $route = [
                     '_name' => 'quiz:play',
@@ -380,7 +380,7 @@ class QuizzesController extends AppController
         $gameSessionPath = $this->QuizGame->getSessionPath();
 
         // Verifica sessione quiz
-        if (!$this->request->session()->check($gameSessionPath)) {
+        if (!$this->request->getSession()->check($gameSessionPath)) {
             $this->Flash->error(__('Sessione di quiz scaduta (non esistente)'));
             $this->QuizGame->restart();
             return $this->redirect($quiz->url);
@@ -388,7 +388,7 @@ class QuizzesController extends AppController
 
         if ($this->QuizGame->isRefreshed()) {
             $this->Flash->error(__('Sessione di quiz scaduta (refresh)'));
-            $this->request->session()->delete($gameSessionPath);
+            $this->request->getSession()->delete($gameSessionPath);
             return $this->redirect(['_name' => 'quiz:view', 'id' => $quiz_id, 'title' => $this->_quiz->slug]);
         }
 
@@ -439,7 +439,7 @@ class QuizzesController extends AppController
         $sessionPath = $this->QuizGame->getSessionPath();
 
         // Verifica sessione quiz e validità expire
-        if (!$this->request->session()->check($sessionPath) || $this->QuizGame->isExpired()) {
+        if (!$this->request->getSession()->check($sessionPath) || $this->QuizGame->isExpired()) {
             $this->QuizGame->restart();
             $this->response->body(json_encode([
                 'status'  => 'failure',
@@ -474,23 +474,23 @@ class QuizzesController extends AppController
             ]);
         }
 
-        $data     = $this->request->session()->read($this->QuizGame->getSessionPath());
+        $data     = $this->request->getSession()->read($this->QuizGame->getSessionPath());
         $qsession = $this->QuizSession->store($data);
 
         $Hashids         = new \Hashids\Hashids('funjob_hashids_salt__923848237yc7a873124', 10);
         $qsessioncrypted = $Hashids->encode($qsession['qsessid'], $qsession['level']);
 
         $params = [
-            'id'    => (int) $this->request->session()->read($this->QuizGame->getSessionPath('quiz.id')),
-            'title' => Text::slug( $this->request->session()->read($this->QuizGame->getSessionPath('quiz.title')), '-'),
-            // 'level' => $this->request->session()->read($this->QuizGame->getSessionPath('level'))
+            'id'    => (int) $this->request->getSession()->read($this->QuizGame->getSessionPath('quiz.id')),
+            'title' => Text::slug( $this->request->getSession()->read($this->QuizGame->getSessionPath('quiz.title')), '-'),
+            // 'level' => $this->request->getSession()->read($this->QuizGame->getSessionPath('level'))
         ];
 
         $url = array_merge(['_name' => 'quiz:score', '?' => ['qsessid' => $qsessioncrypted]], $params);
 
         // FUTURE: In futuro cancellare sessione e far leggere i dati dal database (score)
         // Elimina sessione di gioco
-        //$this->request->session()->delete($quizSessionPath);
+        //$this->request->getSession()->delete($quizSessionPath);
 
         return $this->redirect(Router::url($url, true));
     }

@@ -364,7 +364,7 @@
         <div class="list-group-item">
             <?php
                 echo $this->Form->create($isFriend, ['url' => ['prefix' => 'user', 'controller' => 'UserFriends', 'action' => 'add']]);
-                echo $this->Form->control('user_id', ['value' => $this->request->session()->read('Auth.User.id'), 'type' => 'hidden']);
+                echo $this->Form->control('user_id', ['value' => $this->request->getSession()->read('Auth.User.id'), 'type' => 'hidden']);
                 echo $this->Form->control('friend_id', ['value' => $User->id, 'type' => 'hidden']);
                 echo $this->Form->button(
                     __('{icon} {textStart}Invia amicizia{textEnd}', [

@@ -63,8 +63,8 @@ class StoreProductCategoriesCell extends Cell
     protected function __getCategories()
     {
         $lang = Configure::read('app.defaultLanguage');
-        if ($this->request->session()->check('Config.language')) {
-            $lang = $this->request->session()->read('Config.language');
+        if ($this->request->getSession()->check('Config.language')) {
+            $lang = $this->request->getSession()->read('Config.language');
         }
 
         $tree = Cache::remember('store_categories_tree__' . $lang, function() {

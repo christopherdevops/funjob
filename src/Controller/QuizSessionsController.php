@@ -62,12 +62,12 @@ class QuizSessionsController extends AppController
         if ($this->request->is('post')) {
             $sessionPath = sprintf('Quiz.%d', $this->request->data['quiz_id']);
 
-            if (!$this->request->session()->check($sessionPath)) {
+            if (!$this->request->getSession()->check($sessionPath)) {
                 throw new \BadRequestException();
             }
 
             $quiz        = $this->QuizSessions->Quizzes->get($this->request->data('quiz_id'));
-            $replies     = $this->request->session()->read($sessionPath);
+            $replies     = $this->request->getSession()->read($sessionPath);
             $corrects    = array_filter($replies, function($isCorrect) { return $isCorrect === true; });
             $score       = sizeof($corrects);
 

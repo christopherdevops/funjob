@@ -27,7 +27,7 @@ class UserFriendsRequestsCell extends Cell
     {
         $counter = null;
 
-        //if ($this->request->session()->check('Auth.User')) {
+        //if ($this->request->getSession()->check('Auth.User')) {
         if ($user_id) {
             $UserFriends = TableRegistry::get('UserFriends');
             $q = $UserFriends->find(); // ('waitingPending');

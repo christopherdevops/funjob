@@ -210,25 +210,25 @@ class SponsorAdvsController extends AppController
         }
 
         $quizSessionPath = sprintf('Quiz.%d', $this->request->getData('quiz_id'));
-        if (!$this->request->session()->check($quizSessionPath)) {
+        if (!$this->request->getSession()->check($quizSessionPath)) {
             throw new ForbiddenException();
         }
 
-        if ($this->request->session()->read($quizSessionPath. '._adv') === false) {
+        if ($this->request->getSession()->read($quizSessionPath. '._adv') === false) {
             return null;
         }
 
-        if (!$this->request->session()->check($quizSessionPath . '._advViewed')) {
-            $this->request->session()->write($quizSessionPath . '._advViewed', 0);
+        if (!$this->request->getSession()->check($quizSessionPath . '._advViewed')) {
+            $this->request->getSession()->write($quizSessionPath . '._advViewed', 0);
         }
 
-        $count = $this->request->session()->read($quizSessionPath . '._advViewed');
+        $count = $this->request->getSession()->read($quizSessionPath . '._advViewed');
         $count++;
 
         if ($count > 10) {
             throw new ForbiddenException('Quiz adv counter > 10');
         }
 
-        $this->request->session()->write($quizSessionPath . '._advViewed', $count);
+        $this->request->getSession()->write($quizSessionPath . '._advViewed', $count);
     }
 }

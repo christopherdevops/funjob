@@ -44,8 +44,8 @@ class AccountRequiredFieldsMiddleware
         $url = $request->getUri()->getPath();
 
         if (
-            !$request->session()->check('Auth.User') ||
-             $request->session()->read('Auth._skipAccountRequirementsSkip')
+            !$request->getSession()->check('Auth.User') ||
+             $request->getSession()->read('Auth._skipAccountRequirementsSkip')
         ) {
             return $next($request, $response);
         }
@@ -72,7 +72,7 @@ class AccountRequiredFieldsMiddleware
         }
 
         $Users      = TableRegistry::get('Users');
-        $User       = $Users->get($request->session()->read('Auth.User.id'));
+        $User       = $Users->get($request->getSession()->read('Auth.User.id'));
         $User       = $Users->patchEntity($User, $User->toArray(), ['validate' => $this->__options['validator']]);
         $needFields = empty($User->getErrors());
 
@@ -80,8 +80,8 @@ class AccountRequiredFieldsMiddleware
             $response->location(Router::url($this->__options['location']));
         } else {
 
-            if (!$request->session()->check('Auth._skipAccountRequirementsSkip')) {
-                $request->session()->write('Auth._skipAccountRequirementsSkip', true);
+            if (!$request->getSession()->check('Auth._skipAccountRequirementsSkip')) {
+                $request->getSession()->write('Auth._skipAccountRequirementsSkip', true);
             }
 
             // Non richiede campi obbligatori e sta accedendo alla pagina per impostarli

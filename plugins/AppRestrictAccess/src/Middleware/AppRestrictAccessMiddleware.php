@@ -37,7 +37,7 @@ class AppRestrictAccessMiddleware
             return $next($request, $response);
         }
 
-        if ($request->session()->check('AccessRestriction.authorized')) {
+        if ($request->getSession()->check('AccessRestriction.authorized')) {
             return $next($request, $response);
         }
 

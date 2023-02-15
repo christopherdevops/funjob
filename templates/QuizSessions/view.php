@@ -167,7 +167,7 @@
 
                     <?php if ($level->isNew()) : ?>
 
-                        <?php if ($this->request->session()->read('Auth.User.id') == $quizSession->user_id) : ?>
+                        <?php if ($this->request->getSession()->read('Auth.User.id') == $quizSession->user_id) : ?>
                             <p class="font-size-lg text-center text-muted">
                                 <?php echo __('Non hai ancora sbloccato questo livello') ?>
                             </p>
@@ -215,7 +215,7 @@
 
                             </div>
 
-                            <?php if ($this->request->session()->read('Auth.User.id') == $quizSession->user_id) : ?>
+                            <?php if ($this->request->getSession()->read('Auth.User.id') == $quizSession->user_id) : ?>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                     <a class="btn btn-block btn-info" href="<?= $this->Url->build($quizSession->quiz->url) ?>">

@@ -46,7 +46,7 @@
         <div class="panel-body">
             <?php echo $this->fetch('content') ?>
 
-            <?php if ($this->request->session()->read('Auth.User.id') == $User->id) : ?>
+            <?php if ($this->request->getSession()->read('Auth.User.id') == $User->id) : ?>
                 <?= $this->fetch('tab:edit') ?>
             <?php endif ?>
         </div>

@@ -219,7 +219,7 @@
                             echo $this->Form->control('quiz_id', ['type' => 'hidden', 'value' => $quiz->id]);
                             echo $this->Form->control('user_id', [
                                 'type'  => 'hidden',
-                                'value' => $this->request->session()->read('Auth.User.id')
+                                'value' => $this->request->getSession()->read('Auth.User.id')
                             ]);
                             echo $this->Form->control('question_id', ['type' => 'hidden', 'value' => $Question->id]);
                             echo $this->Form->control('reason', [
@@ -247,7 +247,7 @@
         <?php if (true && $is_passed) : ?>
             <?php
                 // // PIX gudagnati
-                // if ($this->request->session()->read($quizSessionPath . '._adv') == true) {
+                // if ($this->request->getSession()->read($quizSessionPath . '._adv') == true) {
                 //     echo $this->fetch('pix:earned');
                 // }
             ?>
@@ -396,7 +396,7 @@
 
         echo $this->Form->create($QuizUserRankings, ['id' => 'quiz-ranking-form', 'url' => $url]);
         echo $this->Form->control('id', ['type' => 'hidden']);
-        echo $this->Form->control('user_id', ['type' => 'hidden', 'value' => $this->request->session()->read('Auth.User.id')]);
+        echo $this->Form->control('user_id', ['type' => 'hidden', 'value' => $this->request->getSession()->read('Auth.User.id')]);
         echo $this->Form->control('quiz_id', ['type' => 'hidden', 'value' => $quiz->id]);
         echo $this->Form->control('rank', [
             'label'   => false,

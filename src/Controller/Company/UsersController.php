@@ -94,7 +94,7 @@ class UsersController extends AppController
 
                     if (!empty($result['session'])) {
                         foreach ($result['session'] as $key => $value) {
-                            $this->request->session()->write($key, $value);
+                            $this->request->getSession()->write($key, $value);
                         }
                     }
                 }

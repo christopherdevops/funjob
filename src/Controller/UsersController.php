@@ -457,10 +457,10 @@ class UsersController extends AppController
         $lang = $this->request->getData('language');
 
         if (!empty($lang)) {
-            $this->request->session()->write('Config.language', $lang);
+            $this->request->getSession()->write('Config.language', $lang);
 
-            if ($this->request->session()->check('Auth.User')) {
-                $this->request->session()->write('Auth.User.lang', $lang);
+            if ($this->request->getSession()->check('Auth.User')) {
+                $this->request->getSession()->write('Auth.User.lang', $lang);
 
                 $this->loadModel('Users');
                 $User    = $this->Users->get((int) $this->Auth->user('id'));

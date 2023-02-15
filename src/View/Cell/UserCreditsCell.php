@@ -26,7 +26,7 @@ class UserCreditsCell extends Cell
     public function display()
     {
         $credits = null;
-        $user_id = $this->request->session()->read('Auth.User.id');
+        $user_id = $this->request->getSession()->read('Auth.User.id');
 
         if ($user_id) {
             $this->loadModel('UserCredits');

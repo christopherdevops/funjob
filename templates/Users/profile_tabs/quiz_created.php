@@ -9,7 +9,7 @@
     $this->Html->script(['/bower_components/select2/dist/js/select2.min.js'], ['block' => 'js_foot', 'once' => true]);
     $this->Html->css(['/bower_components/select2/dist/css/select2.min.css', 'features/select2-bootstrap.min.css'], ['block' => 'css_foot', 'once' => true]);
 
-    $myself = $this->request->session()->read('Auth.User.id') == $this->request->getParam('pass.0');
+    $myself = $this->request->getSession()->read('Auth.User.id') == $this->request->getParam('pass.0');
 ?>
 
 <?php $this->start('search') ?>

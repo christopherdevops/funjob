@@ -70,7 +70,7 @@
     ]);
 
     echo $this->Form->hidden('user_id', [
-        'value' => $this->request->session()->read('Auth.User.id')
+        'value' => $this->request->getSession()->read('Auth.User.id')
     ]);
 
     echo $this->Form->button(__('Crea'), ['class' => 'btn btn-block btn-success']);

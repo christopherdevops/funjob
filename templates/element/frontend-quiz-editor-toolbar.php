@@ -34,7 +34,7 @@
 <hr>
 
 <div class="row">
-    <?php $cols = $this->request->session()->read('Auth.User.type') == 'admin' ? 6 : 12; ?>
+    <?php $cols = $this->request->getSession()->read('Auth.User.type') == 'admin' ? 6 : 12; ?>
     <div class="col-xs-<?= $cols ?> col-sm-<?= $cols ?> col-md-<?= $cols ?> col-lg-<?= $cols ?>">
         <?php if ($quiz->type == 'default') : ?>
             <?php
@@ -65,7 +65,7 @@
         <?php endif ?>
     </div>
 
-    <?php if ($this->request->session()->read('Auth.User.type') == 'admin') : ?>
+    <?php if ($this->request->getSession()->read('Auth.User.type') == 'admin') : ?>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
         <div class="well">
             <h3 class="text-center text-muted">

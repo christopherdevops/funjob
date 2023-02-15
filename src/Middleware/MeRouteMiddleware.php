@@ -14,7 +14,7 @@ class MeRouteMiddleware
 
         // Richiede Auth
         if (strpos($routePrefix, '/me') === 0) {
-            if (!$request->session()->check('Auth.User.id')) {
+            if (!$request->getSession()->check('Auth.User.id')) {
                 return new RedirectResponse(
                     Router::url(['_name' => 'auth:login'])
                 );
@@ -23,8 +23,8 @@ class MeRouteMiddleware
 
         // Redirect /me (profilo) a /user/profile/n--username
         if ($routePrefix == '/me') {
-            $id       = $request->session()->read('Auth.User.id');
-            $username = Text::slug($request->session()->read('Auth.User.username'), '-');
+            $id       = $request->getSession()->read('Auth.User.id');
+            $username = Text::slug($request->getSession()->read('Auth.User.username'), '-');
 
             return new RedirectResponse(
                 Router::url(['_name' => 'user:profile', 'id' => $id, 'username' => $username])

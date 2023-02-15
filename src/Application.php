@@ -82,11 +82,11 @@ class Application extends BaseApplication
      */
     static public function isDeveloper($request)
     {
-        if (!$request->session()->check('Auth.User.id')) {
+        if (!$request->getSession()->check('Auth.User.id')) {
             return false;
         }
 
-        $ids = $request->session()->read('Auth.User.id');
+        $ids = $request->getSession()->read('Auth.User.id');
         return in_array($ids, [1,2,3,4,5,7,8]);
     }
 

@@ -53,7 +53,7 @@
         ?>
 
         <?php
-            $user_id = (int) $this->request->session()->read('Auth.User.id');
+            $user_id = (int) $this->request->getSession()->read('Auth.User.id');
             $admins  = new \Cake\Collection\Collection($userGroup->administrators);
             $isAdministator = $admins->firstMatch(['user_id' => $user_id]);
         ?>

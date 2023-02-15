@@ -55,7 +55,7 @@ class MaintenanceMiddleware
     }
 
     public function isAuthorized($request) {
-        return $request->session()->check( $this->__authSessionPath . '.User.type') == 'admin';
+        return $request->getSession()->check( $this->__authSessionPath . '.User.type') == 'admin';
     }
 
 }

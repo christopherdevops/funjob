@@ -28,7 +28,7 @@
         ?>
 
 
-        <?php if ($this->request->session()->read('Auth.User.is_bigbrain')) : ?>
+        <?php if ($this->request->getSession()->read('Auth.User.is_bigbrain')) : ?>
         <div class="alert alert-sm alert-warning">
             <div class="text-center">
 
@@ -59,8 +59,8 @@
         echo $this->Form->hidden('uuid', ['value' => Text::uuid() ]);
 
         if (
-            $this->request->session()->read('Auth.User.type') == 'admin' ||
-            $this->request->session()->read('Auth.User.is_bigbrain')
+            $this->request->getSession()->read('Auth.User.type') == 'admin' ||
+            $this->request->getSession()->read('Auth.User.is_bigbrain')
         ) {
             echo $this->Form->control('type', [
                 'label'   => __('Tipologia gioco'),

@@ -26,13 +26,13 @@
         echo $this->Form->control('fullname', [
             'label'   => __('Nome Cognome'),
             'default' => (
-                $this->request->session()->read('Auth.User.first_name') . ' ' .
-                $this->request->session()->read('Auth.User.last_name')
+                $this->request->getSession()->read('Auth.User.first_name') . ' ' .
+                $this->request->getSession()->read('Auth.User.last_name')
             )
         ]);
         echo $this->Form->control('email', [
             'label'   => __('Dove contattarti'),
-            'default' => $this->request->session()->read('Auth.User.email')
+            'default' => $this->request->getSession()->read('Auth.User.email')
         ]);
 
         echo $this->Form->control('descr', [
@@ -45,8 +45,8 @@
 
         echo $this->Form->hidden('ip', ['value' => $this->request->clientIp()]);
 
-        echo $this->Form->hidden('user_id', ['value' => $this->request->session()->read('Auth.User.id')]);
-        echo $this->Form->hidden('user_name', ['value' => $this->request->session()->read('Auth.User.username')]);
+        echo $this->Form->hidden('user_id', ['value' => $this->request->getSession()->read('Auth.User.id')]);
+        echo $this->Form->hidden('user_name', ['value' => $this->request->getSession()->read('Auth.User.username')]);
 
         echo $this->Form->submit(
             '<i class="fa fa-enveloper text-color-primary"></i>' . __('Invia'),

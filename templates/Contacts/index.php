@@ -19,7 +19,7 @@
 
 <?php
     echo $this->Form->create($Form, ['valueSources' => ['query', 'context']]);
-    echo $this->Form->hidden('user_id', ['value' => $this->request->session()->read('Auth.User.id')]);
+    echo $this->Form->hidden('user_id', ['value' => $this->request->getSession()->read('Auth.User.id')]);
 ?>
 <div class="well well-sm">
     <fieldset>
@@ -27,12 +27,12 @@
         <?php
             echo $this->Form->control('fullname', [
                 'label'   => __('Nominativo'),
-                'default' => $this->request->session()->read('Auth.User.first_name') .' '. $this->request->session()->read('Auth.User.last_name')
+                'default' => $this->request->getSession()->read('Auth.User.first_name') .' '. $this->request->getSession()->read('Auth.User.last_name')
             ]);
 
             echo $this->Form->control('from', [
                 'label' => __('Indirizzo e-mail'),
-                'default' => $this->request->session()->read('Auth.User.email')
+                'default' => $this->request->getSession()->read('Auth.User.email')
             ]);
         ?>
     </fieldset>

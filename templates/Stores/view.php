@@ -184,7 +184,7 @@
                             echo $this->Form->button($buyBtn, ['class' => 'btn btn-sm btn-success btn-block store-product-buy-btn']);
                         } else {
                             echo $this->Form->button($buyBtn, ['class' => 'btn btn-sm btn-success btn-block', 'disabled' => 'disabled']);
-                            if ($this->request->session()->check('Auth.User')) {
+                            if ($this->request->getSession()->check('Auth.User')) {
                                 echo '<div class="text-center text-bold text-danger">' .__('Non hai abbastanza crediti per la conversione'). '</div>';
                             } else {
                                 echo '<div class="text-center text-bold text-info">' .__('Esegui l\'accesso per richiedere il premio'). '</div>';
@@ -207,7 +207,7 @@
 
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <?php if ($this->request->session()->check('Auth.User')) : ?>
+                <?php if ($this->request->getSession()->check('Auth.User')) : ?>
                     <?php
                         $formUrl    = ['_name' => 'store:product:buy_form', 'id' => $product->id, 'slug' => $product->slug];
                         $canBuy     = isset($credits->total) ? $credits->total >= $product->amount : false;
@@ -230,7 +230,7 @@
                             echo $this->Form->button($buyBtn, ['class' => 'btn btn-sm btn-success btn-block store-product-buy-btn']);
                         } else {
                             echo $this->Form->button($buyBtn, ['class' => 'btn btn-sm btn-success btn-block', 'disabled' => 'disabled']);
-                            if ($this->request->session()->check('Auth.User')) {
+                            if ($this->request->getSession()->check('Auth.User')) {
                                 echo '<div class="text-center text-bold text-danger">' .__('Non hai abbastanza crediti per la conversione'). '</div>';
                             } else {
                                 echo '<div class="text-center text-bold text-info">' .__('Esegui l\'accesso per richiedere il premio'). '</div>';

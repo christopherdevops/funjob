@@ -43,7 +43,7 @@ class UserRegistrationsController extends AppController
             ]);
 
             if ($this->Users->save($User)) {
-                $this->request->session()->write('Auth.User._skipAccountRequirementsSkip', true);
+                $this->request->getSession()->write('Auth.User._skipAccountRequirementsSkip', true);
 
                 // Aggiornamento sessione con i nuovi dati
                 $this->Auth->setUser($User->toArray());
