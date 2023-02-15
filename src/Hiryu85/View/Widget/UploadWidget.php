@@ -37,7 +37,7 @@ class UploadWidget implements WidgetInterface
      * @param  ContextInterface $context [description]
      * @return [type]                    [description]
      */
-    public function render(array $data, ContextInterface $context)
+    public function render(array $data, ContextInterface $context): string
     {
         $data += [
             'name' => '',
@@ -68,7 +68,7 @@ class UploadWidget implements WidgetInterface
         ]);
     }
 
-    public function secureFields(array $data)
+    public function secureFields(array $data): array
     {
         return [$data['name']];
     }
