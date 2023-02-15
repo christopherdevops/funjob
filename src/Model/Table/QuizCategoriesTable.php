@@ -38,9 +38,9 @@ class QuizCategoriesTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('quiz_categories');
-        $this->displayField('name');
-        $this->primaryKey('id');
+        $this->setTable('quiz_categories');
+        $this->setDisplayField('name');
+        $this->setPrimaryKey('id');
 
         $this->addBehavior('Tree', [
             'level' => 'level', // salva sul campo "level" del database il livello; necessario per ricerca categoria

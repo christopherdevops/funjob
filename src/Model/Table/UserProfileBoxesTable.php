@@ -32,9 +32,9 @@ class UserProfileBoxesTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('user_profile_boxes');
-        $this->displayField('id');
-        $this->primaryKey('id');
+        $this->setTable('user_profile_boxes');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
         $this->belongsTo('Users', [
             'foreignKey' => 'user_id'

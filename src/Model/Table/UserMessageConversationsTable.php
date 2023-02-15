@@ -32,9 +32,9 @@ class UserMessageConversationsTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('user_message_conversations');
-        $this->displayField('id');
-        $this->primaryKey('id');
+        $this->setTable('user_message_conversations');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
 

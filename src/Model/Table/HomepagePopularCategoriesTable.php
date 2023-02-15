@@ -35,9 +35,9 @@ class HomepagePopularCategoriesTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('homepage_popular_categories');
-        $this->displayField('category_id');
-        $this->primaryKey('id');
+        $this->setTable('homepage_popular_categories');
+        $this->setDisplayField('category_id');
+        $this->setPrimaryKey('id');
 
 
         $this->belongsTo('Categories', [

@@ -33,9 +33,9 @@ class StoreCategoryProductsTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('categories_quizzes');
-        $this->displayField('id');
-        $this->primaryKey('id');
+        $this->setTable('categories_quizzes');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
         $this->belongsTo('StoreProducts', [
             'foreignKey' => 'product_id'

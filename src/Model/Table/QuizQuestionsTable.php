@@ -35,9 +35,9 @@ class QuizQuestionsTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('quiz_questions');
-        $this->displayField('id');
-        $this->primaryKey('id');
+        $this->setTable('quiz_questions');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
         $this->belongsTo('Quizzes', [
             'foreignKey' => 'quiz_id'

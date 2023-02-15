@@ -34,9 +34,9 @@ class UserMessageRepliesTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('user_message_replies');
-        $this->displayField('id');
-        $this->primaryKey('id');
+        $this->setTable('user_message_replies');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
         $this->addBehavior('StripTags', [

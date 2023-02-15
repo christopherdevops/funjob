@@ -32,9 +32,9 @@ class UserMessageRecipientsTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('user_message_recipients');
-        $this->displayField('id');
-        $this->primaryKey('id');
+        $this->setTable('user_message_recipients');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
         $this->belongsTo('Users', [
             'className'  => 'Users',

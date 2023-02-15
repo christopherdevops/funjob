@@ -34,9 +34,9 @@ class QuizSessionLevelsTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('quiz_session_levels');
-        $this->displayField('id');
-        $this->primaryKey('id');
+        $this->setTable('quiz_session_levels');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
 

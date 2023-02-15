@@ -32,9 +32,9 @@ class QuizTagsTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('quiz_tags');
-        $this->displayField('tag');
-        $this->primaryKey('id');
+        $this->setTable('quiz_tags');
+        $this->setDisplayField('tag');
+        $this->setPrimaryKey('id');
 
         $this->belongsTo('Quizzes', [
             'foreignKey' => 'quiz_id'

@@ -35,9 +35,9 @@ class SponsorAdvClicksTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('sponsor_adv_clicks');
-        $this->displayField('id');
-        $this->primaryKey('id');
+        $this->setTable('sponsor_adv_clicks');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
 

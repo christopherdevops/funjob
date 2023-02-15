@@ -38,9 +38,9 @@ class QuizSessionsTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('quiz_sessions');
-        $this->displayField('id');
-        $this->primaryKey('id');
+        $this->setTable('quiz_sessions');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
 

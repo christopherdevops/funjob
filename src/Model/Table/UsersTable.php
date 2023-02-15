@@ -55,9 +55,9 @@ class UsersTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('users');
-        $this->displayField('id');
-        $this->primaryKey('id');
+        $this->setTable('users');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
         // Associazioni (in comune per tutti gli utenti -in src/Traits/UserTableTrait-)
         $this->setGlobalAssociations();

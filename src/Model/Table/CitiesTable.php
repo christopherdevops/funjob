@@ -32,10 +32,10 @@ class CitiesTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('cities');
+        $this->setTable('cities');
 
-        $this->displayField('name');
-        $this->primaryKey('id');
+        $this->setDisplayField('name');
+        $this->setPrimaryKey('id');
 
         $this->hasMany('Users', [
             'foreignKey' => 'city_id'

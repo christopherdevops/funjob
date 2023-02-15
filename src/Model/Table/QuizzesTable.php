@@ -43,9 +43,9 @@ class QuizzesTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('quizzes');
-        $this->displayField('title');
-        $this->primaryKey('id');
+        $this->setTable('quizzes');
+        $this->setDisplayField('title');
+        $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
         $this->addBehavior('StripTags', [

@@ -35,9 +35,9 @@ class JobCategoriesTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('job_categories');
-        $this->displayField('name');
-        $this->primaryKey('id');
+        $this->setTable('job_categories');
+        $this->setDisplayField('name');
+        $this->setPrimaryKey('id');
 
         $this->belongsToMany('Users', []);
 

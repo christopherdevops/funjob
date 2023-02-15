@@ -33,9 +33,9 @@ class UserJobOffersTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('user_job_offers');
-        $this->displayField('id');
-        $this->primaryKey('id');
+        $this->setTable('user_job_offers');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
         $this->belongsTo('Users', [
             'foreignKey' => 'user_id'

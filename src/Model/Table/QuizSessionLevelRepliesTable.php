@@ -34,9 +34,9 @@ class QuizSessionLevelRepliesTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('quiz_session_level_replies');
-        $this->displayField('id');
-        $this->primaryKey('id');
+        $this->setTable('quiz_session_level_replies');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
         $this->belongsTo('QuizSessionLevels', [
             'foreignKey' => 'quiz_session_level_id'
