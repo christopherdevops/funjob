@@ -32,7 +32,7 @@ class UsersController extends AppController
             // }
 
             // view: form richiesta CV
-            $this->loadComponent('Csrf');
+            // $this->loadComponent('Csrf');
         }
     }
 

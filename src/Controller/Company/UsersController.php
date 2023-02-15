@@ -12,7 +12,7 @@ class UsersController extends AppController
     public function initialize(): void
     {
         parent::initialize();
-        $this->loadComponent('Csrf');
+        // $this->loadComponent('Csrf');
 
         // Redirect a settings in base al prefix
         if ($this->request->action == 'settings' && !in_array($this->Auth->user('type'), ['company'])) {

@@ -21,7 +21,7 @@ class CvAuthorizationsController extends AppController
             throw new ForbiddenException(__('Funzionalità riservata ai soli utenti privati'));
         }
 
-        $this->loadComponent('Csrf');
+        // $this->loadComponent('Csrf');
     }
 
     public function getAdvertising()

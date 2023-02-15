@@ -21,7 +21,7 @@ class StoresController extends AppController
         $this->Auth->allow(['index', 'archive', 'view', 'search']);
         $this->viewBuilder()->setLayout('store');
 
-        $this->loadComponent('Csrf');
+        // $this->loadComponent('Csrf');
     }
 
     /**

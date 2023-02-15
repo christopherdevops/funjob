@@ -31,7 +31,7 @@ class BigbrainsController extends AppController
         ]);
 
         if ($this->request->action == 'add') {
-            $this->loadComponent('Csrf');
+            // $this->loadComponent('Csrf');
         }
     }
 

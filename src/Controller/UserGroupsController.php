@@ -15,7 +15,7 @@ class UserGroupsController extends AppController
     {
         parent::initialize();
 
-        $this->loadComponent('Csrf');
+        // $this->loadComponent('Csrf');
 
         $this->Auth->allow(['index', 'view', 'search', 'members']);
     }

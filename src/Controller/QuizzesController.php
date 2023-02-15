@@ -34,7 +34,7 @@ class QuizzesController extends AppController
         // Csrf attivato da tutte le parti
         // TODO: eliminare e testare
         if ($this->request->action == 'edit') {
-            $this->loadComponent('Csrf');
+            // $this->loadComponent('Csrf');
         }
 
         if (in_array($this->request->action, ['view', 'play'])) {
@@ -50,7 +50,7 @@ class QuizzesController extends AppController
 
             // Csrf attivato da tutte le parti
             // TODO: eliminare e testare
-            $this->loadComponent('Csrf');
+            // $this->loadComponent('Csrf');
             //$this->Security->disableFields = ['_secs'];
         }
 

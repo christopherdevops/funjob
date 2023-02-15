@@ -56,7 +56,7 @@ class AppController extends Controller
         $this->loadComponent('Flash');
 
         $this->loadComponent('Security', ['blackHoleCallback' => 'blackhole']);
-        $this->loadComponent('Csrf');
+        // $this->loadComponent('Csrf');
 
         if (Configure::read('ssl')) {
             $this->Security->requireSecure();
