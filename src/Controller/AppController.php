@@ -90,7 +90,7 @@ class AppController extends Controller
 
         if (!$this->request->is('ajax')) {
 
-            switch ($this->request->prefix) {
+            switch ($this->request->getParam('prefix')) {
                 case 'admin':
                     $layout = 'backend';
                 break;
