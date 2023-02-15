@@ -14,7 +14,7 @@ use Cake\Network\Exception\NotFoundException;
 class CompaniesController extends AppController
 {
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
         $this->Auth->allow(['index', 'view']);

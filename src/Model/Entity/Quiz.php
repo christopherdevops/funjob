@@ -59,8 +59,8 @@ class Quiz extends Entity
      */
     protected function _getTagString()
     {
-        if (isset($this->_properties['tag_string'])) {
-            return $this->_properties['tag_string'];
+        if (isset($this->_fields['tag_string'])) {
+            return $this->_fields['tag_string'];
         }
 
         if (empty($this->tags)) {
@@ -84,13 +84,13 @@ class Quiz extends Entity
      */
     protected function _getTagIds()
     {
-        if (empty($this->_properties['tags'])) {
+        if (empty($this->_fields['tags'])) {
             return [];
         }
 
         $ids = [];
 
-        foreach ($this->_properties['tags'] as $tag) {
+        foreach ($this->_fields['tags'] as $tag) {
             $ids[ $tag->id ] = $tag->tag;
         }
 
@@ -105,7 +105,7 @@ class Quiz extends Entity
 
     protected function _getImageSrc()
     {
-        $src = $this->_properties['image__dir'] .DS. $this->_properties['image__src'];
+        $src = $this->_fields['image__dir'] .DS. $this->_fields['image__src'];
         return $src;
     }
 
@@ -134,12 +134,12 @@ class Quiz extends Entity
         $_default = 'img/default-quiz-cover.png';
 
         // Default image
-        if (empty($this->_properties['image__src'])) {
+        if (empty($this->_fields['image__src'])) {
             return $this->imageSize($_default, $w.'x'.$h);
         }
 
         // File non esistente
-        $src = $this->_properties['image__dir'] .DS. $this->_properties['image__src'];
+        $src = $this->_fields['image__dir'] .DS. $this->_fields['image__src'];
         if (!file_exists(ROOT .DS. $src)) {
             return $this->imageSize($_default, $w.'x'.$h);
         }
@@ -153,16 +153,16 @@ class Quiz extends Entity
         $_srcParams = [
             'w'     => 500,
             'h'     => 300,
-            'color' => substr($this->_properties['color'], 1),
-            'alt'   => \Cake\Utility\Text::truncate($this->_properties['title'], 20, ['exact' => true])
+            'color' => substr($this->_fields['color'], 1),
+            'alt'   => \Cake\Utility\Text::truncate($this->_fields['title'], 20, ['exact' => true])
         ];
 
         // Immagine da placeholder.it
-        if (empty($this->_properties['image__src'])) {
+        if (empty($this->_fields['image__src'])) {
             return \Cake\Utility\Text::insert($_src, $_srcParams);
         }
 
-        $src = $this->_properties['image__dir'] .DS. $this->_properties['image__src'];
+        $src = $this->_fields['image__dir'] .DS. $this->_fields['image__src'];
         if (!file_exists(ROOT .DS. $src)) {
             return \Cake\Utility\Text::insert($_src, $_srcParams);
         }
@@ -178,19 +178,19 @@ class Quiz extends Entity
     protected function _getUrl()
     {
 
-        if (empty($this->_properties['title']))
+        if (empty($this->_fields['title']))
         {
             throw new \RuntimeException(__('Quiz::title proprietà richiesta'));
         }
 
-        if (empty($this->_properties['id']))
+        if (empty($this->_fields['id']))
         {
             throw new \RuntimeException(__('Quiz::id proprietà richiesta'));
         }
 
         return \Cake\Routing\Router::url([
             '_name' => 'quiz:view',
-            'id'    => $this->_properties['id'],
+            'id'    => $this->_fields['id'],
             'title' => $this->_getSlug()
         ]);
     }
@@ -202,8 +202,8 @@ class Quiz extends Entity
         //     return '#00adee';
         // }
 
-        if (!empty($this->_properties['color'])) {
-            return $this->_properties['color'];
+        if (!empty($this->_fields['color'])) {
+            return $this->_fields['color'];
         }
 
         return '#cc3333';
@@ -278,7 +278,7 @@ class Quiz extends Entity
      */
     protected function _getVisibleInFrontend()
     {
-        return $this->_properties['status'] == 'published' && $this->_properties['is_disabled'] == false;
+        return $this->_fields['status'] == 'published' && $this->_fields['is_disabled'] == false;
     }
 
 }

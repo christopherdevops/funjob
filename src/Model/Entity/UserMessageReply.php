@@ -41,7 +41,7 @@ class UserMessageReply extends Entity
      */
     protected function _getBodyFormatted()
     {
-        if (empty($this->_properties['body'])) {
+        if (empty($this->_fields['body'])) {
             return;
         }
 
@@ -51,7 +51,7 @@ class UserMessageReply extends Entity
         return str_replace(
             array_keys($emoticons),
             array_values($emoticons),
-            $this->_properties['body']
+            $this->_fields['body']
         );
     }
 }

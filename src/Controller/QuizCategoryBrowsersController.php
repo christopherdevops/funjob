@@ -16,7 +16,7 @@ use App\Form\BigBrainContactForm;
 class QuizCategoryBrowsersController extends AppController
 {
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
         $this->Auth->allow();

@@ -13,7 +13,7 @@ class UsersShellTest extends TestCase
     /**
      * ConsoleIo mock
      *
-     * @var \Cake\Console\ConsoleIo|\PHPUnit_Framework_MockObject_MockObject
+     * @var \Cake\Console\ConsoleIo|\PHPUnit\Framework\MockObject\MockObject
      */
     public $io;
 
@@ -29,7 +29,7 @@ class UsersShellTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->io = $this->getMockBuilder('Cake\Console\ConsoleIo')->getMock();
@@ -41,7 +41,7 @@ class UsersShellTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         unset($this->Users);
 

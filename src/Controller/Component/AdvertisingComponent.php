@@ -19,7 +19,7 @@ class AdvertisingComponent extends Component
     protected $_defaultConfig = [];
 
 
-    public function initialize(array $config = [])
+    public function initialize(array $config = []): void
     {
         $this->Controller = $this->_registry->getController();
         $this->Auth = $this->Controller->Auth;

@@ -39,7 +39,7 @@ class QuizzesTable extends Table
      * @param array $config The configuration for the Table.
      * @return void
      */
-    public function initialize(array $config)
+    public function initialize(array $config): void
     {
         parent::initialize($config);
 
@@ -165,7 +165,7 @@ class QuizzesTable extends Table
      * @param \Cake\Validation\Validator $validator Validator instance.
      * @return \Cake\Validation\Validator
      */
-    public function validationDefault(Validator $validator)
+    public function validationDefault(Validator $validator): \Cake\Validation\Validator
     {
         $validator->integer('id')->allowEmpty('id', 'create');
         $validator->allowEmpty(['embed_video', 'href', 'image__src']);
@@ -256,7 +256,7 @@ class QuizzesTable extends Table
         return $validator;
     }
 
-    public function beforeSave($event, $entity, $options)
+    public function beforeSave(\Cake\Event\EventInterface $event, $entity, $options)
     {
         if ($entity->tag_string) {
             $entity->tags = $this->_buildTags($entity->tag_string);
@@ -301,7 +301,7 @@ class QuizzesTable extends Table
      * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
      * @return \Cake\ORM\RulesChecker
      */
-    public function buildRules(RulesChecker $rules)
+    public function buildRules(RulesChecker $rules): \Cake\ORM\RulesChecker
     {
         $rules->add($rules->existsIn(['user_id'], 'Author'));
 

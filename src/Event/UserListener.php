@@ -11,7 +11,7 @@ use Cake\Datasource\ConnectionManager;
 
 class UserListener implements EventListenerInterface {
 
-    public function implementedEvents() {
+    public function implementedEvents(): array {
         return [
             'Auth.afterIdentify' => 'afterAuthIdentity',
 

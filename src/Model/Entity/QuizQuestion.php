@@ -69,8 +69,8 @@ class QuizQuestion extends Entity
 
     protected function _getQuestion()
     {
-        if (!empty($this->_properties['question'])) {
-            return strip_tags(ucfirst($this->_properties['question']));
+        if (!empty($this->_fields['question'])) {
+            return strip_tags(ucfirst($this->_fields['question']));
         }
 
         return null;

@@ -36,21 +36,21 @@ class SponsorAdvPackage extends Entity
     public function _getAmount()
     {
         $amount     = 0.00;
-        $amount     = (float) $this->_properties['price'];
+        $amount     = (float) $this->_fields['price'];
 
         // Aggiungere 50% guadagno funjob su maximum memories
-        if ($this->_properties['type'] == 'banner-quiz') {
-            $amount += $this->_properties['tax_funjob'];
+        if ($this->_fields['type'] == 'banner-quiz') {
+            $amount += $this->_fields['tax_funjob'];
         }
 
         // PAYPAL
-        if (!empty($this->_properties['tax_paypal']) && $this->_properties['tax_paypal'] > 0) {
-            $amount += $this->_properties['tax_paypal'];
+        if (!empty($this->_fields['tax_paypal']) && $this->_fields['tax_paypal'] > 0) {
+            $amount += $this->_fields['tax_paypal'];
         }
 
         // IVA
-        if (!empty($this->_properties['tax_iva']) && $this->_properties['tax_iva'] > 0) {
-            $iva    = (int) $this->_properties['tax_iva'];
+        if (!empty($this->_fields['tax_iva']) && $this->_fields['tax_iva'] > 0) {
+            $iva    = (int) $this->_fields['tax_iva'];
             $amount += ceil( ($amount * $iva) / 100 );
         }
 

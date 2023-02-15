@@ -27,7 +27,7 @@ use Cake\View\Exception\MissingTemplateException;
  */
 class FunJobPagesController extends AppController
 {
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
 

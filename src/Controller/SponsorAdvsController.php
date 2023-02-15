@@ -17,7 +17,7 @@ class SponsorAdvsController extends AppController
 {
     const QUIZ_ADV_TYPE = 'banner-quiz';
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
         $this->loadComponent('RequestHandler');

@@ -15,7 +15,7 @@ use Cake\Network\Exception\ForbiddenException;
 class UserMessagesController extends AppController
 {
 
-    public function initialize()
+    public function initialize(): void
     {
         $this->UserMessages = $this->loadModel('UserMessageConversations');
         $this->loadComponent('Security');

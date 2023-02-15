@@ -16,7 +16,7 @@ class QuizSessionStartForm extends Form
      * @param Schema $schema From schema
      * @return $this
      */
-    protected function _buildSchema(Schema $schema)
+    protected function _buildSchema(Schema $schema): \Cake\Form\Schema
     {
         $schema
             ->addField('adv', 'string')

@@ -10,7 +10,7 @@ use Cake\ORM\TableRegistry;
 class QuizCategoriesShell extends Shell
 {
 
-    public function initialize() {
+    public function initialize(): void {
         $this->QuizCategories = TableRegistry::get('QuizCategories');
     }
 
@@ -21,7 +21,7 @@ class QuizCategoriesShell extends Shell
      *
      * @return \Cake\Console\ConsoleOptionParser
      */
-    public function getOptionParser()
+    public function getOptionParser(): \Cake\Console\ConsoleOptionParser
     {
         $parser = parent::getOptionParser();
 

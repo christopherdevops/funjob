@@ -31,4 +31,10 @@ if (version_compare(phpversion(), $minVersion, '<')) {
 require dirname(__DIR__) . '/vendor/autoload.php';
 include dirname(__DIR__) . '/config/bootstrap.php';
 
-exit(Cake\Console\ShellDispatcher::run($argv));
+use App\Application;
+use Cake\Console\CommandRunner;
+
+// Build the runner with an application and root executable name.
+$runner = new CommandRunner(new Application(dirname(__DIR__) . '/config'), 'cake');
+exit($runner->run($argv));
+

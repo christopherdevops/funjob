@@ -35,7 +35,7 @@ class StoreProductPicture extends Entity
 
     protected function _getSrcFallback()
     {
-        $_src = str_replace('webroot/', '', $this->_properties['dir']) .'/'. $this->_properties['image'];
+        $_src = str_replace('webroot/', '', $this->_fields['dir']) .'/'. $this->_fields['image'];
         if (file_exists(WWW_ROOT . $_src)) {
             return $_src;
         }

@@ -35,13 +35,13 @@ class StoreProductCompany extends Entity
 
     protected function _getImage()
     {
-        if ($this->_properties['image']) {
-            return $this->_properties['image'];
+        if ($this->_fields['image']) {
+            return $this->_fields['image'];
         }
 
-        if ($this->_properties['name']) {
+        if ($this->_fields['name']) {
             return sprintf(
-                'webroot/img/gift-logos/'. \Cake\Utility\Inflector::slug($this->_properties['name']).' .png'
+                'webroot/img/gift-logos/'. \Cake\Utility\Inflector::slug($this->_fields['name']).' .png'
             );
         }
 

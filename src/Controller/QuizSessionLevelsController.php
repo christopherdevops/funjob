@@ -11,7 +11,7 @@ use App\Controller\AppController;
 class QuizSessionLevelsController extends AppController
 {
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
         $this->Auth->allow(['view']);

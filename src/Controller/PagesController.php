@@ -27,7 +27,7 @@ use Cake\View\Exception\MissingTemplateException;
  */
 class PagesController extends AppController
 {
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
         $this->Auth->allow();

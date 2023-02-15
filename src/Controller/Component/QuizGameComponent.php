@@ -39,7 +39,7 @@ class QuizGameComponent extends Component
     private $_questions;
 
 
-    public function initialize(array $config)
+    public function initialize(array $config): void
     {
         parent::initialize($config);
         $this->Controller = $this->_registry->getController();

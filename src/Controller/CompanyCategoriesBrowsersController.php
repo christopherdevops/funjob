@@ -19,7 +19,7 @@ use App\Model\Entity\CompanyCategory as Category;
 class CompanyCategoriesBrowsersController extends AppController
 {
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
         $this->Auth->allow();

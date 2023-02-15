@@ -31,10 +31,10 @@ class SocialUser extends Entity
 
     protected function _getEmail($email)
     {
-        $email = $this->_properties['email'];
+        $email = $this->_fields['email'];
 
-        if (!empty($this->_properties['email_verified'])) {
-            $email = 'verified::' . $this->_properties['email_verified'];
+        if (!empty($this->_fields['email_verified'])) {
+            $email = 'verified::' . $this->_fields['email_verified'];
         }
 
         return $email;

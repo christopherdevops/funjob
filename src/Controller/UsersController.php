@@ -16,7 +16,7 @@ class UsersController extends AppController
 {
     use MailerAwareTrait;
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
 

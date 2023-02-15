@@ -9,7 +9,7 @@ use Cake\Console\Shell;
 class UsersShell extends Shell
 {
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
         $this->loadModel('Users');
@@ -22,7 +22,7 @@ class UsersShell extends Shell
      *
      * @return \Cake\Console\ConsoleOptionParser
      */
-    public function getOptionParser()
+    public function getOptionParser(): \Cake\Console\ConsoleOptionParser
     {
         $parser = parent::getOptionParser();
 

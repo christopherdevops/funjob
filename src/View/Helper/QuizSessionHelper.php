@@ -27,7 +27,7 @@ class QuizSessionHelper extends Helper
     protected $scoreTitles = [];
     protected $scoreTitleHeads = [];
 
-    public function initialize(array $config = [])
+    public function initialize(array $config = []): void
     {
         parent::initialize($config);
         $this->scoreTitleHeads = ['default' => __('Gioco non certificato (creato dagli utenti)'), 'funjob' => __('Gioco certificato Funjob')];

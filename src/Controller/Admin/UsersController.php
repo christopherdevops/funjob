@@ -11,7 +11,7 @@ use Cake\Cache\Cache;
 class UsersController extends AppController
 {
 
-    public function beforeFilter(Event $event)
+    public function beforeFilter(\Cake\Event\EventInterface $event)
     {
         if (in_array($this->request->action, ['quizzes', 'groups'])) {
             // Imposta variabile vista $User per poter accedere all'utente che si stà visualizzando

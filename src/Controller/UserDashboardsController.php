@@ -16,7 +16,7 @@ class UserDashboardsController extends AppController
 
     public $modelClass = null;
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
         $this->Auth->deny(['index']);

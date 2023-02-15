@@ -14,7 +14,7 @@ use Cake\i18n\i18n;
 class HomepagesController extends AppController
 {
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
         $this->Auth->allow();

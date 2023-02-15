@@ -35,16 +35,19 @@ use App\Middleware\AccountRequiredFieldsMiddleware;
  */
 class Application extends BaseApplication
 {
-
-    public function bootstrap()
+    /**
+     * Load all the application configuration and bootstrap logic.
+     *
+     * @return void
+     */
+    public function bootstrap(): void
     {
+        // Call parent to load bootstrap from files.
+        parent::bootstrap();
+
         if (PHP_SAPI === 'cli') {
-            try {
-                $this->addPlugin('Bake');
-            } catch (MissingPluginException $e) {
-                // Do not halt if the plugin is missing
-            }
-        }
+            $this->bootstrapCli();
+        } 
 
         /*
         * Only try to load DebugKit in development mode
@@ -93,12 +96,12 @@ class Application extends BaseApplication
      * @param \Cake\Http\MiddlewareQueue $middleware The middleware queue to setup.
      * @return \Cake\Http\MiddlewareQueue The updated middleware.
      */
-    public function middleware($middleware)
+    public function middleware($middleware): \Cake\Http\MiddlewareQueue
     {
         $middleware
             // Catch any exceptions in the lower layers,
             // and make an error page/response
-            ->add(new ErrorHandlerMiddleware(Configure::read('Error.exceptionRenderer')))
+            ->add(new ErrorHandlerMiddleware(Configure::read('Error')))
 
             // Handle plugin/theme assets like CakePHP normally does.
             ->add(new AssetMiddleware())
@@ -128,5 +131,19 @@ class Application extends BaseApplication
 
             $middleware->add(new MeRouteMiddleware());
         return $middleware;
+    }
+
+    /**
+     * Bootstrapping for CLI application.
+     *
+     * That is when running commands.
+     *
+     * @return void
+     */
+    protected function bootstrapCli(): void
+    {
+        $this->addOptionalPlugin('Bake');
+
+        // Load more plugins here
     }
 }

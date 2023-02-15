@@ -21,7 +21,7 @@ use Cake\Network\Exception\ForbiddenException;
 class CitiesController extends AppController
 {
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
 
@@ -37,7 +37,7 @@ class CitiesController extends AppController
         }
     }
 
-    public function beforeFilter(Event $event)
+    public function beforeFilter(\Cake\Event\EventInterface $event)
     {
         $this->eventManager()->off($this->Csrf);
         $this->eventManager()->off($this->Security);

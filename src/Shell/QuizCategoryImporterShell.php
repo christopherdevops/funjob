@@ -11,12 +11,12 @@ class QuizCategoryImporterShell extends Shell
     const UNIVERSITY_ROOT_NODEID = 1;
     const SPACER = ' / ';
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
 
-        $this->_io->styles('exists', ['text' => 'green', 'blink' => true, 'bold' => true, 'reverse' => true, 'underline' => true]);
-        $this->_io->styles('creating', ['text' => 'yellow', 'blink' => false, 'bold' => true, 'reverse' => true, 'underline' => true]);
+        $this->_io->getStyle('exists', ['text' => 'green', 'blink' => true, 'bold' => true, 'reverse' => true, 'underline' => true]);
+        $this->_io->getStyle('creating', ['text' => 'yellow', 'blink' => false, 'bold' => true, 'reverse' => true, 'underline' => true]);
     }
 
     /**
@@ -26,7 +26,7 @@ class QuizCategoryImporterShell extends Shell
      *
      * @return \Cake\Console\ConsoleOptionParser
      */
-    public function getOptionParser()
+    public function getOptionParser(): \Cake\Console\ConsoleOptionParser
     {
         $parser = parent::getOptionParser();
 

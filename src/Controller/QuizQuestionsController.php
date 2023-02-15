@@ -14,7 +14,7 @@ use Cake\Network\Exception\ForbiddenException;
 class QuizQuestionsController extends AppController
 {
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
 

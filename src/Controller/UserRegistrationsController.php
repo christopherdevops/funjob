@@ -20,7 +20,7 @@ class UserRegistrationsController extends AppController
 
     use MailerAwareTrait;
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
         $this->Auth->deny();

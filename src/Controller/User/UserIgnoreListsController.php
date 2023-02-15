@@ -11,7 +11,7 @@ use App\Controller\AppController;
 class UserIgnoreListsController extends AppController
 {
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
         $this->Auth->deny(['index', 'add', 'delete']);

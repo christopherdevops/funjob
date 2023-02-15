@@ -11,7 +11,7 @@ use Cake\ORM\TableRegistry;
  */
 class StoresController extends AppController
 {
-    public function initialize()
+    public function initialize(): void
     {
         $this->modelClass = false;
 

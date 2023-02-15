@@ -20,11 +20,11 @@ class UserField extends Entity
      */
     protected function _getCvSrc()
     {
-        if (empty($this->_properties['cv']) || empty($this->_properties['user_id'])) {
+        if (empty($this->_fields['cv']) || empty($this->_fields['user_id'])) {
             return null;
         }
 
-        return sprintf('/uploads/user/cv/%d/%s', $this->_properties['user_id'], $this->_properties['cv']);
+        return sprintf('/uploads/user/cv/%d/%s', $this->_fields['user_id'], $this->_fields['cv']);
     }
 
     /**
@@ -34,11 +34,11 @@ class UserField extends Entity
      */
     protected function _getCvUrl()
     {
-        if (empty($this->_properties['cv']) || empty($this->_properties['user_id'])) {
+        if (empty($this->_fields['cv']) || empty($this->_fields['user_id'])) {
             return null;
         }
 
-        return Router::url(['_name' => 'cv:view', 'uuid' => $this->_getCvUuid(), 'user_id' => $this->_properties['user_id']]);
+        return Router::url(['_name' => 'cv:view', 'uuid' => $this->_getCvUuid(), 'user_id' => $this->_fields['user_id']]);
     }
 
     /**
@@ -50,6 +50,6 @@ class UserField extends Entity
      */
     protected function _getCvUuid()
     {
-        return (new Hashids(self::HASHIDS_SECRET, 25))->encode($this->_properties['user_id']);
+        return (new Hashids(self::HASHIDS_SECRET, 25))->encode($this->_fields['user_id']);
     }
 }

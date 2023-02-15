@@ -24,7 +24,7 @@ class AdminListener implements EventListenerInterface {
         'mailer' => 'User',
     ];
 
-    public function implementedEvents() {
+    public function implementedEvents(): array {
         return [
             //'Controller.User.Store.Purchase' => ['priority' => 99, 'callable' => 'onStorePurchase']
             //'Controller.User.Store.NewOrder' => ['priority' => 99, 'callable' => 'onStorePurchase']

@@ -26,7 +26,7 @@ use Cake\Utility\Text;
 class QuizzesController extends AppController
 {
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
         $this->Auth->allow(['index', 'popular', 'view', 'browse', 'search', 'rand']);
@@ -62,7 +62,7 @@ class QuizzesController extends AppController
         }
     }
 
-    public function beforeFilter(Event $event)
+    public function beforeFilter(\Cake\Event\EventInterface $event)
     {
         if (in_array($this->request->action, ['play', 'reply', 'score'])) {
             $quiz_id = $event->getSubject()->request->getParam('pass.0');
@@ -335,7 +335,7 @@ class QuizzesController extends AppController
 
                 return $this->redirect($route);
             } else {
-                $errors = $QuizSessionForm->errors();
+                $errors = $QuizSessionForm->getErrors();
                 $errkey = array_shift($errors);
                 $errmsg = array_shift($errkey);
                 $this->Flash->error($errmsg);
@@ -420,7 +420,7 @@ class QuizzesController extends AppController
 
         $QuizSessionReply = new \App\Form\QuizSessionReplyForm();
         if (!$QuizSessionReply->validate($this->request->getData())) {
-            $errors = $QuizSessionReply->errors();
+            $errors = $QuizSessionReply->getErrors();
             $first  = array_shift($errors);
             $errmsg = $first[ key($first) ];
 

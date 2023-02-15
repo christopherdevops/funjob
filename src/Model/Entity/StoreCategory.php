@@ -42,7 +42,7 @@ class StoreCategory extends Entity
     {
         return \Cake\Routing\Router::url([
             '_name' => 'store:produt:archive',
-            'id'    => $this->_properties->id,
+            'id'    => $this->_fields->id,
             'slug'  => $this->_getSlug()
         ]);
     }

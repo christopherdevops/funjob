@@ -12,7 +12,7 @@ use Cake\Database\Expression\IdentifierExpression;
 class StoreProductsController extends AppController
 {
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
         //$this->modelClass = 'StoreProducts';

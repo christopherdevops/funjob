@@ -16,7 +16,7 @@ class SponsorAdvAdminSearchForm extends Form
      * @param \Cake\Form\Schema $schema From schema
      * @return \Cake\Form\Schema
      */
-    protected function _buildSchema(Schema $schema)
+    protected function _buildSchema(Schema $schema): \Cake\Form\Schema
     {
         return $schema;
     }

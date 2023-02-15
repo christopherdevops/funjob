@@ -11,7 +11,7 @@ use App\Controller\Admin\AppController;
 class StoreProductCategoriesController extends AppController
 {
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
 

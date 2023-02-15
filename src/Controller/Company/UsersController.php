@@ -9,7 +9,7 @@ use Cake\Event\Event;
 
 class UsersController extends AppController
 {
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
         $this->loadComponent('Csrf');

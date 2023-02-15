@@ -15,7 +15,7 @@ use App\Form\BigBrainContactForm;
 class BigbrainsController extends AppController
 {
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
         $this->Auth->allow();
@@ -85,7 +85,7 @@ class BigbrainsController extends AppController
 
                     return $this->redirect($this->referer('/'));
                 } else {
-                    debug($BigBrainContactForm->errors());
+                    debug($BigBrainContactForm->getErrors());
                 }
             } else {
                 $this->Flash->error(__('"NON SONO UN ROBOT" errato... ritenta'));

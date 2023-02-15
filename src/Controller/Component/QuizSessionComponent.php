@@ -31,7 +31,7 @@ class QuizSessionComponent extends Component
     public $components = ['QuizScore'];
 
 
-    public function initialize(array $config)
+    public function initialize(array $config): void
     {
         parent::initialize($config);
         $this->Controller   = $this->_registry->getController();
@@ -43,7 +43,7 @@ class QuizSessionComponent extends Component
         $this->Controller = $controller;
     }
 
-    public function startup(Event $event)
+    public function startup(\Cake\Event\EventInterface $event)
     {
         $this->setController($event->subject());
     }

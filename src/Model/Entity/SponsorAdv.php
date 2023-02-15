@@ -58,11 +58,11 @@ class SponsorAdv extends Entity
             throw new \Exception(__('SponsorAdvEntity::image_track_src works only if isNew = false'));
         }
 
-        if (empty($this->_properties['uuid'])) {
+        if (empty($this->_fields['uuid'])) {
             throw new \Exception(__('SponsorAdvEntity::image_track_src require uuid in SELECT'));
         }
 
-        return Router::url(['_name' => 'adv:image', $this->_properties['uuid']]);
+        return Router::url(['_name' => 'adv:image', $this->_fields['uuid']]);
     }
 
     protected function _getHrefTrackSrc()
@@ -71,11 +71,11 @@ class SponsorAdv extends Entity
             throw new \Exception(__('SponsorAdvEntity::href_track_src works only if isNew = false'));
         }
 
-        if (empty($this->_properties['uuid'])) {
+        if (empty($this->_fields['uuid'])) {
             throw new \Exception(__('SponsorAdvEntity::href_track_src require uuid in SELECT'));
         }
 
-        return Router::url(['_name' => 'adv:track', $this->_properties['uuid']]);
+        return Router::url(['_name' => 'adv:track', $this->_fields['uuid']]);
     }
 
     /**

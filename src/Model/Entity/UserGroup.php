@@ -39,8 +39,8 @@ class UserGroup extends Entity
 
     protected function _getSlug()
     {
-        if (!empty($this->_properties['name'])) {
-            return \Cake\Utility\Text::slug($this->_properties['name'], '-');
+        if (!empty($this->_fields['name'])) {
+            return \Cake\Utility\Text::slug($this->_fields['name'], '-');
         }
 
         return null;
@@ -53,8 +53,8 @@ class UserGroup extends Entity
      */
     protected function _getCoverSrc()
     {
-        if (!empty($this->id) && !empty($this->_properties['image'])) {
-            return '/uploads/user_groups/cover/'. $this->id .'/'. $this->_properties['image'];
+        if (!empty($this->id) && !empty($this->_fields['image'])) {
+            return '/uploads/user_groups/cover/'. $this->id .'/'. $this->_fields['image'];
         } else {
             return '/img/default-group-cover.png';
         }

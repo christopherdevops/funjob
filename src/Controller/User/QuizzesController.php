@@ -9,7 +9,7 @@ use Cake\Network\Exception\ForbiddenException;
 class QuizzesController extends AppController
 {
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
 

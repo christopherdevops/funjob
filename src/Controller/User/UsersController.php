@@ -12,7 +12,7 @@ class UsersController extends AppController
         'maxLimit' => 30
     ];
 
-    public function initialize()
+    public function initialize(): void
     {
         parent::initialize();
 

@@ -90,12 +90,12 @@ class User extends Entity
 
     protected function _getUsername()
     {
-        if (isset($this->_properties['is_disabled']) && $this->_properties['is_disabled']) {
+        if (isset($this->_fields['is_disabled']) && $this->_fields['is_disabled']) {
             return __('Anonimo');
         }
 
-        if (isset($this->_properties['username'])) {
-            return $this->_properties['username'];
+        if (isset($this->_fields['username'])) {
+            return $this->_fields['username'];
         }
 
         return null;
@@ -111,11 +111,11 @@ class User extends Entity
         $defaultAvatar = $avatar = '/img/default-user-avatar.png';
         $avatarDir = '/uploads/user/avatar/';
 
-        if (!empty($this->_properties['avatar'])) {
-            $avatar = sprintf($avatarDir . '%d/%s', $this->_properties['id'], $this->_properties['avatar']);
+        if (!empty($this->_fields['avatar'])) {
+            $avatar = sprintf($avatarDir . '%d/%s', $this->_fields['id'], $this->_fields['avatar']);
         }
 
-        if (isset($this->_properties['is_disabled']) && $this->_properties['is_disabled']) {
+        if (isset($this->_fields['is_disabled']) && $this->_fields['is_disabled']) {
             $avatar = $defaultAvatar;
         }
 
