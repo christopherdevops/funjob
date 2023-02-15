@@ -129,7 +129,7 @@ class AppController extends Controller
         }
 
         $this->request->getSession()->write('Config.language', $lang);
-        I18n::locale($lang);
+        I18n::setLocale($lang);
 
         // Entity che contiene l'utente loggato
         // Utilizzato da vari helper (vedi UserHelper)
