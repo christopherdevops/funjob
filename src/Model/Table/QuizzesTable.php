@@ -322,7 +322,7 @@ class QuizzesTable extends Table
      */
     public function findNotDisabled(Query $q)
     {
-        $field = $this->alias() . '.is_disabled';
+        $field = $this->getAlias() . '.is_disabled';
         return $q->where([$field => false]);
     }
 
@@ -333,7 +333,7 @@ class QuizzesTable extends Table
     {
         $q->find('notDisabled');
 
-        $field = $this->alias() . '.status';
+        $field = $this->getAlias() . '.status';
         return $q->where([$field => ['published']], [$field => 'string[]']);
     }
 
@@ -584,7 +584,7 @@ class QuizzesTable extends Table
 
             case 'unpublished':
                 $q->where(function($exp, $q) {
-                    $alias = $this->alias();
+                    $alias = $this->getAlias();
 
                     return $exp->or_([
                         $alias . '.status <> "published"',
@@ -621,9 +621,9 @@ class QuizzesTable extends Table
 
         // Solo sessioni visibili nel diario
         $q->where([
-            $this->alias() . '.status'      => 'published',
-            $this->alias() . '.is_disabled' => false,
-            $this->alias() . '.user_id'     => (int) $settings['user_id']
+            $this->getAlias() . '.status'      => 'published',
+            $this->getAlias() . '.is_disabled' => false,
+            $this->getAlias() . '.user_id'     => (int) $settings['user_id']
         ]);
 
         // Scorre ResultSet e crea array:

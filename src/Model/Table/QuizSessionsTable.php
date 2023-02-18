@@ -115,8 +115,8 @@ class QuizSessionsTable extends Table
 
     public function findIsVisible(Query $q) {
         return $q->where([
-            $this->alias() . '.is_hidden'  => false,
-            $this->alias() . '.is_deleted' => false
+            $this->getAlias() . '.is_hidden'  => false,
+            $this->getAlias() . '.is_deleted' => false
         ]);
     }
 
@@ -139,9 +139,9 @@ class QuizSessionsTable extends Table
 
         // Solo sessioni visibili nel diario
         $q->where([
-            $this->alias() . '.is_hidden'  => false,
-            $this->alias() . '.is_deleted' => false,
-            $this->alias() . '.user_id'    => (int) $settings['user_id']
+            $this->getAlias() . '.is_hidden'  => false,
+            $this->getAlias() . '.is_deleted' => false,
+            $this->getAlias() . '.user_id'    => (int) $settings['user_id']
         ]);
 
         // Scorre ResultSet e crea array:

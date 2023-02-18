@@ -11,7 +11,7 @@ trait UserRecoveryTrait {
         }
 
         $q->bind(':token', $settings['token']);
-        $q->where([$this->alias() . '.recovery_token = :token']);
+        $q->where([$this->getAlias() . '.recovery_token = :token']);
 
         return $q;
     }
@@ -22,7 +22,7 @@ trait UserRecoveryTrait {
         }
 
         $q->bind(':token', $settings['token']);
-        $q->where([$this->alias() . '.confirmation_token = :token']);
+        $q->where([$this->getAlias() . '.confirmation_token = :token']);
 
         return $q;
     }

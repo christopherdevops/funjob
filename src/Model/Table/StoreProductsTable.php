@@ -254,11 +254,11 @@ class StoreProductsTable extends Table
     public function findMinimumAvailability(Query $q, $settings = [])
     {
         $q->where(function($exp, $q) {
-            $exp->between($this->alias() . '.qty', 0, self::AVAILABILITY_MIN_NOTIFY_FROM);
+            $exp->between($this->getAlias() . '.qty', 0, self::AVAILABILITY_MIN_NOTIFY_FROM);
             return $exp;
         });
 
-        $q->orderAsc( $this->alias() . '.qty' );
+        $q->orderAsc( $this->getAlias() . '.qty' );
         return $q;
     }
 

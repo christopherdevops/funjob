@@ -191,7 +191,7 @@ class UserFriendsTable extends Table
 
     public function findStarred(Query $q)
     {
-        $q->where([ $this->alias() . '.is_preferite' => true]);
+        $q->where([ $this->getAlias() . '.is_preferite' => true]);
         return $q;
     }
 }
