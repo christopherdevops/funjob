@@ -61,7 +61,7 @@ class AdvertisingComponent extends Component
             }
 
             if (empty($auth['country'])) {
-                $auth['country'] = $this->Controller->request->getSession()->read('Config.language');
+                $auth['country'] = $this->Controller->getRequest()->getSession()->read('Config.language');
             }
 
             // Per lingua (filtro globale)

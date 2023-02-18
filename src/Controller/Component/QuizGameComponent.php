@@ -44,7 +44,7 @@ class QuizGameComponent extends Component
         parent::initialize($config);
         $this->Controller = $this->_registry->getController();
 
-        //$this->Session    = $this->Controller->request->getSession();
+        //$this->Session    = $this->Controller->getRequest()->getSession();
         // Crea sessione di gioco
         $this->_initgetSession();
     }
@@ -63,7 +63,7 @@ class QuizGameComponent extends Component
             $sessionKey .= '.' . $key;
         }
 
-        return $this->Controller->request->getSession()->read($sessionKey);
+        return $this->Controller->getRequest()->getSession()->read($sessionKey);
     }
 
     /**
@@ -81,7 +81,7 @@ class QuizGameComponent extends Component
             $sessionKey .= '.' . $key;
         }
 
-        return $this->Controller->request->getSession()->read($sessionKey);
+        return $this->Controller->getRequest()->getSession()->read($sessionKey);
     }
 
 
@@ -97,9 +97,9 @@ class QuizGameComponent extends Component
         // $this->_config['quiz_id'] è nullo
         if (
             empty($this->_config['quiz_id']) &&
-            !empty($this->Controller->request->getParam('id'))
+            !empty($this->Controller->getRequest()->getParam('id'))
         ) {
-            $this->_config['quiz_id'] = (int) $this->Controller->request->getParam('id');
+            $this->_config['quiz_id'] = (int) $this->Controller->getRequest()->getParam('id');
         }
 
         $keyPath = sprintf('Quiz.%d', $this->_config['quiz_id']);
@@ -132,14 +132,14 @@ class QuizGameComponent extends Component
         $keyRoot = $this->getSessionPath();
 
         // Crea sessione Quiz.<id>
-        if (!$this->Controller->request->getSession()->check($keyRoot)) {
-            $this->Controller->request->getSession()->write($keyRoot, []);
+        if (!$this->Controller->getRequest()->getSession()->check($keyRoot)) {
+            $this->Controller->getRequest()->getSession()->write($keyRoot, []);
         }
 
         // Inizializza sessione
         for ($i=1; $i <= self::QUESTION_FOR_LEVEL; $i++) {
 
-            if ($this->Controller->request->getSession()->check("{$keyRoot}.replies.{$i}")) {
+            if ($this->Controller->getRequest()->getSession()->check("{$keyRoot}.replies.{$i}")) {
                 continue;
             }
 
@@ -150,10 +150,10 @@ class QuizGameComponent extends Component
                 'expire_at'  => null
             ];
 
-            $this->Controller->request->getSession()->write($keyRoot. '.replies.' .$i, $data);
+            $this->Controller->getRequest()->getSession()->write($keyRoot. '.replies.' .$i, $data);
         }
 
-        return $this->Controller->request->getSession()->read($keyRoot);
+        return $this->Controller->getRequest()->getSession()->read($keyRoot);
     }
 
     /**
@@ -164,7 +164,7 @@ class QuizGameComponent extends Component
      */
     public function initializeGame($step = 1)
     {
-        $session = $this->Controller->request->getSession();
+        $session = $this->Controller->getRequest()->getSession();
 
         // Quiz.n.quiz
         if (!$session->read($this->getSessionPath('quiz'))) {
@@ -172,7 +172,7 @@ class QuizGameComponent extends Component
         }
 
         if (!$session->read($this->getSessionPath('level'))) {
-            $session->write($this->getSessionPath('level'), $this->Controller->request->getParam('level'));
+            $session->write($this->getSessionPath('level'), $this->Controller->getRequest()->getParam('level'));
         }
 
         $this->_quiz = $session->read($this->getSessionPath('quiz'));
@@ -180,7 +180,7 @@ class QuizGameComponent extends Component
         // Quiz.n.questions
         if (
             !$session->read($this->getSessionPath('questions')) ||
-            isset($this->Controller->request->query['force'])
+            isset($this->Controller->getRequest()->query['force'])
         ) {
             $session->write($this->getSessionPath('questions'), $this->_getQuestions()->all());
         }
@@ -250,7 +250,7 @@ class QuizGameComponent extends Component
      */
     private function _getQuestion()
     {
-        $questions     = $this->Controller->request->getSession()->read($this->getSessionPath('questions'));
+        $questions     = $this->Controller->getRequest()->getSession()->read($this->getSessionPath('questions'));
         $questionIndex = $this->getStep() - 1;
 
         return $this->_questions->take(1, $questionIndex)->first();
@@ -296,7 +296,7 @@ class QuizGameComponent extends Component
         $q->limit(10);
 
         // Implementare difficoltà domande in base al livello richiesto
-        $level = $this->Controller->request->getParam('level');
+        $level = $this->Controller->getRequest()->getParam('level');
 
         // NOTE:
         // Attacca alla query dei filtri
@@ -455,7 +455,7 @@ class QuizGameComponent extends Component
 
     public function restart()
     {
-        return $this->Controller->request->getSession()->delete($this->getSessionPath());
+        return $this->Controller->getRequest()->getSession()->delete($this->getSessionPath());
     }
 
     /**
@@ -467,7 +467,7 @@ class QuizGameComponent extends Component
         // Disabilita aiuti se utilizzati (vengono passati booleani tramite campo hidden)
         $this->_setSuggestiongetSession();
 
-        $reply   = (int) $this->Controller->request->data('reply');
+        $reply   = (int) $this->Controller->getRequest()->data('reply');
         $question = $this->_getQuestion();
         $answers = $question->quiz_answers;
         $correct = null;
@@ -492,11 +492,11 @@ class QuizGameComponent extends Component
         // debug($isCorrect);
         // die;
 
-        $this->Controller->request->getSession()->write($sessionKey . '.answer_id', $reply);
-        $this->Controller->request->getSession()->write($sessionKey . '.is_correct', (bool) $isCorrect);
+        $this->Controller->getRequest()->getSession()->write($sessionKey . '.answer_id', $reply);
+        $this->Controller->getRequest()->getSession()->write($sessionKey . '.is_correct', (bool) $isCorrect);
 
-        $secs = Configure::readOrFail('app.quizAnswer.timeout') - (int) $this->Controller->request->getData('secs', '1');
-        $this->Controller->request->getSession()->write($sessionKey . '.reply_after_secs', $secs);
+        $secs = Configure::readOrFail('app.quizAnswer.timeout') - (int) $this->Controller->getRequest()->getData('secs', '1');
+        $this->Controller->getRequest()->getSession()->write($sessionKey . '.reply_after_secs', $secs);
 
         $params = [
             'id'    => $this->request->getParam('id'),
@@ -635,7 +635,7 @@ class QuizGameComponent extends Component
      */
     protected function _getSuggestiongetSession() {
         $sessionPath = $this->getSessionPath('suggestions');
-        return $this->Controller->request->getSession()->read($sessionPath);
+        return $this->Controller->getRequest()->getSession()->read($sessionPath);
     }
 
     /**
@@ -649,7 +649,7 @@ class QuizGameComponent extends Component
 
         // Boolean: true=non utilizzato   false=utilizzato)
         // Valori: ['skip' => false, 'perc50' => true, 'perc25' => true]
-        $suggestionData    = $this->Controller->request->data('suggestions');
+        $suggestionData    = $this->Controller->getRequest()->data('suggestions');
 
         foreach ($suggestionData as $name => $used) {
 
@@ -663,7 +663,7 @@ class QuizGameComponent extends Component
                 throw new \Cake\Network\Exception\BadRequestException(__('Suggerimento {name} già utilizzato!', ['name' => $name]));
             }
 
-            $this->Controller->request->getSession()->write($this->getSessionPath('suggestions.' . $name), false);
+            $this->Controller->getRequest()->getSession()->write($this->getSessionPath('suggestions.' . $name), false);
         }
     }
 

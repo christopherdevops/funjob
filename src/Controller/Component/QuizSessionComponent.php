@@ -61,7 +61,7 @@ class QuizSessionComponent extends Component
     {
         $q = $this->QuizSessions->find();
         $q->where(['quiz_id' => $quiz_id]);
-        $q->where(['user_id' => $this->Controller->request->getSession()->read('Auth.User.id')]);
+        $q->where(['user_id' => $this->Controller->getRequest()->getSession()->read('Auth.User.id')]);
         $q->where(['is_deleted' => false]);
 
         $q->contain([
@@ -86,7 +86,7 @@ class QuizSessionComponent extends Component
     public function create($quiz_id)
     {
         $attrs = [
-            'user_id' => $this->Controller->request->getSession()->read('Auth.User.id'),
+            'user_id' => $this->Controller->getRequest()->getSession()->read('Auth.User.id'),
             'quiz_id' => $quiz_id,
         ];
 
@@ -109,18 +109,18 @@ class QuizSessionComponent extends Component
         // PS: Viene effettuata nel controller
 
         $quizSessionPath = sprintf('Quiz.%d', $session['quiz']->id);
-        $alreadyStore    = $this->Controller->request->getSession()->read($quizSessionPath . '._alreadySaved', true);
+        $alreadyStore    = $this->Controller->getRequest()->getSession()->read($quizSessionPath . '._alreadySaved', true);
         if ($alreadyStore) {
             throw new ForbiddenException();
         }
 
         // Aggiunge livello su $session
-        //$session['level'] = $this->Controller->request->getParam('level');
+        //$session['level'] = $this->Controller->getRequest()->getParam('level');
 
         $score = $this->calcScore($session);
         $session['points'] = $score['score'];
         $session['score']  = $score['score_final'];
-        $session['User']   = $this->Controller->request->getSession()->read('Auth.User');
+        $session['User']   = $this->Controller->getRequest()->getSession()->read('Auth.User');
 
         $quizSession = $this->exists($session['quiz']->id);
         $self        = $this;
@@ -266,7 +266,7 @@ class QuizSessionComponent extends Component
         // Sessione aggiunta:
         // _saved = se questa sessione di quiz è già stata salvata e sono già stati assegnati i PIX
         $quizSessionPath = sprintf('Quiz.%d', $session['quiz']->id);
-        $this->Controller->request->getSession()->write($quizSessionPath . '._alreadySaved', true);
+        $this->Controller->getRequest()->getSession()->write($quizSessionPath . '._alreadySaved', true);
 
         return [
             'qsessid' => $insertionData['QuizSession']->id,

@@ -96,7 +96,7 @@ class QuizQuestionComponent extends Component
         $answerFieldsets            = array_fill_keys($answerFieldsets, false);
         $answerFieldsets['default'] = true;
 
-        if ($this->Controller->request->is('post')) {
+        if ($this->Controller->getRequest()->is('post')) {
             $answerFieldsets['default']                      = false;
             $answerFieldsets[ $this->request->data('type') ] = true;
         }
