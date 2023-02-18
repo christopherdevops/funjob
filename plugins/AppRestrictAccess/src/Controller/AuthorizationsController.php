@@ -25,8 +25,7 @@ class AuthorizationsController extends BaseController
         }
 
         if ($this->request->is('post')) {
-            if (!$Form->validate($this->request->getData())) {
-                echo 'hi';
+            if ($Form->validate($this->request->getData())) {
                 $this->request->getSession()->write('AccessRestriction.authorized', true);
                 return $this->redirect('/');
             }
