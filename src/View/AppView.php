@@ -43,15 +43,19 @@ class AppView extends View
         // Don't forget to call the parent::initialize()
         parent::initialize();
 
+        // App\View\Widget\UploadWidget
+        $this->helpers = [
+            'Form' => [
+                'widgets' => [
+                    'upload' => ['Hiryu85\View\Widget\UploadWidget', 'text', 'label', 'file']
+                ],
+                'className' => 'BootstrapUI.Form'
+            ]
+        ];
+
         // TwitterBootstrapUI
         $this->initializeUI(['layout' => false]);
 
         //$this->loadHelper('WyriHaximus/MinifyHtml.MinifyHtml');
-
-        // App\View\Widget\UploadWidget
-        $this->Form->addWidget(
-            'upload',
-            ['Hiryu85\View\Widget\UploadWidget', 'text', 'label', 'file']
-        );
     }
 }
