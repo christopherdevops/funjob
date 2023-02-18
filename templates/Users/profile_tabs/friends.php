@@ -8,7 +8,7 @@
         border:green;
     }
 
-    .user-vcard {min-height:86px;height:100%}
+    .user-vcard {min-height:86px;height:min-content;}
     .user-vcard .well {
         overflow:hidden !important;
         background-color:white !important;

@@ -55,7 +55,7 @@
 
             <div class="col-xs-4 col-sm-5 col-md-5 no-padding">
                 <div class="row row-height-100">
-                    <div data-class="pull-right flex-align-center" style="height:100%">
+                    <div data-class="pull-right flex-align-center" style="height:min-content">
                         <div class="funjob-primary-menu-right-container container-fluid">
 
                             <ul class="funjob-primary-menu-right-list <?= $this->request->getSession()->check('Auth.User.id') ? 'funjob-primary-menu-right-list--authed' : '' ?> list-inline pull-right">

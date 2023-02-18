@@ -4,7 +4,7 @@
     .clt ul {list-style: none;padding-left: 32px;}
     .clt li::before, .clt li::after {content: "";position: absolute;left: -12px;}
     .clt li::before {border-top: 1px solid #000;top: 9px;width: 8px;height: 0;}
-    .clt li::after {border-left: 1px solid #000;height: 100%;width: 0px;top: 2px;}
+    .clt li::after {border-left: 1px solid #000;height:min-content;width: 0px;top: 2px;}
     .clt ul > li:last-child::after {height: 8px;}
 
     .clt li::before, .clt li::after {border:1px solid orange !important;}

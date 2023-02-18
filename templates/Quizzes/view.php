@@ -219,7 +219,7 @@
                         .funjob-quiz-panel-video .panel-body iframe,
                         .funjob-quiz-panel-video .panel-body iframe
                         {
-                            height:100% !important;
+                            height:min-content !important;
                             width:100% !important;
                         }
                     </style>
@@ -289,7 +289,7 @@
         <div class="funjob-quiz-detail">
 
             <div class="funjob-quiz-cover-box" style="border-color:<?= $quiz->color ?>;overflow:hidden;">
-                <img class="img-responsive" style="width:100%;height:100%" src="<?= $quiz->imageSize($quiz->coverSrcOriginal, '900x400') ?>" data-src="holder.js/500x300?auto=yes&bg=<?= $quiz->color ?>&fg=#ffffff&text=funjob.it" alt="">
+                <img class="img-responsive" style="width:100%;height:min-content" src="<?= $quiz->imageSize($quiz->coverSrcOriginal, '900x400') ?>" data-src="holder.js/500x300?auto=yes&bg=<?= $quiz->color ?>&fg=#ffffff&text=funjob.it" alt="">
             </div>
             <div class="well well-sm funjob-quiz-cover-info" style="background-color: <?= $quiz->color ?>">
                 <h1 class="funjob-quiz-title font-size-lg--x text-center no-margin">

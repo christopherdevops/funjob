@@ -36,7 +36,7 @@ label .btn-label {
     display: inline-block;
     padding: 0 10px;
     background: rgba(0,0,0,.15);
-    height: 100%
+    height:min-content;
 }
 
 label .glyphicon {

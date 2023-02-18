@@ -98,7 +98,7 @@
 
                                     <div class="col-xs-4 col-sm-5 col-md-5 no-padding">
                                         <div class="row row-height-100">
-                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height:100%;">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height:min-content;">
                                                 <div class="container-fluid pull-right">
 
                                                     <style type="text/css">

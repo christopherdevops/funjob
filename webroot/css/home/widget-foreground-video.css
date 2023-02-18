@@ -1,4 +1,4 @@
-.youtube-player iframe {height:100%;width:100% !important}
+.youtube-player iframe {height:min-content;width:100% !important}
 
 /* Desktops and laptops ----------- */
 @media only screen

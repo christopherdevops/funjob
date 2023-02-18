@@ -2,7 +2,7 @@ html {
     background-color:#00adee !important;
     background-image:url("../img/quiz-background.jpg") !important;
     overflow:hidden;
-    min-height:100%;
+    min-height:min-content;
 }
 body{background-color:transparent !important;}
 
@@ -15,7 +15,7 @@ body{background-color:transparent !important;}
 .app-menu-primary-btn,
 .app-menu-primary-btn * {
     /* bottone al centro della barra */
-    line-height: 100%;
+    line-height:100%;
         vertical-align: middle;
         display: table-cell !important;
 }

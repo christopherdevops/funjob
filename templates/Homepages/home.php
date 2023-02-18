@@ -96,7 +96,7 @@
         position:relative;
         top:0;left:0;
         display:block;
-        height:100%
+        height:min-content;
     }
 
     .funjob-howto-video-icon {

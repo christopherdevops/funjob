@@ -28,7 +28,7 @@
 
     .clt li::after {
         border-left: 1px solid #000;
-        height: 100%;
+        height:min-content;
         width: 0px;
         top: 2px;
     }

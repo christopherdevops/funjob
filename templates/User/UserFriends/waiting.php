@@ -7,7 +7,7 @@
 ?>
 
 <?php $this->append('css_head--inline') ?>
-    .user-vcard {min-height:86px;height:100%}
+    .user-vcard {min-height:86px;height:min-content;}
     .user-vcard .well {
         border-radius:6px !important;
         overflow:hidden !important;
