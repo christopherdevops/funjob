@@ -102,7 +102,7 @@ class HomepagesController extends AppController
 
         $this->loadModel('QuizCategories');
         $categories         = $this->QuizCategories->find('treeList', ['spacer' => ' ']);
-        $categoriesSelected = $this->HomepagePopularCategories->find('list')->hydrate(false)->toArray();
+        $categoriesSelected = $this->HomepagePopularCategories->find('list')->enableHydration(false)->toArray();
 
         $this->set(compact('categories', 'categoriesSelected'));
     }

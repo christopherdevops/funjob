@@ -178,7 +178,7 @@ class QuizCategoriesTable extends Table
     public function findPrimary(\Cake\ORM\Query $q)
     {
         $PopularCategories = TableRegistry::get('HomepagePopularCategories');
-        $ids = $PopularCategories->find('list')->hydrate(false)->toList();
+        $ids = $PopularCategories->find('list')->enableHydration(false)->toList();
 
         // Previene eccezione quando $ids è vuoto (Datasource)
         if (!empty($ids)) {

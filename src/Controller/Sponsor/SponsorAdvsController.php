@@ -165,7 +165,7 @@ Class SponsorAdvsController extends AppController {
     private function _fetchClicks($adv_id, $filterMonth)
     {
         $q = $this->SponsorAdvs->Clicks->findBySponsorAdvId($adv_id);
-        $q->hydrate(false);
+        $q->enableHydration(false);
         $q->find('byMonth', ['month' => $filterMonth]);
 
         $createdFormat = $q->func()->date_format([

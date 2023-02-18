@@ -299,7 +299,7 @@ class UserMessagesController extends AppController
                 'user_id'        => (int) $recipient,
                 'ignore_user_id' => (int) $sender
             ])
-            ->hydrate(false)
+            ->enableHydration(false)
             ->count();
 
         if ($ignoreMe) {

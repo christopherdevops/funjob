@@ -645,7 +645,7 @@ class QuizzesTable extends Table
                         return $TableQuizCategories
                             ->find('path', ['for' => $category['id']])
                             ->select(['id', 'name', 'parent_id'])
-                            ->hydrate(false)
+                            ->enableHydration(false)
                             ->toArray();
                     }, 'quiz_categories');
 

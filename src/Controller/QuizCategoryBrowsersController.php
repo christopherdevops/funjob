@@ -95,7 +95,7 @@ class QuizCategoryBrowsersController extends AppController
 
         $childrens = $this->Categories->find('children', ['for' => $node])
             ->select(['id'])
-            ->hydrate(false)
+            ->enableHydration(false)
             ->extract('id')->toArray();
 
         $childrens[] = $node;

@@ -657,7 +657,7 @@ class QuizzesController extends AppController
             throw new \Cake\Network\Exception\BadRequestException();
         }
 
-        $Query = $this->Quizzes->find()->hydrate(false);
+        $Query = $this->Quizzes->find()->enableHydration(false);
         $term  = trim($this->request->query['term']);
 
         $Query->leftJoinWith('Tags');

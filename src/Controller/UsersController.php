@@ -227,7 +227,7 @@ class UsersController extends AppController
         $User       = $this->Users->findById($user_id)->firstOrFail();
         $categories = $this->Users->QuizSessions
             ->find('playedCategories', ['user_id' => $options['user_id']])
-            ->hydrate(false)->all();
+            ->enableHydration(false)->all();
 
         $this->set(compact('sessions', 'User', 'categories'));
         $this->set('_serialize', ['sessions']);
@@ -295,7 +295,7 @@ class UsersController extends AppController
 
         $limit      = $this->request->is('mobile') ?  10 : 30;
         $quizzes    = $this->Paginator->paginate($q, compact('limit'));
-        $categories = $this->Quizzes->find('createdByCategories', compact('user_id'))->hydrate(false)->all();
+        $categories = $this->Quizzes->find('createdByCategories', compact('user_id'))->enableHydration(false)->all();
 
         $this->set(compact('quizzes', 'categories'));
         $this->set('_serialize', ['quizzes']);

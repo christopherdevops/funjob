@@ -110,7 +110,7 @@ class CompanyCategoriesBrowsersController extends AppController
             $node = (int) $pass[0];
             $childrens = $this->Categories->find('children', ['for' => $node])
                 ->select(['id'])
-                ->hydrate(false)
+                ->enableHydration(false)
                 ->extract('id')->toArray();
 
             $childrens[] = $node;

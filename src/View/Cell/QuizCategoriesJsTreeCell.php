@@ -45,9 +45,9 @@ class QuizCategoriesJsTreeCell extends Cell
             $categories = $this->QuizCategories
                 ->find('threaded')
                 ->select(['id', 'name', 'parent_id'])
-                // NOTE: Se si usa hydrate=false e si itera tramite $Iterator non vengono impostate le nuove voci
+                // NOTE: Se si usa enableHydration=false e si itera tramite $Iterator non vengono impostate le nuove voci
                 // $data['state'], difatti ogni nuova voce creata non compare in $categories (viene clonato?)
-                //->hydrate(false)
+                //->enableHydration(false)
                 ->bufferResults(false)
                 ->toArray();
 

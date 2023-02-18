@@ -85,7 +85,7 @@ class FakeUsersCell extends Cell
         $entities = $this->MapPoints->find()
             ->order('RAND()')
             ->limit($limit)
-            ->hydrate(false)
+            ->enableHydration(false)
             ->all();
 
         foreach ($entities as $point) {

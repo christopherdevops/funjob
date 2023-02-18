@@ -68,7 +68,7 @@ class CitiesController extends AppController
         // $Cities->removeBehavior('Translate');
 
         // $query  = $this->Cities->find();
-        // $query->hydrate(false);
+        // $query->enableHydration(false);
 
         // $query->select(['name' => 'accent_city', 'value' => 'id']);
         // $query->where(['name LIKE' => '%' .$this->request->data['term']. '%']);

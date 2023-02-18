@@ -68,7 +68,7 @@ class QuizzesController extends AppController
         $User       = $this->Users->findById($this->Auth->user('id'))->firstOrFail();
         $categories = $this->Users->QuizSessions
             ->find('playedCategories', ['user_id' => $this->Auth->user('id')])
-            ->hydrate(false)->toArray();
+            ->enableHydration(false)->toArray();
 
         $this->set(compact('sessions', 'User', 'categories'));
         //$this->set('quizzes', $sessions);

@@ -308,7 +308,7 @@ class QuizQuestionsController extends AppController
 
         $q->where(['QuizQuestions.is_published' => true]);
 
-        $questions = $q->hydrate(false)->all();
+        $questions = $q->enableHydration(false)->all();
 
         $_header        = [
             'Quiz',

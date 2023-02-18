@@ -156,7 +156,7 @@ class QuizCategoryImporterShell extends Shell
         $tree = $this->QuizCategories
             ->find('children', ['for' => self::UNIVERSITY_ROOT_NODEID])
             ->find('threaded')
-        ->hydrate(false)
+        ->enableHydration(false)
         ->toArray();
 
 

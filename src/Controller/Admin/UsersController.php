@@ -152,7 +152,7 @@ class UsersController extends AppController
         $qStatuses = $this->Users->Quizzes->find();
         $qStatuses->find('byAuthor',  ['user_id' => $user_id]);
         $qStatuses->select(['id', 'title', 'status', 'is_disabled']);
-        $statuses = $qStatuses->hydrate(false)->mapReduce($mapper, $reducer)->all();
+        $statuses = $qStatuses->enableHydration(false)->mapReduce($mapper, $reducer)->all();
 
         $this->set(compact('statuses', 'quizzes'));
         $this->set('_serialize', ['status', 'quizzes']);
@@ -226,7 +226,7 @@ class UsersController extends AppController
                 ];
         }
 
-        $users      = $q->hydrate(false)->all();
+        $users      = $q->enableHydration(false)->all();
         $_serialize = ['users'];
         $_delimiter = ';';
 

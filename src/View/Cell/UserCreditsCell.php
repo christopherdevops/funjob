@@ -35,7 +35,7 @@ class UserCreditsCell extends Cell
                 $entity = $this->UserCredits->find()
                     ->select(['total'])
                     ->where(['user_id' => (int) $user_id])
-                    ->hydrate(false)
+                    ->enableHydration(false)
                     ->first();
 
                 if ($entity) {

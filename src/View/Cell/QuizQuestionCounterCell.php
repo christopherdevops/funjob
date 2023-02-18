@@ -32,7 +32,7 @@ class QuizQuestionCounterCell extends Cell
 
         $minQuestionForLevel = Configure::read(sprintf('app.quiz.%s.minQuestions', $quiz->type));
         $counters            = [];
-        $levelCounters       = $this->QuizQuestions ->find('isPublished') ->find('countByLevel', ['quiz_id' => $quiz->id])->hydrate(false)->first();
+        $levelCounters       = $this->QuizQuestions ->find('isPublished') ->find('countByLevel', ['quiz_id' => $quiz->id])->enableHydration(false)->first();
         $levels              = ['_total' => 0, '_lefts' => $minQuestionForLevel];
 
         // Contatore: domande totali
@@ -85,7 +85,7 @@ class QuizQuestionCounterCell extends Cell
 
         $minQuestionForLevel = Configure::read(sprintf('app.quiz.%s.minQuestions', $quiz->type));
         $counters            = [];
-        $levelCounters       = $this->QuizQuestions->find('countByLevel', ['quiz_id' => $quiz->id])->hydrate(false)->first();
+        $levelCounters       = $this->QuizQuestions->find('countByLevel', ['quiz_id' => $quiz->id])->enableHydration(false)->first();
         $levels              = ['_total' => 0, '_lefts' => $minQuestionForLevel];
 
         // Contatore: domande totali

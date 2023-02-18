@@ -269,7 +269,7 @@ class QuizGameComponent extends Component
             }
         ]);
 
-        //$q->hydrate(false);
+        //$q->enableHydration(false);
         return $q;
     }
 
@@ -303,7 +303,7 @@ class QuizGameComponent extends Component
         $this->_getQuestionByLevel($q, $level);
 
 
-        //$q->hydrate(false);
+        //$q->enableHydration(false);
         return $q;
     }
 
@@ -360,7 +360,7 @@ class QuizGameComponent extends Component
             }
         ]);
 
-        $questions = $qSession->hydrate(false)->first();
+        $questions = $qSession->enableHydration(false)->first();
         if (!$questions) {
             return [];
         }
