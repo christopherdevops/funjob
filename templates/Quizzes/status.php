@@ -17,7 +17,7 @@
 <?php endif ?>
 
 <?php
-    echo $this->Form->create($Quiz, ['url' => ['prefix' => 'user', 'controller' => 'Quizzes', 'action' => 'status']]);
+    echo $this->Form->create($Quiz, ['url' => ['prefix' => 'User', 'controller' => 'Quizzes', 'action' => 'status']]);
     //echo $this->Form->hidden('id', ['value' => $quiz->id]);
 
     $btnAttrs = ['class' => 'btn btn-success btn-block'];

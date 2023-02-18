@@ -77,7 +77,7 @@
                         <button class="btn btn-xs btn-default js-adv-image" data-text="<?= $adv->descr ?>" data-src="<?= $adv->imageSrc ?>">
                             <i class="fa fa-file-image-o"></i>
                         </button>
-                        <a href="<?= $this->Url->build(['prefix' => 'sponsor', 'action' => 'view', $adv->id]) ?>" class="btn btn-xs btn-default">
+                        <a href="<?= $this->Url->build(['prefix' => 'Sponsor', 'action' => 'view', $adv->id]) ?>" class="btn btn-xs btn-default">
                             <i class="fa fa-pie-chart"></i>
                         </a>
                         <a target="_blank" href="<?= $adv->href ?>" class="btn btn-xs btn-default">

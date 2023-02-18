@@ -105,7 +105,7 @@
                                 </td>
 
                                 <td>
-                                    <a href="<?= $this->Url->build(['prefix' => 'admin', 'action' => 'edit', 0 => $group->id]) ?>">
+                                    <a href="<?= $this->Url->build(['prefix' => 'Admin', 'action' => 'edit', 0 => $group->id]) ?>">
                                         <i class="fa fa-pencil"></i>
                                         <?= __d('backend', 'Modifica') ?>
                                     </a>
@@ -113,7 +113,7 @@
                                     <?php
                                         echo $this->Form->postLink(
                                             '<i class="text-danger fa fa-trash"></i> ' . __d('backend', 'Elimina'),
-                                            ['prefix' => 'admin', 'action' => 'delete', 0 => $group->id],
+                                            ['prefix' => 'Admin', 'action' => 'delete', 0 => $group->id],
                                             ['escape' => false, 'confirm' => __('Sei sicuro di voler cancellare questo gruppo?')]
                                         );
                                     ?>

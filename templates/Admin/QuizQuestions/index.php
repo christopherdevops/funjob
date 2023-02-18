@@ -112,7 +112,7 @@
             <tr>
                 <td>
                     <?php
-                        echo $this->Form->create($question, ['class' => 'js-import-question-form', 'url' => ['prefix' => 'admin', 'action' => 'import']]);
+                        echo $this->Form->create($question, ['class' => 'js-import-question-form', 'url' => ['prefix' => 'Admin', 'action' => 'import']]);
                         echo $this->Form->control('quiz_id', ['type' => 'hidden', 'value' => $this->request->getQuery('quiz_id')]);
                         echo $this->Form->control('id', ['type' => 'hidden']);
                         echo $this->Form->button(__d('backend', 'Importa'), ['class' => 'btn btn-sm btn-success']);

@@ -42,7 +42,7 @@
 <?php $this->end() ?>
 
 <?php $this->start('new') ?>
-    <a href="<?= $this->Url->build(['prefix' => 'sponsor', 'controller' => 'sponsor-advs', 'action' => 'add']) ?>" class="btn btn-block btn-success btn-sm">
+    <a href="<?= $this->Url->build(['prefix' => 'Sponsor', 'controller' => 'sponsor-advs', 'action' => 'add']) ?>" class="btn btn-block btn-success btn-sm">
         <?= __('Crea annuncio') ?>
     </a>
 <?php $this->end() ?>

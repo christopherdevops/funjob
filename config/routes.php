@@ -301,7 +301,7 @@ return static function (RouteBuilder $routes) {
 
     $routes->scope(
         '/quiz/ranking/',
-        ['_namePrefix' => 'quiz:ranking:', 'plugin' => null, 'prefix' => 'user', 'controller' => 'QuizUserRankings'],
+        ['_namePrefix' => 'quiz:ranking:', 'plugin' => null, 'prefix' => 'User', 'controller' => 'QuizUserRankings'],
         function ($builder) {
             $builder->connect('/add', ['action' => 'add'], ['_name' => 'add']);
             $builder->connect('/edit/:id', ['action' => 'edit'], ['_name' => 'edit', 'id' => RouteValidator::ID, 'pass' => ['id']]);
@@ -408,18 +408,18 @@ return static function (RouteBuilder $routes) {
         );
 
         $builder->scope('/quizzes', function (RouteBuilder $builder) {
-            $builder->connect('/', ['prefix' => 'user', 'controller' => 'users', 'action' => 'quizzes'], ['_name' => 'quizzes']);
+            $builder->connect('/', ['prefix' => 'User', 'controller' => 'users', 'action' => 'quizzes'], ['_name' => 'quizzes']);
 
             // Quiz svolti (pubblico)
             //$builder->connect('/completed', ['prefix' => null, 'controller' => 'users', 'action' => 'quizCompleted'], ['_name' => 'quizzes:completed']);
 
             // Quiz svolti parte backend (pubblico)
-            $builder->connect('/completed', ['prefix' => 'user', 'controller' => 'Quizzes', 'action' => 'played'], ['_name' => 'quizzes:completed']);
+            $builder->connect('/completed', ['prefix' => 'User', 'controller' => 'Quizzes', 'action' => 'played'], ['_name' => 'quizzes:completed']);
             $builder->connect('/created', ['prefix' => null, 'controller' => 'users', 'action' => 'quizCreated'], ['_name' => 'quizzes:created']);
         });
 
-        //$builder->connect('/credits', ['prefix' => 'user', 'controller' => 'users', 'action' => 'credits'], ['_name' => 'credits']);
-        $builder->connect('/orders', ['prefix' => 'user', 'controller' => 'StoreOrders', 'action' => 'index'], ['_name' => 'orders']);
+        //$builder->connect('/credits', ['prefix' => 'User', 'controller' => 'users', 'action' => 'credits'], ['_name' => 'credits']);
+        $builder->connect('/orders', ['prefix' => 'User', 'controller' => 'StoreOrders', 'action' => 'index'], ['_name' => 'orders']);
 
         $builder->fallbacks(DashedRoute::class);
     });
@@ -560,23 +560,23 @@ return static function (RouteBuilder $routes) {
     $routes->scope('/messages', ['_namePrefix' => 'message:'], function (RouteBuilder $builder) {
         $builder->connect(
             '/',
-            ['plugin' => false, 'prefix' => 'user', 'controller' => 'UserMessages', 'action' => 'index'],
+            ['plugin' => false, 'prefix' => 'User', 'controller' => 'UserMessages', 'action' => 'index'],
             ['_name' => 'archive']
         );
         $builder->connect(
             '/conversation/:uuid',
-            ['plugin' => false, 'prefix' => 'user', 'controller' => 'UserMessages', 'action' => 'view'],
+            ['plugin' => false, 'prefix' => 'User', 'controller' => 'UserMessages', 'action' => 'view'],
             ['_name' => 'view', 'uuid' => RouteValidator::UUID, 'pass' => ['uuid']]
         );
 
         $builder->connect(
             '/compose',
-            ['plugin' => false, 'prefix' => 'user', 'controller' => 'UserMessages', 'action' => 'add', 'username' => null],
+            ['plugin' => false, 'prefix' => 'User', 'controller' => 'UserMessages', 'action' => 'add', 'username' => null],
             ['_name' => 'compose', 'username' => '(^$|' . RouteValidator::SLUG .')', 'pass' => ['username']]
         );
         $builder->connect(
             '/compose/:username',
-            ['plugin' => false, 'prefix' => 'user', 'controller' => 'UserMessages', 'action' => 'add', 'username' => null],
+            ['plugin' => false, 'prefix' => 'User', 'controller' => 'UserMessages', 'action' => 'add', 'username' => null],
             ['_name' => 'compose:username', 'username' => RouteValidator::SLUG, 'pass' => ['username']]
         );
     });
@@ -589,7 +589,7 @@ return static function (RouteBuilder $routes) {
         $builder->connect('/leave', ['action' => 'leave'], ['_name' => 'leave']);
     });
 
-    $routes->scope('/my-groups', ['_namePrefix' => 'mygroups:', 'prefix' => 'user'], function(RouteBuilder $builder) {
+    $routes->scope('/my-groups', ['_namePrefix' => 'mygroups:', 'prefix' => 'User'], function(RouteBuilder $builder) {
         $builder->connect('/joined', ['controller' => 'Users', 'action' => 'groups', 'joined'], ['_name' => 'archive']);
         $builder->connect('/joined', ['controller' => 'Users', 'action' => 'groups', 'joined'], ['_name' => 'archive:joined']);
         $builder->connect('/created', ['controller' => 'Users', 'action' => 'groups', 'created'], ['_name' => 'archive:created']);
@@ -630,8 +630,8 @@ return static function (RouteBuilder $routes) {
         function ($builder) {
 
             // Backend
-            $builder->prefix('admin', ['_namePrefix' => 'admin:', 'prefix' => 'admin'], function($builder) {
-                $builder->scope('/product', ['_namePrefix' => 'product:', 'prefix' => 'admin'], function($builder) {
+            $builder->prefix('admin', ['_namePrefix' => 'admin:', 'prefix' => 'Admin'], function($builder) {
+                $builder->scope('/product', ['_namePrefix' => 'product:', 'prefix' => 'Admin'], function($builder) {
                     $builder->connect('/', ['controller' => 'StoreProducts', 'action' => 'index'], ['_name' => 'index']);
                     $builder->connect('/add', ['controller' => 'StoreProducts', 'action' => 'add'], ['_name' => 'add']);
                     $builder->connect('/edit/:id', ['controller' => 'StoreProducts', 'action' => 'edit'], ['_name' => 'edit', 'id' => RouteValidator::ID, 'pass' => ['id']]);

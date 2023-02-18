@@ -103,7 +103,7 @@
                                 <?= __('Profilo') ?>
                             </a>
 
-                            <a href="<?= $this->Url->build(['prefix' => 'admin', 'controller' => 'users', 'action' => 'view', 0 => $order->user->id]) ?>">
+                            <a href="<?= $this->Url->build(['prefix' => 'Admin', 'controller' => 'users', 'action' => 'view', 0 => $order->user->id]) ?>">
                                 <i class="fa fa-user"></i>
                                 <?= __('Profilo (admin)') ?>
                             </a>
@@ -197,11 +197,11 @@
 
                 <?php echo __('Se rifiuti un ordine, è necessario:') ?>
 
-                <a href="<?= $this->Url->build(['prefix' => 'admin', 'controller' => 'Users', 'action' => 'view', 0 => $order->user->id, '?' => ['pixs' => $order->amount]]) ?>">
+                <a href="<?= $this->Url->build(['prefix' => 'Admin', 'controller' => 'Users', 'action' => 'view', 0 => $order->user->id, '?' => ['pixs' => $order->amount]]) ?>">
                     1. <?= __('Restituire i {amount} PIX all\'utente', ['amount' => $order->amount]) ?>
                 </a>
                 <br>
-                <a href="<?= $this->Url->build(['prefix' => 'admin', 'controller' => 'StoreProducts', 'action' => 'edit', 0 => $order->product->id]) ?>">
+                <a href="<?= $this->Url->build(['prefix' => 'Admin', 'controller' => 'StoreProducts', 'action' => 'edit', 0 => $order->product->id]) ?>">
                     2. <?= __('Incrementare la quantità dell oggetto') ?>
                 </a>
 

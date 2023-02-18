@@ -53,7 +53,7 @@
         <?php
             echo $this->Html->link(
                 __('Acquista spazio'),
-                ['prefix' => 'sponsor', 'controller' => 'sponsor-advs', 'action' => 'add'],
+                ['prefix' => 'Sponsor', 'controller' => 'sponsor-advs', 'action' => 'add'],
                 ['class' => 'btn btn-xs btn-block btn-default']
             )
         ?>

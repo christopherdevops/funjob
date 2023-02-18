@@ -84,7 +84,7 @@
             <script>
                 config.adminPanel = {
                     csrfToken : "<?= $this->request->getParam('_csrfToken') ?>",
-                    url       : "<?= $this->Url->build(['prefix' => 'admin', 'controller' => 'quiz-questions', 'action' => 'index', '?' => ['quiz_id' => $quiz->id]]) ?>"
+                    url       : "<?= $this->Url->build(['prefix' => 'Admin', 'controller' => 'quiz-questions', 'action' => 'index', '?' => ['quiz_id' => $quiz->id]]) ?>"
                 };
             </script>
             <button class="js-admin-question-modal btn btn-block btn-default">
@@ -98,7 +98,7 @@
             </button>
 
             <?php
-                echo $this->Form->create($quiz, ['id' => 'form-quiz-admin-ban', 'url' => ['prefix' => 'admin', 'controller' => 'Quizzes', 'action' => 'disable']]);
+                echo $this->Form->create($quiz, ['id' => 'form-quiz-admin-ban', 'url' => ['prefix' => 'Admin', 'controller' => 'Quizzes', 'action' => 'disable']]);
                 echo $this->Form->control('id');
                 echo $this->Form->control('is_disabled', [
                     'label'  => __('Disabilita quiz (ban)'),

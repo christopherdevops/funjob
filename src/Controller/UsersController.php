@@ -54,7 +54,7 @@ class UsersController extends AppController
      */
     public function settings() {
         $this->autoRender = false;
-        $baseRoute = ['_name' => 'me:settings:prefixed', 'prefix' => 'user'];
+        $baseRoute = ['_name' => 'me:settings:prefixed', 'prefix' => 'User'];
 
         if ($this->Auth->user('type') == 'company') {
             $baseRoute['prefix'] = 'company';

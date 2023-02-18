@@ -48,7 +48,7 @@
 
                     <?php if ($this->request->getSession()->read('Auth.User.type') == 'admin') : ?>
                     <br>
-                    <a href="<?= $this->Url->build(['prefix' => 'admin', 'controller' => 'QuizQuestions', 'action' => 'edit', $question->id]) ?>">
+                    <a href="<?= $this->Url->build(['prefix' => 'Admin', 'controller' => 'QuizQuestions', 'action' => 'edit', $question->id]) ?>">
                         <i class="fa fa-edit"></i>
                         <?php echo __('Modifica') ?> (admin)
                     </a>

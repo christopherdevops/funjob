@@ -363,7 +363,7 @@
         <?php if (!$myself && in_array('isFriend', $this->getVars()) && empty($isFriend)) : ?>
         <div class="list-group-item">
             <?php
-                echo $this->Form->create($isFriend, ['url' => ['prefix' => 'user', 'controller' => 'UserFriends', 'action' => 'add']]);
+                echo $this->Form->create($isFriend, ['url' => ['prefix' => 'User', 'controller' => 'UserFriends', 'action' => 'add']]);
                 echo $this->Form->control('user_id', ['value' => $this->request->getSession()->read('Auth.User.id'), 'type' => 'hidden']);
                 echo $this->Form->control('friend_id', ['value' => $User->id, 'type' => 'hidden']);
                 echo $this->Form->button(
@@ -380,7 +380,7 @@
         <?php elseif (!$myself && isset($isFriend) && $isFriend && $isFriend->is_accepted) : ?>
         <div class="list-group-item">
             <?php
-                echo $this->Form->create($isFriend, ['url' => ['prefix' => 'user', 'controller' => 'UserFriends', 'action' => 'edit']]);
+                echo $this->Form->create($isFriend, ['url' => ['prefix' => 'User', 'controller' => 'UserFriends', 'action' => 'edit']]);
                 echo $this->Form->control('id', ['type' => 'hidden']);
                 echo $this->Form->control('is_accepted', ['value' => false, 'type' => 'hidden']);
                 echo $this->Form->button(

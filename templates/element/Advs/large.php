@@ -39,7 +39,7 @@ $(function() {
                 <?php
                     if ($adv->id === 0) {
                         $src  = $adv->banner__img;
-                        $href = $this->Url->build(['prefix' => 'sponsor', 'controller' => 'sponsor-advs', 'action' => 'add']);
+                        $href = $this->Url->build(['prefix' => 'Sponsor', 'controller' => 'sponsor-advs', 'action' => 'add']);
                     } else {
                         $src  = $this->Url->build(['_name' => 'adv:image', $adv->uuid]);
                         $href = $this->Url->build(['_name' => 'adv:track', $adv->uuid]);
@@ -70,7 +70,7 @@ $(function() {
         <?php
             echo $this->Html->link(
                 __('Acquista spazio'),
-                ['prefix' => 'sponsor', 'controller' => 'sponsor-advs', 'action' => 'add'],
+                ['prefix' => 'Sponsor', 'controller' => 'sponsor-advs', 'action' => 'add'],
                 ['class' => 'btn btn-xs btn-block btn-default']
             )
         ?>

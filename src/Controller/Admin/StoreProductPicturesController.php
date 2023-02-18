@@ -60,7 +60,7 @@ class StoreProductPicturesController extends AppController
         if ($this->StoreProductPictures->delete($ProductPicture)) {
             $this->Flash->success(__('Foto eliminata'));
             return $this->redirect([
-                'prefix' => 'admin', 'controller' => 'StoreProducts', 'action' => 'edit',
+                'prefix' => 'Admin', 'controller' => 'StoreProducts', 'action' => 'edit',
                 0 => $ProductPicture->product_id, '#' => 'pictures'
             ]);
         }

@@ -72,12 +72,12 @@
                     </span>
                     <ul>
                         <li>
-                            <a href="<?= $this->Url->build(['prefix' => 'user', 'controller' => 'UserFriends', 'action' => 'index']) ?>">
+                            <a href="<?= $this->Url->build(['prefix' => 'User', 'controller' => 'UserFriends', 'action' => 'index']) ?>">
                                 <?= __('Amici') ?>
                             </a>
                         </li>
                         <li>
-                            <a href="<?= $this->Url->build(['prefix' => 'user', 'controller' => 'UserFriends', 'action' => 'waiting']) ?>">
+                            <a href="<?= $this->Url->build(['prefix' => 'User', 'controller' => 'UserFriends', 'action' => 'waiting']) ?>">
                                 <?= __('Richieste') ?>
                             </a>
                         </li>
@@ -143,12 +143,12 @@
                     </span>
                     <ul>
                         <li>
-                            <a href="<?= $this->Url->build(['prefix' => 'sponsor', 'controller' => 'SponsorAdvs', 'action' => 'index']) ?>">
+                            <a href="<?= $this->Url->build(['prefix' => 'Sponsor', 'controller' => 'SponsorAdvs', 'action' => 'index']) ?>">
                                 <?php echo __('Pubblicità create') ?>
                             </a>
                         </li>
                         <li>
-                            <a href="<?= $this->Url->build(['prefix' => 'sponsor', 'controller' => 'SponsorAdvs', 'action' => 'add']) ?>">
+                            <a href="<?= $this->Url->build(['prefix' => 'Sponsor', 'controller' => 'SponsorAdvs', 'action' => 'add']) ?>">
                                 <?php echo __('Crea nuova') ?>
                             </a>
                         </li>
@@ -373,15 +373,15 @@
                     <span><?= __('Homepage') ?></span>
                     <ul>
                         <li>
-                            <?= $this->Html->link(__('Impostazioni generali'), ['prefix' => 'admin', 'controller' => 'Homepages', 'action' => 'index']) ?>
+                            <?= $this->Html->link(__('Impostazioni generali'), ['prefix' => 'Admin', 'controller' => 'Homepages', 'action' => 'index']) ?>
                         </li>
 
                         <li>
-                            <?= $this->Html->link(__('Categorie Popolari'), ['prefix' => 'admin', 'controller' => 'Homepages', 'action' => 'popularCategories']) ?>
+                            <?= $this->Html->link(__('Categorie Popolari'), ['prefix' => 'Admin', 'controller' => 'Homepages', 'action' => 'popularCategories']) ?>
                         </li>
 
                         <li>
-                            <?= $this->Html->link(__('Quiz Popolari'), ['prefix' => 'admin', 'controller' => 'Homepages', 'action' => 'popularQuizzes']) ?>
+                            <?= $this->Html->link(__('Quiz Popolari'), ['prefix' => 'Admin', 'controller' => 'Homepages', 'action' => 'popularQuizzes']) ?>
                         </li>
                     </ul>
                 </li>
@@ -390,7 +390,7 @@
                     <span><?= __('Giochi') ?></span>
                     <ul>
                         <li>
-                            <a href="<?= $this->Url->build(['prefix' => 'admin', 'controller' => 'quizzes', 'action' => 'index' ]) ?>">
+                            <a href="<?= $this->Url->build(['prefix' => 'Admin', 'controller' => 'quizzes', 'action' => 'index' ]) ?>">
                                 <?= __('Archivio') ?>
                             </a>
                         </li>
@@ -407,14 +407,14 @@
                 <li>
                     <span><?= __('Utenti') ?></span>
                     <ul>
-                        <li><a href="<?= $this->Url->build(['controller' => 'Users', 'action' => 'index', 'prefix' => 'admin']) ?>">Mostra</a></li>
+                        <li><a href="<?= $this->Url->build(['controller' => 'Users', 'action' => 'index', 'prefix' => 'Admin']) ?>">Mostra</a></li>
                     </ul>
                 </li>
 
                 <li>
                     <span><?= __('Gruppi utenti') ?></span>
                     <ul>
-                        <li><a href="<?= $this->Url->build(['controller' => 'UserGroups', 'action' => 'index', 'prefix' => 'admin']) ?>">Mostra</a></li>
+                        <li><a href="<?= $this->Url->build(['controller' => 'UserGroups', 'action' => 'index', 'prefix' => 'Admin']) ?>">Mostra</a></li>
                     </ul>
                 </li>
 
@@ -434,17 +434,17 @@
                     <span><?= __('Pubblicità') ?></span>
                     <ul>
                         <li>
-                            <a href="<?= $this->Url->build(['prefix' => 'admin', 'controller' => 'SponsorAdvPackages', 'action' => 'index']) ?>">
+                            <a href="<?= $this->Url->build(['prefix' => 'Admin', 'controller' => 'SponsorAdvPackages', 'action' => 'index']) ?>">
                                 Pacchetti pubblicitari
                             </a>
                         </li>
                         <li>
-                            <a href="<?= $this->Url->build(['prefix' => 'admin', 'controller' => 'SponsorAdvPackages', 'action' => 'add']) ?>">
+                            <a href="<?= $this->Url->build(['prefix' => 'Admin', 'controller' => 'SponsorAdvPackages', 'action' => 'add']) ?>">
                                 Nuovo pacchetto
                             </a>
                         </li>
                         <li>
-                            <a href="<?= $this->Url->build(['prefix' => 'admin', 'controller' => 'SponsorAdvs', 'action' => 'index']) ?>">
+                            <a href="<?= $this->Url->build(['prefix' => 'Admin', 'controller' => 'SponsorAdvs', 'action' => 'index']) ?>">
                                 Mostra pubblicità create
                             </a>
                         </li>
@@ -468,8 +468,8 @@
                         <li>
                             <span><?= __('Categorie') ?></span>
                             <ul>
-                                <li><a href="<?= $this->Url->build(['prefix' => 'admin', 'controller' => 'StoreProductCategories', 'action' => 'index']) ?>"><?= __('Mostra') ?></a></li>
-                                <li><a href="<?= $this->Url->build(['prefix' => 'admin', 'controller' => 'StoreProductCategories', 'action' => 'add'])  ?>"><?= __('Nuova') ?></a></li>
+                                <li><a href="<?= $this->Url->build(['prefix' => 'Admin', 'controller' => 'StoreProductCategories', 'action' => 'index']) ?>"><?= __('Mostra') ?></a></li>
+                                <li><a href="<?= $this->Url->build(['prefix' => 'Admin', 'controller' => 'StoreProductCategories', 'action' => 'add'])  ?>"><?= __('Nuova') ?></a></li>
                             </ul>
                         </li>
                         <li>
@@ -484,7 +484,7 @@
                 <li>
                     <span><?= __('Aziende') ?></span>
                     <ul>
-                        <li><a href="<?= $this->Url->build(['prefix' => 'admin', 'controller' => 'CompanyCategories', 'action' => 'index']) ?>"><?= __('Settori') ?></a></li>
+                        <li><a href="<?= $this->Url->build(['prefix' => 'Admin', 'controller' => 'CompanyCategories', 'action' => 'index']) ?>"><?= __('Settori') ?></a></li>
                     </ul>
                 </li>
 

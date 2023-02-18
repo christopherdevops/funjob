@@ -292,7 +292,7 @@
                     </div>
 
                     <?php
-                        echo $this->Form->create($quizSession, ['id' => 'quiz-visibility-form', 'url' => ['prefix' => 'user', 'controller' => 'QuizSessions', 'action' => 'edit']]);
+                        echo $this->Form->create($quizSession, ['id' => 'quiz-visibility-form', 'url' => ['prefix' => 'User', 'controller' => 'QuizSessions', 'action' => 'edit']]);
                         echo $this->Form->control('id', ['type' => 'hidden']);
                         echo $this->Form->control('is_hidden', [
                             'type'   => 'checkbox',

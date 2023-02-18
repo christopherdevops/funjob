@@ -239,8 +239,8 @@
                     'dropdownClass' => 'user-dashboard-block',
                     'icon'          => 'fa-users',
                     'links'         => [
-                        __('Amici')               => ['prefix' => 'user', 'controller' => 'UserFriends', 'action' => 'index'],
-                        __('Richieste in attesa') => ['prefix' => 'user', 'controller' => 'UserFriends', 'action' => 'index', 0 => 'waiting'],
+                        __('Amici')               => ['prefix' => 'User', 'controller' => 'UserFriends', 'action' => 'index'],
+                        __('Richieste in attesa') => ['prefix' => 'User', 'controller' => 'UserFriends', 'action' => 'index', 0 => 'waiting'],
                     ]
                 ])
             ?>
@@ -299,8 +299,8 @@
                     'dropdownClass' => 'user-dashboard-block',
                     'icon'          => 'fa-area-chart',
                     'links'         => [
-                        __('Crea annuncio')  => ['prefix' => 'sponsor', 'controller' => 'SponsorAdvs', 'action' => 'add'],
-                        __('Annunci creati') => ['prefix' => 'sponsor', 'controller' => 'SponsorAdvs', 'action' => 'index'],
+                        __('Crea annuncio')  => ['prefix' => 'Sponsor', 'controller' => 'SponsorAdvs', 'action' => 'add'],
+                        __('Annunci creati') => ['prefix' => 'Sponsor', 'controller' => 'SponsorAdvs', 'action' => 'index'],
                     ]
                 ])
             ?>

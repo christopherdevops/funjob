@@ -273,7 +273,7 @@
 
                             <?php
                                 echo $this->Form->create($session, [
-                                    'url' => ['prefix' => 'user', 'controller' => 'QuizSessions', 'action' => 'edit'],
+                                    'url' => ['prefix' => 'User', 'controller' => 'QuizSessions', 'action' => 'edit'],
                                     'id'  => 'quiz-session-form-visibility-' . $session->id
                                 ]);
                                 echo $this->Form->control('id', ['type' => 'hidden']);
@@ -287,7 +287,7 @@
                             ?>
                         </a>
 
-                        <a href="<?= $this->Url->build(['prefix' => 'user', 'controller' => 'QuizSessions', 'action' => 'delete', 0 => $session->id]) ?>" class="btn btn-danger btn-xs btn-block js-quiz-session-delete-btn" data-content="<?= __('Elimina sessione di gioco') ?>">
+                        <a href="<?= $this->Url->build(['prefix' => 'User', 'controller' => 'QuizSessions', 'action' => 'delete', 0 => $session->id]) ?>" class="btn btn-danger btn-xs btn-block js-quiz-session-delete-btn" data-content="<?= __('Elimina sessione di gioco') ?>">
 
                             <span class="fa-stack fa-xs">
                                 <i class="fa fa-trash fa-stack-1x"></i>
