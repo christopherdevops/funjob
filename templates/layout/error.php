@@ -9,7 +9,7 @@
     <head>
         <title><?= $this->fetch('title') ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <base href="<?= $this->Url->build('/', true) ?>" />
+        <base href="<?= $this->Url->build('/') ?>" />
 
         <?php echo $this->fetch('css') ?>
 
