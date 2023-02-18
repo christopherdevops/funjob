@@ -1,4 +1,4 @@
-<?php if (!$this->request->cookie($cookie)) : ?>
+<?php if (!$this->request->getCookie($cookie)) : ?>
 <div class="alert alert-info alert-remember">
     <button type="button" class="close" data-cookie="<?= $cookie ?>" data-dismiss="alert" aria-hidden="true">
         <i class="fa fa-close"></i>

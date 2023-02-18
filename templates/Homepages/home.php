@@ -282,7 +282,7 @@
 
                     <div class="well-howto-toggle-block pull-right">
                         <div id="well-howto-toggle-content">
-                            <?php if ($this->request->cookie('home__hide_howto')) : ?>
+                            <?php if ($this->request->getCookie('home__hide_howto')) : ?>
                                 <?= $this->fetch('howto--open') ?>
                             <?php else: ?>
                                 <?= $this->fetch('howto--close') ?>
@@ -312,7 +312,7 @@
         </div>
     </div>
 
-    <div class="funjob-howto-toggle" style="<?= $this->request->cookie('home__hide_howto') ? 'display:none' : '' ?>">
+    <div class="funjob-howto-toggle" style="<?= $this->request->getCookie('home__hide_howto') ? 'display:none' : '' ?>">
         <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                <div class="funjob-howto-block funjob-howto-block--fun">
@@ -706,6 +706,6 @@
 <?php $this->end() ?>
 
 
-<?php //if (!$this->request->cookie('show_welcome_modal')) : ?>
+<?php //if (!$this->request->getCookie('show_welcome_modal')) : ?>
 <?php //echo $this->element('welcome-modal') ?>
 <?php //endif ?>

@@ -130,7 +130,7 @@
             <div class="app-menu-tab app-menu-tab--scroller">
                 <ul class="app-menu-tab-list">
 
-                    <?php if (!$this->request->cookie('menu-slide-tutorial')) : ?>
+                    <?php if (!$this->request->getCookie('menu-slide-tutorial')) : ?>
                     <li id="app-menu-tab-list-item-tutorial" class="app-menu-tab-list-item app-menu-tab-list-item--header hidden-lg hidden-md" style="padding-right:10px;">
                         <img src="img/menu-touch-slider-tutorial.png" style="max-height:40px;" alt="">
                     </li>

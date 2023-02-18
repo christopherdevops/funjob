@@ -86,7 +86,7 @@
 
 <div class="row">
     <div style="display:none;margin-top:10px" id="funjob-quiz-archive-filters">
-        <?php $compress = false; // (bool) $this->request->cookie('alert__quiz_filters_show') === false ?>
+        <?php $compress = false; // (bool) $this->request->getCookie('alert__quiz_filters_show') === false ?>
         <div class="<?= $compress ? 'col-xs-12 col-sm-6 col-md-6 col-lg-6' : 'col-xs-12 col-sm-12 col-md-12 col-lg-12' ?>">
             <?php
                 echo $this->Form->setValueSources(['query'])->create(null, ['method' => 'POST', 'class' => 'well well-sm']);

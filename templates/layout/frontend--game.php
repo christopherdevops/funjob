@@ -112,7 +112,7 @@
                                                             <a href="" class="display-inline-block js-sound-toggle">
                                                                 <span class="fa-stack fa-lg">
                                                                   <i class="fa fa-volume-up fa-stack-1x"></i>
-                                                                  <i class="<?= $this->request->cookie('sounds') == 'false' ? '' : 'hidden' ?> fa fa-ban fa-stack-2x text-danger"></i>
+                                                                  <i class="<?= $this->request->getCookie('sounds') == 'false' ? '' : 'hidden' ?> fa fa-ban fa-stack-2x text-danger"></i>
                                                                 </span>
                                                             </a>
                                                             <script type="text/javascript">

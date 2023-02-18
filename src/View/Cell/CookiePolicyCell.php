@@ -24,7 +24,7 @@ class CookiePolicyCell extends Cell
      */
     public function display()
     {
-        $is_accepted = $this->request->cookie('cookie_policy_accept');
+        $is_accepted = $this->request->getCookie('cookie_policy_accept');
         $this->set(compact('is_accepted'));
     }
 }
