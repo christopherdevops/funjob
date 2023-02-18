@@ -10,7 +10,7 @@ class MeRouteMiddleware
 {
     public function __invoke($request, $response, $next)
     {
-        $routePrefix = $request->_matchedRoute;
+        $routePrefix = $request->getParam('_matchedRoute');
 
         // Richiede Auth
         if (strpos($routePrefix, '/me') === 0) {
