@@ -22,7 +22,7 @@ class UsersController extends AppController
 
         $this->Auth->allow(['register', 'login', 'view', 'quizCompleted', 'quizCreated', 'friends', 'groups', 'language']);
 
-        if (in_array($this->request->action, ['view'])) {
+        if (in_array($this->request->getParam('action'), ['view'])) {
 
             // Se si tenta di accedere a /me e non si è loggati
             // Sostituito da MeRouteMiddleware (in src/Application.php)
@@ -38,7 +38,7 @@ class UsersController extends AppController
 
     public function getAdvertising()
     {
-        if ($this->request->action == 'view') {
+        if ($this->request->getParam('action') == 'view') {
             return parent::getAdvertising();
         }
 

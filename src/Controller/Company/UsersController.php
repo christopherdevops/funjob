@@ -15,7 +15,7 @@ class UsersController extends AppController
         // $this->loadComponent('Csrf');
 
         // Redirect a settings in base al prefix
-        if ($this->request->action == 'settings' && !in_array($this->Auth->user('type'), ['company'])) {
+        if ($this->request->getParam('action') == 'settings' && !in_array($this->Auth->user('type'), ['company'])) {
             return $this->redirect(['_name' => 'me:settings']);
         }
     }

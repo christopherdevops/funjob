@@ -18,7 +18,7 @@ class QuizQuestionsController extends AppController
     {
         parent::initialize();
 
-        if ($this->request->action == 'add') {
+        if ($this->request->getParam('action') == 'add') {
             $this->loadComponent('Security');
 
             // Disabilita quiz_answers[1-4]

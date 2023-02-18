@@ -22,7 +22,7 @@ class UserFriendsController extends AppController
     {
         parent::initialize();
 
-        if (in_array($this->request->action, ['index', 'waiting', 'starred'])) {
+        if (in_array($this->request->getParam('action'), ['index', 'waiting', 'starred'])) {
             $this->loadComponent('Paginator');
         }
 

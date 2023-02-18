@@ -13,7 +13,7 @@ class QuizzesController extends AppController
     {
         parent::initialize();
 
-        if ($this->request->action == 'status') {
+        if ($this->request->getParam('action') == 'status') {
             $this->loadComponent('Security');
         }
     }

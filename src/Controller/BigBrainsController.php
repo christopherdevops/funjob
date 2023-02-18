@@ -30,7 +30,7 @@ class BigbrainsController extends AppController
             'lang'    => Configure::read('lang')
         ]);
 
-        if ($this->request->action == 'add') {
+        if ($this->request->getParam('action') == 'add') {
             // $this->loadComponent('Csrf');
         }
     }

@@ -91,7 +91,7 @@
     <?php
         echo $this->Form->create($User, [
             'type'    => 'file',
-            'url'     => ['_name' => 'me:settings:prefixed', 'prefix' => $this->request->prefix, '#' => 'account'],
+            'url'     => ['_name' => 'me:settings:prefixed', 'prefix' => $this->request->getParam('prefix'), '#' => 'account'],
             'context' => [
                 'validator' => [
                     'Users' => 'settingsAccountUser'
@@ -150,7 +150,7 @@
     </div>
 
     <?php
-        echo $this->Form->create($User, ['type' => 'file', 'url' => ['_name' => 'me:settings:prefixed', 'prefix' => $this->request->prefix, '#' => 'profile']]);
+        echo $this->Form->create($User, ['type' => 'file', 'url' => ['_name' => 'me:settings:prefixed', 'prefix' => $this->request->getParam('prefix'), '#' => 'profile']]);
 
         // Il campo cover viene impostato tramite un blockView
         // Il FormHelper sembra che non lo aggiunge nella lista dei campi permessi a quanto pare
@@ -267,7 +267,7 @@
         <small><?= __('Attraverso queste impostazioni verrai ricercato dalle aziende per offerte di lavoro') ?></small>
     </div>
 
-    <?php echo $this->Form->create($User, ['type' => 'file', 'url' => ['_name' => 'me:settings:prefixed', 'prefix' => $this->request->prefix, '#' => 'job']]); ?>
+    <?php echo $this->Form->create($User, ['type' => 'file', 'url' => ['_name' => 'me:settings:prefixed', 'prefix' => $this->request->getParam('prefix'), '#' => 'job']]); ?>
     <fieldset>
         <?php
             echo $this->Form->hidden('user_id', ['value' => $User->id]);

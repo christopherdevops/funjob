@@ -23,7 +23,7 @@ class UserMessagesController extends AppController
         parent::initialize();
         $this->Auth->deny();
 
-        if (in_array($this->request->action, ['add', 'view'])) {
+        if (in_array($this->request->getParam('action'), ['add', 'view'])) {
             Configure::load('emoticon');
             $icons = Configure::read('emoticon.map');
             $icons = array_flip($icons);

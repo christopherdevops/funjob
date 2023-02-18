@@ -368,7 +368,7 @@ class SponsorAdvsTable extends Table
      */
     public function findIsPublished($query)
     {
-        return $query->where(['is_published' => 1]);
+        return $query->where(['is_published' => true]);
     }
 
     /**

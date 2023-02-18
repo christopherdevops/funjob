@@ -33,11 +33,11 @@ class QuizzesController extends AppController
 
         // Csrf attivato da tutte le parti
         // TODO: eliminare e testare
-        if ($this->request->action == 'edit') {
+        if ($this->request->getParam('action') == 'edit') {
             // $this->loadComponent('Csrf');
         }
 
-        if (in_array($this->request->action, ['view', 'play'])) {
+        if (in_array($this->request->getParam('action'), ['view', 'play'])) {
             $Quiz = $this->Quizzes->get($this->request->getParam('pass')[0]);
 
             if (empty($Quiz)) {
@@ -55,7 +55,7 @@ class QuizzesController extends AppController
         }
 
         // Loading Game components
-        if (in_array($this->request->action, ['play', 'reply', 'score'])) {
+        if (in_array($this->request->getParam('action'), ['play', 'reply', 'score'])) {
             $this->loadComponent('QuizGame');
             $this->loadComponent('QuizSession');
             $this->loadComponent('QuizScore');
@@ -64,7 +64,7 @@ class QuizzesController extends AppController
 
     public function beforeFilter(\Cake\Event\EventInterface $event)
     {
-        if (in_array($this->request->action, ['play', 'reply', 'score'])) {
+        if (in_array($this->request->getParam('action'), ['play', 'reply', 'score'])) {
             $quiz_id = $event->getSubject()->request->getParam('pass.0');
 
             $this->QuizGame->config('quiz_id', (int) $quiz_id);
@@ -75,7 +75,7 @@ class QuizzesController extends AppController
 
     public function getAdvertising() {
         // Pubblicità disattivata su schermata di gioco (richiesta da Giuseppe)
-        if ($this->request->action == 'play') {
+        if ($this->request->getParam('action') == 'play') {
             return false;
         }
 

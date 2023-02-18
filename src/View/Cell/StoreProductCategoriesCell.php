@@ -41,7 +41,7 @@ class StoreProductCategoriesCell extends Cell
         // archivio = categoria selezionata
         // home     = niente
         // ricerca  = niente
-        // if ($this->request->action == 'archive') {
+        // if ($this->request->getParam('action') == 'archive') {
         //     $pass = $this->request->getParam('pass');
         //     $cat  = (int) $pass[0];
 

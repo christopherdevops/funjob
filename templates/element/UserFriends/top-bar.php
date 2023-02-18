@@ -1,21 +1,21 @@
 <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
         <div class="btn-group">
-            <a href="<?= $this->Url->build(['action' => 'index']) ?>" class="btn btn-default <?= $this->request->action == 'index' ? 'active' : '' ?>">
+            <a href="<?= $this->Url->build(['action' => 'index']) ?>" class="btn btn-default <?= $this->request->getParam('action') == 'index' ? 'active' : '' ?>">
                 <i class="fa fa-users"></i>
 
                 <span class="hidden-xs"><?= __('Amici') ?></span>
                 <span class="visible-xs"><?= __('Amici') ?></span>
             </a>
 
-            <a href="<?= $this->Url->build(['action' => 'starred']) ?>" class="btn btn-default <?= $this->request->action == 'starred' ? 'active' : '' ?>">
+            <a href="<?= $this->Url->build(['action' => 'starred']) ?>" class="btn btn-default <?= $this->request->getParam('action') == 'starred' ? 'active' : '' ?>">
                 <i class="fa fa-star"></i>
 
                 <span class="hidden-xs"><?= __('Amici preferiti') ?></span>
                 <span class="visible-xs"><?= __('Preferiti') ?></span>
             </a>
 
-            <a href="<?= $this->Url->build(['action' => 'waiting']) ?>" class="btn btn-default <?= $this->request->action == 'waiting' ? 'active' : '' ?>">
+            <a href="<?= $this->Url->build(['action' => 'waiting']) ?>" class="btn btn-default <?= $this->request->getParam('action') == 'waiting' ? 'active' : '' ?>">
                 <i class="fa fa-clock-o"></i>
 
                 <span class="visible-xs"><?= __('In attesa') ?></span>

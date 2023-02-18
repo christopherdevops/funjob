@@ -13,7 +13,7 @@ class UsersController extends AppController
 
     public function beforeFilter(\Cake\Event\EventInterface $event)
     {
-        if (in_array($this->request->action, ['quizzes', 'groups'])) {
+        if (in_array($this->request->getParam('action'), ['quizzes', 'groups'])) {
             // Imposta variabile vista $User per poter accedere all'utente che si stà visualizzando
             $User = $this->Users->get((int) $this->request->getParam('pass.0'));
             $this->set('UserCurrent', $User);

@@ -17,9 +17,9 @@ class UsersController extends AppController
         parent::initialize();
 
 
-        if ($this->request->action == 'quizzes') {
+        if ($this->request->getParam('action') == 'quizzes') {
             $this->loadComponent('Security');
-        } elseif ($this->request->action == 'index') {
+        } elseif ($this->request->getParam('action') == 'index') {
             $this->loadComponent('Security');
 
             // Le città vengono impostate tramite typeahead attraverso dei campi hidden
@@ -37,7 +37,7 @@ class UsersController extends AppController
         }
 
         // Redirect a settings in base al prefix
-        if ($this->request->action == 'settings' && !in_array($this->Auth->user('type'), ['user', 'admin'])) {
+        if ($this->request->getParam('action') == 'settings' && !in_array($this->Auth->user('type'), ['user', 'admin'])) {
             return $this->redirect(['_name' => 'me:settings']);
         }
     }
