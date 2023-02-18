@@ -195,7 +195,7 @@ class CitiesController extends AppController
             'input'    => $this->request->getData('term'),
             'types'    => '(cities)',
             'key'      => Configure::read('GoogleMap.api.key'),
-            'language' => I18n::locale()
+            'language' => I18n::getLocale()
         ]);
 
         if (!$response->isOk()) {

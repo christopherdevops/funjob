@@ -32,7 +32,7 @@ class HomepagesController extends AppController
      */
     public function home()
     {
-        $key = 'home_popular_categories__'. i18n::locale();
+        $key = 'home_popular_categories__'. i18n::getLocale();
         $categories = Cache::remember($key, function() {
             return $this->QuizCategories
                 ->find('primary')

@@ -158,7 +158,7 @@ class QuizSessionsTable extends Table
                 $mapReduce->emitIntermediate($entity['quiz']['id'], '|' . __('Nessun categoria'));
             } else {
                 foreach ($entity['quiz']['categories'] as  $category) {
-                    $cacheKey = sprintf('%s_paths_%d', I18n::locale(), $category['id']);
+                    $cacheKey = sprintf('%s_paths_%d', I18n::getLocale(), $category['id']);
                     $path     = Cache::remember($cacheKey, function() use ($TableQuizCategories, $category) {
                         return $TableQuizCategories
                             ->find('path', ['for' => $category['id']])

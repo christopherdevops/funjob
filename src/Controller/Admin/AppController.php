@@ -43,7 +43,7 @@ class AppController extends \App\Controller\AppController
 
         // $this->loadComponent('Csrf');
 
-        \Cake\I18n\I18n::locale('it_IT');
+        \Cake\I18n\I18n::setLocale('it_IT');
         \Cake\I18n\Time::setDefaultLocale('it_IT');       // For any mutable DateTime
         \Cake\I18n\FrozenTime::setDefaultLocale('it_IT'); // For any immutable DateTime
         \Cake\I18n\Date::setDefaultLocale('it_IT');       // For any mutable Date
