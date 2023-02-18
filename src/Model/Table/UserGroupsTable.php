@@ -194,9 +194,9 @@ class UserGroupsTable extends Table
 
         $this->validationUploadCover($validator);
 
-        // $validator->provider('upload', \Josegonzalez\Upload\Validation\UploadValidation::class);
-        // $validator->provider('upload', \Josegonzalez\Upload\Validation\DefaultValidation::class);
-        // $validator->provider('upload', \Josegonzalez\Upload\Validation\ImageValidation::class);
+        // $validator->setProvider('upload', \Josegonzalez\Upload\Validation\UploadValidation::class);
+        // $validator->setProvider('upload', \Josegonzalez\Upload\Validation\DefaultValidation::class);
+        // $validator->setProvider('upload', \Josegonzalez\Upload\Validation\ImageValidation::class);
 
         // Dimensione massima
         // $validator->add('image', 'fileAboveMinHeight', [
@@ -227,9 +227,9 @@ class UserGroupsTable extends Table
 
     public function validationUploadCover(Validator $validator) {
         // Upload
-        $validator->provider('upload', \Josegonzalez\Upload\Validation\UploadValidation::class);
-        $validator->provider('upload', \Josegonzalez\Upload\Validation\ImageValidation::class);
-        $validator->provider('upload', \Josegonzalez\Upload\Validation\DefaultValidation::class);
+        $validator->setProvider('upload', \Josegonzalez\Upload\Validation\UploadValidation::class);
+        $validator->setProvider('upload', \Josegonzalez\Upload\Validation\ImageValidation::class);
+        $validator->setProvider('upload', \Josegonzalez\Upload\Validation\DefaultValidation::class);
 
         $validator->add('image', 'isValidMime', [
             'rule'    => ['mimeType', ['image/jpg', 'image/jpeg', 'image/gif', 'image/png']],

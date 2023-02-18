@@ -99,8 +99,8 @@ class QuizQuestionsTable extends Table
      */
     public function validationDefault(Validator $validator): \Cake\Validation\Validator
     {
-        $validator->provider('quiz', 'App\Model\Validation\QuizValidation');
-        $validator->provider('url', 'App\Model\Validation\UrlValidation');
+        $validator->setProvider('quiz', 'App\Model\Validation\QuizValidation');
+        $validator->setProvider('url', 'App\Model\Validation\UrlValidation');
 
         $validator = $this->validationSource($validator);
 

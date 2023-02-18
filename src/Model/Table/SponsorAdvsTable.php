@@ -243,9 +243,9 @@ class SponsorAdvsTable extends Table
         $validator = $this->validationDefault($validator);
 
         // Upload validation
-        $validator->provider('upload', \Josegonzalez\Upload\Validation\UploadValidation::class);
-        $validator->provider('upload', \Josegonzalez\Upload\Validation\ImageValidation::class);
-        $validator->provider('upload', \Josegonzalez\Upload\Validation\DefaultValidation::class);
+        $validator->setProvider('upload', \Josegonzalez\Upload\Validation\UploadValidation::class);
+        $validator->setProvider('upload', \Josegonzalez\Upload\Validation\ImageValidation::class);
+        $validator->setProvider('upload', \Josegonzalez\Upload\Validation\DefaultValidation::class);
 
         $validator->requirePresence('banner__img');
         $validator->add('banner__img', 'uploadedFile', [
@@ -295,9 +295,9 @@ class SponsorAdvsTable extends Table
         $validator = $this->validationDefault($validator);
 
         // Upload validation
-        $validator->provider('upload', \Josegonzalez\Upload\Validation\UploadValidation::class);
-        $validator->provider('upload', \Josegonzalez\Upload\Validation\ImageValidation::class);
-        $validator->provider('upload', \Josegonzalez\Upload\Validation\DefaultValidation::class);
+        $validator->setProvider('upload', \Josegonzalez\Upload\Validation\UploadValidation::class);
+        $validator->setProvider('upload', \Josegonzalez\Upload\Validation\ImageValidation::class);
+        $validator->setProvider('upload', \Josegonzalez\Upload\Validation\DefaultValidation::class);
 
         $validator->requirePresence('banner__img');
         $validator->add('banner__img', 'uploadedFile', [
@@ -368,7 +368,7 @@ class SponsorAdvsTable extends Table
      */
     public function findIsPublished($query)
     {
-        return $query->where(['is_published' => true]);
+        return $query->where(['is_published' => 1]);
     }
 
     /**

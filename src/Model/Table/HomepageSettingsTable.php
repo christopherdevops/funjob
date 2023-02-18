@@ -59,7 +59,7 @@ class HomepageSettingsTable extends Table
         ]);
 
         // Iframe validation
-        $validator->provider('VideoEmbedValidation', '\Hiryu85\Model\Validation\VideoEmbedValidation');
+        $validator->setProvider('VideoEmbedValidation', '\Hiryu85\Model\Validation\VideoEmbedValidation');
         $validator->add('foreground_video_embed', 'isEmbedCode', [
             'rule'     => ['iframeExists'],
             'last'     => true,

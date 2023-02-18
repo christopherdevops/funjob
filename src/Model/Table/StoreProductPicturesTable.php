@@ -136,9 +136,9 @@ class StoreProductPicturesTable extends Table
             ->allowEmpty('dir');
 
         // Upload validation
-        $validator->provider('upload', \Josegonzalez\Upload\Validation\UploadValidation::class);
-        $validator->provider('upload', \Josegonzalez\Upload\Validation\ImageValidation::class);
-        $validator->provider('upload', \Josegonzalez\Upload\Validation\DefaultValidation::class);
+        $validator->setProvider('upload', \Josegonzalez\Upload\Validation\UploadValidation::class);
+        $validator->setProvider('upload', \Josegonzalez\Upload\Validation\ImageValidation::class);
+        $validator->setProvider('upload', \Josegonzalez\Upload\Validation\DefaultValidation::class);
 
         // Mimetypes
         $validator->add('image', 'isValidMime', [

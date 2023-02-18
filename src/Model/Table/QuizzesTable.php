@@ -180,7 +180,7 @@ class QuizzesTable extends Table
         ]);
 
 
-        $validator->provider('VideoEmbedValidation', '\Hiryu85\Model\Validation\VideoEmbedValidation');
+        $validator->setProvider('VideoEmbedValidation', '\Hiryu85\Model\Validation\VideoEmbedValidation');
         $validator->add('foreground_video_embed', 'isEmbedCode', [
             'rule'     => ['iframeExists'],
             'message'  => __('Richiede un codice embed (HTLM)'),
@@ -214,9 +214,9 @@ class QuizzesTable extends Table
     {
         // Upload validation
 
-        $validator->provider('upload', \Josegonzalez\Upload\Validation\UploadValidation::class);
-        $validator->provider('upload', \Josegonzalez\Upload\Validation\ImageValidation::class);
-        $validator->provider('upload', \Josegonzalez\Upload\Validation\DefaultValidation::class);
+        $validator->setProvider('upload', \Josegonzalez\Upload\Validation\UploadValidation::class);
+        $validator->setProvider('upload', \Josegonzalez\Upload\Validation\ImageValidation::class);
+        $validator->setProvider('upload', \Josegonzalez\Upload\Validation\DefaultValidation::class);
 
         $validator->add('image__src', 'uploadedMimetype', [
             'rule'    => ['mimeType', Configure::read('funjob.upload.extensions')],

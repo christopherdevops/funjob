@@ -166,9 +166,9 @@ class UsersTable extends Table
      */
     public function validateUploadAvatar(Validator $validator)
     {
-        $validator->provider('upload', \Josegonzalez\Upload\Validation\UploadValidation::class);
-        $validator->provider('upload', \Josegonzalez\Upload\Validation\ImageValidation::class);
-        $validator->provider('upload', \Josegonzalez\Upload\Validation\DefaultValidation::class);
+        $validator->setProvider('upload', \Josegonzalez\Upload\Validation\UploadValidation::class);
+        $validator->setProvider('upload', \Josegonzalez\Upload\Validation\ImageValidation::class);
+        $validator->setProvider('upload', \Josegonzalez\Upload\Validation\DefaultValidation::class);
 
         $validator->add('avatar', 'uploadedMimetype', [
             'rule'    => ['mimeType', Configure::read('funjob.upload.extensions')],
