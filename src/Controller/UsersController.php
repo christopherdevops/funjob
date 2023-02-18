@@ -347,7 +347,7 @@ class UsersController extends AppController
 
     public function register()
     {
-        //$this->ViewBuilder()->layout('default');
+        //$this->ViewBuilder()->setLayout('default');
         if ($this->request->getQuery('response')) {
             $this->_socialProfileDecode();
         }

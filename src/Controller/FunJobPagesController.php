@@ -32,7 +32,7 @@ class FunJobPagesController extends AppController
         parent::initialize();
 
         $this->Auth->allow();
-        $this->viewBuilder()->layout('frontend');
+        $this->viewBuilder()->setLayout('frontend');
     }
 
     public function getAdvertising()

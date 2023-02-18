@@ -89,7 +89,7 @@ class SponsorAdvsController extends AppController
             $this->SponsorAdvs->Views->save($ViewsDay);
         }
 
-        $this->viewBuilder()->layout(false);
+        $this->viewBuilder()->enableAutoLayout(false);
 
         //if (strpos($adv->banner__img, 'http') === 0) {
         //    // remote file
