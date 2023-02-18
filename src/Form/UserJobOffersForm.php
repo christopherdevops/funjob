@@ -37,7 +37,7 @@ class UserJobOffersForm extends Form
      * @param Validator $validator to use against the form
      * @return Validator
      */
-    protected function _buildValidator(Validator $validator)
+    public function validationDefault(Validator $validator): Validator
     {
         $validator->allowEmpty(['fullname', 'age_from', 'age_to', 'role', 'city', 'city_id']);
 

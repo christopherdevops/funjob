@@ -30,7 +30,7 @@ class QuizSessionReplyForm extends Form
      * @param Validator $validator to use against the form
      * @return Validator
      */
-    protected function _buildValidator(Validator $validator)
+    public function validationDefault(Validator $validator): Validator
     {
         $validator->requirePresence(['quiz_id', 'reply', 'secs']);
         $validator->notEmpty(['reply', 'secs']);

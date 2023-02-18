@@ -29,7 +29,7 @@ class AuthorizationForm extends Form
      * @param \Cake\Validation\Validator $validator to use against the form
      * @return \Cake\Validation\Validator
      */
-    protected function _buildValidator(Validator $validator)
+    public function validationDefault(Validator $validator): Validator
     {
         $validator->requirePresence(['pwd']);
         $validator->notEmpty(['pwd']);
