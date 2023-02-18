@@ -46,10 +46,9 @@ class AppView extends View
         // App\View\Widget\UploadWidget
         $this->helpers = [
             'Form' => [
-                'widgets' => [
-                    'upload' => ['Hiryu85\View\Widget\UploadWidget', 'text', 'label', 'file']
-                ],
-                'className' => 'BootstrapUI.Form'
+                'className' => 'BootstrapUI.Form',
+                'widgets' => ['upload' => ['Hiryu85\View\Widget\UploadWidget', 'text', 'label', 'file']],
+                'templates' => ['select' => '<select class="form-control" name="{{name}}" {{attrs}}>{{content}}</select>']
             ]
         ];
 
