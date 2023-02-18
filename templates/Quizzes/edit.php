@@ -110,7 +110,7 @@ $this->Html->css(['/bower_components/select2/dist/css/select2.min.css', 'feature
     <div class="row">
         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
             <?php
-                echo $this->Form->input('image__src', [
+                echo $this->Form->control('image__src', [
                     'type'        => 'file',
                     'label'       => __('Copertina'),
                     'help'        => __('Sarà visibile all\'interno del quiz e in archivio (inferiore a {size} KB, e {format} px)', [
@@ -136,7 +136,7 @@ $this->Html->css(['/bower_components/select2/dist/css/select2.min.css', 'feature
 <fieldset>
     <?php
         echo $this->Form->hidden('uuid');
-        // echo $this->Form->input('type', [
+        // echo $this->Form->control('type', [
         //     'label'   => __('Tipologia quiz'),
         //     'options' => [
         //         'default' => __('Quiz normale: 10 domande'),
@@ -156,7 +156,7 @@ $this->Html->css(['/bower_components/select2/dist/css/select2.min.css', 'feature
     <?php if (false) : ?>
     <div class="hidden">
     <?php
-        echo $this->Form->input('categories._ids', [
+        echo $this->Form->control('categories._ids', [
             'label'     => __('Materia trattata'),
             'options'   => $quiz->category_ids,
             'multiple'  => 'checkbox',
@@ -185,17 +185,17 @@ $this->Html->css(['/bower_components/select2/dist/css/select2.min.css', 'feature
     <?php endif ?>
 
     <?php
-        echo $this->Form->input('title', [
+        echo $this->Form->control('title', [
             'label' => __('Titolo quiz'),
             'help'  => __('Il titolo viene mostrato nell\'archivio'),
         ]);
 
-        echo $this->Form->input('descr', [
+        echo $this->Form->control('descr', [
             'label' => __('Descrizione'),
             'help'  => __('Viene mostrata in archivio')
         ]);
 
-        echo $this->Form->input('tag_string', [
+        echo $this->Form->control('tag_string', [
             'type'  => 'text',
             'label' => 'Parole chiave',
             'help'  => __('Utili per ricercare il quiz (separate da virgola)')
@@ -203,7 +203,7 @@ $this->Html->css(['/bower_components/select2/dist/css/select2.min.css', 'feature
 
         echo $this->fetch('cover_preview');
 
-        echo $this->Form->input('color', [
+        echo $this->Form->control('color', [
             'type'        => 'select',
             'label'       => __('Colore copertina'),
             'help'        => __('Sarà visibile all\'interno del quiz e in archivio')

@@ -71,7 +71,7 @@
     <fieldset>
         <?php
             echo $this->Form->hidden('quiz_id', ['value' => $this->request->pass[0]]);
-            echo $this->Form->input('type', [
+            echo $this->Form->control('type', [
                 'type'    => 'radio',
                 'label'   => false,
                 'default' => 'default',
@@ -81,7 +81,7 @@
                 ]
             ]);
 
-            echo $this->Form->input('question', [
+            echo $this->Form->control('question', [
                 'type'        => 'textarea',
                 'label'       => __('Titolo domanda'),
                 'max'         => 100,
@@ -91,7 +91,7 @@
                     ['max_chars' => Configure::read('app.quizQuestion.maxChars')]
                 )
             ]);
-            echo $this->Form->input('complexity', [
+            echo $this->Form->control('complexity', [
                 /*
                 'prepend' => '0 - 10',
                 'type'    => 'number',
@@ -139,7 +139,7 @@
 
         <fieldset class="source-config js-source--url" <?= $this->request->getData('source_type') == 'url' ? '' : 'disabled="disabled"' ?>>
             <?php
-                echo $this->Form->input('source_url', [
+                echo $this->Form->control('source_url', [
                     'type'        => 'url',
                     'label'       => __('Link'),
                     'help'        => __('Solo link provenienti da pagine Wikipedia'),
@@ -153,17 +153,17 @@
 
         <fieldset class="source-config js-source--book" <?= $this->request->getData('source_type') == 'book' ? '' : 'disabled="disabled"' ?>>
             <?php
-                echo $this->Form->input('source_book_title', [
+                echo $this->Form->control('source_book_title', [
                     'label'       => __('Titolo'),
                     'placeholder' => 'Titolo libro',
                     'required'    => false
                 ]);
-                echo $this->Form->input('source_book_page', [
+                echo $this->Form->control('source_book_page', [
                     'label'       => __('Pagina'),
                     'placeholder' => 'Pagina 4',
                     'required'    => false
                 ]);
-                echo $this->Form->input('source_book_photo', [
+                echo $this->Form->control('source_book_photo', [
                     'type'        => 'file',
                     'label'       => __('Scansione pagina'),
                     'help'        => __('Ci servirà nel processo di validazione del quiz per verificare le risposte'),
@@ -192,7 +192,7 @@
             $ko = '<i style="color:red" class="glyphicon glyphicon-remove"></i>';
 
             for ($i=0; $i < 4; $i++) {
-                echo $this->Form->input('quiz_answers.' .$i. '.answer', [
+                echo $this->Form->control('quiz_answers.' .$i. '.answer', [
                     'label'       => false, //  $i == 0 ? __('Risposta corretta') : __('Risposta errata'),
                     'prepend'     => $i == 0 ? $ok : $ko,
                     //'placeholder' => $i == 0 ? 'La risposta corretta' : 'La risposta errata',
@@ -212,7 +212,7 @@
     <fieldset class="app-quiz-answer__trueorfalse" <?= $disabled ? 'disabled="disabled"' : '' ?>>
         <legend><?= __('Risposte [vero/falso]') ?></legend>
         <?php
-            echo $this->Form->input('quiz_answers.0.is_correct', [
+            echo $this->Form->control('quiz_answers.0.is_correct', [
                 'type'    => 'select',
                 'label'   => false,
                 'default' => 'true',

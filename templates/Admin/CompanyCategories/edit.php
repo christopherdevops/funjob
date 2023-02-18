@@ -27,11 +27,11 @@
     <fieldset>
         <legend><?php echo __('Traduzioni') ?></legend>
         <?php
-            echo $this->Form->input('_translations.it.name', ['required' => false, 'label' => __('Italiano')]);
-            echo $this->Form->input('_translations.en.name', ['required' => false, 'label' => __('Inglese')]);
-            echo $this->Form->input('_translations.fr.name', ['required' => false, 'label' => __('Francese')]);
-            echo $this->Form->input('_translations.es.name', ['required' => false, 'label' => __('Spagnolo')]);
-            echo $this->Form->input('_translations.ru.name', ['required' => false, 'label' => __('Russo')]);
+            echo $this->Form->control('_translations.it.name', ['required' => false, 'label' => __('Italiano')]);
+            echo $this->Form->control('_translations.en.name', ['required' => false, 'label' => __('Inglese')]);
+            echo $this->Form->control('_translations.fr.name', ['required' => false, 'label' => __('Francese')]);
+            echo $this->Form->control('_translations.es.name', ['required' => false, 'label' => __('Spagnolo')]);
+            echo $this->Form->control('_translations.ru.name', ['required' => false, 'label' => __('Russo')]);
         ?>
     </fieldset>
 

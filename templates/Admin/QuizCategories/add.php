@@ -94,13 +94,13 @@
                 'help'     => __('Seleziona la categoria attraverso lo strumento di ricerca sovrastante, selezionando il pallino')
             ]);
 
-            // echo $this->Form->input('parent_id', [
+            // echo $this->Form->control('parent_id', [
             //     'label'   => __('Sotto categoria di'),
             //     'empty'   => __('-- Nodo principale'),
             //     'options' => $parentQuizCategories,
             //     'default' => '',
             // ]);
-            echo $this->Form->input('name', [
+            echo $this->Form->control('name', [
                 'label' => __('Nome categoria'),
                 'help'  => __('Traduzioni disponibili nella pagina di modifica'),
             ]);

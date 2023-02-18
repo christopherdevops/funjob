@@ -99,26 +99,26 @@
 
 
     <?php
-        echo $this->Form->input('email', [
+        echo $this->Form->control('email', [
             'label' => __('E-mail'),
             'prepend' => '<i class="fa fa-envelope"></i>',
             'help'  => __('Utilizzata per il recupero password (non verrà mostrata su FunJob)'),
         ]);
-        echo $this->Form->input('username', [
+        echo $this->Form->control('username', [
             'label'   => __('Nome utente'),
             'prepend' => '<i class="fa fa-at"></i>',
             'help'    => __('Sarà il tuo nickname su FunJob'),
         ]);
-        echo $this->Form->input('password', [
+        echo $this->Form->control('password', [
             'label' => __('Password (minimo 5 caratteri)'),
             'type'  => 'password',
         ]);
-        echo $this->Form->input('password_confirm', [
+        echo $this->Form->control('password_confirm', [
             'label' => __('Password (digita nuovamente)'),
             'type'  => 'password',
         ]);
 
-        echo $this->Form->input('accept_terms', [
+        echo $this->Form->control('accept_terms', [
             'label' => (
                 __('Accetto i ') .
                 ' <a style="text-decoration:underline !important;" href="'. $this->Url->build(['controller' => 'Pages', 'action' => 'display', 'terms_and_conditions']) .'" target="_blank">Termini e condizioni</a>'

@@ -6,7 +6,7 @@ $this->assign('tab', 'candidates');
 ?>
 
 <?php
-echo $this->Form->input('profile_block.candidates', [
+echo $this->Form->control('profile_block.candidates', [
     'label'       => __('Candidati ideali'),
     'placeholder' => '',
     'help'        => ''

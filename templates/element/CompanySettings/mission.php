@@ -6,7 +6,7 @@ $this->assign('tab', 'mission');
 ?>
 
 <?php
-echo $this->Form->input('profile_block.mission', [
+echo $this->Form->control('profile_block.mission', [
     'label'       => __('Missione'),
     'placeholder' => '',
     'help'        => ''

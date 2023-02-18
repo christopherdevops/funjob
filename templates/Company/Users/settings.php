@@ -49,7 +49,7 @@
     <fieldset>
         <?php
             use \Cake\Core\Configure;
-            echo $this->Form->input('background_cover', [
+            echo $this->Form->control('background_cover', [
                 'type'    => 'select',
                 'label'   => __('Immagine di copertina'),
                 'options' => [

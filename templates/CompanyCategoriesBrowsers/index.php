@@ -160,7 +160,7 @@
 
             $this->Form->unlockField('city_id');
             echo $this->Form->hidden('city_id', ['class' => 'js-city-id']);
-            echo $this->Form->input('_city', [
+            echo $this->Form->control('_city', [
                 'label'        => false,
                 'id'           => $autocomplete_id,
                 'placeholder'  => __('Digita il nome e attendi i suggerimenti (3 caratteri richiesti) '),

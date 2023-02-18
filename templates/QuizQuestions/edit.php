@@ -43,13 +43,13 @@ $this->end();
 <fieldset>
     <legend><?= __('Edit {0}', ['Quiz Question']) ?></legend>
     <?php
-    echo $this->Form->input('quiz_id', ['options' => $quizzes]);
-    echo $this->Form->input('type');
-    echo $this->Form->input('question');
-    echo $this->Form->input('complexity');
-    echo $this->Form->input('source_url');
-    echo $this->Form->input('source_book_page');
-    echo $this->Form->input('source_book_title');
+    echo $this->Form->control('quiz_id', ['options' => $quizzes]);
+    echo $this->Form->control('type');
+    echo $this->Form->control('question');
+    echo $this->Form->control('complexity');
+    echo $this->Form->control('source_url');
+    echo $this->Form->control('source_book_page');
+    echo $this->Form->control('source_book_title');
     ?>
 </fieldset>
 <?= $this->Form->button(__("Save")); ?>

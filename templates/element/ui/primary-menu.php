@@ -341,7 +341,7 @@
 <script type="text/template" id="tpl-lang-selector">
     <?php
         echo $this->Form->create(null, ['url' => ['prefix' => false, 'controller' => 'Users', 'action' => 'language']]);
-        echo $this->Form->input('language', [
+        echo $this->Form->control('language', [
             'label'   => __('Lingue disponibili'),
             'empty'   => __('-- Seleziona'),
             'options' => Configure::read('app.languages')

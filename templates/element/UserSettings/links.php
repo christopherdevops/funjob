@@ -6,7 +6,7 @@ $this->assign('tab', 'links');
 ?>
 
 <?php
-echo $this->Form->input('profile_block.links', [
+echo $this->Form->control('profile_block.links', [
     'label'       => __('Links'),
     'placeholder' => __('Nome sito http://www....'),
     'help'        => __('I links alle tue pagine web (uno per linea)')

@@ -10,7 +10,7 @@
     <?php echo $this->Form->create('QuizCategorySearch', ['id' => 'quiz-category-search', 'class' => 'well']); ?>
     <fieldset>
         <?php
-            echo $this->Form->input('name', [
+            echo $this->Form->control('name', [
                 'label'        => __('Nome categoria'),
                 'placeholder'  => __('Termine di ricerca'),
                 'help'         => __('Digita il termine, e attendi il risultato'),
@@ -25,7 +25,7 @@
     <?php echo $this->Form->create('QuizSearch', ['id' => 'quiz-category-search', 'class' => 'well']); ?>
     <fieldset>
         <?php
-            echo $this->Form->input('name', [
+            echo $this->Form->control('name', [
                 'label'        => __('Nome quiz, parole chiave'),
                 'placeholder'  => __('Termine di ricerca'),
                 'help'         => __('Digita il termine, e attendi il risultato'),
@@ -185,7 +185,7 @@
     <fieldset>
         <div class="app-category-selector-level app-category-selector-level--1">
         <?php
-            echo $this->Form->input('category_id.1', [
+            echo $this->Form->control('category_id.1', [
                 'empty'      => '-- Seleziona categoria',
                 'value'      => '',
                 'class'      => 'app-category-selector',
@@ -199,7 +199,7 @@
         <?php for ($i=2; $i < 10; $i++) : ?>
         <div disabled="disabled" class="app-category-selector-level app-category-selector-level--<?= $i ?>">
             <?php
-                echo $this->Form->input('category_id.'. $i, [
+                echo $this->Form->control('category_id.'. $i, [
                     'empty'      => '-- Seleziona categoria',
                     'class'      => 'app-category-selector',
                     'data-level' => $i,

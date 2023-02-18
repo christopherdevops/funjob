@@ -83,7 +83,7 @@
         <div class="well">
             <?php
                 echo $this->Form->create(null, ['method' => 'get', 'id' => 'app-archive-filter', 'align' => 'horizontal']);
-                echo $this->Form->input('filter.type', [
+                echo $this->Form->control('filter.type', [
                     'type'    => 'select',
                     'label'   => __('Tipologia quiz'),
                     'help'    => __('Quiz certificati da funjob.it (a più livelli)'),

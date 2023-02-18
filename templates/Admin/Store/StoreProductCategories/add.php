@@ -11,12 +11,12 @@
     <?= $this->Form->create($category, ['valueSources' => ['context', 'query']]) ?>
     <fieldset>
         <?php
-            echo $this->Form->input('parent_id', [
+            echo $this->Form->control('parent_id', [
                 'label'   => __('Sotto categoria di'),
                 'empty'   => __('-- Nodo principale'),
                 'options' => $parentCategories,
             ]);
-            echo $this->Form->input('name', [
+            echo $this->Form->control('name', [
                 'label' => __('Nome categoria'),
                 'help'  => __('Traduzioni disponibili nella pagina di modifica'),
             ]);

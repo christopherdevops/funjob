@@ -6,7 +6,7 @@ $this->assign('tab', 'job_roles');
 ?>
 
 <?php
-echo $this->Form->input('profile_block.job_roles', [
+echo $this->Form->control('profile_block.job_roles', [
     'label'       => __('Posizioni ricercate'),
     'placeholder' => '',
     'help'        => ''

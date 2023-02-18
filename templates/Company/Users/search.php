@@ -15,7 +15,7 @@
     ?>
     <fieldset>
         <?php
-            echo $this->Form->input('skills', [
+            echo $this->Form->control('skills', [
                 'default'     => '',
                 'placeholder' => 'php,cakephp',
                 'label'       => __('Competenze tecniche (separate da virgola)'),
@@ -24,7 +24,7 @@
 
             // Utilizzato per aggiornare città (non modificare POSIZIONE elemento hidden)
             echo $this->Form->hidden('city_id', ['id' => 'js-city-id']);
-            echo $this->Form->input('city', [
+            echo $this->Form->control('city', [
                 'label'        => __('Vive a'),
                 'placeholder'  => __('Trascrivi il nome della città'),
                 'type'         => 'text',

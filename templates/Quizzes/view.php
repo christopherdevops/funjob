@@ -91,7 +91,7 @@
                 $options[$i] = $data;
             }
 
-            echo $this->Form->input('level', [
+            echo $this->Form->control('level', [
                 'label'   => __('{icon} Livello di difficoltà', ['icon' => '<i style="color:#00adee" class="fa fa-signal"></i>']),
                 'type'    => 'select',
                 'help'    => __('Giocando potrai sbloccare i livelli successivi'),
@@ -132,7 +132,7 @@
         //     'class' => 'btn btn-block btn-primary btn-lg',
         // ]);
 
-        echo $this->Form->input('_adv', [
+        echo $this->Form->control('_adv', [
             'label'   => __('{icon} Guadagna crediti (PIX) da spendere in premi', [
                 'icon' => '<i class="fontello-credits" style="color:#00adee"></i>'
             ]),

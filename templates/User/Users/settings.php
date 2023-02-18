@@ -37,7 +37,7 @@
     <fieldset>
         <?php
             use \Cake\Core\Configure;
-            echo $this->Form->input('background_cover', [
+            echo $this->Form->control('background_cover', [
                 'type'    => 'select',
                 'label'   => __('Immagine di copertina'),
                 'options' => [
@@ -121,7 +121,7 @@
                 'help'  => __('Compila questo campo solo se intendi cambiare la password')
             ]);
 
-            echo $this->Form->input('lang', [
+            echo $this->Form->control('lang', [
                 'label'   => __('Lingua interfaccia'),
                 'options' => $langs
             ]);
@@ -179,14 +179,14 @@
 
             echo '<div class="row">';
             echo '<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">';
-            echo $this->Form->input('first_name', [
+            echo $this->Form->control('first_name', [
                 'label' => __('Nome'),
                 'max'   => 140,
                 'help'  => __('Utilizzato nelle ricerche')
             ]);
             echo '</div>';
             echo '<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">';
-            echo $this->Form->input('last_name', [
+            echo $this->Form->control('last_name', [
                 'label' => __('Cognome'),
                 'max'   => 140,
                 'help'  => __('Utilizzato nelle ricerche')
@@ -202,7 +202,7 @@
             echo '</div>';
 
 
-            echo $this->Form->input('account_info.sex', [
+            echo $this->Form->control('account_info.sex', [
                 'label'   => __('Sesso'),
                 'empty'   => __('Non specificato'),
                 'options' => [
@@ -211,28 +211,28 @@
                 ]
             ]);
 
-            echo $this->Form->input('account_info.phone', [
+            echo $this->Form->control('account_info.phone', [
                 'label'   => __('Numero telefonico'),
             ]);
-            echo $this->Form->input('account_info.show_phone', [
+            echo $this->Form->control('account_info.show_phone', [
                 'type'   => 'checkbox',
                 'label'  => __('Mostrare nel profilo')
             ]);
 
-            echo $this->Form->input('title', [
+            echo $this->Form->control('title', [
                 'label' => __('Titolo'),
                 'max'   => 140,
                 'help'  => __('Descriviti in {characters} caratteri (te o la tua professione)', ['characters' => 140])
             ]);
 
-            echo $this->Form->input('account_info.profession', [
+            echo $this->Form->control('account_info.profession', [
                 'label' => __('Professione'),
                 'max'   => 40,
                 'help'  => __('La tua professione in breve (massimo {characters} caratteri)', ['characters' => 40])
             ]);
 
             if ($User->is_bigbrain) {
-                echo $this->Form->input('bigbrain_area', [
+                echo $this->Form->control('bigbrain_area', [
                     'label'  => __('{icon} Bigbrain: Materie', ['icon' => '<i class="fontello-brain text-color-primary"></i>']),
                     'max'    => 150,
                     'escape' => false,
@@ -281,7 +281,7 @@
 
         <?php
             // Utilizzato User.UserSkills (skill_tags element)
-            // echo $this->Form->input('job_offers._ids', [
+            // echo $this->Form->control('job_offers._ids', [
             //     'type'     => 'select',
             //     'multiple' => 'checkbox',
             //     'options'  => $UserJobOffers,

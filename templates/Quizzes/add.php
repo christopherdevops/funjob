@@ -120,7 +120,7 @@
             'help'  => __('Gli utenti potranno cercare il tuo gioco attraverso queste parole')
         ]);
 
-        echo $this->Form->input('image__src', [
+        echo $this->Form->control('image__src', [
             'type'        => 'file',
             'label'       => __('Copertina'),
             'help'        => __('Sarà visibile all\'interno del quiz e in archivio (inferiore a {size} KB, e {format} px)', [

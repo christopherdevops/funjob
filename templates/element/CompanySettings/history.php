@@ -6,7 +6,7 @@ $this->assign('tab', 'history');
 ?>
 
 <?php
-echo $this->Form->input('profile_block.history', [
+echo $this->Form->control('profile_block.history', [
     'label'       => __('Storia'),
     'placeholder' => '',
     'help'        => ''

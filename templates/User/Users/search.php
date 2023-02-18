@@ -146,7 +146,7 @@
     <div class="row">
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
             <?php
-                echo $this->Form->input('age_from', [
+                echo $this->Form->control('age_from', [
                     'default' => '',
                     'type'    => 'number',
                     'label'   => false, //__('Età (da)'),
@@ -157,7 +157,7 @@
         </div>
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
             <?php
-                echo $this->Form->input('age_to', [
+                echo $this->Form->control('age_to', [
                     'default' => '',
                     'type'    => 'number',
                     'label'   => false, //__('Età (fino a)'),
@@ -177,16 +177,16 @@
     ?>
     <fieldset>
         <?php
-            echo $this->Form->input('fullname', [
+            echo $this->Form->control('fullname', [
                 'label'       => __('Nome e cognome'),
                 'placeholder' => 'Mario Rossi'
             ]);
 
-            echo $this->Form->input('username', [
+            echo $this->Form->control('username', [
                 'label' => __('Nome utente')
             ]);
 
-            echo $this->Form->input('sex', [
+            echo $this->Form->control('sex', [
                 'label' => __('Sesso'),
                 'options' => [
                     ''       => __('Tutti'),
@@ -207,7 +207,7 @@
 
             // FILTRI TITOLI DI STUDIO
             /*
-            echo $this->Form->input('qualification', [
+            echo $this->Form->control('qualification', [
                 'type'    => 'select',
                 'options' => [
                     ''  => '-- Tutti',
@@ -219,7 +219,7 @@
                 'label'   => __('Titolo di studio'),
                 'help'    => __('<span class="label label-warning">Attenzione</span> Tieni in considerazione che ci sono moltissimi talenti che non hanno un titolo di studio (auto didatti)')
             ]);
-            echo $this->Form->input('facolta', [
+            echo $this->Form->control('facolta', [
                 'type'    => 'select',
                 'options' => [
                     ''  => '-- Tutti',
@@ -244,14 +244,14 @@
 
             // FILTRI: PROFESSIONALI
 
-            // echo $this->Form->input('role', [
+            // echo $this->Form->control('role', [
             //     'type'    => 'select',
             //     'options' => array_merge(['' => '-- Tutti'], $jobs->toArray()),
             //     'default'     => '',
             //     'label'       => __('Professione'),
             // ]);
 
-            echo $this->Form->input('skills', [
+            echo $this->Form->control('skills', [
                 'default'     => '',
                 'placeholder' => 'php,cakephp',
                 'label'       => __('Competenze tecniche (separate da virgola)'),
@@ -261,7 +261,7 @@
                 )
             ]);
 
-            echo $this->Form->input('hobbies', [
+            echo $this->Form->control('hobbies', [
                 'default'     => '',
                 'label'       => __('Hobbies & interessi')
             ]);
@@ -282,7 +282,7 @@
 
 
             echo $this->Form->error('city_id');
-            echo $this->Form->input('_city', [
+            echo $this->Form->control('_city', [
                 'label'        => false,
                 'id'           => $autocomplete_id,
                 'placeholder'  => __('Digita il nome e attendi i suggerimenti (3 caratteri richiesti) '),
