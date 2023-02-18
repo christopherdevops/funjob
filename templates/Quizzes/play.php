@@ -232,7 +232,7 @@
                     type : "json",
                     data : {},
                     headers: {
-                        "X-CSRF-Token": "<?= $this->request->param('_csrfToken') ?>"
+                        "X-CSRF-Token": "<?= $this->request->getParam('_csrfToken') ?>"
                     }
                 });
             };
@@ -378,7 +378,7 @@
                             url    : "<?= $this->Url->build(['controller' => 'SponsorAdvs', 'action' => 'viewed', '_ext' => 'json']) ?>",
                             data   : $("#form-next-question-after-adv").serialize(),
                             headers: {
-                                "X-CSRF-Token": "<?= $this->request->param('_csrfToken') ?>"
+                                "X-CSRF-Token": "<?= $this->request->getParam('_csrfToken') ?>"
                             },
                         });
                         $req.done(function() {
@@ -420,7 +420,7 @@
                     data   : $gameForm.serialize(),
                     method : "POST",
                     headers: {
-                        "X-CSRF-Token": "<?= $this->request->param('_csrfToken') ?>"
+                        "X-CSRF-Token": "<?= $this->request->getParam('_csrfToken') ?>"
                     },
                     url    :  $gameForm.attr("action"),
                     beforeSend: function(settings) {
