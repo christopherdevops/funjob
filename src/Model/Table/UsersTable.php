@@ -107,7 +107,7 @@ class UsersTable extends Table
         $validator->integer('id');
 
         $validator->allowEmpty('fullname', null, __('Campo obbligatorio'));
-        $validator->email('email', null, __('Valore non valido'));
+        $validator->email('email', false, __('Valore non valido'));
 
         $minLength = 3;
         $maxLength = 25;
