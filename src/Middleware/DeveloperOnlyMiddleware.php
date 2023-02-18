@@ -4,7 +4,7 @@ namespace App\Middleware;
 use Cake\Routing\Router;
 use Cake\Utility\Text;
 
-use Zend\Diactoros\Response\RedirectResponse;
+use Laminas\Diactoros\Response\RedirectResponse;
 
 /**
  * Nega l'accesso a determinate URl's se l'utente non è un developer

@@ -7,7 +7,7 @@ use Cake\Utility\Text;
 use Cake\Core\Configure;
 use Cake\Log\Log;
 
-//use Zend\Diactoros\Response\RedirectResponse;
+//use Laminas\Diactoros\Response\RedirectResponse;
 
 /**
  * Applicazione in manutenzione

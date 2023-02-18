@@ -20,7 +20,8 @@
         "ezyang/htmlpurifier": "^4.16",
         "friendsofcake/cakephp-csvview": "^4.0",
         "hybridauth/hybridauth": "^3.8",
-        "josegonzalez/dotenv": "^3.2"
+        "josegonzalez/dotenv": "^3.2",
+        "laminas/laminas-diactoros": "^2.24"
     },
     "require-dev": {
         "psy/psysh": "@stable",

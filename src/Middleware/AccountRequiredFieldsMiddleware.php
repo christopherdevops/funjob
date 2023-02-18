@@ -6,7 +6,7 @@ use Cake\Utility\Text;
 use Cake\Core\Configure;
 use Cake\ORM\TableRegistry;
 
-//use Zend\Diactoros\Response\RedirectResponse;
+//use Laminas\Diactoros\Response\RedirectResponse;
 
 /**
  * Verifica che l'account loggato abbia tutti i campi necessari all'account

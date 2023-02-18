@@ -4,7 +4,7 @@ namespace App\Middleware;
 use Cake\Routing\Router;
 use Cake\Utility\Text;
 
-use Zend\Diactoros\Response\RedirectResponse;
+use Laminas\Diactoros\Response\RedirectResponse;
 
 class MeRouteMiddleware
 {
