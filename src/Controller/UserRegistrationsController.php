@@ -4,7 +4,7 @@ namespace App\Controller;
 use App\Controller\AppController;
 
 use Cake\Mailer\MailerAwareTrait;
-use Cake\Utility\String;
+use Cake\Utility\Text;
 use Cake\Network\Exception\ForbiddenException;
 use Cake\Network\Exception\NotFoundException;
 
@@ -72,7 +72,7 @@ class UserRegistrationsController extends AppController
                 return null;
             }
 
-            $User->recovery_token = String::uuid();
+            $User->recovery_token = Text::uuid();
 
             if ($this->Users->save($User, ['fieldList' => 'recovery_token'])) {
                 $this->getMailer('User')->send('resetToken', [$User]);

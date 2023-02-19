@@ -4,7 +4,6 @@ namespace App\View\Cell;
 use Cake\View\Cell;
 use Cake\Cache\Cache;
 use Cake\Core\Configure;
-use Cake\Utility\String;
 
 /**
  * QuizCategoriesJsTree cell

@@ -65,7 +65,7 @@ class QuizzesTable extends Table
                 ],
                 'nameCallback' => function ($uploadData, $settings) {
                     //$ext = pathinfo($uploadData['name'], PATHINFO_EXTENSION);
-                    //return \Cake\Utility\String::uuid() .'.'. $ext;
+                    //return \Cake\Utility\Text::uuid() .'.'. $ext;
                     return 'cover.jpg'; // overrides file precedente
                 },
                 // This can also be in a class that implements

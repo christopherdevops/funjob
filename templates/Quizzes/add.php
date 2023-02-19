@@ -1,6 +1,5 @@
 <?php
     use Cake\Core\Configure;
-    use Cake\Utility\String;
     use Cake\Utility\Text;
 
     $this->assign('title', __('Nuovo Gioco'));
@@ -89,7 +88,7 @@
 
     <?php
         $this->Form->unlockField('categories._ids');
-        $selector = 'quiz-category-jstree-' .String::uuid();
+        $selector = 'quiz-category-jstree-' .Text::uuid();
         echo $this->cell(
             'QuizCategoriesJsTree',
             [$selector],

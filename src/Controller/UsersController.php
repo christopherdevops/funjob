@@ -360,7 +360,7 @@ class UsersController extends AppController
                 'validate' => 'registration'
             ]);
 
-            $User->confirmation_token = \Cake\Utility\String::uuid();
+            $User->confirmation_token = \Cake\Utility\Text::uuid();
             $User->can_login          = true;
             $User->is_verified_mail   = false;
 

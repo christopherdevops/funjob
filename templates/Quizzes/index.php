@@ -1,6 +1,4 @@
 <?php
-    use Cake\Utility\String;
-
     $this->assign('header', ' ');
 
     $this->Html->css(['quizzes/index', 'quizzes/popular'], ['block' => 'css_head']);

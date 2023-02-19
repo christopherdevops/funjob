@@ -44,7 +44,7 @@ class CitiesTable extends Table
         $this->addBehavior('Translate', []);
     }
 
-    public static function defaultConnectionName()
+    public static function defaultConnectionName(): string
     {
         return 'cities';
     }

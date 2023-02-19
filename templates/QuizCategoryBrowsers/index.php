@@ -1,6 +1,4 @@
 <?php
-    use Cake\Utility\String;
-
     $this->assign('title', __('Ricerca Gioco per categorie'));
     $this->assign('header', ' ');
 

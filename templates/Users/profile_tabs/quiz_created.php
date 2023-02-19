@@ -1,6 +1,4 @@
 <?php
-    use Cake\Utility\String;
-
     $this->assign('title', __('Quiz creati'));
     $this->assign('header', ' ');
 
