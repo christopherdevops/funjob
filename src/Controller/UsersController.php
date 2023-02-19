@@ -162,7 +162,7 @@ class UsersController extends AppController
             }
         }
 
-        $CvAuthorization = $this->Users->CvAuthorizations->newEntity();
+        $CvAuthorization = $this->Users->CvAuthorizations->newEmptyEntity();
 
         $this->set(compact('User', 'CvAuthorization', 'isFriend'));
         $this->set('_serialize', ['User']);
@@ -352,7 +352,7 @@ class UsersController extends AppController
             $this->_socialProfileDecode();
         }
 
-        $User = $this->Users->newEntity();
+        $User = $this->Users->newEmptyEntity();
 
         if ($this->request->is('post'))
         {

@@ -18,7 +18,7 @@ class StoreProductPicturesController extends AppController
      */
     public function add()
     {
-        $ProductPicture = $this->StoreProductPictures->newEntity();
+        $ProductPicture = $this->StoreProductPictures->newEmptyEntity();
 
         // Forzo "product_id" poichè è ignorato dal guard dell'entity
         $ProductPicture->set(['product_id' => $this->request->getData('product_id')], ['guard' => false]);

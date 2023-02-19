@@ -93,7 +93,7 @@ class UserMessagesController extends AppController
         // TODO:
         // Verificare se utente attivo è nei recipients
 
-        $userMessageReply = $this->UserMessages->Replies->newEntity();
+        $userMessageReply = $this->UserMessages->Replies->newEmptyEntity();
 
 
         $this->set(compact('userMessage', 'userMessageReply'));
@@ -108,7 +108,7 @@ class UserMessagesController extends AppController
     public function add($username = null)
     {
         $this->loadModel('Users');
-        $userMessage = $this->UserMessages->newEntity();
+        $userMessage = $this->UserMessages->newEmptyEntity();
 
         if ($this->request->is('post')) {
 
@@ -185,7 +185,7 @@ class UserMessagesController extends AppController
         $recipients = $this->_getConversationRecipients();
 
         if ($this->request->is('post')) {
-            $userMessageReply = $this->UserMessages->Replies->newEntity();
+            $userMessageReply = $this->UserMessages->Replies->newEmptyEntity();
 
             // Aggiunge dati
             $this->request->data('sender_id', $this->Auth->user('id'));

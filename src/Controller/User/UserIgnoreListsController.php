@@ -47,7 +47,7 @@ class UserIgnoreListsController extends AppController
     {
         $this->request->allowMethod(['post']);
 
-        $userIgnoreList = $this->UserIgnoreLists->newEntity();
+        $userIgnoreList = $this->UserIgnoreLists->newEmptyEntity();
         if ($this->request->is('post')) {
             $userIgnoreList = $this->UserIgnoreLists->patchEntity($userIgnoreList, $this->request->getData());
             if ($this->UserIgnoreLists->save($userIgnoreList)) {

@@ -52,7 +52,7 @@ Class SponsorAdvsController extends AppController {
 
     public function add()
     {
-        $Adv = $this->SponsorAdvs->newEntity();
+        $Adv = $this->SponsorAdvs->newEmptyEntity();
 
         if ($this->request->is('post')) {
 

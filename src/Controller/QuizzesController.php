@@ -542,7 +542,7 @@ class QuizzesController extends AppController
         $this->loadComponent('QuizGame');
         $this->QuizGame->config('quiz_id', $quizID);
 
-        $QuizUserRankings = $this->Quizzes->UserRankings->newEntity();
+        $QuizUserRankings = $this->Quizzes->UserRankings->newEmptyEntity();
         if (!empty($quiz->user_rankings[0])) {
             $QuizUserRankings = $quiz->user_rankings[0];
         }

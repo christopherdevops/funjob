@@ -75,7 +75,7 @@ class StoreProductsController extends AppController
     {
         $this->loadModel('StoreProductCategories');
 
-        $product = $this->StoreProducts->newEntity();
+        $product = $this->StoreProducts->newEmptyEntity();
         if ($this->request->is('post')) {
             $product = $this->StoreProducts->patchEntity($product, $this->request->getData(), [
                 'associated' => [
@@ -145,7 +145,7 @@ class StoreProductsController extends AppController
 
         $categories     = $this->StoreProductCategories->find('treeList', ['spacer' => '<i class="fa fa-arrow-right"></i> ']);
         $parentProducts = $this->StoreProducts->find('product')->find('list')->all();
-        $Picture        = $this->StoreProducts->Pictures->newEntity();
+        $Picture        = $this->StoreProducts->Pictures->newEmptyEntity();
 
         $this->set(compact('product', 'categories', 'parentProducts', 'Picture'));
         $this->set('_serialize', ['product']);

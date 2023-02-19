@@ -50,7 +50,7 @@ class QuizQuestionsController extends AppController
 
         $questionsCounter = $this->QuizQuestion->getQuestionsCounter();
 
-        $quizQuestion = $this->QuizQuestions->newEntity();
+        $quizQuestion = $this->QuizQuestions->newEmptyEntity();
         $uuid         = \Cake\Utility\Text::uuid();
 
         // NOTE:

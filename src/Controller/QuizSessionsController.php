@@ -57,7 +57,7 @@ class QuizSessionsController extends AppController
         $this->autoRender = false;
         $this->request->allowMethod(['post']);
 
-        $quizSession = $this->QuizSessions->newEntity();
+        $quizSession = $this->QuizSessions->newEmptyEntity();
 
         if ($this->request->is('post')) {
             $sessionPath = sprintf('Quiz.%d', $this->request->data['quiz_id']);

@@ -95,7 +95,7 @@ class QuizQuestionsController extends AppController
      */
     public function add()
     {
-        $quizQuestion = $this->QuizQuestions->newEntity();
+        $quizQuestion = $this->QuizQuestions->newEmptyEntity();
         if ($this->request->is('post')) {
             $quizQuestion = $this->QuizQuestions->patchEntity($quizQuestion, $this->request->getData());
             if ($this->QuizQuestions->save($quizQuestion)) {

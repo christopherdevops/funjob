@@ -34,7 +34,7 @@ class CompanyCategoriesController extends AppController
      */
     public function add()
     {
-        $Category = $this->CompanyCategories->newEntity();
+        $Category = $this->CompanyCategories->newEmptyEntity();
         if ($this->request->is('post')) {
             $Category = $this->CompanyCategories->patchEntity($Category, $this->request->getData());
             if ($this->CompanyCategories->save($Category)) {

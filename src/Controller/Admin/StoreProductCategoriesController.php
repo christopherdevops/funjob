@@ -42,7 +42,7 @@ class StoreProductCategoriesController extends AppController
      */
     public function add()
     {
-        $category = $this->StoreProductCategories->newEntity();
+        $category = $this->StoreProductCategories->newEmptyEntity();
         if ($this->request->is('post')) {
             $category = $this->StoreProductCategories->patchEntity($category, $this->request->getData());
             if ($this->StoreProductCategories->save($category)) {

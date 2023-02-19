@@ -99,7 +99,7 @@ class CvAuthorizationsController extends AppController
     {
         $this->autoRender = false;
 
-        $CvAuthorization = $this->CvAuthorizations->newEntity();
+        $CvAuthorization = $this->CvAuthorizations->newEmptyEntity();
 
         $this->request->data('requester_user_id', $this->Auth->user('id'));
         $this->request->data('allowed', null);

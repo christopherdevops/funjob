@@ -81,7 +81,7 @@ class UserGroupsController extends AppController
      */
     public function add()
     {
-        $userGroup = $this->UserGroups->newEntity();
+        $userGroup = $this->UserGroups->newEmptyEntity();
 
         if ($this->request->is('post')) {
             // Inject data

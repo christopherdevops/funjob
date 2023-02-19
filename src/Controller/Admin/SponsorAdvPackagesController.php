@@ -56,7 +56,7 @@ class SponsorAdvPackagesController extends AppController
      */
     public function add()
     {
-        $SponsorAdvPackage = $this->SponsorAdvPackages->newEntity();
+        $SponsorAdvPackage = $this->SponsorAdvPackages->newEmptyEntity();
         if ($this->request->is('post')) {
             $SponsorAdvPackage = $this->SponsorAdvPackages->patchEntity($SponsorAdvPackage, $this->request->getData());
             if ($this->SponsorAdvPackages->save($SponsorAdvPackage)) {

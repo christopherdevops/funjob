@@ -63,7 +63,7 @@ class UserRegistrationsController extends AppController
     public function recovery() {
         $this->loadModel('Users');
 
-        $User = $this->Users->newEntity();
+        $User = $this->Users->newEmptyEntity();
 
         if ($this->request->is('post')) {
             $User = $this->Users->findByEmail($this->request->getData('email'))->first();

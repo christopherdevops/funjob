@@ -43,7 +43,7 @@ class QuizCategoriesController extends AppController
     public function add()
     {
 
-        $Category = $this->Categories->newEntity();
+        $Category = $this->Categories->newEmptyEntity();
         if ($this->request->is('post')) {
 
             if ($this->request->getData('_filter')) {
