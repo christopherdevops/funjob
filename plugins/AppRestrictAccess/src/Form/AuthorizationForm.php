@@ -50,7 +50,7 @@ class AuthorizationForm extends Form
      * @param array $data Form data.
      * @return bool
      */
-    protected function _execute(array $data): bool
+    protected function _execute(array $data): bool: bool
     {
         return true;
     }

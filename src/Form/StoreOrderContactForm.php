@@ -39,7 +39,7 @@ class StoreOrderContactForm extends Form
      * @param array $data Form data.
      * @return bool
      */
-    protected function _execute(array $data)
+    protected function _execute(array $data): bool
     {
         return true;
     }
