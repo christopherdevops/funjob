@@ -9,7 +9,8 @@ use Cake\Datasource\ConnectionManager;
 
 class UserNotificationListener implements EventListenerInterface {
 
-    public function implementedEvents() {
+    public function implementedEvents(): array
+    {
         return [
             'Controller.User.Store.Purchase' => ['priority' => 99, 'callable' => 'onStorePurchase']
         ];

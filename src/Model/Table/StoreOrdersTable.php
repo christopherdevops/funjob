@@ -60,7 +60,7 @@ class StoreOrdersTable extends Table
         ]);
     }
 
-    public function implementedEvents()
+    public function implementedEvents(): array
     {
         return [
             'Model.afterSave' => 'onNewOrderEvent'
