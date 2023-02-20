@@ -47,7 +47,7 @@ class QuizCategoriesJsTreeCell extends Cell
                 // NOTE: Se si usa enableHydration=false e si itera tramite $Iterator non vengono impostate le nuove voci
                 // $data['state'], difatti ogni nuova voce creata non compare in $categories (viene clonato?)
                 //->enableHydration(false)
-                ->bufferResults(false)
+                ->disableBufferedResults()
                 ->toArray();
 
                 // Scorre tutte le categorie per abilitare tramite opzione "state"
