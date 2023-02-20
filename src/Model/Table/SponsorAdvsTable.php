@@ -378,11 +378,11 @@ class SponsorAdvsTable extends Table
     public function findIsActive(Query $q)
     {
         $q->where(function($exp) {
-            $gte = $exp->and_(function($condition) {
+            $gte = $exp->and(function($condition) {
                 return $condition->gt('impression_lefts', 0);
             });
 
-            return $exp->add( $exp->and_($gte) );
+            return $exp->add( $exp->and($gte) );
         });
 
         $q->where(function($exp, $q) {
@@ -423,11 +423,11 @@ class SponsorAdvsTable extends Table
 
         // Filtro su età non dichiarato
         $q->andWhere(function($exp) use ($age) {
-            return $exp->add( $exp->and_(['filter_for_age__from IS NULL', 'filter_for_age__to IS NULL']) );
+            return $exp->add( $exp->and(['filter_for_age__from IS NULL', 'filter_for_age__to IS NULL']) );
         });
         // Filtro su età dichiarato
         $q->orWhere(function($exp) use ($age) {
-            $condition = $exp->and_(function($condition) use ($age) {
+            $condition = $exp->and(function($condition) use ($age) {
                 $condition->lte('filter_for_age__from', $age);
                 $condition->gte('filter_for_age__to', $age);
                 return $condition;
