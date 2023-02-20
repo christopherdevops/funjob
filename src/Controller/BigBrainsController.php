@@ -77,10 +77,10 @@ class BigbrainsController extends AppController
 
         if ($this->request->is('post')) {
             if ($this->Recaptcha->verify()) {
-                if ($BigBrainContactForm->execute($this->request->data)) {
+                if ($BigBrainContactForm->execute($this->request->getData())) {
                     $this->Flash->success(__(
                         'Grazie! La tua richiesta verrà analizzata e verrai ricontattato su {0}',
-                        $this->request->data['email']
+                        $this->request->getData('email')
                     ));
 
                     return $this->redirect($this->referer('/'));

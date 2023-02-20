@@ -85,11 +85,13 @@ class UserGroupsController extends AppController
 
         if ($this->request->is('post')) {
             // Inject data
-            $this->request->data('user_id', $this->Auth->user('id'));
-            $this->request->data('user_group_members.0', [
-                'user_id' => $this->Auth->user('id'),
-                'role'    => 'owner'
-            ]);
+            $this->setRequest($this->request
+                ->withData('user_id', $this->Auth->user('id'))
+                ->withData('user_group_members.0', [
+                    'user_id' => $this->Auth->user('id'),
+                    'role'    => 'owner'
+                ])
+            );
 
             $userGroup = $this->UserGroups->patchEntity($userGroup, $this->request->getData(), [
                 'associated' => ['UserGroupMembers']

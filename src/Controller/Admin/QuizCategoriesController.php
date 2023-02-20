@@ -50,7 +50,7 @@ class QuizCategoriesController extends AppController
                 return $this->redirect(['?' => $this->request->getData()]);
             }
 
-            $Category = $this->Categories->patchEntity($Category, $this->request->data);
+            $Category = $this->Categories->patchEntity($Category, $this->request->getData());
             if ($this->Categories->save($Category)) {
                 $this->Flash->success(__d('backend', 'Categoria creata'));
                 return $this->redirect(['action' => 'edit', $Category->id]);
@@ -68,7 +68,7 @@ class QuizCategoriesController extends AppController
             $q       = $this->QuizCategories->find();
             $nodes = $q
                 ->select(['name', 'id', 'parent_id'])
-                ->bind(':term', '%' .$this->request->query('term'). '%')
+                ->bind(':term', '%' .$this->request->getQuery('term'). '%')
                 ->where(['name LIKE :term'])
                 ->limit(100)
             ->all();
@@ -111,7 +111,7 @@ class QuizCategoriesController extends AppController
 
         if ($this->request->is(['patch', 'post', 'put'])) {
 
-            $quizCategory = $this->QuizCategories->patchEntity($quizCategory, $this->request->data, [
+            $quizCategory = $this->QuizCategories->patchEntity($quizCategory, $this->request->getData(), [
                 'translations' => true
             ]);
 

@@ -60,26 +60,27 @@ class QuizSessionsController extends AppController
         $quizSession = $this->QuizSessions->newEmptyEntity();
 
         if ($this->request->is('post')) {
-            $sessionPath = sprintf('Quiz.%d', $this->request->data['quiz_id']);
+            $sessionPath = sprintf('Quiz.%d', $this->request->getData('quiz_id'));
 
             if (!$this->request->getSession()->check($sessionPath)) {
                 throw new \BadRequestException();
             }
 
-            $quiz        = $this->QuizSessions->Quizzes->get($this->request->data('quiz_id'));
+            $quiz        = $this->QuizSessions->Quizzes->get($this->request->getData('quiz_id'));
             $replies     = $this->request->getSession()->read($sessionPath);
             $corrects    = array_filter($replies, function($isCorrect) { return $isCorrect === true; });
             $score       = sizeof($corrects);
 
-            $this->request->data('score', (string) sizeof($corrects));
-            $this->request->data('user_id', $this->Auth->user('id'));
-            $this->request->data('lang', $quiz->lang);
+            $this->setRequest($this->request
+                    ->withData('score', (string) sizeof($corrects))
+                    ->withData('user_id', $this->Auth->user('id'))
+                    ->withData('lang', $quiz->lang)
+                    // TODO:
+                    // Impostare livello solo per quiz funjob
+                    ->withData('level', 1)
+            );
 
-            // TODO:
-            // Impostare livello solo per quiz funjob
-            $this->request->data('level', 1);
-
-            $quizSession = $this->QuizSessions->patchEntity($quizSession, $this->request->data);
+            $quizSession = $this->QuizSessions->patchEntity($quizSession, $this->request->getData());
 
             if ($this->QuizSessions->save($quizSession)) {
                 //$this->Flash->success(__('The quiz session has been saved.'));

@@ -185,11 +185,11 @@ class StoresController extends AppController
         $this->loadModel('Users');
 
         if (!$productId) {
-            if (!$this->request->data('product_id')) {
+            if (!$this->request->getData('product_id')) {
                 throw new \Cake\Network\Exception\BadRequestException();
             }
 
-            $productId = $this->request->data('product_id');
+            $productId = $this->request->getData('product_id');
         }
 
         $product = $this->StoreProducts->get($productId);

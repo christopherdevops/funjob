@@ -42,14 +42,14 @@ class QuizCategoriesController extends AppController
      */
     public function search()
     {
-        if (empty($this->request->query('term'))) {
+        if (empty($this->request->getQuery('term'))) {
             throw new \App\Exceptions\Http\ForbiddenException();
         }
 
         $Query   = $this->QuizCategories->find();
         $results = $Query
             ->select(['name', 'id', 'parent_id'])
-            ->where(['name LIKE' => '%' .$this->request->query('term'). '%'])
+            ->where(['name LIKE' => '%' .$this->request->getQuery('term'). '%'])
             ->where(['parent_id IS NOT NULL'])
             ->limit(100)
         ->all();
@@ -94,7 +94,7 @@ class QuizCategoriesController extends AppController
         }
 
         $id = false;
-        foreach ($this->request->data('category_id') as $level => $category_id) {
+        foreach ($this->request->getData('category_id') as $level => $category_id) {
             if (empty($category_id)) {
                 break;
             }

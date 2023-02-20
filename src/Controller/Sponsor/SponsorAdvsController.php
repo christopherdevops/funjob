@@ -56,8 +56,10 @@ Class SponsorAdvsController extends AppController {
 
         if ($this->request->is('post')) {
 
-            $this->request->data['user_id'] = $this->Auth->user('id');
-            $this->request->data['uuid']    = Text::uuid();
+            $this->setRequest($this->request
+                ->withData('user_id', $this->Auth->user('id'))
+                ->withData('uuid', Text::uuid())
+            );
 
             $Package = TableRegistry::get('SponsorAdvPackages')->get($this->request->getData('package_id'));
 
@@ -70,8 +72,11 @@ Class SponsorAdvsController extends AppController {
             // HARDCODED: aggiunge un anno dalla data attuale
             $from = \Cake\I18n\Time::now();
             $to   = \Cake\I18n\Time::now();
-            $this->request->data('active_from', $from);
-            $this->request->data('active_to', $to->modify('+4 years'));
+
+            $this->setRequest($this->request
+                ->withData('active_from', $from)
+                ->withData('active_to', $to->modify('+4 years'))
+            );
 
             $validator = 'uploadBanner';
             switch ($Package->type) {

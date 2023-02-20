@@ -35,7 +35,7 @@ $this->assign('tab', 'skills');
             <?php
                 echo $this->Form->control('user_skills.' .$i. '.id', [
                     'type'  => 'hidden',
-                    'value' => $this->request->data('user_skills.' .$i. '.id')
+                    'value' => $this->request->getData('user_skills.' .$i. '.id')
                 ]);
             ?>
 
@@ -44,7 +44,7 @@ $this->assign('tab', 'skills');
                     <?php
                         echo $this->Form->control('user_skills.' .$i. '.name', [
                             'align' => 'left',
-                            //'value' => $this->request->data('user_skills.' .$i. '.id'),
+                            //'value' => $this->request->getData('user_skills.' .$i. '.id'),
                             'label' => __('Competenza tecnica (parola chiave)'),
                             'help'  => __('Lascia il campo vuoto per eliminare questa competenza')
                         ]);
@@ -62,7 +62,7 @@ $this->assign('tab', 'skills');
                             'append'  => '<i class="fa fa-percent"></i>',
                             'help'    => __('Valore numero in percentuale'),
                             'default' => 50
-                            //'value'   => $this->request->data('user_skills.' .$i. '.id')
+                            //'value'   => $this->request->getData('user_skills.' .$i. '.id')
                         ]);
                     ?>
                 </div>

@@ -62,16 +62,16 @@ class QuizQuestionsController extends AppController
         $this->QuizQuestion->autoShowAnswerByType();
 
         if ($this->request->is('post')) {
-            $uuid = $this->request->data('uuid');
+            $uuid = $this->request->getData('uuid');
 
             // Esegue inject di quiz_answers.1 se il la question è di tipo true_or_false
             // (non è previsto questo campo nel form)
             $this->Quiz->buildAnswerData();
 
             // A seconda del tipo di question si usa un ValidationSet differente
-            $validate     = Inflector::classify(sprintf('quiz_%s', $this->request->data('type')));
+            $validate     = Inflector::classify(sprintf('quiz_%s', $this->request->getData('type')));
 
-            $quizQuestion = $this->QuizQuestions->patchEntity($quizQuestion, $this->request->data, [
+            $quizQuestion = $this->QuizQuestions->patchEntity($quizQuestion, $this->request->getData(), [
                 'validate'   => $validate,
                 'associated' => ['QuizAnswers' => ['validate' => $validate]]
             ]);
@@ -118,7 +118,7 @@ class QuizQuestionsController extends AppController
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $quizQuestion = $this->QuizQuestions->patchEntity($quizQuestion, $this->request->data);
+            $quizQuestion = $this->QuizQuestions->patchEntity($quizQuestion, $this->request->getData());
             if ($this->QuizQuestions->save($quizQuestion)) {
                 $this->Flash->success(__('The quiz question has been saved.'));
 

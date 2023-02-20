@@ -101,8 +101,10 @@ class CvAuthorizationsController extends AppController
 
         $CvAuthorization = $this->CvAuthorizations->newEmptyEntity();
 
-        $this->request->data('requester_user_id', $this->Auth->user('id'));
-        $this->request->data('allowed', null);
+        $this->setRequest($this->request
+            ->withData('requester_user_id', $this->Auth->user('id'))
+            ->withData('allowed', null)
+        );
 
         if ($this->request->is('post')) {
             $CvAuthorization = $this->CvAuthorizations->patchEntity($CvAuthorization, $this->request->getData());

@@ -391,7 +391,7 @@ class UsersController extends AppController
 
         $q = $this->Users->find();
         $q->select(['id', 'username', 'first_name', 'last_name']);
-        $q->where(['username LIKE' => '%' . $this->request->query('term') . '%']);
+        $q->where(['username LIKE' => '%' . $this->request->getQuery('term') . '%']);
 
         $results = $q->limit(25)->all();
 

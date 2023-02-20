@@ -71,7 +71,7 @@ class CitiesController extends AppController
         // $query->enableHydration(false);
 
         // $query->select(['name' => 'accent_city', 'value' => 'id']);
-        // $query->where(['name LIKE' => '%' .$this->request->data['term']. '%']);
+        // $query->where(['name LIKE' => '%' .$this->request->getData('term'). '%']);
         // $query->limit(10);
 
         // $results = $query->all()->toArray();

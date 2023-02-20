@@ -37,7 +37,7 @@ class UserCreditsController extends AppController
             // Somma crediti a totale corrente
             $old   = $userCredit->total;
             $total = (int) $this->request->getData('pixs', 0) + $userCredit->total;
-            $this->request->data('total', $total);
+            $this->setRequest($this->request->withData('total', $total));
 
             $userCredit = $this->UserCredits->patchEntity($userCredit, $this->request->getData(), ['fieldList' => ['total']]);
 

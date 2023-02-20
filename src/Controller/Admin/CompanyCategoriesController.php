@@ -64,7 +64,7 @@ class CompanyCategoriesController extends AppController
         ]);
 
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $Category = $this->CompanyCategories->patchEntity($Category, $this->request->data, [
+            $Category = $this->CompanyCategories->patchEntity($Category, $this->request->getData(), [
                 'translations' => true
             ]);
 

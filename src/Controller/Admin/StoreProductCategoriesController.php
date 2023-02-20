@@ -78,7 +78,7 @@ class StoreProductCategoriesController extends AppController
 
         if ($this->request->is(['patch', 'post', 'put'])) {
 
-            $category = $this->StoreProductCategories->patchEntity($category, $this->request->data, [
+            $category = $this->StoreProductCategories->patchEntity($category, $this->request->getData(), [
                 'translations' => true
             ]);
 

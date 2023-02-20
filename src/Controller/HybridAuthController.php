@@ -42,7 +42,7 @@ class HybridAuthController extends AppController
     }
 
     private function login() {
-        if ($this->request->is('post') || $this->request->query('provider')) {
+        if ($this->request->is('post') || $this->request->getQuery('provider')) {
             $user = $this->Auth->identify();
             if ($user) {
                 $this->Auth->setUser($user);

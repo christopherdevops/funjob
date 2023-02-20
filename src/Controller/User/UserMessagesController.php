@@ -116,10 +116,10 @@ class UserMessagesController extends AppController
             $this->Users = \Cake\ORM\TableRegistry::get('Users');
             $user = $this->Users->find()
                 ->select('id')
-                ->where(['username' => $this->request->data('replies.0.recipients.1.username')])
+                ->where(['username' => $this->request->getData('replies.0.recipients.1.username')])
                 ->first();
 
-            $this->request->data('replies.0.recipients.1.user_id', $user->id);
+            $this->setRequest($this->request->withData('replies.0.recipients.1.user_id', $user->id));
 
             try {
                 $this->_userCanSendMessage($this->Auth->user('id'), $user->id);
@@ -129,18 +129,20 @@ class UserMessagesController extends AppController
             }
 
             // Aggiunge dati per save
-            $this->request->data('sender_id', $this->Auth->user('id'));
-            $this->request->data('uuid', \Cake\Utility\Text::uuid());
-            $this->request->data('replies.0.sender_id', $this->Auth->user('id'));
+            $this->setRequest($this->request
+                ->withData('sender_id', $this->Auth->user('id'))
+                ->withData('uuid', \Cake\Utility\Text::uuid())
+                ->withData('replies.0.sender_id', $this->Auth->user('id'))
 
-            $this->request->data('replies.0.recipients.0.user_id', $this->Auth->user('id'));
-            $this->request->data('replies.0.recipients.0.is_sender', true);
-            $this->request->data('replies.0.recipients.0.is_unreaded', false);
+                ->withData('replies.0.recipients.0.user_id', $this->Auth->user('id'))
+                ->withData('replies.0.recipients.0.is_sender', true)
+                ->withData('replies.0.recipients.0.is_unreaded', false)
+            );
 
             // TODO (future)
             // Implementare logica per inviare messaggi a più utenti qui
 
-            $userMessage = $this->UserMessages->patchEntity($userMessage, $this->request->data, [
+            $userMessage = $this->UserMessages->patchEntity($userMessage, $this->request->getData(), [
                 'associated' => [
                     'Replies',
                     'Replies.Recipients'
@@ -156,7 +158,7 @@ class UserMessagesController extends AppController
         } elseif ($this->request->is('get')) {
             // Auto complete
             if (!empty($this->request->username)) {
-                $this->request->data('replies.0.recipients.1.username', $this->request->username);
+                $this->setRequest($this->request->withData('replies.0.recipients.1.username', $this->request->username));
             }
         }
 
@@ -188,7 +190,7 @@ class UserMessagesController extends AppController
             $userMessageReply = $this->UserMessages->Replies->newEmptyEntity();
 
             // Aggiunge dati
-            $this->request->data('sender_id', $this->Auth->user('id'));
+            $this->setRequest($this->request->withData('sender_id', $this->Auth->user('id')));
 
             $cacheFiles = [];
 
@@ -203,14 +205,16 @@ class UserMessagesController extends AppController
 
                 $isSender   = $User->id == $this->Auth->user('id');
                 $dataPrefix = sprintf('recipients.%d', $i);
-                $this->request->data($dataPrefix . '.user_id', $User->id);
-                $this->request->data($dataPrefix . '.is_sender', $isSender);
-                $this->request->data($dataPrefix . '.is_unreaded', !$isSender);
+                $this->setRequest($this->request
+                    ->withData($dataPrefix . '.user_id', $User->id)
+                    ->withData($dataPrefix . '.is_sender', $isSender)
+                    ->withData($dataPrefix . '.is_unreaded', !$isSender)
+                );
 
                 $cacheFiles[] = 'user_inbox_user_'. $User->id;
             }
 
-            $userMessageReply = $this->UserMessages->Replies->patchEntity($userMessageReply, $this->request->data, [
+            $userMessageReply = $this->UserMessages->Replies->patchEntity($userMessageReply, $this->request->getData(), [
                 'associated' => [
                     'Recipients'
                 ]

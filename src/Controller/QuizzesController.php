@@ -307,10 +307,10 @@ class QuizzesController extends AppController
         
 
         if ($this->request->is('post')) {
-            $data = array_merge($this->request->data, ['_quiz' => $quiz, '_user' => $this->Auth->user()]);
+            $data = array_merge($this->request->getData(), ['_quiz' => $quiz, '_user' => $this->Auth->user()]);
 
             if ($QuizSessionForm->execute($data)) {
-                $sessionPath = sprintf('Quiz.%d', $this->request->data('quiz_id'));
+                $sessionPath = sprintf('Quiz.%d', $this->request->getData('quiz_id'));
 
                 // Reset Sessione di gicoo
                 if ($this->request->getSession()->check($sessionPath)) {
@@ -329,7 +329,7 @@ class QuizzesController extends AppController
                     '_name' => 'quiz:play',
                     'id'    => $quiz->id,
                     'title' => $quiz->slug,
-                    'level' => (int) $this->request->data['level'],
+                    'level' => (int) $this->request->getData('level'),
                     'step'  => 1
                 ];
 
@@ -353,7 +353,7 @@ class QuizzesController extends AppController
      *
      * Per verificare se l'utente ha risposto prima dello scadere del tempo
      * su richieste POST (quando invia la risposta) fare affidamento su
-     * $this->request->data['_secs'] che invia un numero intero che rappresenta
+     * $this->request->getData('_secs') che invia un numero intero che rappresenta
      * quanti secondi sono passati dall'inizio del quiz.
      *
      * Questo perchè la risposta viene inviata dopo aver visualizzato la pubblicità
@@ -416,7 +416,7 @@ class QuizzesController extends AppController
         $this->autoRender = false;
 
         // Viene utilizzato da QuizGameComponent, QuizSessionComponent, QuizScoreComponent
-        // $this->request->data('quiz_id', $quiz_id);
+        // $this->setRequest($this->request->withData('quiz_id', $quiz_id));
 
         $QuizSessionReply = new \App\Form\QuizSessionReplyForm();
         if (!$QuizSessionReply->validate($this->request->getData())) {
@@ -579,11 +579,14 @@ class QuizzesController extends AppController
         $quiz       = $this->Quizzes->newEntity($this->request->getData(), ['associated' => ['Categories']]);
 
         if ($this->request->is('post')) {
-            $this->request->data('user_id', $this->Auth->user('id'));
+            $this->setRequest(
+                $this->request
+                    ->withData('user_id', $this->Auth->user('id'))
+                    // Trasformo categories._ids da stringa ad array
+                    // Viene inviato come campo di testo semplice (jstree)
+                    ->withData('categories._ids', explode(' ', $this->request->getData('categories._ids')))
+            );
 
-            // Trasformo categories._ids da stringa ad array
-            // Viene inviato come campo di testo semplice (jstree)
-            $this->request->data('categories._ids', explode(' ', $this->request->getData('categories._ids')));
             $quiz = $this->Quizzes->patchEntity($quiz, $this->request->getData(), ['associated' => ['Categories']]);
 
             if ($quiz->type == 'funjob') {
@@ -624,11 +627,11 @@ class QuizzesController extends AppController
 
         // Filtra quiz in base a tipologia (quiz utenti+funjob o solo quiz funjob)
         if (
-            isset($this->request->query['filter']['type']) &&
-            in_array($this->request->query['filter']['type'], ['funjob'])
+            isset($this->request->getQuery('filter')['type']) &&
+            in_array($this->request->getQuery('filter')['type'], ['funjob'])
         ) {
-            $this->request->data['filter']['type'] = $this->request->query['filter']['type'];
-            $Query->find('byType', ['type' => $this->request->data['filter']['type']]);
+            $this->setRequest($this->request->withData('filter', ['type' => $this->request->getQuery('filter')['type']]));
+            $Query->find('byType', ['type' => $this->request->getData('filter')['type']]);
         }
 
         $quizzes  = $this->Paginator->paginate($Query, ['limit' => 25]);
@@ -653,12 +656,12 @@ class QuizzesController extends AppController
             throw new ForbiddenException();
         }
 
-        if (empty($this->request->query['term'])) {
+        if (empty($this->request->getQuery('term'))) {
             throw new \Cake\Network\Exception\BadRequestException();
         }
 
         $Query = $this->Quizzes->find()->enableHydration(false);
-        $term  = trim($this->request->query['term']);
+        $term  = trim($this->request->getQuery('term'));
 
         $Query->leftJoinWith('Tags');
         $Query->orWhere(['Quizzes.title LIKE' => '%'. $term .'%']);
@@ -699,7 +702,7 @@ class QuizzesController extends AppController
 
         if ($this->request->is(['patch', 'post', 'put'])) {
 
-            $quiz = $this->Quizzes->patchEntity($quiz, $this->request->data);
+            $quiz = $this->Quizzes->patchEntity($quiz, $this->request->getData());
             if ($this->Quizzes->save($quiz)) {
                 $this->Flash->success(__('Quiz aggiornato'));
 
