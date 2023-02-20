@@ -268,7 +268,7 @@
                         </div>
                         <div class="col-xs-10 col-sm-9 col-md-9 col-lg-9">
                             <p class="usergroup-index-title text-muted font-size-md">
-                                <?= $this->Text->truncate(h($company->title), 140) ?>
+                                <?= $this->Text->truncate(h($company->title) || "", 140) ?>
                             </p>
                         </div>
                     </div>
