@@ -28,9 +28,10 @@ class ContactMailer extends Mailer
 
         $this->setSubject(sprintf('[funjob.it] %s', $formData['subject']));
 
-        $this->setTemplate('Contacts/default')
-            ->setEmailFormat('html')
-            ->viewVars(compact('formData'));
+        $this->setEmailFormat('html')
+            ->viewBuilder()
+            ->setTemplate('Contacts/default')
+            ->setVars(compact('formData'));
     }
 
 }

@@ -24,9 +24,10 @@ class UserFriendMailer extends Mailer
         $this->setTo($UserRecipient->email, $UserRecipient->username);
         $this->setSubject(__('[funjob.it] Richiesta di amicizia di {username}', ['username' => $UserRequester->username]));
 
-        $this->setLayout('default')
+        $this->setEmailFormat('html')
+            ->viewBuilder()
+            ->setLayout('default')
             ->setTemplate('Users/new_friend_request')
-            ->setEmailFormat('html')
-            ->viewVars(compact('UserRecipient', 'UserRequester'));
+            ->setVars(compact('UserRecipient', 'UserRequester'));
     }
 }

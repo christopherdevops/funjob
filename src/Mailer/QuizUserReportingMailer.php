@@ -34,9 +34,10 @@ class QuizUserReportingMailer extends Mailer
             )
         );
 
-        $this->setLayout('admin')
+        $this->setEmailFormat('html')
+            ->viewBuilder()
+            ->setLayout('admin')
             ->setTemplate('Quizzes/Admin/new_reporting')
-            ->setEmailFormat('html')
-            ->viewVars(compact('Quiz', 'User', 'request'));
+            ->setVars(compact('Quiz', 'User', 'request'));
     }
 }

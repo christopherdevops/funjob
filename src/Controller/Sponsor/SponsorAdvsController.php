@@ -243,7 +243,7 @@ Class SponsorAdvsController extends AppController {
     private function __fetchAccountInfo()
     {
         $accountData = [];
-        $userAuth    = $this->viewVars['UserAuth'];
+        $userAuth    = $this->viewBuilder()->getVars('UserAuth');
         $accountData = array_fill_keys(['name', 'phone', 'address', 'city', 'district', 'cap'], null);
 
         // AccountInfos

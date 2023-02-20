@@ -29,7 +29,7 @@ class UserProfileHelper extends Helper
         }
 
         // Usando $this->request->getParam('id') non funziona in /me
-        return $this->getView()->getRequest()->getSession()->read('Auth.User.id') == $this->_View->viewVars['User']->id;
+        return $this->getView()->getRequest()->getSession()->read('Auth.User.id') == $this->_View->get('User')->id;
     }
 
 }

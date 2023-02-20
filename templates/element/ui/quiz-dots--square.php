@@ -4,7 +4,7 @@
  * int $steps
  */
     $_defaults = ['step' => 1, 'steps' => 10];
-    $settings  = array_merge($_defaults, array_intersect_key($this->viewVars, $_defaults));
+    $settings  = array_merge($_defaults, array_intersect_key($this->viewBuilder()->getVars(), $_defaults));
     extract($settings);
 ?>
 

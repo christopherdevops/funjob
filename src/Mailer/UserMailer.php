@@ -31,9 +31,10 @@ class UserMailer extends Mailer
         $this->setTo($User->email);
         $this->setSubject(__('[funjob.it] Verifica account'));
 
-        $this->setTemplate('Users/confirm_account')
-            ->setEmailFormat('html')
-            ->viewVars(compact('User'));
+        $this->setEmailFormat('html')
+            ->viewBuilder()
+            ->setTemplate('Users/confirm_account')
+            ->setVars(compact('User'));
     }
 
 
@@ -43,8 +44,9 @@ class UserMailer extends Mailer
         $this->setTo($User->email);
         $this->setSubject(__('[funjob.it] ripristino account'));
 
-        $this->setTemplate('Users/reset_account')
-            ->setEmailFormat('html')
-            ->viewVars(compact('User'));
+        $this->setEmailFormat('html')
+            ->viewBuilder()
+            ->setTemplate('Users/reset_account')
+            ->setVars(compact('User'));
     }
 }

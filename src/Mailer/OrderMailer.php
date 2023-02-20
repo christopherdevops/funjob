@@ -27,10 +27,11 @@ class OrderMailer extends Mailer
         $this->setTo(Configure::read('store_email'), 'FunJob.it admin');
         $this->setSubject(__('[funjob.it] Ordine da {0} (N° {1})', $order->user->username, $order->id));
 
-        $this->setLayout('admin')
-        ->setTemplate('Store/Admin/new_order')
-        ->setEmailFormat('html')
-        ->viewVars(compact('order'));
+        $this->setEmailFormat('html')
+            ->viewBuilder()
+            ->setLayout('admin')
+            ->setTemplate('Store/Admin/new_order')
+            ->setVars(compact('order'));
     }
 
     public function orderUpdateNotification($OrderMessage)
@@ -39,11 +40,11 @@ class OrderMailer extends Mailer
         $this->setTo($OrderMessage['to']);
         $this->setSubject($OrderMessage['subject']);
 
-        $this
+        $this->setEmailFormat('html')
+        ->viewBuilder()
         //->setLayout('admin')
         ->setTemplate('Store/Admin/order_update')
-        ->setEmailFormat('html')
-        ->viewVars([
+        ->setVars([
             'message' => $OrderMessage
         ]);
     }
@@ -61,10 +62,11 @@ class OrderMailer extends Mailer
         $this->setSubject(__('[funjob.it] Ordine #{id} aggiornato', ['id' => $Order->id]));
 
         $this
+        ->setEmailFormat('html')
+        ->viewBuilder()
         //->setLayout('admin')
         ->setTemplate('Store/Admin/order_state_updated')
-        ->setEmailFormat('html')
-        ->viewVars([
+        ->setVars([
             'order' => $Order
         ]);
     }
@@ -85,11 +87,11 @@ class OrderMailer extends Mailer
             'subject' => $requestData['subject']
         ]));
 
-        $this
+        $this->setEmailFormat('html')
+        ->viewBuilder()
         //->setLayout('admin')
         ->setTemplate('Store/order_contact')
-        ->setEmailFormat('html')
-        ->viewVars([
+        ->setVars([
             'Order'       => $Order,
             'requestData' => $requestData
         ]);

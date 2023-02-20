@@ -35,10 +35,11 @@ class SponsorAdvMailer extends Mailer
             )
         );
 
-        $this->setLayout('admin')
+        $this->setEmailFormat('html')
+            ->viewBuilder()
+            ->setLayout('admin')
             ->setTemplate('Advs/Admin/new_adv')
-            ->setEmailFormat('html')
-            ->viewVars(compact('SponsorAdv'));
+            ->setVars(compact('SponsorAdv'));
     }
 
 
@@ -55,9 +56,10 @@ class SponsorAdvMailer extends Mailer
             )
         );
 
-        $this->setLayout('admin')
+        $this->setEmailFormat('html')
+            ->viewBuilder()
+            ->setLayout('admin')
             ->setTemplate('Advs/Sponsor/adv_after_publication')
-            ->setEmailFormat('html')
-            ->viewVars(compact('SponsorAdv'));
+            ->setVars(compact('SponsorAdv'));
     }
 }
