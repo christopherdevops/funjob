@@ -5,7 +5,7 @@ $this->assign('cover', '/img/funjob-profiles-background-company');
 
 $this->Breadcrumbs->add(__('Informazioni su FunJob'), ['_name' => 'funjob:info']);
 $this->Breadcrumbs->add(__('A chi è rivolto?'), ['_name' => 'funjob:profiles']);
-$this->Breadcrumbs->add(__('Aziende'), $this->request->here);
+$this->Breadcrumbs->add(__('Aziende'), $this->request->getAttribute('here'));
 ?>
 
 

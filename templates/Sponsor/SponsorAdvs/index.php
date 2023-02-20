@@ -6,9 +6,9 @@
     $this->assign('title', __('Le tue campagne pubblicitarie'));
 
     $this->Breadcrumbs
-        ->add(__('Pubblicità'), $this->request->here)
+        ->add(__('Pubblicità'), $this->request->getAttribute('here'))
         ->add($UserAuth->username, ['_name' => 'me:dashboard'])
-        ->add(__x('Pubblicità create', 'Create'), $this->request->here);
+        ->add(__x('Pubblicità create', 'Create'), $this->request->getAttribute('here'));
 ?>
 
 <?php $this->start('filters') ?>

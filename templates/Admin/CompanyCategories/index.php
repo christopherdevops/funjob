@@ -1,8 +1,8 @@
 <?php
     $this->assign('header', ' ');
     $this->Breadcrumbs
-        ->add(__('Categorie'), $this->request->here)
-        ->add(__('Settore Aziende'), $this->request->here);
+        ->add(__('Categorie'), $this->request->getAttribute('here'))
+        ->add(__('Settore Aziende'), $this->request->getAttribute('here'));
 ?>
 
 <?php $this->append('css_head--inline') ?>

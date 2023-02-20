@@ -2,7 +2,7 @@
     $this->assign('title', __('Inventario prodotti'));
 
     $this->Breadcrumbs->add(__('Negozio'), ['_name' => 'store:index']);
-    $this->Breadcrumbs->add(__('Prodotti'), $this->request->here);
+    $this->Breadcrumbs->add(__('Prodotti'), $this->request->getAttribute('here'));
 ?>
 
 <?php $this->append('css_head--inline') ?>

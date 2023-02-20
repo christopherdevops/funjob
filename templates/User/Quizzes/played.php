@@ -2,7 +2,7 @@
     use \Cake\Core\Configure;
 
     $myself    = $this->UserProfile->isMyProfile();
-    $isArchive = $this->request->here == $this->Url->build(['_name' => 'me:quizzes:completed']);
+    $isArchive = $this->request->getAttribute('here') == $this->Url->build(['_name' => 'me:quizzes:completed']);
 
     $this->assign('title', __('Scegli quali giochi condividere con Utenti e Aziende nel tuo profilo'));
     $this->assign('header', '');

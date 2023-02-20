@@ -7,7 +7,7 @@
 
     $this->Breadcrumbs
         ->add(__('Quizzes'), ['_name' => 'quiz:index'])
-        ->add(__('Popolari'), $this->request->here);
+        ->add(__('Popolari'), $this->request->getAttribute('here'));
 ?>
 
 <div class="row gutter-10">

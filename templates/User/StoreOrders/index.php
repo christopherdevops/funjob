@@ -3,7 +3,7 @@
 
     $this->Breadcrumbs
         ->add($UserAuth->username, ['_name' => 'me:dashboard'])
-        ->add(__('Premi richiesti'), $this->request->here);
+        ->add(__('Premi richiesti'), $this->request->getAttribute('here'));
 ?>
 
 <?php $this->start('filters') ?>

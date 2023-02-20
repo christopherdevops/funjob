@@ -3,7 +3,7 @@
     $this->assign('header', ' ');
 
     $this->Breadcrumbs
-        ->add(__('Collaboratori'), $this->request->here);
+        ->add(__('Collaboratori'), $this->request->getAttribute('here'));
 ?>
 
 <?php $this->append('css_head--inline') ?>

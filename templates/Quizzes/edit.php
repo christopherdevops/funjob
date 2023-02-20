@@ -5,7 +5,7 @@ $this->assign('title', __('Modifica: {0}', $quiz->title));
 
 $this->Breadcrumbs
     ->add(__('I miei quiz'), ['_name' => 'me:quizzes'])
-    ->add($quiz->title, $this->request->here)
+    ->add($quiz->title, $this->request->getAttribute('here'))
     ->add(__('Modifica'));
 
 $this->Html->script(['/bower_components/select2/dist/js/select2.min.js'], ['block' => 'js_foot']);

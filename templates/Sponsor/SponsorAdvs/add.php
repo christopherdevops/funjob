@@ -3,7 +3,7 @@
 
     $this->Breadcrumbs
         ->add(__('Pubblicità'), ['action' => 'index'])
-        ->add(__('Nuovo annuncio'), $this->request->here);
+        ->add(__('Nuovo annuncio'), $this->request->getAttribute('here'));
 
 ?>
 

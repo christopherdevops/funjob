@@ -2,7 +2,7 @@
     $this->assign('title', __('Modifica: {subject}', ['subject' => $Category->name]));
     $this->Breadcrumbs
         ->add(__('Settori aziendali'), ['action' => 'index'])
-        ->add(__('Modifica'), $this->request->here);
+        ->add(__('Modifica'), $this->request->getAttribute('here'));
 ?>
 
 <div class="form large-9 medium-8 columns content">

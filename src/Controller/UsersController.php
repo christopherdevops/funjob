@@ -188,7 +188,7 @@ class UsersController extends AppController
                 }
             }
 
-            return $this->redirect($this->request->here . '?'. http_build_query($query));
+            return $this->redirect($this->request->getAttribute('here') . '?'. http_build_query($query));
         }
 
         $this->loadComponent('Paginator');
@@ -254,7 +254,7 @@ class UsersController extends AppController
                 }
             }
 
-            return $this->redirect($this->request->here . '?'. http_build_query($query));
+            return $this->redirect($this->request->getAttribute('here') . '?'. http_build_query($query));
         }
 
         $this->loadComponent('Paginator');

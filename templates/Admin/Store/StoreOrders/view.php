@@ -3,7 +3,7 @@
 
     $this->Breadcrumbs->add(__('Negozio'), ['_name' => 'store:admin:order:index']);
     $this->Breadcrumbs->add(__('Ordini'), ['_name' => 'store:admin:order:index']);
-    $this->Breadcrumbs->add('#' .$order->id, $this->request->here);
+    $this->Breadcrumbs->add('#' .$order->id, $this->request->getAttribute('here'));
 ?>
 
 

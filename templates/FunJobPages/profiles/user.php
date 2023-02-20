@@ -6,7 +6,7 @@ $this->assign('cover', '/img/funjob-profiles-background-user'); // senza .ext;
 
 $this->Breadcrumbs->add(__('Informazioni su FunJob'), ['_name' => 'funjob:info']);
 $this->Breadcrumbs->add(__('A chi è rivolto?'), ['_name' => 'funjob:profiles']);
-$this->Breadcrumbs->add(__('Utenti'), $this->request->here);
+$this->Breadcrumbs->add(__('Utenti'), $this->request->getAttribute('here'));
 ?>
 
 <?php $this->append('css_head--inline') ?>

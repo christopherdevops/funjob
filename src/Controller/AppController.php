@@ -164,7 +164,7 @@ class AppController extends Controller
         // Forza URL con SSL
         if ($errorType == 'secure') {
             $domain = env('APP_DOMAIN', env('SERVER_NAME'));
-            return $this->redirect('https://' .$domain. $this->request->here());
+            return $this->redirect('https://' .$domain. $this->request->getAttribute('here'));
         }
 
         return null;

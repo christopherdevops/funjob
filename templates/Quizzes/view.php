@@ -13,7 +13,7 @@
 
     $this->Breadcrumbs
         ->add(__('Quiz'), ['_name' => 'quiz:index'])
-        ->add($quiz->title, $this->request->here);
+        ->add($quiz->title, $this->request->getAttribute('here'));
 
 
     $this->Html->meta('og:image:width', 500, ['block' => true]);

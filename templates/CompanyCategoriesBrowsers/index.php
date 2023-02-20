@@ -311,7 +311,7 @@
                         ])
                     ?>
 
-                    <a style="margin-left:10px" href="<?= $this->request->here() . '#results' ?>" class="btn btn-sm btn-default">
+                    <a style="margin-left:10px" href="<?= $this->request->getAttribute('here') . '#results' ?>" class="btn btn-sm btn-default">
                         <span class="text-bold text-color-gray--dark">
                             <i class="text-color-primary fa fa-arrow-down"></i>
                             <?= __('Scorri fino ai risultati') ?>
@@ -341,7 +341,7 @@
                                         __(
                                             'Elimina i filtri precedentemente selezionati e riprova con altri filtri {link}', [
                                             'link' => (
-                                                '<a href="' .$this->request->here .'?'. '" class="btn btn-xs btn-danger">'.__('eliminali').'</a>'
+                                                '<a href="' .$this->request->getAttribute('here') .'?'. '" class="btn btn-xs btn-danger">'.__('eliminali').'</a>'
                                             )
                                         ])
                                     ?>

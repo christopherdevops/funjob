@@ -2,7 +2,7 @@
     $this->assign('title', __('Crea gruppo'));
 
     $this->Breadcrumbs->add(__('Gruppi'), ['action' => 'index']);
-    $this->Breadcrumbs->add(__('Crea'), $this->request->here);
+    $this->Breadcrumbs->add(__('Crea'), $this->request->getAttribute('here'));
 ?>
 
 <?php

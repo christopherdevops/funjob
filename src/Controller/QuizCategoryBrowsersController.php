@@ -79,7 +79,7 @@ class QuizCategoryBrowsersController extends AppController
     private function _post2get()
     {
         if ($this->request->is('post')) {
-            $url = $this->request->here. '?';
+            $url = $this->request->getAttribute('here'). '?';
 
             foreach ($this->request->getData() as $key => $value) {
                 $url .= '&' . $key .'='. $value;

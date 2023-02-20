@@ -1,7 +1,7 @@
 <?php
     $this->assign('title', __('Archivio utenti registrati'));
 
-    $this->Breadcrumbs->add(__('Utenti'), $this->request->here);
+    $this->Breadcrumbs->add(__('Utenti'), $this->request->getAttribute('here'));
 ?>
 
 <style type="text/css">

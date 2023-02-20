@@ -2,7 +2,7 @@
     $this->assign('title', __('Archivio ordini ricevuti'));
 
     $this->Breadcrumbs->add(__('Negozio'), ['_name' => 'store:index']);
-    $this->Breadcrumbs->add(__('Ordini ricevuti'), $this->request->here);
+    $this->Breadcrumbs->add(__('Ordini ricevuti'), $this->request->getAttribute('here'));
 
 
     $orderStateClass = function($entity) {

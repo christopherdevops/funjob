@@ -6,7 +6,7 @@
 
     $this->Breadcrumbs
         ->add($User->username, ['_name' => 'user:profile:home', 'id' => $User->id, 'username' => $User->slug])
-        ->add(__('Impostazioni'), $this->request->here);
+        ->add(__('Impostazioni'), $this->request->getAttribute('here'));
 ?>
 
 <?php $this->append('css_head--inline') ?>

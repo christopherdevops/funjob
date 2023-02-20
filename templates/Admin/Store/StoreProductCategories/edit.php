@@ -2,7 +2,7 @@
     $this->assign('title', __('Modifica: {name}', ['name' => $category->name]));
     $this->Breadcrumbs->add(__('Negozio'), '#');
     $this->Breadcrumbs->add(__('Categorie'), ['action' => 'index']);
-    $this->Breadcrumbs->add(__('Modifica'), $this->request->here);
+    $this->Breadcrumbs->add(__('Modifica'), $this->request->getAttribute('here'));
 ?>
 
 <div class="quizCategories form large-9 medium-8 columns content">

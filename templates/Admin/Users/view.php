@@ -8,7 +8,7 @@
 
     $this->Breadcrumbs
         ->add(__d('backend', 'Utenti'), ['action' => 'index'])
-        ->add($User->username, $this->request->here);
+        ->add($User->username, $this->request->getAttribute('here'));
 ?>
 
 <?php // CREDITI ?>

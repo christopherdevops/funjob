@@ -7,7 +7,7 @@
     $this->assign('header', ' ');
     $this->Breadcrumbs
         ->add(__('Messaggi privati'), ['action' => 'index'])
-        ->add(__('Dettaglio'), $this->request->here);
+        ->add(__('Dettaglio'), $this->request->getAttribute('here'));
 ?>
 
 <?php $this->append('css_head--inline') ?>
@@ -96,7 +96,7 @@
                 <?= __('Archivio messaggi') ?>
             </a>
 
-            <a class="btn btn-sm btn-block btn-default" href="<?= $this->request->here ?>#user-message-reply-form">
+            <a class="btn btn-sm btn-block btn-default" href="<?= $this->request->getAttribute('here') ?>#user-message-reply-form">
                 <i class="fa fa-comment"></i>
 
                 <span class="text-truncate">

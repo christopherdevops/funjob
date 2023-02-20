@@ -1,7 +1,7 @@
 <?php
     $this->assign('title', __('Pubblicità'));
     $this->Breadcrumbs
-        ->add(__('Pubblicità'), $this->request->here);
+        ->add(__('Pubblicità'), $this->request->getAttribute('here'));
 ?>
 
 

@@ -132,7 +132,7 @@ class SponsorAdvsController extends AppController
             Log::info(
                 __('Impressione su {adv} : {url}', [
                     'adv' => $adv->id,
-                    'url' => $this->referer($this->request->here),
+                    'url' => $this->referer($this->request->getAttribute('here')),
                 ]), ['scope' => ['adv']]
             );
         } catch (Exception $e) {
@@ -187,7 +187,7 @@ class SponsorAdvsController extends AppController
         Log::info(
             __('click su pubblicità {adv} {url}', [
                 'adv' => $Adv->id,
-                'url' => $this->referer($this->request->here),
+                'url' => $this->referer($this->request->getAttribute('here')),
             ]), ['scope' => ['adv']]
         );
 

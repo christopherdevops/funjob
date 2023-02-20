@@ -5,7 +5,7 @@
 
     $this->Breadcrumbs->add(__('Gruppi'), ['_name' => 'groups:archive']);
     $this->Breadcrumbs->add($userGroup->name, ['_name' => 'groups:view', 'id' => $userGroup->id, 'slug' => $userGroup->slug]);
-    $this->Breadcrumbs->add(__('Utenti inscritti'), $this->request->here);
+    $this->Breadcrumbs->add(__('Utenti inscritti'), $this->request->getAttribute('here'));
 ?>
 
 <?php $this->append('css_head--inline') ?>

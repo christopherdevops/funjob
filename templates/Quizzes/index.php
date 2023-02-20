@@ -25,7 +25,7 @@
 
     $this->Breadcrumbs
         ->add(__('Quizzes'), ['_name' => 'quiz:index'])
-        ->add($title, $this->request->here);
+        ->add($title, $this->request->getAttribute('here'));
 ?>
 
 <?php if (!$this->request->is('mobile')) : ?>
