@@ -44,16 +44,19 @@ class AppView extends View
         parent::initialize();
 
         // App\View\Widget\UploadWidget
-        $this->helpers = [
-            'Form' => [
+
+        $this->helpers = array_merge(
+            $this->helpers,
+            ['Form' => [
                 'className' => 'BootstrapUI.Form',
                 'widgets' => ['upload' => ['Hiryu85\View\Widget\UploadWidget', 'text', 'label', 'file']],
                 'templates' => ['select' => '<select class="form-control" name="{{name}}" {{attrs}}>{{content}}</select>']
-            ]
-        ];
+            ]]
+        );
 
         // TwitterBootstrapUI
         $this->initializeUI(['layout' => false]);
+        // $this->Form->addWidget('upload', ['Hiryu85\View\Widget\UploadWidget', 'text', 'label', 'file']);
 
         //$this->loadHelper('WyriHaximus/MinifyHtml.MinifyHtml');
     }
