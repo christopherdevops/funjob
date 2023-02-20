@@ -15,15 +15,17 @@ class UsersController extends AppController
         // $this->loadComponent('Csrf');
 
         // Redirect a settings in base al prefix
-        if ($this->request->getParam('action') == 'settings' && !in_array($this->Auth->user('type'), ['company'])) {
-            return $this->redirect(['_name' => 'me:settings']);
-        }
+
     }
 
     /**
      * Configurazione account FunJob
      */
     public function settings() {
+        if (!in_array($this->Auth->user('type'), ['company'])) {
+            return $this->redirect(['_name' => 'me:settings']);
+        }
+
         $this->loadModel('CompanyCategories');
         $this->Users = TableRegistry::get('Companies');
 

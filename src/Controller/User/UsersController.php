@@ -37,9 +37,6 @@ class UsersController extends AppController
         }
 
         // Redirect a settings in base al prefix
-        if ($this->request->getParam('action') == 'settings' && !in_array($this->Auth->user('type'), ['user', 'admin'])) {
-            return $this->redirect(['_name' => 'me:settings']);
-        }
     }
 
     // public function getAdvertising()
@@ -51,6 +48,10 @@ class UsersController extends AppController
      * Configurazione account FunJob
      */
     public function settings() {
+        if (!in_array($this->Auth->user('type'), ['user', 'admin'])) {
+            return $this->redirect(['_name' => 'me:settings']);
+        }
+
         $this->loadModel('JobCategories');
 
         $User = $this->Users->get(
