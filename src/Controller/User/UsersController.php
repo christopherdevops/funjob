@@ -67,8 +67,6 @@ class UsersController extends AppController
         );
 
         if ($this->request->is('put')) {
-            $this->request->data('user_skills');
-
             // Aggiunge property a UserEntity per poter fare la validazione di password_confirm
             $User->password_confirm = $User->password;
             // Non permette di aggiornare l'email (non uso un campo hidden percui non può farlo il SecurityComponent questo controllo)
@@ -277,8 +275,8 @@ class UsersController extends AppController
         if ($isSearch) {
 
             // Imposta variabili GET come POST
-            if ($this->request->is('get')) {
-                $this->request->data = $this->request->query();
+            if ($this->request->is('get') && !empty($this->request->getQuery())) {
+                $this->setRequest($this->request->withData($this->request->getQuery()));
             }
 
             $isValid   = $form->validate($this->request->getData());
@@ -317,7 +315,7 @@ class UsersController extends AppController
                 // if (!empty($this->request->getData('role'))) {
                 //     $query->contain(['JobOffers']);
                 //     $query->matching('JobOffers', function($q) {
-                //         return $q->where(['job_id' => (int) $this->request->data['role']]);
+                //         return $q->where(['job_id' => (int) $this->request->getData('role')]);
                 //     });
                 // }
 
@@ -454,7 +452,7 @@ class UsersController extends AppController
         $query->matching('UserSkills', function($q) {
             $q->select(['UserSkills.name', 'UserSkills.perc']);
 
-            //$tags = explode(',', filter_var($this->request->data['skills'], FILTER_SANITIZE_STRING));
+            //$tags = explode(',', filter_var($this->request->getData('skills'), FILTER_SANITIZE_STRING));
             //$tags = array_map('trim', $tags);
 
             // metodo 1: ricerca IN (veloce)
@@ -504,7 +502,7 @@ class UsersController extends AppController
 
                     $q->select(['UserSkills.name', 'UserSkills.perc', 'UserSkills.user_id']);
 
-                    // $tags = explode(',', filter_var($this->request->data['skills'], FILTER_SANITIZE_STRING));
+                    // $tags = explode(',', filter_var($this->request->getData('skills'), FILTER_SANITIZE_STRING));
                     // $tags = array_map('trim', $tags);
                     // $tags = implode(' ', $tags);
 

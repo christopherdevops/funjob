@@ -126,8 +126,8 @@ class UsersController extends AppController
         if ($isSearch) {
 
             // Imposta variabili GET come POST
-            if ($this->request->is('get')) {
-                $this->request->data = $this->request->query();
+            if ($this->request->is('get') && !empty($this->request->getQuery())) {
+                $this->setRequest($this->request->withData($this->request->getQuery()));
             }
 
             if ($form->validate($this->request->getData())) {
@@ -141,7 +141,7 @@ class UsersController extends AppController
                 // if (!empty($this->request->getData('role'))) {
                 //     $query->contain(['JobOffers']);
                 //     $query->matching('JobOffers', function($q) {
-                //         return $q->where(['job_id' => (int) $this->request->data['role']]);
+                //         return $q->where(['job_id' => (int) $this->request->getData('role')]);
                 //     });
                 // }
 
@@ -165,19 +165,19 @@ class UsersController extends AppController
                 // TODO: spostare su componente
                 if ($this->request->getData('age_from')) {
                     $query->where(function($exp, $q) {
-                        return $q->newExpr()->add( sprintf('(YEAR(CURRENT_TIMESTAMP) - YEAR(Users.birthday)) >= %d', $this->request->data('age_from')) );
+                        return $q->newExpr()->add( sprintf('(YEAR(CURRENT_TIMESTAMP) - YEAR(Users.birthday)) >= %d', $this->request->getData('age_from')) );
                     });
                 }
 
                 if ($this->request->getData('age_to')) {
                     $query->where(function($exp, $q) {
-                        return $q->newExpr()->add( sprintf('(YEAR(CURRENT_TIMESTAMP) - YEAR(Users.birthday)) <= %d', $this->request->data('age_to')) );
+                        return $q->newExpr()->add( sprintf('(YEAR(CURRENT_TIMESTAMP) - YEAR(Users.birthday)) <= %d', $this->request->getData('age_to')) );
                     });
                 }
 
                 // Città
                 if ($this->request->getData('city_id')) {
-                    $query->where(['live_city_id' => $this->request->data['city_id']]);
+                    $query->where(['live_city_id' => $this->request->getData('city_id')]);
                 }
 
                 // SKILL tags
