@@ -67,9 +67,9 @@ class QuizzesController extends AppController
         if (in_array($this->request->getParam('action'), ['play', 'reply', 'score'])) {
             $quiz_id = $event->getSubject()->request->getParam('pass.0');
 
-            $this->QuizGame->config('quiz_id', (int) $quiz_id);
-            $this->QuizSession->config('quiz_id', (int) $quiz_id);
-            $this->QuizScore->config('quiz_id', (int) $quiz_id);
+            $this->QuizGame->setConfig('quiz_id', (int) $quiz_id);
+            $this->QuizSession->setConfig('quiz_id', (int) $quiz_id);
+            $this->QuizScore->setConfig('quiz_id', (int) $quiz_id);
         }
     }
 
@@ -433,7 +433,7 @@ class QuizzesController extends AppController
         }
 
         $this->loadComponent('QuizGame');
-        $this->QuizGame->config('quiz_id', $quiz_id);
+        $this->QuizGame->setConfig('quiz_id', $quiz_id);
         $this->QuizGame->play();
 
         $sessionPath = $this->QuizGame->getSessionPath();
@@ -540,7 +540,7 @@ class QuizzesController extends AppController
         }
 
         $this->loadComponent('QuizGame');
-        $this->QuizGame->config('quiz_id', $quizID);
+        $this->QuizGame->setConfig('quiz_id', $quizID);
 
         $QuizUserRankings = $this->Quizzes->UserRankings->newEmptyEntity();
         if (!empty($quiz->user_rankings[0])) {
@@ -550,7 +550,7 @@ class QuizzesController extends AppController
 
         $quizSessionPath = $this->QuizGame->getSessionPath();
         $this->loadComponent('QuizScore');
-        $this->QuizScore->config('quizSessionPath', $quizSessionPath);
+        $this->QuizScore->setConfig('quizSessionPath', $quizSessionPath);
 
         $replies     = $this->QuizScore->getReplies();
         $min_score   = Configure::readOrFail('app.quiz.minScoreRequired');

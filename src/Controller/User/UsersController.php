@@ -33,7 +33,7 @@ class UsersController extends AppController
             // Il campo cover viene impostato tramite un blockView
             // Il FormHelper sembra che non lo aggiunge nella lista dei campi permessi a quanto pare
             //$ignoreFields[] = 'background_cover';
-            //$this->Security->config('unlockedFields', $ignoreFields);
+            //$this->Security->setConfig('unlockedFields', $ignoreFields);
         }
 
         // Redirect a settings in base al prefix

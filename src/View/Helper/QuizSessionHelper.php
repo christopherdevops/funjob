@@ -10,7 +10,7 @@ use Cake\View\View;
  * QuizResult helper
  *
  * Richiede:
- * $this->QuizSession->config('entity', \App\Model\Entity\QuizSession $QuizSessionEntity)
+ * $this->QuizSession->setConfig('entity', \App\Model\Entity\QuizSession $QuizSessionEntity)
  */
 class QuizSessionHelper extends Helper
 {
@@ -50,7 +50,7 @@ class QuizSessionHelper extends Helper
 
         if (empty($entity)) {
             throw new \Exception(__(
-                'Require $this->QuizSession->config("entity", \App\Model\Entity\QuizSession $QuizSessionEntity)', ['class' => __CLASS__]
+                'Require $this->QuizSession->setConfig("entity", \App\Model\Entity\QuizSession $QuizSessionEntity)', ['class' => __CLASS__]
             ));
         }
 

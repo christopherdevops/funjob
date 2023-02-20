@@ -19,7 +19,7 @@
         ->add($quizSession->quiz->title, $quizSession->quiz->url)
         ->add(__('Risultato'));
 
-    $this->QuizSession->config('entity', $quizSession);
+    $this->QuizSession->setConfig('entity', $quizSession);
 ?>
 
 <?php // CONDIVIDI QUIZ ?>

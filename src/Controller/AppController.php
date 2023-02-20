@@ -84,7 +84,7 @@ class AppController extends Controller
         // Sarebbe più appropiato configurare l'auth adapter solo se il plugin è caricato
         //
         // if (\Cake\Core\Plugin::loaded('ADmad/HybridAuth')) {
-        //     $this->Auth->config('authenticate.ADmad/HybridAuth.HybridAuth', [
+        //     $this->Auth->setConfig('authenticate.ADmad/HybridAuth.HybridAuth', [
         //     ]);
         // }
 

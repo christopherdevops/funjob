@@ -24,7 +24,7 @@ class QuizQuestionsController extends AppController
             // Disabilita quiz_answers[1-4]
             // perchè a seconda di quiz_question.type vengono disabilitati i campi quiz_answers[1-4]
             for ($i=1; $i < 4; $i++) {
-                $this->Security->config('unlockedFields', ['quiz_answers.' .$i. '.is_correct', 'quiz_answers.' .$i. '.answer']);
+                $this->Security->setConfig('unlockedFields', ['quiz_answers.' .$i. '.is_correct', 'quiz_answers.' .$i. '.answer']);
             }
         }
     }

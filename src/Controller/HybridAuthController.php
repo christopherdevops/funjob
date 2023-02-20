@@ -20,7 +20,7 @@ class HybridAuthController extends AppController
         // $this->loadComponent('Auth');
         $this->Auth->allow(['register', 'login']);
 
-        // $this->Auth->config('authenticate.ADmad/HybridAuth.HybridAuth', [
+        // $this->Auth->setConfig('authenticate.ADmad/HybridAuth.HybridAuth', [
         //     // All keys shown below are defaults
         //     'fields' => [
         //         'provider'          => 'provider',

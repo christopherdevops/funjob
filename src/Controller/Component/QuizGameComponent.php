@@ -93,7 +93,7 @@ class QuizGameComponent extends Component
      */
     public function getSessionPath($key = '') {
         // Componente instanziato tramite $this->loadModel ma senza $config
-        // Potrebbe essere istanziato senza settings e impostati al volo (tramite $this->QuizGame->config('quiz_id', N)) in quel caso
+        // Potrebbe essere istanziato senza settings e impostati al volo (tramite $this->QuizGame->setConfig('quiz_id', N)) in quel caso
         // $this->_config['quiz_id'] è nullo
         if (
             empty($this->_config['quiz_id']) &&
