@@ -425,7 +425,7 @@ return static function (RouteBuilder $routes) {
     });
 
     // User
-    $routes->prefix('user', ['_namePrefix' => 'user:'], function (RouteBuilder $builder) {
+    $routes->prefix('User', ['_namePrefix' => 'user:'], function (RouteBuilder $builder) {
 
         $routeContext = ['_namePrefix' => 'profile:', 'prefix' => null, 'controller' => 'users'];
         $builder->scope('/:id-:username/', $routeContext, function ($builder) {
@@ -453,19 +453,19 @@ return static function (RouteBuilder $routes) {
             ]
         );
 
-        $builder->prefix('quizzes/', function (RouteBuilder $builder) {
+        $builder->prefix('Quizzes', function (RouteBuilder $builder) {
             $builder->connect('/', ['prefix' => null, 'controller' => 'Quizzes', 'action' => 'index'], ['_name' => 'index']);
 
             // Quiz completati
             $builder->connect(
-                'completed/:user_id',
+                '/completed/:user_id',
                 ['prefix' => null, 'controller' => 'users', 'action' => 'quizCompleted'],
                 ['_name' => 'quizzes:completed', 'pass' => ['user_id'], 'user_id' => RouteValidator::ID]
             );
 
             // Quiz completati
             $builder->connect(
-                'created/:user_id/:type',
+                '/created/:user_id/:type',
                 ['prefix' => null, 'controller' => 'users', 'action' => 'quizCreated', 'type' => 'default'],
                 ['_name' => 'quizzes:created', 'pass' => ['user_id'], 'user_id' => '\d+']
             );
@@ -518,7 +518,7 @@ return static function (RouteBuilder $routes) {
     });
 
     // Admin backend
-    $routes->prefix('admin', function (RouteBuilder $builder) {
+    $routes->prefix('Admin', function (RouteBuilder $builder) {
 
         $builder->connect('/quiz-categories/', ['controller' => 'quiz-categories', 'action' => 'index'], ['_name' => 'admin/quiz-categories/index']);
         $builder->connect('/quiz-categories/add', ['controller' => 'quiz-categories', 'action' => 'add'], ['_name' => 'admin/quiz-categories/add']);
@@ -529,14 +529,14 @@ return static function (RouteBuilder $routes) {
 
     // User (company)
     // Prefisso utilizzato da gli users con role (company)
-    $routes->prefix('company', function ($builder) {
+    $routes->prefix('Company', function ($builder) {
         $builder->setExtensions(['json']);
         $builder->fallbacks(DashedRoute::class);
     });
 
     // User (sponsor)
     // Prefisso utilizzato da gli users con role (sponsor)
-    $routes->prefix('sponsor', function ($builder) {
+    $routes->prefix('Sponsor', function ($builder) {
         $builder->fallbacks(DashedRoute::class);
     });
 
@@ -630,7 +630,7 @@ return static function (RouteBuilder $routes) {
         function ($builder) {
 
             // Backend
-            $builder->prefix('admin', ['_namePrefix' => 'admin:', 'prefix' => 'Admin'], function($builder) {
+            $builder->prefix('Admin', ['_namePrefix' => 'admin:', 'prefix' => 'Admin'], function($builder) {
                 $builder->scope('/product', ['_namePrefix' => 'product:', 'prefix' => 'Admin'], function($builder) {
                     $builder->connect('/', ['controller' => 'StoreProducts', 'action' => 'index'], ['_name' => 'index']);
                     $builder->connect('/add', ['controller' => 'StoreProducts', 'action' => 'add'], ['_name' => 'add']);

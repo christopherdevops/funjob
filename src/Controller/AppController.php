@@ -90,7 +90,7 @@ class AppController extends Controller
 
         if (!$this->request->is('ajax')) {
 
-            switch ($this->request->getParam('prefix')) {
+            switch (strtolower($this->request->getParam('prefix'))) {
                 case 'admin':
                     $layout = 'backend';
                 break;
@@ -193,10 +193,10 @@ class AppController extends Controller
 
         // Prefixes liberi    : user, company, sponsor
         // Prefixes riservati : admin
-        if (in_array($this->request->getParam('prefix'), ['user', 'company', 'sponsor'])) {
+        if (in_array(strtolower($this->request->getParam('prefix')), ['user', 'company', 'sponsor'])) {
             return true;
         } else {
-            return $this->request->getParam('prefix') == $user['type'];
+            return strtolower($this->request->getParam('prefix')) == $user['type'];
         }
 
         return false;
