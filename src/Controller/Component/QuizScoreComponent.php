@@ -42,7 +42,7 @@ class QuizScoreComponent extends Component
      */
     public function getSession($key = null)
     {
-        $sessionPath = $this->config('quizSessionPath');
+        $sessionPath = $this->getConfig('quizSessionPath');
 
         if (!empty($key)) {
             $sessionPath .= '.' . $key;

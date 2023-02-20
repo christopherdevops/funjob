@@ -46,7 +46,7 @@ class QuizSessionHelper extends Helper
     }
 
     public function getEntity() {
-        $entity = $this->config('entity');
+        $entity = $this->getConfig('entity');
 
         if (empty($entity)) {
             throw new \Exception(__(

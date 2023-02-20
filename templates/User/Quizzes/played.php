@@ -113,7 +113,7 @@
 <?php $this->end() ?>
 
 <?php $this->start('quiz:results') ?>
-    <?php foreach ($sessions as $session) : $this->QuizSession->config('entity', $session) ?>
+    <?php foreach ($sessions as $session) : $this->QuizSession->setConfig('entity', $session) ?>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 quiz-entity-col">
         <div class="funjob-quiz-result panel panel-sm <?= $session->quiz->type == 'default' ? 'panel-default' : 'panel-info' ?>">
             <div class="panel-heading" style="overflow:hidden">
@@ -333,7 +333,7 @@
                                                 showCount : false,
                                                 shareIn   : "popup",
                                                 text      : <?= json_encode($session->quiz['title']) ?>,
-                                                url       : "<?= $this->Url->build($session->url, true) ?>",
+                                                url       : "<?= $this->Url->build($session->url) ?>",
                                                 shares    : [
                                                    "twitter",
                                                    "facebook",
