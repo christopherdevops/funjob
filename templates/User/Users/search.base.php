@@ -57,7 +57,7 @@
 <?php if (!$this->fetch('users-results')) : ?>
 <?php $this->start('users-results') ?>
     <div class="alert alert-info">
-        <?php $counter = $this->Paginator->counter('{{count}}') ?>
+        <?php $counter = $this->Paginator->counter('{{count}}', ['model' => '']) ?>
         <?= __n('1 utente soddisfa la tua richiesta', '{0} utenti soddisfano la tua richiesta', $counter, $counter) ?>
     </div>
 

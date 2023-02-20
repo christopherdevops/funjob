@@ -70,7 +70,7 @@
 <?php // Blocco: mostra il risultato della ricerca ?>
 <?php $this->start('users-results') ?>
     <p class="text-color-primary font-size-md pull-right">
-        <?php $counter = $this->Paginator->counter('{{count}}') ?>
+        <?php $counter = $this->Paginator->counter('{{count}}', ['model' => '']) ?>
         <?= __n('1 utente soddisfa la tua richiesta', '{0} utenti soddisfano la tua richiesta', $counter, $counter) ?>
     </p>
     <div class="clearfix"></div>
