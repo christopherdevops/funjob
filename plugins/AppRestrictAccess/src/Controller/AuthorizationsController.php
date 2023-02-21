@@ -20,7 +20,7 @@ class AuthorizationsController extends BaseController
 
         $this->viewBuilder()->setLayout('AppRestrictAccess.default');
 
-        if (file_exists(ROOT . DS . 'templates' . DS . 'Layout' . DS . 'access-restriction.php')) {
+        if (file_exists(ROOT . DS . 'templates' . DS . 'layout' . DS . 'access-restriction.php')) {
             $this->viewBuilder()->setLayout('access-restriction');
         }
 
