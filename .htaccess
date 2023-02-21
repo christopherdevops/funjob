@@ -10,13 +10,13 @@
     # HTTP authorization: fixs
     #RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
-    #RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
-    #RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
-    #RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
     RewriteRule    ^$    webroot/    [L]
-    #RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
-    #RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
-    #RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
     RewriteRule    (.*) webroot/$1    [L]
 </IfModule>
 
@@ -74,25 +74,3 @@
     Header append Vary User-Agent
 </IfModule>
 # FINE DEFLATE
-
-# SP BEGIN php handler
-<IfModule mod_fcgid.c>
-          AddHandler fcgid-script .php .php5 .php7 .phtml
-          FcgidWrapper    /usr/local/cpanel/cgi-sys/sp-ea-php72 .php
-          FcgidWrapper    /usr/local/cpanel/cgi-sys/sp-ea-php72 .php5
-          FcgidWrapper    /usr/local/cpanel/cgi-sys/sp-ea-php72 .php7
-          FcgidWrapper    /usr/local/cpanel/cgi-sys/sp-ea-php72 .phtml
-</IfModule>
-# SP END php handler
-
-#----------------------------------------------------------------cp:ppd
-# Section managed by cPanel: Password Protected Directories     -cp:ppd
-# - Do not edit this section of the htaccess file!              -cp:ppd
-#----------------------------------------------------------------cp:ppd
-AuthType Basic
-AuthName "Protected 'public_html'"
-AuthUserFile "/home2/ngfunjob/.htpasswds/public_html/passwd"
-Require valid-user
-#----------------------------------------------------------------cp:ppd
-# End section managed by cPanel: Password Protected Directories -cp:ppd
-#----------------------------------------------------------------cp:ppd
