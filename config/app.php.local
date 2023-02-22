@@ -9,15 +9,25 @@ return [
      * Development Mode:
      * true: Errors and warnings shown.
      */
-    'debug' => filter_var(env('DEBUG', true), FILTER_VALIDATE_BOOLEAN),
+    'debug' => filter_var(env('DEBUG', false), FILTER_VALIDATE_BOOLEAN),
+    'ssl'   => filter_var(env('APP_USE_SSL', false), FILTER_VALIDATE_BOOLEAN),
 
     /**
      * Maintenance mode:
-     *
+     * src/Middleware/MaintenanceMiddleware.php
      */
     'Maintenance' => [
         'enabled' => filter_var(env('MAINTENANCE_ENABLE', false), FILTER_VALIDATE_BOOLEAN),
         'message' => env('MAINTENANCE_MESSAGE', 'App in maintenance... try later!'),
+    ],
+
+    /**
+     * src/Middleware/MaintenanceMiddleware.php
+     */
+    'Authorization' => [
+        'enabled' => filter_var(env('AUTHORIZATION_ENABLE', false), FILTER_VALIDATE_BOOLEAN),
+        'real'    => env('AUTHORIZATION_REALM', 'Restrict access'),
+        'pwd'     => env('AUTHORIZATION_PWD', 'foo'),
     ],
 
     /**
@@ -60,8 +70,8 @@ return [
         'jsBaseUrl'     => 'js/',
         'paths' => [
             'plugins'   => [ROOT . DS . 'plugins' . DS],
-            'templates' => [APP . 'Template' . DS],
-            'locales'   => [APP . 'Locale' . DS],
+            'templates' => [ROOT . DS . 'templates' . DS],
+            'locales'   => [RESOURCES . DS . 'locales' . DS],
         ],
     ],
 
@@ -161,6 +171,68 @@ return [
             'url'       => env('CACHE_DEFAULT_URL', null),
         ],
 
+        'quiz_categories' => [
+            'className' => 'File',
+            'prefix'    => '',
+            'serialize' => true,
+            'duration'  => '+30 minutes',
+            'path'      => CACHE . 'quiz_categories',
+            'url'       => env('CACHE_DEFAULT_URL', null),
+        ],
+
+
+        'home_latests_users' => [
+            'className' => 'File',
+            'prefix'    => '',
+            'serialize' => true,
+            'duration'  => '+5 minutes',
+            'path'      => CACHE,
+            'url'       => env('CACHE_DEFAULT_URL', null),
+        ],
+        'home_latests_companies' => [
+            'className' => 'File',
+            'prefix'    => '',
+            'serialize' => true,
+            'duration'  => '+5 minutes',
+            'path'      => CACHE,
+            'url'       => env('CACHE_DEFAULT_URL', null),
+        ],
+        'home_random_bigbrains' => [
+            'className' => 'File',
+            'prefix'    => '',
+            'serialize' => true,
+            'duration'  => '+5 minutes',
+            'path'      => CACHE,
+            'url'       => env('CACHE_DEFAULT_URL', null),
+        ],
+
+        'home_latests_groups' => [
+            'className' => 'File',
+            'prefix'    => '',
+            'serialize' => true,
+            'duration'  => '+5 minutes',
+            'path'      => CACHE,
+            'url'       => env('CACHE_DEFAULT_URL', null),
+        ],
+
+        'home_popular_categories' => [
+            'className' => 'File',
+            'prefix'    => '',
+            'serialize' => true,
+            'duration'  => '+90 minutes',
+            'path'      => CACHE,
+            'url'       => env('CACHE_DEFAULT_URL', null),
+        ],
+
+        'home_popular_quizzes' => [
+            'className' => 'File',
+            'prefix'    => '',
+            'serialize' => true,
+            'duration'  => '+5 minutes',
+            'path'      => CACHE,
+            'url'       => env('CACHE_DEFAULT_URL', null),
+        ],
+
         /**
          * Configure the cache used for general framework caching.
          * Translation cache files are stored with this configuration.
@@ -224,7 +296,7 @@ return [
     'Error' => [
         'errorLevel'        => E_ALL,
         'exceptionRenderer' => 'Cake\Error\ExceptionRenderer',
-        'skipLog'           => ['NotFoundException'],
+        'skipLog'           => ['Cake\Routing\Exception\NotFoundException', 'Cake\Routing\Exception\MissingControllerException'],
         'log'               => true,
         'trace'             => true,
     ],
@@ -274,9 +346,9 @@ return [
      */
     'Email' => [
         'default' => [
-            'transport'       => 'default',
-            'from'            => 'you@localhost',
-            //'charset'       => 'utf-8',
+            'transport' => 'default',
+            'from'      => 'funjob@funjob.it',
+            'charset'   => 'utf-8',
             //'headerCharset' => 'utf-8',
         ],
     ],
@@ -491,7 +563,7 @@ return [
      */
     'Session' => [
         'defaults' => 'php',
-        'timeout'  => 30
+        //'timeout'  => 0
     ],
 
 
@@ -503,6 +575,10 @@ return [
     // Email sviluppatore
     // Utilizzata dall'applicazione per inviare email di tipo non tecnico
     'developer_email' => env('APP_DEVELOPER_EMAIL', 'stoneddea7h@gmail.com'),
+
+    // Email ordini store
+    // Utilizzata per notificare i nuovi ordini a chi si occupa degli ordini
+    'store_email' => env('APP_STORE_EMAIL', 'funjob.store@gmail.com'),
 
     // reCaptcha Google
     'recaptca_keys' => [
