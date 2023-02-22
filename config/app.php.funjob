@@ -70,8 +70,8 @@ return [
         'jsBaseUrl'     => 'js/',
         'paths' => [
             'plugins'   => [ROOT . DS . 'plugins' . DS],
-            'templates' => [APP . 'Template' . DS],
-            'locales'   => [APP . 'Locale' . DS],
+            'templates' => [ROOT . DS . 'templates' . DS],
+            'locales'   => [RESOURCES . DS . 'locales' . DS],
         ],
     ],
 
@@ -180,6 +180,41 @@ return [
             'url'       => env('CACHE_DEFAULT_URL', null),
         ],
 
+
+        'home_latests_users' => [
+            'className' => 'File',
+            'prefix'    => '',
+            'serialize' => true,
+            'duration'  => '+5 minutes',
+            'path'      => CACHE,
+            'url'       => env('CACHE_DEFAULT_URL', null),
+        ],
+        'home_latests_companies' => [
+            'className' => 'File',
+            'prefix'    => '',
+            'serialize' => true,
+            'duration'  => '+5 minutes',
+            'path'      => CACHE,
+            'url'       => env('CACHE_DEFAULT_URL', null),
+        ],
+        'home_random_bigbrains' => [
+            'className' => 'File',
+            'prefix'    => '',
+            'serialize' => true,
+            'duration'  => '+5 minutes',
+            'path'      => CACHE,
+            'url'       => env('CACHE_DEFAULT_URL', null),
+        ],
+
+        'home_latests_groups' => [
+            'className' => 'File',
+            'prefix'    => '',
+            'serialize' => true,
+            'duration'  => '+5 minutes',
+            'path'      => CACHE,
+            'url'       => env('CACHE_DEFAULT_URL', null),
+        ],
+
         'home_popular_categories' => [
             'className' => 'File',
             'prefix'    => '',
@@ -193,7 +228,7 @@ return [
             'className' => 'File',
             'prefix'    => '',
             'serialize' => true,
-            'duration'  => '+90 minutes',
+            'duration'  => '+5 minutes',
             'path'      => CACHE,
             'url'       => env('CACHE_DEFAULT_URL', null),
         ],
@@ -261,7 +296,7 @@ return [
     'Error' => [
         'errorLevel'        => E_ALL,
         'exceptionRenderer' => 'Cake\Error\ExceptionRenderer',
-        'skipLog'           => ['NotFoundException'],
+        'skipLog'           => ['Cake\Routing\Exception\NotFoundException', 'Cake\Routing\Exception\MissingControllerException'],
         'log'               => true,
         'trace'             => true,
     ],
@@ -331,7 +366,7 @@ return [
              'className'     => 'Cake\Database\Connection',
              'driver'        => 'Cake\Database\Driver\Mysql',
              'persistent'    => false,
-             'host'          => 'localhost',
+             'host'          => 'db5012018697.hosting-data.io',
              /**
              * CakePHP will use the default DB port based on the driver selected
              * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
@@ -373,7 +408,7 @@ return [
             'className'  => 'Cake\Database\Connection',
             'driver'     => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
-            'host'       => 'localhost',
+            'host'       => 'db5012020208.hosting-data.io',
             /**
              * CakePHP will use the default DB port based on the driver selected
              * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
@@ -528,6 +563,7 @@ return [
      */
     'Session' => [
         'defaults' => 'php',
+        //'timeout'  => 0
     ],
 
 
@@ -539,6 +575,10 @@ return [
     // Email sviluppatore
     // Utilizzata dall'applicazione per inviare email di tipo non tecnico
     'developer_email' => env('APP_DEVELOPER_EMAIL', 'stoneddea7h@gmail.com'),
+
+    // Email ordini store
+    // Utilizzata per notificare i nuovi ordini a chi si occupa degli ordini
+    'store_email' => env('APP_STORE_EMAIL', 'funjob.store@gmail.com'),
 
     // reCaptcha Google
     'recaptca_keys' => [
