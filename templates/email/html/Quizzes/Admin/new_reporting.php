@@ -3,7 +3,7 @@
 <br>
 <dl>
     <dt>Quiz</dt>
-    <dd><?= $this->Url->build($Quiz->url, true) ?></dd>
+    <dd><?= $this->Url->build($Quiz->url, ['fullBase' => true]) ?></dd>
 
     <dt>Segnalatore:</dt>
     <dd><?= $User->username ?></dd>

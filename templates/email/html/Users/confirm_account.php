@@ -2,5 +2,5 @@
 <?= __('Per poter accedere a tutte le funzioni di FunJob è necessario che confermi il tuo account cliccando questo link') ?>
 <br>
 <br>
-<?php $url = $this->Url->build(['_name' => 'account:confirmation', 'uuid' => $User->confirmation_token], true) ?>
+<?php $url = $this->Url->build(['_name' => 'account:confirmation', 'uuid' => $User->confirmation_token], ['fullBase' => true]) ?>
 <?= $this->Html->link($url, $url) ?>

@@ -7,11 +7,11 @@
 
     $this->Html->meta('og:image:width', 500, ['block' => true]);
     $this->Html->meta('og:image:height', 300, ['block' => true]);
-    $this->Html->meta('og:image', $this->Url->build($quizSession->quiz->imageSize($quizSession->quiz->coverSrcOriginal, '500x300'), true), ['block' => true]);
+    $this->Html->meta('og:image', $this->Url->build($quizSession->quiz->imageSize($quizSession->quiz->coverSrcOriginal, '500x300'), ['fullBase' => true]), ['block' => true]);
 
     $this->Html->meta('og:title', $quizSession->quiz->title, ['block' => true]);
     $this->Html->meta('og:descr', $quizSession->quiz->descr_small, ['block' => true]);
-    $this->Html->meta('og:url', $this->Url->build($quizSession->url, true), ['block' => true]);
+    $this->Html->meta('og:url', $this->Url->build($quizSession->url, ['fullBase' => true]), ['block' => true]);
 
     $this->Breadcrumbs
         ->add($quizSession->user->username, $quizSession->user->url)
@@ -46,7 +46,7 @@
                     'score'     => $this->QuizSession->getFinalScore(),
                     'score_max' => $this->QuizSession->getFinalScoreMax()
                 ])) ?>,
-                url       : "<?= $this->Url->build($quizSession->url, true) ?>",
+                url       : "<?= $this->Url->build($quizSession->url, ['fullBase' => true]) ?>",
                 shares    : [
                    "facebook",
                    "googleplus",

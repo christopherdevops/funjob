@@ -8,7 +8,7 @@
     <dd><?= $SponsorAdv->descr ?> </dd>
 
     <dt><?= __('Destinazione') ?></dt>
-    <dd><?= $this->Url->build($SponsorAdv->image_src, true) ?></dd>
+    <dd><?= $this->Url->build($SponsorAdv->image_src, ['fullBase' => true]) ?></dd>
 
     <dt><?= __('Destinazione') ?></dt>
     <dd><?= $SponsorAdv->href ?></dd>
@@ -18,7 +18,7 @@
 </dl>
 
 <figure>
-    <img src="<?= $this->Url->build($SponsorAdv->image_src, true) ?>" alt="404">
+    <img src="<?= $this->Url->build($SponsorAdv->image_src, ['fullBase' => true]) ?>" alt="404">
     <figcaption>
         <?= __('Immagine caricata') ?>
     </figcaption>

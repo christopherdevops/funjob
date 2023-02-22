@@ -23,11 +23,11 @@
 
     $this->Html->meta('og:image:width', 500, ['block' => true]);
     $this->Html->meta('og:image:height', 300, ['block' => true]);
-    $this->Html->meta('og:image', $this->Url->build($quiz->imageSize($quiz->cover_src_original, '500x300'), true), ['block' => true]);
+    $this->Html->meta('og:image', $this->Url->build($quiz->imageSize($quiz->cover_src_original, '500x300'), ['fullBase' => true]), ['block' => true]);
 
     $this->Html->meta('og:title', $quiz->title, ['block' => true]);
     $this->Html->meta('og:descr', $quiz->descr_small, ['block' => true]);
-    $this->Html->meta('og:url', $this->Url->build($quiz->url, true), ['block' => true]);
+    $this->Html->meta('og:url', $this->Url->build($quiz->url, ['fullBase' => true]), ['block' => true]);
 ?>
 
 <?php // CONDIVIDI QUIZ ?>
@@ -41,7 +41,7 @@
                 showCount : false,
                 shareIn   : "popup",
                 text      : <?= json_encode(__('Sfida i tuoi amici su: ‹{title}›', ['title' => $quiz->title])) ?>,
-                url       : "<?= $this->Url->build($quiz->url, true) ?>",
+                url       : "<?= $this->Url->build($quiz->url, ['fullBase' => true]) ?>",
                 shares    : [
                    "facebook",
                    "googleplus",
@@ -74,7 +74,7 @@
                 showCount : false,
                 shareIn   : "popup",
                 text      : <?= json_encode(__('Ho ottenuto un punteggio di {score} su ‹{title}›', ['title' => $quiz->title, 'score' => 13])) ?>,
-                url       : "<?= $this->Url->build($quiz->url, true) ?>",
+                url       : "<?= $this->Url->build($quiz->url, ['fullBase' => true]) ?>",
                 shares    : [
                    "facebook",
                    "googleplus",

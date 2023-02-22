@@ -6,11 +6,11 @@
 <?=
     __(
         '{requester} vorrebbe diventare tuoi amico',
-        ['requester' => '<a href="' .$this->Url->build($UserRequester->url, true). '">' .$UserRequester->username. '</a>']
+        ['requester' => '<a href="' .$this->Url->build($UserRequester->url, ['fullBase' => true]). '">' .$UserRequester->username. '</a>']
     )
  ?>
 </p>
 
 
-<?php $url = $this->Url->build(['prefix' => null, 'controller' => 'user-friends', 'action' => 'waiting'], true) ?>
+<?php $url = $this->Url->build(['prefix' => null, 'controller' => 'user-friends', 'action' => 'waiting'], ['fullBase' => true]) ?>
 <?= $this->Html->link(__('Accetta o rifiuta da questa pagina'), $url) ?>
